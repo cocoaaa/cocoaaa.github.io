@@ -1,0 +1,9 @@
+{% from 'macros.html' import get_article_list %}
+{% extends "base.html" %}
+{% block title %}{{ category }}{% endblock %}
+
+{% block content %}
+    <h2>{{ category }}</h2>
+    <!-- todo: List articles in this category -->
+    {{ get_article_list(articles, DEFAULT_CATEGORY) }}
+{% endblock %}

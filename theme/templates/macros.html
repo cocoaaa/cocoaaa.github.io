@@ -1,0 +1,52 @@
+{% macro get_meta_data_html(article) %}
+  {{ article.date.strftime('%b %d, %Y') }}
+  {% if article.category %}
+  / <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+  {% endif %}
+  {% if article.tags %}
+    /
+    {% for tag in article.tags %}
+      {% if not loop.last %}
+        <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>,
+      {% else %}
+        <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{%  endmacro %}
+
+{% macro add_nav_buttons(article, exclude_category) %}
+    {% if article.category and article.category != exclude_category %}
+    <div class="row">
+      {% if article.prev_article_in_category %}
+      <span style="float:left">
+        &#8592;
+        <a href="{{ SITEURL }}/{{ article.prev_article_in_category.url}}">
+          {{ article.prev_article_in_category.title }}
+        </a>
+      </span>
+      {% endif %}
+
+      {% if article.next_article_in_category %}
+      <span style="float:right">
+        <a href="{{ SITEURL }}/{{ article.next_article_in_category.url}}">
+          {{ article.next_article_in_category.title }}
+        </a>
+        &#8594;
+      </span>
+      {% endif %}
+    </div>
+    {% endif %}
+{%  endmacro %}
+
+{% macro get_article_list(articles, exclude_category) %}
+    <ul>
+    {% for article in articles %}
+        <li>
+            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            &nbsp
+            <span class="post-meta">{{ get_meta_data_html(article) }}</span>
+        </li>
+    {% endfor %}
+    </ul>
+{% endmacro %}
