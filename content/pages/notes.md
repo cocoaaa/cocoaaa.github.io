@@ -1,5 +1,12 @@
 Title: Notes
 
+
+---
+# Pelican blog setup references
+1. Site generation setting variable definitions: [pelican doc](http://docs.getpelican.com/en/stable/settings.html)
+2. Variables that can be used in theme's templates (.html files): [pelican doc](http://docs.getpelican.com/en/stable/themes.html#category-html)
+
+---
 # Resources
 A list of useful websites for building a website like this using Pelican  
 

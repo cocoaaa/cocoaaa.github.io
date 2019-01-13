@@ -27,6 +27,8 @@ import re
 import logging
 logger = logging.getLogger(__name__)
 
+import pdb #todo: debug
+
 ### CORE BUG: https://github.com/getpelican/pelican/issues/1547
 ### Content.url_format does not honor category.slug (or author.slug).
 ### The sanest way to work around this is to dynamically redefine each

@@ -1,4 +1,4 @@
-Title: About Me
+Title: About me
 
 {% img ../images/profile.jpg %}
 

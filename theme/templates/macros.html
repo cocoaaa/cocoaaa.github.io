@@ -1,18 +1,24 @@
-{% macro get_meta_data_html(article) %}
-  {{ article.date.strftime('%b %d, %Y') }}
-  {% if article.category %}
-  / <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-  {% endif %}
-  {% if article.tags %}
-    /
-    {% for tag in article.tags %}
-      {% if not loop.last %}
-        <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>,
-      {% else %}
-        <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
+{% macro get_meta_data_html(article, exclude_category, meta_types=['date', 'category', 'tag']) %}
+    {% if 'date' in meta_types %}
+        {{ article.date.strftime('%b %d, %Y') }}
+    {% endif %}
+
+    {% if 'category' in meta_types %}
+        {% if article.category and article.category != exclude_category %}
+            / <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category.name }}</a>
+        {% endif %}
+    {% endif %}
+
+    {% if 'tag' in meta_types and article.tags %}
+        /
+        {% for tag in article.tags %}
+            {% if not loop.last %}
+                <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>,
+            {% else %}
+                <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
 {%  endmacro %}
 
 {% macro add_nav_buttons(article, exclude_category) %}
@@ -45,7 +51,7 @@
         <li>
             <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
             &nbsp
-            <span class="post-meta">{{ get_meta_data_html(article) }}</span>
+            <span class="post-meta">{{ get_meta_data_html(article, exclude_category, meta_types=['date', 'tag']) }}</span>
         </li>
     {% endfor %}
     </ul>

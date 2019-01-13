@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Hayley Song'
 SITENAME = 'Small Simplicity'
-SITESUBTITLE = u'Human intelligence through computational perspectives'
+SITESUBTITLE = u'Understanding Intelligence from Computational Perspective'
 SITEURL = ''
 TIMEZONE = 'America/Los_Angeles'
 DEFAULT_LANG = 'en'
@@ -15,10 +15,14 @@ LOAD_CONTENT_CACHE = False
 # Read paths
 ## relative to $PATH
 PATH = 'content'
-ARTICLE_PATHS = ['articles']
+# ARTICLE_PATHS = ['articles', 'articles/TIL', 'articles/research_log']
+ARTICLE_EXCLUDES = ['images', 'figures', 'videos']
 PAGE_PATHS = ['pages']
 
+# Note: these two values do not take effect in the current theme
+# Instead, the menu bar items are manually set in `theme/templates/base.html`
 # DISPLAY_PAGES_ON_MENU = True
+# DISPLAY_CATEGORIES_ON_MENU = True
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -52,7 +56,9 @@ PLUGINS = [
     'liquid_tags.img',  # embedding images
     'liquid_tags.video',  # embedding videos
     'liquid_tags.include_code',  # including code blocks
-    'liquid_tags.literal'
+    'liquid_tags.literal',
+    'category_meta', # enables to add category descriptions in each category page
+    'neighbors', # (none default) category page navigations
 ]
 IGNORE_FILES = ['.ipynb_checkpoints']
 
@@ -69,6 +75,7 @@ PROJECTS_PAGE = '/pages/projects.html'
 PUBS_PAGE = '/pages/publications.html'
 TUTORIALS_PAGE = '/pages/tutorials.html'
 NOTES_PAGE = '/pages/notes.html'
+CATEGORIES_PAGE = '/categories.html' # must match{{ CATEGORIES_SAVE_AS }}
 
 # About page
 #TWITTER_USERNAME = 'jakevdp'
