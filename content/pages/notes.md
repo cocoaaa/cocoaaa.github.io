@@ -22,4 +22,6 @@ A list of useful websites for building a website like this using Pelican
     - [DaveDash](http://davedash.com/)
 
 ---
-
+# PyCharm shortcuts
+- Click on the filename on the Browser sidecar and 'Shift + Enter`: create a new 
+view of the same file
