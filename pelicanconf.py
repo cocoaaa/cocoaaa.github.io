@@ -15,8 +15,8 @@ LOAD_CONTENT_CACHE = False
 # Read paths
 ## relative to $PATH
 PATH = 'content'
-# ARTICLE_PATHS = ['articles', 'articles/TIL', 'articles/research_log']
-ARTICLE_EXCLUDES = ['images', 'figures', 'videos']
+# ARTICLE_PATHS = ['articles', 'articles/*']
+ARTICLE_EXCLUDES = ['downloads', 'figures', 'images', 'videos']
 PAGE_PATHS = ['pages']
 
 # Note: these two values do not take effect in the current theme
@@ -35,18 +35,38 @@ AUTHOR_FEED_RSS = None
 DEFAULT_DATE = 'fs'
 DEFAULT_CATEGORY = 'Unorganized'
 
-# Set the article URL
-ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+################################################################################
+# Set the URL and SAVE_AS formats
+################################################################################
+AUTHORS_SAVE_AS = '' # Prevents this html page from being generated
+
+ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+# ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
+
+PAGE_URL = 'pages/{slug}.html'
 PAGE_SAVE_AS = 'pages/{slug}.html'
+
+CATEGORY_URL = 'category/{slug}.html'
+CATEGORY_SAVE_AS = 'category/{slug}.html'
+
+MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
+
+################################################################################
+#
+################################################################################
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+
+
+################################################################################
+#
+################################################################################
 #MARKUP = ('md', 'ipynb')
 #PLUGINS = ['ipynb.markup']
-
 MARKUP = ['md']
 PLUGIN_PATHS = ['./plugins', './plugins/pelican-plugins']
 PLUGINS = [
@@ -69,7 +89,9 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 # THEME SETTINGS
 THEME = './theme/'
 
+################################################################################
 # List of menu pages to show on the menu bar
+################################################################################
 ABOUT_PAGE = '/pages/about-me.html'
 PROJECTS_PAGE = '/pages/projects.html'
 PUBS_PAGE = '/pages/publications.html'
@@ -78,9 +100,7 @@ NOTES_PAGE = '/pages/notes.html'
 CATEGORIES_PAGE = '/categories.html' # must match{{ CATEGORIES_SAVE_AS }}
 
 # About page
-#TWITTER_USERNAME = 'jakevdp'
 GITHUB_USERNAME = 'cocoaaa'
-#STACKOVERFLOW_ADDRESS = 'http://stackoverflow.com/users/2937831/jakevdp'
 # AUTHOR_WEBSITE = 'http://vanderplas.com'
 AUTHOR_BLOG = 'http://cocoaaa.github.io'
 #AUTHOR_CV = "http://staff.washington.edu/jakevdp/media/pdfs/CV.pdf"
@@ -89,6 +109,7 @@ SHOW_ARCHIVES = True
 SHOW_FEED = False  # Need to address large feeds
 ENABLE_MATHJAX = True
 
+# TEMPLATE_PAGES =
 STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
 
 # Footer info
