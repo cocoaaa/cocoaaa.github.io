@@ -6,6 +6,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# pelican server related ids
+pelican.pid
+svr.pid
+
 # C extensions
 *.so
 
