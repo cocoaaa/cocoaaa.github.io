@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - TIL (Today I Learned)</title><link href="http://cocoaaa.github.io/" rel="alternate"></link><link href="http://cocoaaa.github.io/feeds/TIL.atom.xml" rel="self"></link><id>http://cocoaaa.github.io/</id><updated>2019-04-24T17:23:13-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Git refspec</title><link href="http://cocoaaa.github.io/articles/2019/04/24/git-refspec/" rel="alternate"></link><published>2019-04-24T17:23:13-07:00</published><updated>2019-04-24T17:23:13-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-04-24:articles/2019/04/24/git-refspec/</id><summary type="html">&lt;p&gt;Resource: &lt;a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec"&gt;git-book&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Git Remotes&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remote repositories: versions of your project that are hosted on the internet&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Let's say I cloned a repository from some repository, for instance
+&lt;code&gt;git@github.com:cocoaaa/dip.git&lt;/code&gt;, by running:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nd"&gt;@github.com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;cocoaaa&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;dip&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then, in this cloned …&lt;/p&gt;</summary></entry></feed>
