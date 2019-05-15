@@ -31,6 +31,7 @@ DROPBOX_DIR=~/Dropbox/Public/
 
 GITHUB_PAGES_REMOTE=git@github.com:cocoaaa/cocoaaa.github.io.git
 GITHUB_PAGES_BRANCH=master
+LOCAL_OUTPUT_BRANCH=blog-build
 
 GIT_COMMIT_HASH = $(shell git rev-parse HEAD)
 
@@ -126,11 +127,11 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 publish-to-github: publish
-	ghp-import -n -m "publish-to-github from $(GIT_COMMIT_HASH)" -b blog-build $(OUTPUTDIR)
-	git push $(GITHUB_PAGES_REMOTE) blog-build:$(GITHUB_PAGES_BRANCH)
+	ghp-import -n -m "publish-to-github from $(GIT_COMMIT_HASH)" -b $(LOCAL_OUTPUT_BRANCH) $(OUTPUTDIR)
+	git push $(GITHUB_PAGES_REMOTE) $(LOCAL_OUTPUT_BRANCH):$(GITHUB_PAGES_BRANCH)
 
 publish-to-github-force: publish
-	ghp-import -n -m "publish-to-github-force from $(GIT_COMMIT_HASH)" -b blog-build $(OUTPUTDIR)
-	git push -f $(GITHUB_PAGES_REMOTE) blog-build:$(GITHUB_PAGES_BRANCH)
+	ghp-import -n -m "publish-to-github-force from $(GIT_COMMIT_HASH)" -b $(LOCAL_OUTPUT_BRANCH) $(OUTPUTDIR)
+	git push -f $(GITHUB_PAGES_REMOTE) $(LOCAL_OUTPUT_BRANCH):$(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
