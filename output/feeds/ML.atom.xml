@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - ML (Machine Learning)</title><link href="http://cocoaaa.github.io/" rel="alternate"></link><link href="http://cocoaaa.github.io/feeds/ML.atom.xml" rel="self"></link><id>http://cocoaaa.github.io/</id><updated>2019-05-16T17:20:57-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Introduction to Clustering</title><link href="http://cocoaaa.github.io/articles/2019/05/16/introduction-to-clustering/" rel="alternate"></link><published>2019-05-16T17:20:57-07:00</published><updated>2019-05-16T17:20:57-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-05-16:articles/2019/05/16/introduction-to-clustering/</id><summary type="html">&lt;!--status: draft--&gt;
+
+&lt;h1&gt;Outline&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Clustering as a method of Unsupervised Learning&lt;/li&gt;
+&lt;li&gt;Problem setup&lt;/li&gt;
+&lt;li&gt;Examples&lt;/li&gt;
+&lt;li&gt;Categorize current approaches and give examples/applications&lt;/li&gt;
+&lt;li&gt;Set up the image segmentation problem&lt;/li&gt;
+&lt;li&gt;Mathematical setup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;TODO&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;/ul&gt;</summary></entry><entry><title>Linear Regression</title><link href="http://cocoaaa.github.io/articles/2019/05/16/linear-regression/" rel="alternate"></link><published>2019-05-16T17:02:42-07:00</published><updated>2019-05-16T17:02:42-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-05-16:articles/2019/05/16/linear-regression/</id><summary type="html">&lt;p&gt;Todo:
+- [ ] Set up the problem
+- [ ] Simple housing problem
+- [ ] Frequentist view - minimize the squared-loss
+- [ ] Probablistic view - Discriminative classifier to model conditional distribution
+- [ ] Interactive example using &lt;code&gt;holoviews&lt;/code&gt; or &lt;code&gt;ipywwidgets&lt;/code&gt;&lt;/p&gt;</summary></entry><entry><title>Perceptron algorithm</title><link href="http://cocoaaa.github.io/articles/2019/05/16/perceptron-algorithm/" rel="alternate"></link><published>2019-05-16T16:54:25-07:00</published><updated>2019-05-16T16:54:25-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-05-16:articles/2019/05/16/perceptron-algorithm/</id><summary type="html">&lt;p&gt;Interactive exploration on what is perceptron algorithm, how it works,
+and its relationships to logistic regression(ie. linear classifier)&lt;/p&gt;</summary></entry></feed>

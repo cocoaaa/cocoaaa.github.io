@@ -6,7 +6,7 @@
         <meta name="author" content="Hayley Song">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <title>Git refspec | Small Simplicity</title>
+        <title>Linear Regression | Small Simplicity</title>
 
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -435,72 +435,39 @@ article .meta a.comments_btn:hover {
 <div class="container post">
     <article>
         <header>
-            <h1>Git refspec</h1>
-            <time datetime="article.date.isoformat()" pubdate>Wed 24 April 2019</time>
+            <h1>Linear Regression</h1>
+            <time datetime="article.date.isoformat()" pubdate>Thu 16 May 2019</time>
         </header>
 
         <div class="article_content">
-            <p>Resource: <a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec">git-book</a></p>
-<h2>Git Remotes</h2>
-<blockquote>
-<p>Remote repositories: versions of your project that are hosted on the internet</p>
-</blockquote>
-<h3><code>git remote -v</code></h3>
-<p>Let's say I cloned a repository from some repository, for instance
-<code>git@github.com:cocoaaa/dip.git</code>, by running:</p>
-<div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github.com</span><span class="p">:</span><span class="n">cocoaaa</span><span class="o">/</span><span class="n">dip</span><span class="o">.</span><span class="n">git</span>
-</pre></div>
-
-
-<p>Then, in this cloned repo's directory in my local machine, 
-<code>git remote</code> will list the shortnames of each remote handle I've specified. 
-By default, Git gives to the server I've just cloned the shortname, <code>origin</code>.
-Use <code>git remote -v</code> to see both the shortname and the URLs that Git has stored for
-each shortname to use for reading and writing to that remote.</p>
-<p><img alt="git-remote" src="http://cocoaaa.github.io/images/git-remote.png"></p>
-<h3><code>git remote add &lt;shortname&gt; &lt;URL&gt;</code></h3>
-<dl>
-<dd>adds a remote in <URL> with the shortname of <shortname></dd>
-</dl>
-<h3><code>git fetch &lt;remote&gt;</code></h3>
-<p>The command goes out to that remote project and pulls down all the data from that
-remote project that I don't have yet. It does so for all branches in the remote.
-Upon the command execution, I should have references to all the branches from that
-remote, and I can merge in or inspect them at any time.</p>
-<p>Remember that <code>git fetch</code> command only downloads the data to my local repository,
-and does <em>NOT</em> automatically merge it with any of my work or modify what I'm currently
-working on. So, it is safer than <code>git pull</code>, yet I'm required to merge it into my 
-work whenever I'm ready. </p>
-<p>For fetching and pushing, my current branch needs be set up to track a remote 
-<em>branch</em>. In other words, setting up the URL to the remote repository is not enough, 
-and we need to specify which local branch will track which remote branch.  </p>
-<p><code>git clone &lt;some-repo-url&gt;</code> automatically sets up my local <code>master</code> branch to 
-track the remote default branch (often also <code>master</code>) on the server I cloned from,
-ie. <code>&lt;URL&gt;</code>.</p>
-<h3>Push my (local) changes to the remote server (upstream)</h3>
-<p><code>git push &lt;remote&gt; &lt;branch&gt;</code> pushes my local <code>branch</code> to my <code>remote</code> server. 
-For example, if I want to push my <code>master</code> branch to my <code>origin</code> server (recall 
-that these names are set up by <code>git clone &lt;some-repo-url&gt;</code> command automatically),
-run: <code>git push origin master</code>. Again, <code>origin</code> is the shortname assigned to the 
-remote server URL, and <code>master</code> is the name of the local branch I'm pushing.</p>
-<blockquote>
-<p>Q: wait, we don't need to specify which branch in the remote server to push 
-the local branch?</p>
-</blockquote>
-<h3>Inspecting a remote</h3>
-<p><code>git remote show &lt;remote-shortname&gt;</code> command shows the details of the particular 
-remote. </p>
-<p><img alt="git-remote-show" src="http://cocoaaa.github.io/images/git-remote-show.png"></p>
+            <p>Todo:
+- [ ] Set up the problem
+- [ ] Simple housing problem
+- [ ] Frequentist view - minimize the squared-loss
+- [ ] Probablistic view - Discriminative classifier to model conditional distribution
+- [ ] Interactive example using <code>holoviews</code> or <code>ipywwidgets</code></p>
         </div>
 
         <footer class="meta">
-                    Apr 24, 2019
+                    May 16, 2019
 
-            / <a href="http://cocoaaa.github.io/category/TIL.html">TIL (Today I Learned)</a>
+            / <a href="http://cocoaaa.github.io/category/ML.html">ML (Machine Learning)</a>
 
 
                 <div class="row">
+      <span style="float:left">
+        &#8592;
+        <a href="http://cocoaaa.github.io/articles/2019/05/16/perceptron-algorithm/">
+          Perceptron algorithm
+        </a>
+      </span>
 
+      <span style="float:right">
+        <a href="http://cocoaaa.github.io/articles/2019/05/16/introduction-to-clustering/">
+          Introduction to Clustering
+        </a>
+        &#8594;
+      </span>
     </div>
 
 
@@ -565,7 +532,7 @@ pre code {
     <footer>
         <p align="center"><a href="#">Hayley Song</a> ©2019 </p>
 
-         <!--license <a href=""> </a>
+         <!--license <a href=""> MIT</a>
         unless otherwise noted.-->
     </footer>
 
