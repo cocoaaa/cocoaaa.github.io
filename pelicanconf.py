@@ -62,7 +62,7 @@ CATEGORY_URL = 'category/{slug}.html'
 CATEGORY_SAVE_AS = 'category/{slug}.html'
 
 MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
-
+INDEX_SAVE_AS = 'index.html'
 
 ################################################################################
 # Plugins
@@ -115,6 +115,7 @@ TUTORIALS_PAGE = '/pages/tutorials.html'
 NOTES_PAGE = '/pages/notes.html'
 # PHOTOS_PAGE='#'
 CATEGORIES_PAGE = '/categories.html' # must match{{ CATEGORIES_SAVE_AS }}
+ARCHIVE_PAGE='/archives.html'
 
 # About page
 GITHUB_USERNAME = 'cocoaaa'

@@ -1,5 +1,4 @@
 Title: Linear Regression
-Category: ML
 
 Todo:
 - [ ] Set up the problem

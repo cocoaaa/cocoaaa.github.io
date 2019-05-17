@@ -1,5 +1,4 @@
 Title: Git refspec
-Category: TIL
 
 Resource: [git-book](https://git-scm.com/book/en/v2/Git-Internals-The-Refspec)
 ## Git Remotes
@@ -23,7 +22,7 @@ each shortname to use for reading and writing to that remote.
 ![git-remote]({filename}/images/git-remote.png)
 
 ### `git remote add <shortname> <URL>`
-: adds a remote in <URL> with the shortname of <shortname>
+: adds a remote in `<URL>` with the shortname of `<shortname>`
 
 ### `git fetch <remote>`
 The command goes out to that remote project and pulls down all the data from that
@@ -50,6 +49,12 @@ For example, if I want to push my `master` branch to my `origin` server (recall
 that these names are set up by `git clone <some-repo-url>` command automatically),
 run: `git push origin master`. Again, `origin` is the shortname assigned to the 
 remote server URL, and `master` is the name of the local branch I'm pushing.
+
+If I want to push my local `dev-local` branch to my remote repository called `origin`'s 
+`dev-remote` branch, I'd run `git push origin dev-local:dev-remote`. 
+The colon syntax follows `src_refspec`:`dst_refspec` where `src_refspec` and `dst_refspec`
+are the refspecs of the source branch (in local) and the destination branch (in remote)
+of the `git push` action, respectively.
 
 > Q: wait, we don't need to specify which branch in the remote server to push 
 the local branch?

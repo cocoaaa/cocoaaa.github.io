@@ -1,5 +1,4 @@
 Title: Introduction to Clustering
-Category: ML
 <!--status: draft-->
 
 
