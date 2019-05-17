@@ -19,7 +19,7 @@ By default, Git gives to the server I've just cloned the shortname, `origin`.
 Use `git remote -v` to see both the shortname and the URLs that Git has stored for
 each shortname to use for reading and writing to that remote.
 
-![git-remote]({filename}/images/git-remote.png)
+![git-remote]({static}/images/git-remote.png)
 
 ### `git remote add <shortname> <URL>`
 : adds a remote in `<URL>` with the shortname of `<shortname>`
@@ -64,7 +64,7 @@ the local branch?
 `git remote show <remote-shortname>` command shows the details of the particular 
 remote. 
 
-![git-remote-show]({filename}/images/git-remote-show.png)
+![git-remote-show]({static}/images/git-remote-show.png)
 
 
 
