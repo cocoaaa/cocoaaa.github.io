@@ -37,7 +37,8 @@ PAGE_PATHS = ['pages']
 # Default Meta Data
 ################################################################################
 # Set the default date metadata from the filesystem timestamp if not provided
-DEFAULT_DATE = 'fs'
+DEFAULT_DATE = 'fs' # Default to filesystem's mtime if no date in the metadata
+DEFAULT_DATE_FORMAT = '%m-%d-%Y'
 DEFAULT_CATEGORY = 'Unorganized'
 USE_FOLDER_AS_CATEGORY = True  # default
 

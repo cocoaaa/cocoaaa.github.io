@@ -18,7 +18,7 @@
             <li>
                 <a href='/{{ article.url }}'>
                     <h2>{{ article.title }}</h2>
-                    <span>{{ article.date.strftime('%d.%m.%Y') }}</span>
+                    <span>{{ article.date.strftime(DEFAULT_DATE_FORMAT) }}</span>
                 </a>
             </li>
         {% endfor %}
