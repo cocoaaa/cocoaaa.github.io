@@ -6,7 +6,8 @@
         <meta name="author" content="{{ AUTHOR }}">
         <meta name="description" content="{% block description %}{%endblock%}">
         <meta name="viewport" content="width=device-width">
-        <title>{% block title %}{% endblock %} | {{ SITENAME }}</title>
+{#        <title>{% block title %}{% endblock %} {{ SITENAME }}</title>#}
+        <title>{% block title %}{% endblock %} - {{ AUTHOR }}</title>
 
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -70,6 +71,9 @@
                         {% if PUBS_PAGE %}
                             <li><a href="{{ PUBS_PAGE }}" title="Publications">Publications</a></li>
                         {% endif %}
+                         {% if ARTICLES_PAGE %}
+                            <li><a href="{{ ARTICLES_PAGE }}" title="Articles">Blog</a></li>
+                        {% endif %}
                         {% if TUTORIALS_PAGE %}
                             <li><a href="{{ TUTORIALS_PAGE }}" title="Tutorials">Tutorials</a></li>
                         {% endif %}
@@ -99,7 +103,7 @@
         </div>
 
     <footer>
-        <p align="center"><a href="#">{{ AUTHOR }}</a> ©2019 </p>
+        <p align="center">{{ AUTHOR }} ©2019 </p>
 
          <!--license <a href="{{ LICENSE_URL}}"> {{LICENSE_NAME }}</a>
         unless otherwise noted.-->
