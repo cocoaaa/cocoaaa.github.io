@@ -119,9 +119,11 @@ CATEGORIES_PAGE = '/categories.html' # must match{{ CATEGORIES_SAVE_AS }}
 ARCHIVE_PAGE='/archives.html'
 
 # About page
+## Below must match with templates/about.html
 GITHUB_USERNAME = 'cocoaaa'
 # AUTHOR_WEBSITE = 'http://vanderplas.com'
 AUTHOR_BLOG = 'http://cocoaaa.github.io'
+AUTHOR_CV = '/docs/hjsong_cv.pdf'
 #AUTHOR_CV = "http://staff.washington.edu/jakevdp/media/pdfs/CV.pdf"
 
 SHOW_ARCHIVES = True
