@@ -16,7 +16,7 @@ in Computer Science, studying
 
 - the **interpretability** and **transferability** of deep neural networks, and
 
-- new intelligent systems that incorporate **knowledge-based 
+- hybrid intelligent systems that incorporate **knowledge-based 
 (symbolic) AI to neural networks**
  
 
@@ -28,11 +28,12 @@ Professor [Yao-Yi Chiang](https://yaoyichi.github.io/)([Spatial Computing and In
 Before USC, I studied Mathematics and Electrical Engineering and Computer Science (EECS) 
 for my Bachelors and Masters in Engineering at **Massachusetts Institute of Technology**. 
 During my Masters, I concentrated on Artificial Intelligence and worked under the joint 
-guidance of Professor [Regina Barzilay](#), Professor [Wojciech Matusik](#), and 
-Dr. [Julian Straub](#). My main projects were (1) image registration of mammograms 
-for breast cancer detection (<a href='/pages/projects.html' style="color:black">more</a>), 
+guidance of Professor [Regina Barzilay](https://people.csail.mit.edu/regina/), 
+Professor [Wojciech Matusik](http://people.csail.mit.edu/wojciech/), and Dr. 
+[Julian Straub](http://people.csail.mit.edu/jstraub/). My main projects were 
+(1) image registration of mammograms for breast cancer detection (<a href='/pages/projects.html' style="color:black;">...more</a>), 
 and (2) 3D reconstruction of human arms for efficient [lymphedema](https://mayocl.in/2S5khTZ) screening
-(<a href='/pages/projects.html' style="color:black">more</a>)s.
+(<a href='/pages/projects.html' style="color:black">...more</a>).
 
 <!--
 - Build a camera system using 8 RGBD sensors (eg. Intel RealSense)
