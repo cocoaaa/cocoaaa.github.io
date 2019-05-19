@@ -1,30 +1,58 @@
 Title: About me
 
-{% img ../images/profile.jpg %}
+<div align="center"> 
+    <img src="/images/profile.jpg" alt="profile" width="250"/>
+</div>
+<br>
+<div align="center">
+    <a href="/docs/hjsong_cv.pdf"><img src="/images/cv1.svg" alt="cv" width="40"/></a>
+    <a href="https://github.com/cocoaaa"><img src="/images/github.svg" alt="@cocoaaa" width="40"/></a>
+    <a href="/pages/projects.html"><img src="/images/lightbulb3.svg" alt="projects" width="40"/></a>
+</div>
 
 
 Hello!  I'm a PhD student at **University of Southern California** (USC) 
-in Computer Science, studying:
+in Computer Science, studying
 
-(1) the **interpretability** and **transferability** of deep neural networks, and
+- the **interpretability** and **transferability** of deep neural networks, and
 
-(2) developing new intelligent systems that incorporate knowledge-based 
-(symbolic) AI to neural network models, particularly with **spatio-temporal** data
+- new intelligent systems that incorporate **knowledge-based 
+(symbolic) AI to neural networks**
+ 
 
-At USC, I'm working with [Professor Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
+At USC, I'm working with Professor [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
 ([Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/) at ISI) and 
-[Professor Yao-Yi Chiang](https://yaoyichi.github.io/) ([Spatial Computing and Informatics](http://spatial-computing.github.io/))
-on the following projects.  Please see my [project](#) page for more details.
-
-- Semantic Road
-- MINT 
+Professor [Yao-Yi Chiang](https://yaoyichi.github.io/)([Spatial Computing and Informatics](http://spatial-computing.github.io/)).
 
 
 Before USC, I studied Mathematics and Electrical Engineering and Computer Science (EECS) 
- at **Massachusetts Institute of Technology** for my undergraduate studies, and 
- continued for Masters in Engineering in EECS with a concentration on AI. 
-During my Masters, I worked under the joint guidance of [Professor Regina Barzilay](#), 
-[Professor Wojciech Matusik](#), and [Dr. Julian Straub](#). 
+for my Bachelors and Masters in Engineering at **Massachusetts Institute of Technology**. 
+During my Masters, I concentrated on Artificial Intelligence and worked under the joint 
+guidance of Professor [Regina Barzilay](#), Professor [Wojciech Matusik](#), and 
+Dr. [Julian Straub](#). My main projects were (1) image registration of mammograms 
+for breast cancer detection (<a href='/pages/projects.html' style="color:black">more</a>), 
+and (2) 3D reconstruction of human arms for efficient [lymphedema](https://mayocl.in/2S5khTZ) screening
+(<a href='/pages/projects.html' style="color:black">more</a>)s.
+
+<!--
+- Build a camera system using 8 RGBD sensors (eg. Intel RealSense)
+- Reconstruct 3D models of human arms from RGBD images
+- Non-rigid registration of mammogram images using optical flow algorithms
+-->
+
+My current projects focus on using reasoning and deep neural networks in extracting 
+insights from complex **spatio-temporal** data collected from satellites. 
+
+- Semantic Road - 
+- Poke the models - 
+- MINT - 
+
+
+
+Please see my [project](/pages/projects.html) page for more details. 
+
+
+---
 
 - 
 - 
@@ -73,8 +101,27 @@ thoughts and knowledge.  I enjoy sharing such experiences with friends:)
  
 
 <!--
-I hope everyday I become more aware of 
 
+
+{% img ../images/profile.jpg %}  
+<div align="center"> 
+    <img src="/images/profile.jpg" alt="profile" width="250"/>
+    <ul>
+      <li><a href="/docs/hjsong_cv.pdf"><img src="/images/cv1.svg" alt="cv" width="50"/><a></li>
+      <li><a href="https://github.com/cocoaaa"><img src="/images/github.svg" alt="@cocoaaa" width="50" /><a></li>
+      <li><a href="/pages/projects.html"><img src="/images/lightbulb3.svg" alt="projects" width="50"/><a></li>
+    </ul>
+</div>
+
+
+
+    <a href="/docs/hjsong_cv.pdf"><img src="/images/cv1.svg" alt="cv" width="50"/><a>
+    <a href="https://github.com/cocoaaa"><img src="/images/github.svg" alt="@cocoaaa" width="50" /><a>
+    <a href="/pages/projects.html"><img src="/images/rocket1.svg" alt="projects" width="50"/><a>
+    <a href="/pages/projects.html"><img src="/images/rocket2.svg" alt="projects" width="50"/><a>
+    <a href="/pages/projects.html"><img src="/images/lightbulb1.svg" alt="projects" width="50"/><a>
+    <a href="/pages/projects.html"><img src="/images/lightbulb2.svg" alt="projects" width="50"/><a>
+    <a href="/pages/projects.html"><img src="/images/lightbulb3.svg" alt="projects" width="50"/><a>
  
  we can use our understandings of the world to develop intelligent systems 
 that can interactive with the dynamic environments as we, humans, do. 

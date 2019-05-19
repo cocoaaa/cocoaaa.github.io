@@ -1,3 +1,4 @@
-Title: ML (Machine Learning)
+Title: ML 
 
-    contains writeups about ML algorithms
+
+contains writeups about Machine Learning algorithms

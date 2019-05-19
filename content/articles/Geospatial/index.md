@@ -1,3 +1,4 @@
-Title: Tutorial
+Title: Geospatial
 
-    Series of tutorials on worthwhile topics
+
+Series of geospatial notes/tutorials on worthwhile topics
