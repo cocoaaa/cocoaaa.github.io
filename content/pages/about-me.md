@@ -17,7 +17,7 @@ in Computer Science, studying
 - the **interpretability** and **transferability** of deep neural networks, and
 
 - hybrid intelligent systems that incorporate **knowledge-based 
-(symbolic) AI to neural networks**
+(symbolic) AI** to **neural networks**
  
 
 At USC, I'm working with Professor [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
@@ -31,9 +31,10 @@ During my Masters, I concentrated on Artificial Intelligence and worked under th
 guidance of Professor [Regina Barzilay](https://people.csail.mit.edu/regina/), 
 Professor [Wojciech Matusik](http://people.csail.mit.edu/wojciech/), and Dr. 
 [Julian Straub](http://people.csail.mit.edu/jstraub/). My main projects were 
-(1) image registration of mammograms for breast cancer detection (<a href='/pages/projects.html' style="color:black;">...more</a>), 
+(1) image registration of mammograms for breast cancer detection (<a href='/pages/projects.html' style="color:black">...more <img src="/images/more1.svg" alt="project" width="20"/></a>), 
 and (2) 3D reconstruction of human arms for efficient [lymphedema](https://mayocl.in/2S5khTZ) screening
-(<a href='/pages/projects.html' style="color:black">...more</a>).
+(<a href='/pages/projects.html' style="color:black">...more <img src="/images/more1.svg" alt="project" width="20"/></a>)
+
 
 <!--
 - Build a camera system using 8 RGBD sensors (eg. Intel RealSense)
@@ -41,19 +42,20 @@ and (2) 3D reconstruction of human arms for efficient [lymphedema](https://mayoc
 - Non-rigid registration of mammogram images using optical flow algorithms
 -->
 
-My current projects focus on using reasoning and deep neural networks in extracting 
-insights from complex **spatio-temporal** data collected from satellites. 
+My current projects focus on using reasoning and deep neural networks to understand 
+complex **spatio-temporal** data collected from satellites. 
 
-- Semantic Road - 
-- Poke the models - 
-- MINT - 
-
+- [Semantic Road](): 
+- [MINT](): 
+ 
+- [Model Poker]():
 
 
 Please see my [project](/pages/projects.html) page for more details. 
 
 
 ---
+## Knowledge representation in Learning and Generalization
 
 - 
 - 
@@ -65,7 +67,8 @@ Please see my [project](/pages/projects.html) page for more details.
 
 In a bigger scheme, I am excited about the problems regarding human perception of 
 the world and how symbolic representation of knowledge can facilitate learning 
-in a new domain [via knowledge transfer across various domains/modalities].  
+in a new domain [via knowledge transfer across various domains/modalities].  I'm 
+continuously exploring these questions in my research:
 
 1. How can intelligent agents learn with less supervision, particularly in the domain of 
 vision and three-dimensional perception (<todo>:spatial reasonging?)
@@ -85,16 +88,16 @@ learning in different domains
 
 ##  Softwares
  
-My preferred languages are Python (eg. **PyTorch**, Numpy, scikit-learn) for machine learning 
+My preferred language is Python (eg. **PyTorch**, Numpy, scikit-learn) for machine learning 
 [projects](#), and C++ for hardware systems (eg. Microsoft Kinnect and Intel RealSense) 
 as in [this](#) project. 
 
 ---
-Besides working on my projects, I enjoy being in nature and trying out new 
-activities outdoor. Along the way, I became a certified scuba diver, and sky-dived 
-in Czech sky! I enjoy biking and swimming -- they help me connect to the part that 
-is not about our minds, and remind me we are more than our 
-thoughts and knowledge.  I enjoy sharing such experiences with friends:)
+Besides working on my projects, I enjoy being in nature and trying out different sports. 
+Along the way, I became a certified scuba diver and have sky-dived in Czech sky! 
+I enjoy biking and swimming -- they help me connect to the dimension that 
+is not about thinking and analyzing, and remind me we are more than our 
+thoughts and minds. I enjoy sharing such experiences with friends:)
  
  
  
