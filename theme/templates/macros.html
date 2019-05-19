@@ -1,6 +1,6 @@
 {% macro get_meta_data_html(article, exclude_category, meta_types=['date', 'category', 'tag']) %}
     {% if 'date' in meta_types %}
-        {{ article.date.strftime('%b %d, %Y') }}
+        {{ article.date.strftime('%m-%d-%Y') }}
     {% endif %}
 
     {% if 'category' in meta_types %}
@@ -20,6 +20,18 @@
         {% endfor %}
     {% endif %}
 {%  endmacro %}
+
+{% macro get_article_list(articles, exclude_category) %}
+    <ul class="double-list">
+    {% for article in articles %}
+        <li>
+            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            &nbsp
+            <span class="post-meta"> - {{ get_meta_data_html(article, exclude_category, meta_types=['date', 'tag']) }}</span>
+        </li>
+    {% endfor %}
+    </ul>
+{% endmacro %}
 
 {% macro add_nav_buttons(article, exclude_category) %}
     {% if article.category and article.category != exclude_category %}
@@ -45,14 +57,3 @@
     {% endif %}
 {%  endmacro %}
 
-{% macro get_article_list(articles, exclude_category) %}
-    <ul>
-    {% for article in articles %}
-        <li>
-            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-            &nbsp
-            <span class="post-meta">{{ get_meta_data_html(article, exclude_category, meta_types=['date', 'tag']) }}</span>
-        </li>
-    {% endfor %}
-    </ul>
-{% endmacro %}

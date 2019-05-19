@@ -3,9 +3,32 @@
 {% block title %}{{ category }}{% endblock %}
 
 {% block content %}
-    <h2>{{ category }}</h2>
-    <p>{{ category.description }}</p>
 
-    <!-- List articles in this category -->
-    {{ get_article_list(articles, DEFAULT_CATEGORY) }}
+<div class="container list">
+    <article>
+        <h1 style="margin-bottom: 30px;">{{  category }}</h1>
+        <div class="meta" style="margin-bottom: 30px;">
+            {% for tag, articles in tags %}
+                <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }} ({{ articles | length }})</a>
+            {% endfor %}
+        </div>
+
+        <ul class="double-list">
+        {% for article in articles %}
+            <li>
+                <a href='/{{ article.url }}'>
+                    <h2>{{ article.title }}</h2>
+                    <span>{{ article.date.strftime(DEFAULT_DATE_FORMAT) }}</span>
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </article>
+</div>
 {% endblock %}
+
+
+
+
+
+
