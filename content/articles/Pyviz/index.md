@@ -1,4 +1,4 @@
 Title: ML 
 
 
-contains writeups about Machine Learning algorithms
+contains writeups and jupyter notebook tutorials for Pyviz-suite libraries
