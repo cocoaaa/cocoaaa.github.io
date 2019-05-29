@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
-{% block title %}{{ SITENAME }} - Categories{% endblock %}
+{% block title %}Categories{% endblock %}
 
 {% block content %}
     <div class="container list">
 
-    <h1 style="margin-bottom: 30px;">Categories</h1>
+    <h1 style="margin-bottom: 30px; font-weight:bold;">Categories</h1>
 
     <ul class="double-list">
     {% for category, articles in categories|sort %}
