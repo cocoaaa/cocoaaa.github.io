@@ -39,7 +39,7 @@ of the theme you use:
       {{ EXTRA_HEADER }}
     {% endif %}
 
-and in your ``pelicanconf.py`` file, include the line:
+and in your ``pelicanconf_v1.py`` file, include the line:
 
     EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
 

@@ -111,7 +111,7 @@ class TestFullRun(unittest.TestCase):
 
         Compare with recorded output via ``git diff``.
         To generate output for comparison run the command
-        ``pelican -o test_data/output -s test_data/pelicanconf.py \
+        ``pelican -o test_data/output -s test_data/pelicanconf_v1.py \
         test_data/content``
         Remember to remove the output/ folder before that.
         '''
@@ -119,7 +119,7 @@ class TestFullRun(unittest.TestCase):
         base_path = os.path.join(base_path, 'test_data')
         content_path = os.path.join(base_path, 'content')
         output_path = os.path.join(base_path, 'output')
-        settings_path = os.path.join(base_path, 'pelicanconf.py')
+        settings_path = os.path.join(base_path, 'pelicanconf_v1.py')
         settings = read_settings(path=settings_path, override={
             'PATH': content_path,
             'OUTPUT_PATH': self.temp_path,
