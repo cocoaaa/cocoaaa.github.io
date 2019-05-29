@@ -1,5 +1,24 @@
 # macosx
-**/.DS_Store
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# pycharm
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/vcs.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Generated files
+.idea/**/contentModel.xml
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
