@@ -73,14 +73,7 @@ CATEGORY_URL = 'category/{slug}.html'
 CATEGORY_SAVE_AS = 'category/{slug}.html'
 
 MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
-
 INDEX_SAVE_AS = '/index.html'
-TAGS_URL           = 'tags'
-TAGS_SAVE_AS       = 'tags/index.html'
-CATEGORIES_URL     = 'categories'
-CATEGORIES_SAVE_AS = 'categories/index.html'
-ARCHIVES_URL       = 'archives'
-ARCHIVES_SAVE_AS   = 'archives/index.html'
 
 
 
@@ -102,7 +95,6 @@ ARCHIVES_SAVE_AS   = 'archives/index.html'
 # DISPLAY_CATEGORIES_ON_MENU = True
 # The following variable names must match the names used as varnames in the navbar
 # class of `theme/templates/base.html`
-
 ABOUT_PAGE = '/pages/about-me.html'
 PROJECTS_PAGE = '/pages/projects.html'
 PUBS_PAGE = '/pages/publications.html'
@@ -120,45 +112,13 @@ TUTORIALS_PAGE = '/pages/tutorials.html'
 try:
     CATEGORIES_PAGE = CATEGORIES_SAVE_AS  # must match{{ CATEGORIES_SAVE_AS }}
 except NameError as e:
-    print(e);print("Setting categories_page as /categories.html")
+    print(e);print("Setting categoreis_page as /categories.html")
     CATEGORIES_PAGE = '/categories.html'
 
-try:
-    ARCHIVE_PAGE = ARCHIVES_SAVE_AS  # must match{{ CATEGORIES_SAVE_AS }}
-except NameError as e:
-    print(e);print("Setting archive_page as /archives.html")
-    ARCHIVE_PAGE = '/archives.html'
+ARCHIVE_PAGE='/archives.html'
 
 
 
-
-
-################################################################################
-# Blue Penguine theme specific configs
-# use those if you want pelican standard pages to appear in your menu
-################################################################################
-# PROJECTS_URL = 'projects'
-# ABOUT_URL = 'about'
-# PUBS_URL = 'pubs'
-# INDEX_URL = '/'
-#
-#
-#
-# MENU_INTERNAL_PAGES = (
-#     # ('Tags', TAGS_URL, TAGS_SAVE_AS),
-#     # ('Authors', AUTHORS_URL, AUTHORS_SAVE_AS),
-#     ('About', ABOUT_URL, ABOUT_PAGE),
-#     ('Projects', PROJECTS_URL, PROJECTS_PAGE),
-#     ('Blog', INDEX_URL, INDEX_SAVE_AS),
-#     ('Categories', CATEGORIES_URL, CATEGORIES_SAVE_AS),
-#     ('Archives', ARCHIVES_URL, ARCHIVES_SAVE_AS),
-#
-# )
-# additional menu items
-# MENUITEMS = (
-#     ('GitHub', 'https://github.com/'),
-#     ('Linux Kernel', 'https://www.kernel.org/'),
-# )
 
 
 ################################################################################
@@ -197,7 +157,7 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 ################################################################################
 # THEME SETTINGS
 ################################################################################
-THEME = './pelican-themes/blue-penguin'
+THEME = './theme/'
 
 
 
