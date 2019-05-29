@@ -5,7 +5,9 @@ PELICANOPTS=
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
-CONFFILE=$(BASEDIR)/pelicanconf.py
+#CONFFILE=$(BASEDIR)/pelicanconf_v1.py
+CONFFILE=$(BASEDIR)/pelicanconf_blue_penguin.py
+
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 PORT=9999
 
