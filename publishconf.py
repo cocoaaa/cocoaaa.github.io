@@ -8,7 +8,7 @@ from __future__ import unicode_literals
 import os
 import sys
 sys.path.append(os.curdir)
-from pelicanconf import *
+from pelicanconf_v1 import *
 
 SITEURL = 'http://cocoaaa.github.io'
 RELATIVE_URLS = False
