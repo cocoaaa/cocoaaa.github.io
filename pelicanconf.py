@@ -21,8 +21,6 @@ OUTPUT_RETENTION = ['.git']
 DEFAULT_PAGINATION = 10
 
 
-
-
 ################################################################################
 # Content paths
 # - Read paths, relative to $PATH
@@ -35,9 +33,6 @@ ARTICLE_EXCLUDES = ['downloads', 'figures', 'images', 'videos']
 PAGE_PATHS = ['pages']
 
 
-
-
-
 ################################################################################
 # Default Meta Data
 ################################################################################
@@ -46,9 +41,6 @@ DEFAULT_DATE = 'fs' # Default to filesystem's mtime if no date in the metadata
 DEFAULT_DATE_FORMAT = '%m-%d-%Y'
 DEFAULT_CATEGORY = 'Unorganized'
 USE_FOLDER_AS_CATEGORY = True  # default
-
-
-
 
 
 ################################################################################
@@ -83,14 +75,11 @@ ARCHIVES_URL       = 'archives'
 ARCHIVES_SAVE_AS   = 'archives/index.html'
 
 
-
-
 ################################################################################
 # Direct templates
 # Refer to `pelican.generator.generate_direct_templates` method
 ################################################################################
 # DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives']
-
 
 
 ################################################################################
@@ -102,7 +91,6 @@ ARCHIVES_SAVE_AS   = 'archives/index.html'
 # DISPLAY_CATEGORIES_ON_MENU = True
 # The following variable names must match the names used as varnames in the navbar
 # class of `theme/templates/base.html`
-
 ABOUT_PAGE = '/pages/about-me.html'
 PROJECTS_PAGE = '/pages/projects.html'
 PUBS_PAGE = '/pages/publications.html'
@@ -110,7 +98,7 @@ PUBS_PAGE = '/pages/publications.html'
 try:
     ARTICLES_PAGE = INDEX_SAVE_AS  # must match, List of blog posts
 except NameError as e:
-    print(e);print("Setting articles_page as /index.html")
+    print(e); print("Setting articles_page as /index.html")
     ARTICLES_PAGE = 'index.html'
 
 TUTORIALS_PAGE = '/pages/tutorials.html'
@@ -118,19 +106,16 @@ TUTORIALS_PAGE = '/pages/tutorials.html'
 # # PHOTOS_PAGE='#'
 
 try:
-    CATEGORIES_PAGE = CATEGORIES_SAVE_AS  # must match{{ CATEGORIES_SAVE_AS }}
+    CATEGORIES_PAGE = CATEGORIES_SAVE_AS  # must match {{CATEGORIES_SAVE_AS }}
 except NameError as e:
-    print(e);print("Setting categories_page as /categories.html")
+    print(e); print("Setting categories_page as /categories.html")
     CATEGORIES_PAGE = '/categories.html'
 
 try:
-    ARCHIVE_PAGE = ARCHIVES_SAVE_AS  # must match{{ CATEGORIES_SAVE_AS }}
+    ARCHIVE_PAGE = ARCHIVES_SAVE_AS  # must match {{CATEGORIES_SAVE_AS }}
 except NameError as e:
-    print(e);print("Setting archive_page as /archives.html")
+    print(e); print("Setting archive_page as /archives.html")
     ARCHIVE_PAGE = '/archives.html'
-
-
-
 
 
 ################################################################################
@@ -191,16 +176,10 @@ CODE_DIR = 'downloads/code'
 NOTEBOOK_DIR = 'downloads/notebooks'
 
 
-
-
-
 ################################################################################
 # THEME SETTINGS
 ################################################################################
 THEME = './pelican-themes/blue-penguin'
-
-
-
 
 
 ################################################################################
@@ -212,13 +191,9 @@ GITHUB_USERNAME = 'cocoaaa'
 AUTHOR_BLOG = 'http://cocoaaa.github.io'
 AUTHOR_CV = '/docs/hjsong_cv.pdf'
 #AUTHOR_CV = "http://staff.washington.edu/jakevdp/media/pdfs/CV.pdf"
-
 SHOW_ARCHIVES = True
 SHOW_FEED = False  # Need to address large feeds
 ENABLE_MATHJAX = True
-
-
-
 
 
 ################################################################################
@@ -227,17 +202,11 @@ ENABLE_MATHJAX = True
 STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
 
 
-
-
-
 ################################################################################
 # Footer info
 ################################################################################
 #LICENSE_URL = "https://github.com/jakevdp/jakevdp.github.io-source/blob/master/LICENSE"
 LICENSE_NAME = "MIT"
-
-
-
 
 
 ################################################################################
@@ -248,6 +217,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
 
 ################################################################################
 # Development settings
