@@ -1,6 +1,7 @@
 Title: Git refspec
 
 Resource: [git-book](https://git-scm.com/book/en/v2/Git-Internals-The-Refspec)
+
 ## Git Remotes
 > Remote repositories: versions of your project that are hosted on the internet
 
