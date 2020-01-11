@@ -52,6 +52,8 @@ backup
 nohup.out
 
 # Pelican
+pelican-themes
+#*.bck
 srv.pid
 pelican.pid
 
