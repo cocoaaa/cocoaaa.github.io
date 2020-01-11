@@ -18,7 +18,7 @@ LOAD_CONTENT_CACHE = False
 DELETE_OUTPUT_DIRECTORY = True
 # Don't delete git data when cleaning up the output folder
 OUTPUT_RETENTION = ['.git']
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 
 ################################################################################
@@ -96,6 +96,7 @@ PROJECTS_PAGE = '/pages/projects.html'
 PUBS_PAGE = '/pages/publications.html'
 
 try:
+    #todo: separate index and articles page
     ARTICLES_PAGE = INDEX_SAVE_AS  # must match, List of blog posts
 except NameError as e:
     print(e); print("Setting articles_page as /index.html")
@@ -199,7 +200,7 @@ ENABLE_MATHJAX = True
 ################################################################################
 ################################################################################
 # TEMPLATE_PAGES =
-STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
+STATIC_PATHS = ['docs', 'pdfs', 'images', 'figures', 'videos', 'downloads', 'favicon.ico']
 
 
 ################################################################################

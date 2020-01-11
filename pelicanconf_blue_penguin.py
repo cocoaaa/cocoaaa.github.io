@@ -15,10 +15,14 @@ DEFAULT_LANG = 'en'
 
 # Set cache to False
 LOAD_CONTENT_CACHE = False
+# Compare mtimes of content and output files, and only copy content files that are
+# newer than existing output files
+STATIC_CHECK_IF_MODIFIED = False
+
 DELETE_OUTPUT_DIRECTORY = True
 # Don't delete git data when cleaning up the output folder
 OUTPUT_RETENTION = ['.git']
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 
 
@@ -31,7 +35,7 @@ DEFAULT_PAGINATION = 10
 ################################################################################
 PATH = 'content'
 # ARTICLE_PATHS = ['articles', 'articles/*']
-ARTICLE_EXCLUDES = ['downloads', 'figures', 'images', 'videos']
+ARTICLE_EXCLUDES = ['pdfs','docs','fixed_htmls','downloads', 'figures', 'images', 'videos']
 PAGE_PATHS = ['pages']
 
 
@@ -58,29 +62,33 @@ USE_FOLDER_AS_CATEGORY = True  # default
 ################################################################################
 # SLUGIFY_SOURCE = 'title' # 'title' to use `Title` metadata tag or
 # 'basename' to use the filename
+
+# Location to save the list of all articles
+INDEX_SAVE_AS = 'index.html' #'/index.html'
+
 # AUTHOR_URL = 'author.html'
 # AUTHOR_SAVE_AS = 'about.html'
 AUTHORS_SAVE_AS = '' # Empty string to prevent this html page from being generated
 
 ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-# ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 
-PAGE_URL = 'pages/{slug}.html'
+PAGE_URL = 'pages/{slug}'
 PAGE_SAVE_AS = 'pages/{slug}.html'
 
-CATEGORY_URL = 'category/{slug}.html'
-CATEGORY_SAVE_AS = 'category/{slug}.html'
-
-MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
-
-INDEX_SAVE_AS = '/index.html'
 TAGS_URL           = 'tags'
 TAGS_SAVE_AS       = 'tags/index.html'
+CATEGORY_URL = 'category/{slug}'
+CATEGORY_SAVE_AS = 'category/{slug}.html'
 CATEGORIES_URL     = 'categories'
 CATEGORIES_SAVE_AS = 'categories/index.html'
+
 ARCHIVES_URL       = 'archives'
 ARCHIVES_SAVE_AS   = 'archives/index.html'
+YEAR_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/index.html'
+# MONTH_ARCHIVE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/{date:%m}/index.html'
+
 
 
 
@@ -102,32 +110,34 @@ ARCHIVES_SAVE_AS   = 'archives/index.html'
 # DISPLAY_CATEGORIES_ON_MENU = True
 # The following variable names must match the names used as varnames in the navbar
 # class of `theme/templates/base.html`
-
-ABOUT_PAGE = '/pages/about-me.html'
-PROJECTS_PAGE = '/pages/projects.html'
-PUBS_PAGE = '/pages/publications.html'
+ABOUT_URL = '/pages/about-me.html'
+ABOUT_SAVE_AS = '/pages/about-me.html'
+PROJECTS_URL = '/pages/projects.html'
+PROJECTS_SAVE_AS = '/pages/projects.html'
+PUBS_URL = '/pages/publications.html'
+PUBS_SAVE_AS = '/pages/publications.html'
 
 try:
-    ARTICLES_PAGE = INDEX_SAVE_AS  # must match, List of blog posts
+    ARTICLES_SAVE_AS = INDEX_SAVE_AS  # must match, List of blog posts
 except NameError as e:
     print(e);print("Setting articles_page as /index.html")
-    ARTICLES_PAGE = 'index.html'
+    ARTICLES_SAVE_AS = 'index.html'
 
-TUTORIALS_PAGE = '/pages/tutorials.html'
+TUTORIALS_SAVE_AS = '/pages/tutorials.html'
 # NOTES_PAGE = '/pages/notes.html'
 # # PHOTOS_PAGE='#'
 
-try:
-    CATEGORIES_PAGE = CATEGORIES_SAVE_AS  # must match{{ CATEGORIES_SAVE_AS }}
-except NameError as e:
-    print(e);print("Setting categories_page as /categories.html")
-    CATEGORIES_PAGE = '/categories.html'
+# try:
+#     CATEGORIES_PAGE = CATEGORIES_SAVE_AS  # must match{{ CATEGORIES_SAVE_AS }}
+# except NameError as e:
+#     print(e);print("Setting categories_page as /categories.html")
+#     CATEGORIES_PAGE = '/categories.html'
 
-try:
-    ARCHIVE_PAGE = ARCHIVES_SAVE_AS  # must match{{ CATEGORIES_SAVE_AS }}
-except NameError as e:
-    print(e);print("Setting archive_page as /archives.html")
-    ARCHIVE_PAGE = '/archives.html'
+# try:
+#     ARCHIVE_PAGE = ARCHIVES_SAVE_AS  # must match{{ CATEGORIES_SAVE_AS }}
+# except NameError as e:
+#     print(e);print("Setting archive_page as /archives.html")
+#     ARCHIVE_PAGE = '/archives.html'
 
 
 
@@ -153,6 +163,16 @@ except NameError as e:
 #     ('Categories', CATEGORIES_URL, CATEGORIES_SAVE_AS),
 #     ('Archives', ARCHIVES_URL, ARCHIVES_SAVE_AS),
 #
+# )
+# MENU_INTERNAL_PAGES = (
+#     # ('Tags', TAGS_URL, TAGS_SAVE_AS),
+#     # ('Authors', AUTHORS_URL, AUTHORS_SAVE_AS),
+#     ('About', ABOUT_URL, ABOUT_SAVE_AS),
+#     ('Publications', PUBS_URL, PUBS_SAVE_AS),
+#     ('Projects', PROJECTS_URL, PROJECTS_SAVE_AS),
+#     ('Blog', INDEX_URL, INDEX_SAVE_AS),
+#     ('Categories', CATEGORIES_URL, CATEGORIES_SAVE_AS),
+#     ('Archives', ARCHIVES_URL, ARCHIVES_SAVE_AS),
 # )
 # additional menu items
 # MENUITEMS = (
@@ -182,9 +202,8 @@ PLUGINS = [
 ]
 
 # pelican-ipynb setup
-# MARKUP = ['md']
 MARKUP = ('md', 'ipynb')
-IGNORE_FILES = ['.ipynb_checkpoints']
+IGNORE_FILES = ['.ipynb_checkpoints', '__pycache__']
 
 # for liquid tags
 CODE_DIR = 'downloads/code'
@@ -198,10 +217,31 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 # THEME SETTINGS
 ################################################################################
 THEME = './pelican-themes/blue-penguin'
+# THEME = './pelican-themes/pelican-bootstrap3'
+# THEME = './pelican-themes/pelican-mockingbird'
+# # THEME = './pelican-themes/pelican-simplegrey'
+# # THEME = './pelican-themes/pelican-striped-html5up'
+# # THEME = './pelican-themes/tuxlite_tbs' # pretty good
+# # THEME = './pelican-themes/uikit'
+# # DISPLAY_TAGS_ON_SIDEBAR_LIMIT=3
+# # DISPLAY_LINKS_ON_SIDEBAR_LIMIT = 3
+# # LICENSE = {
+# #     'cc_name':"by-sa",
+# #     'hosted':False,
+# #     'compact':True,
+# #     'brief':False
+# #     }
+#
+# # THEME = './pelican-themes/storm' #no
+# # THEME = './pelican-themes/voce'
+# THEME = './pelican-themes/pelican-sober' ## good potential, clean
+# THEME = './pelican-themes/pelican-simplegrey'
+# THEME = './pelican-themes/pelican-hss' # pretty good
+# THEME = './pelican-themes/pelican-mockingbird'
 
-
-
-
+# THEME = './pelican-themes/nikhil-theme'
+# THEME = './pelican-themes/voce/'
+# THEME = './theme'
 
 ################################################################################
 # About page
@@ -224,7 +264,7 @@ ENABLE_MATHJAX = True
 ################################################################################
 ################################################################################
 # TEMPLATE_PAGES =
-STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
+STATIC_PATHS = ['docs', 'pdfs', 'images', 'figures', 'videos', 'downloads', 'favicon.ico']
 
 
 
