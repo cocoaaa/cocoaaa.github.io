@@ -1,6 +1,6 @@
-Title: second note on the today i learned category
+Title: Let's blog with Pelican
 
-# Makefile for Blog
+## Makefile
 1. `make html`: generates output html files from files in `content` folder using
 development config file
     - `make regenerate`: do `make html` with "listening" to new changes
@@ -11,7 +11,7 @@ development config file
 4. `ghp-import -b <local-gh-branch> <outputdir>`: imports content in <output> to 
 the local branch `local-gh-branch`
 
-# Workflow
+## Workflow
 Key: Do every work in `dev` branch. Do not touch `blog-build` or `master`
 `blog-build` will be indirectly modified by `ghp-import` (or `make publish-to-github`)
 and `master` is the branch that Github will access to show my website. 
