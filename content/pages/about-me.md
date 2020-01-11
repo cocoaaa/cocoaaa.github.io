@@ -12,21 +12,21 @@ Title: About me
 
 
 Hello!  I'm a PhD student at **University of Southern California** (USC) 
-in Computer Science, studying
+in Computer Science, studying the dynamics of neural networks using information-theoretic approach and extracting lower dimensional
+representation of complex, unstructured geospatial datasets like multi-spectral satellite images.
 
+## Research interest
 - the **interpretability** and **transferability** of deep neural networks, and
-
 - hybrid intelligent systems that incorporate **knowledge-based 
 (symbolic) AI** to **neural networks**
- 
 
 At USC, I'm working with Professor [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
-([Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/) at ISI) and 
-Professor [Yao-Yi Chiang](https://yaoyichi.github.io/)([Spatial Computing and Informatics](http://spatial-computing.github.io/)).
+at ISI's [Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/) and
+Professor [Yao-Yi Chiang](https://yaoyichi.github.io/) at the [Spatial Computing and Informatics](http://spatial-computing.github.io/)) lab.
 
 
-Before USC, I studied Mathematics and Electrical Engineering and Computer Science (EECS) 
-for my Bachelors and Masters in Engineering at **Massachusetts Institute of Technology**. 
+Before USC, I studied at **Massachusetts Institute of Technology** Mathematics and Electrical Engineering and Computer Science (EECS)
+for my Bachelors and Masters.
 During my Masters, I concentrated on Artificial Intelligence and worked under the joint 
 guidance of Professor [Regina Barzilay](https://people.csail.mit.edu/regina/), 
 Professor [Wojciech Matusik](http://people.csail.mit.edu/wojciech/), and Dr. 
@@ -88,8 +88,8 @@ learning in different domains
 
 ##  Softwares
  
-My preferred language is Python (eg. **PyTorch**, Numpy, scikit-learn) for machine learning 
-[projects](#), and C++ for hardware systems (eg. Microsoft Kinnect and Intel RealSense) 
+I use Python (eg. **PyTorch**, Numpy, scikit-learn) for machine learning
+[projects](#) and C++ for hardware systems (eg. Microsoft Kinnect and Intel RealSense)
 as in [this](#) project. 
 
 ---
