@@ -17,7 +17,7 @@ DEFAULT_LANG = 'en'
 LOAD_CONTENT_CACHE = False
 # Compare mtimes of content and output files, and only copy content files that are
 # newer than existing output files
-STATIC_CHECK_IF_MODIFIED = False
+# STATIC_CHECK_IF_MODIFIED = False
 
 DELETE_OUTPUT_DIRECTORY = True
 # Don't delete git data when cleaning up the output folder
@@ -35,7 +35,7 @@ DEFAULT_PAGINATION = 5
 ################################################################################
 PATH = 'content'
 # ARTICLE_PATHS = ['articles', 'articles/*']
-ARTICLE_EXCLUDES = ['pdfs','docs','fixed_htmls','downloads', 'figures', 'images', 'videos']
+ARTICLE_EXCLUDES = ['pdfs','docs', 'js','css','downloads', 'figures', 'images', 'videos']
 PAGE_PATHS = ['pages']
 
 
@@ -64,7 +64,8 @@ USE_FOLDER_AS_CATEGORY = True  # default
 # 'basename' to use the filename
 
 # Location to save the list of all articles
-INDEX_SAVE_AS = 'index.html' #'/index.html'
+INDEX_URL = 'blog_index'
+INDEX_SAVE_AS = 'blog_index.html' #'/index.html'
 
 # AUTHOR_URL = 'author.html'
 # AUTHOR_SAVE_AS = 'about.html'
@@ -106,7 +107,7 @@ MONTH_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/{date:%m}/index.html'
 ################################################################################
 # Note: these two values do not take effect in the current theme
 # Instead, the menu bar items are manually set in `theme/templates/base.html`
-# DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = True
 # DISPLAY_CATEGORIES_ON_MENU = True
 # The following variable names must match the names used as varnames in the navbar
 # class of `theme/templates/base.html`
@@ -121,7 +122,8 @@ try:
     ARTICLES_SAVE_AS = INDEX_SAVE_AS  # must match, List of blog posts
 except NameError as e:
     print(e);print("Setting articles_page as /index.html")
-    ARTICLES_SAVE_AS = 'index.html'
+    ARTICLES_SAVE_AS = 'blog_index.html'
+ARTICLES_URL = 'blog_index'
 
 TUTORIALS_SAVE_AS = '/pages/tutorials.html'
 # NOTES_PAGE = '/pages/notes.html'
@@ -154,16 +156,11 @@ TUTORIALS_SAVE_AS = '/pages/tutorials.html'
 #
 #
 #
-# MENU_INTERNAL_PAGES = (
-#     # ('Tags', TAGS_URL, TAGS_SAVE_AS),
-#     # ('Authors', AUTHORS_URL, AUTHORS_SAVE_AS),
-#     ('About', ABOUT_URL, ABOUT_PAGE),
-#     ('Projects', PROJECTS_URL, PROJECTS_PAGE),
-#     ('Blog', INDEX_URL, INDEX_SAVE_AS),
-#     ('Categories', CATEGORIES_URL, CATEGORIES_SAVE_AS),
-#     ('Archives', ARCHIVES_URL, ARCHIVES_SAVE_AS),
-#
-# )
+MENU_INTERNAL_PAGES = (
+    # ('Tags', TAGS_URL, TAGS_SAVE_AS),
+    # ('Authors', AUTHORS_URL, AUTHORS_SAVE_AS),
+    ('Blog', ARTICLES_URL, ARTICLES_SAVE_AS),
+)
 # MENU_INTERNAL_PAGES = (
 #     # ('Tags', TAGS_URL, TAGS_SAVE_AS),
 #     # ('Authors', AUTHORS_URL, AUTHORS_SAVE_AS),
@@ -187,6 +184,7 @@ TUTORIALS_SAVE_AS = '/pages/tutorials.html'
 ################################################################################
 PLUGIN_PATHS = ['./plugins', './plugins/pelican-plugins']
 PLUGINS = [
+    'pelican_javascript',
     'summary',       # auto-summarizing articles
     'feed_summary',  # use summaries for RSS, not full articles
     'ipynb.liquid',  # for embedding notebooks
@@ -216,7 +214,7 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 ################################################################################
 # THEME SETTINGS
 ################################################################################
-THEME = './pelican-themes/blue-penguin'
+# THEME = './pelican-themes/blue-penguin'
 # THEME = './pelican-themes/pelican-bootstrap3'
 # THEME = './pelican-themes/pelican-mockingbird'
 # # THEME = './pelican-themes/pelican-simplegrey'
@@ -241,7 +239,7 @@ THEME = './pelican-themes/blue-penguin'
 
 # THEME = './pelican-themes/nikhil-theme'
 # THEME = './pelican-themes/voce/'
-# THEME = './theme'
+THEME = './theme/blue-penguin'
 
 ################################################################################
 # About page
