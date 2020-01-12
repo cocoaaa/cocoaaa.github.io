@@ -1,6 +1,12 @@
 Title: front page
 
 ## concise Intro to who I was, who I am <!--todo-->
+<p class="codepen" data-height="1050" data-theme-id="default" data-default-tab="result" data-user="cocoaaa" data-slug-hash="PoweddN" style="height: 1050px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Day and Night World Map">
+  <span>See the Pen <a href="https://codepen.io/cocoaaa/pen/PoweddN">
+  Day and Night World Map</a> by Hayley Song (<a href="https://codepen.io/cocoaaa">@cocoaaa</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 I'm a 2nd year PhD @ USC studying the lower-dimensional representation of complex unstructured datasets (eg. multi-spectral satellite images, 3D MRI scans) using deep learning. My work lies in the intersection of statistical machine learning, information theory and coding theory.  I also work on interactive visiaulization of high-dimensional datasets and complex models (eg. deep neural nets) for a guide to better insight and understanding.
 
