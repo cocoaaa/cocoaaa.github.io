@@ -1,10 +1,15 @@
-Title: Notes
-
+Title: Notes  
+Modified: 2020-01-12
 
 ---
 # Pelican blog setup references
 1. Site generation setting variable definitions: [pelican doc](http://docs.getpelican.com/en/stable/settings.html)
 2. Variables that can be used in theme's templates (.html files): [pelican doc](http://docs.getpelican.com/en/stable/themes.html#category-html)
+    - All templates receives the variables defined in the settings file, 
+    as long as they are in all-caps
+    - Look at section [common variables](http://docs.getpelican.com/en/stable/themes.html#common-variables) for other variable (ie. not from 
+    the settings file): note they are in lowercase
+
 
 ---
 # Resources
