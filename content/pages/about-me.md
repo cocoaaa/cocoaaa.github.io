@@ -5,9 +5,9 @@ Title: About me
 </div>
 <br>
 <div align="center">
-    <a href="/docs/hjsong_cv.pdf"><img src="/images/cv1.svg" alt="cv" width="40"/></a>
+    <a href="/docs/hjsong_cv.pdf"><img src="/images/cv1.png" alt="cv" width="40"/></a>
     <a href="https://github.com/cocoaaa"><img src="/images/github.svg" alt="@cocoaaa" width="40"/></a>
-    <a href="/pages/projects.html"><img src="/images/lightbulb3.svg" alt="projects" width="40"/></a>
+    <a href="/pages/publications.html"><img src="/images/lightbulb3.svg" alt="projects" width="40"/></a>
 </div>
 
 
@@ -31,9 +31,7 @@ During my Masters, I concentrated on Artificial Intelligence and worked under th
 guidance of Professor [Regina Barzilay](https://people.csail.mit.edu/regina/), 
 Professor [Wojciech Matusik](http://people.csail.mit.edu/wojciech/), and Dr. 
 [Julian Straub](http://people.csail.mit.edu/jstraub/). My main projects were 
-(1) image registration of mammograms for breast cancer detection (<a href='/pages/projects.html' style="color:black">...more <img src="/images/more1.svg" alt="project" width="20"/></a>), 
-and (2) 3D reconstruction of human arms for efficient [lymphedema](https://mayocl.in/2S5khTZ) screening
-(<a href='/pages/projects.html' style="color:black">...more <img src="/images/more1.svg" alt="project" width="20"/></a>)
+(1) image registration of mammograms for breast cancer detection, and (2) 3D reconstruction of human arms for efficient [lymphedema](https://mayocl.in/2S5khTZ) screening.  You can find out more about them [here](/pages/publications.html)
 
 
 <!--
@@ -45,26 +43,18 @@ and (2) 3D reconstruction of human arms for efficient [lymphedema](https://mayoc
 My current projects focus on using reasoning and deep neural networks to understand 
 complex **spatio-temporal** data collected from satellites. 
 
-- [Semantic Road](): 
-- [MINT](): 
- 
-- [Model Poker]():
+- [Semantic Road](#): 
+- [MINT](#): 
+- [Model Poker](#):
 
-
-Please see my [project](/pages/projects.html) page for more details. 
-
+Please see my [project](/pages/publications.html) page for more details. 
 
 ---
 ## Knowledge representation in Learning and Generalization
 
-- 
-- 
-- 
-
 {% youtube ow7eEWh37iU %}
 
 ## Lingering questions
-
 In a bigger scheme, I am excited about the problems regarding human perception of 
 the world and how symbolic representation of knowledge can facilitate learning 
 in a new domain [via knowledge transfer across various domains/modalities].  I'm 
@@ -76,14 +66,13 @@ vision and three-dimensional perception (<todo>:spatial reasonging?)
     - via incorporating external knowledge 
     - via incorporating common sense reasoning
     
-    My current [project](#semantic_road_project) on road detection from satellite images explores 
+ My current [project](#semantic_road_project) on road detection from satellite images explores 
 this question using external geospatial knowledge base (OpenStreetMap) and reinforcement
-learning. <todo> transfer learning? 
+learning. <!-- todo: transfer learning? -->
 
 2. How can those knowledge be represented in a more abstract form so that it can be used for 
 learning in different domains 
 (keyword: [Knowledge Representation](#), [Transfer Learning](#)/[Domain Adaptation](#))
-
 
 
 ##  Softwares
@@ -103,10 +92,7 @@ thoughts and minds. I enjoy sharing such experiences with friends:)
  
  ---
  
-
 <!--
-
-
 {% img ../images/profile.jpg %}  
 <div align="center"> 
     <img src="/images/profile.jpg" alt="profile" width="250"/>
