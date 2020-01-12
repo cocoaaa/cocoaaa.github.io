@@ -1,4 +1,6 @@
 Title: Let's blog with Pelican
+Date: 2020-01-10
+Modified: 2020-01-11
 
 ## Makefile
 1. `make html`: generates output html files from files in `content` folder using
@@ -39,9 +41,9 @@ make html # or, make regenerate
    
 - Version control the source
 ```bash
-git add . # make sure not to push the output folder
+git add <files> # make sure not to push the output folder
 git cm "<commit message>"
-git push origin src
+git push origin dev #origin/dev is the remote branch that keeps track of blog sources
 ```
 
 
