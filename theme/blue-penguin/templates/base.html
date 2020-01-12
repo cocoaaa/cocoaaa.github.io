@@ -56,7 +56,9 @@
                 {% endif %}
                 {% if DISPLAY_PAGES_ON_MENU %}
                 {% for p in pages %}
-                <li{% if p == page %} class="selected"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                    {%  if output_file != "index.html" %}
+                        <li{% if p == page %} class="selected"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                    {% endif %}
                 {% endfor %}
                 {% endif %}
                 {% for title, link in MENUITEMS %}
@@ -75,7 +77,6 @@
             {% endif %}
         </div>
     </header>
-
     {% endif %}
     <div id="wrapper">
         <div id="content">
@@ -103,4 +104,13 @@
     </div>
 {% include 'analytics.html' %}
 </body>
+
+{% if article %}
+    {% if article.javascripts %}
+        {% for javascript in article.javascripts %}
+        {{ javascript }}
+        {% endfor %}
+    {% endif %}
+{% endif %}
+
 </html>

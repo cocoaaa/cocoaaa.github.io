@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block head %}
     {{ super() }}
     {% if article.tags %}
@@ -7,6 +6,11 @@
     {% endif %}
     {% if article.description %}
     <meta name="description" content="{{ article.description }}" />
+    {% endif %}
+    {% if article.stylesheets %}
+        {% for stylesheet in article.stylesheets %}
+        {{ stylesheet }}
+        {% endfor %}
     {% endif %}
 {% endblock %}
 
