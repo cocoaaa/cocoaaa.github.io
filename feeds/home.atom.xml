@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="http://cocoaaa.github.io/" rel="alternate"></link><link href="http://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>http://cocoaaa.github.io/</id><updated>2020-01-12T14:01:54-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="http://cocoaaa.github.io/" rel="alternate"></link><published>2020-01-12T14:01:54-08:00</published><updated>2020-01-12T14:01:54-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-12:</id><summary type="html">&lt;div id="chartdiv"&gt;&lt;/div&gt;
+
+&lt;div id="mapdiv"&gt;&lt;/div&gt;
+
+&lt;p&gt;I'm a 2nd year PhD @ USC studying the lower-dimensional representation of complex unstructured datasets (eg. multi-spectral satellite images, 3D MRI scans) using deep learning. My work lies in the intersection of statistical machine learning, information theory and coding theory.  I also work on interactive visualization of high-dimensional datasets and complex …&lt;/p&gt;</summary></entry></feed>
