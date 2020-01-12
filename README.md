@@ -1,6 +1,8 @@
-# Source for http://jakevdp.github.io
+# Source for http://cocoaaa.github.io
 
-This repository contains the source for http://jakevdp.github.io/.
+This repository contains the source for my [blog](https://cocoaaa.github.io). 
+I got good amount of help from other pelican-generated blog such as [jakevdp's](http://jakevdp.github.io). 
+
 
 ## Building the Blog
 
