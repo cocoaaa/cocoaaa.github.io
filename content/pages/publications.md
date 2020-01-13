@@ -54,7 +54,7 @@ In this paper, we explore the framework of Adversarial Training as introduced in
 ### Automatic Cell Detection using HOG features and SVM
 Nicha Apichitsopa*, Boying Meng*, Hayley Song*
 
-[paper](/pdfs/6_869_Final__cell_detection.pdf), [video](#), [slides](/pdfs/6.869-cell-detection-ppt.pdf) (2016 Fall)
+[paper](/pdfs/6.869-cell-detection.pdf), [video](#), [slides](/pdfs/6.869-cell-detection-ppt.pdf) (2016 Fall)
 
 The analysis of cell trajectories inside microchannels is a critical part of many microfluidic systems. This task requires automated cell detection and cell tracking algorithms in order to reliably extract cell positions over time. Such algorithms need be robust against shape deformation, variable illumination, and noises from sensors and cell movements. In this report, we prove the ability of our machine-learning detection algorithm based on the Histogram of Oriented Gradients (HOG) and Support Vector Machines (SVMs), and compare its performances to the classic image segmentation method. We also investiage different features extracted by various machine learning algorithms and discuss how they affect the performances of cell detection and tracking.
 
@@ -62,7 +62,7 @@ The analysis of cell trajectories inside microchannels is a critical part of man
 ### FreeFlow: Unintrusive Reading Device for Printed Texts
 Hayley Song, Suvrit Sra
 
-[paper](/pdfs/free-flow-hjsong-hjsong.pdf), [poster](/pdfs/free-flow-hjsong-poster.png) (2016 Spring)
+[paper](/pdfs/free-flow-hjsong.pdf), [poster](/pdfs/free-flow-hjsong-poster.png) (2016 Spring)
 
 ![free-flow-demo](/pdfs/free-flow-demo.png)
 ![free-flow-workflow](/pdfs/free-flow-workflow.png)
