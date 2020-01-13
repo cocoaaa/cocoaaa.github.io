@@ -111,12 +111,12 @@ DISPLAY_PAGES_ON_MENU = True
 # DISPLAY_CATEGORIES_ON_MENU = True
 # The following variable names must match the names used as varnames in the navbar
 # class of `theme/templates/base.html`
-ABOUT_URL = '/pages/about-me.html'
-ABOUT_SAVE_AS = '/pages/about-me.html'
-PROJECTS_URL = '/pages/projects.html'
-PROJECTS_SAVE_AS = '/pages/projects.html'
-PUBS_URL = '/pages/publications.html'
-PUBS_SAVE_AS = '/pages/publications.html'
+ABOUT_URL = 'pages/about-me'
+ABOUT_SAVE_AS = 'pages/about-me.html'
+PROJECTS_URL = 'pages/projects'
+PROJECTS_SAVE_AS = 'pages/projects.html'
+PUBS_URL = 'pages/publications'
+PUBS_SAVE_AS = 'pages/publications.html'
 
 try:
     ARTICLES_SAVE_AS = INDEX_SAVE_AS  # must match, List of blog posts
@@ -159,6 +159,8 @@ TUTORIALS_SAVE_AS = '/pages/tutorials.html'
 MENU_INTERNAL_PAGES = (
     # ('Tags', TAGS_URL, TAGS_SAVE_AS),
     # ('Authors', AUTHORS_URL, AUTHORS_SAVE_AS),
+    ('About', ABOUT_URL, ABOUT_SAVE_AS),
+    ('Publications', PUBS_URL, PUBS_SAVE_AS),
     ('Blog', ARTICLES_URL, ARTICLES_SAVE_AS),
 )
 # MENU_INTERNAL_PAGES = (
@@ -239,7 +241,7 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 
 # THEME = './pelican-themes/nikhil-theme'
 # THEME = './pelican-themes/voce/'
-THEME = './theme/blue-penguin'
+THEME = 'theme/blue-penguin'
 
 ################################################################################
 # About page
