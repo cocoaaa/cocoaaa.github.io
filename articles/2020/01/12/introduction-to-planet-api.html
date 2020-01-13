@@ -1,0 +1,2619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Small Simplicity | Introduction to Planet API</title>
+    <link rel="shortcut icon" type="image/png" href="https://cocoaaa.github.io/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
+    <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
+    <link href="https://cocoaaa.github.io/feeds/Geospatial.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Categories Atom Feed" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="Hayley Song" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://cocoaaa.github.io/">Home</a></li>
+                        <li><a href="https://cocoaaa.github.io/pages/about-me">About me</a></li>
+                        <li><a href="https://cocoaaa.github.io/pages/notes">Notes</a></li>
+                        <li><a href="https://cocoaaa.github.io/pages/projects">Projects</a></li>
+                        <li><a href="https://cocoaaa.github.io/pages/publications">Publications</a></li>
+                        <li><a href="https://cocoaaa.github.io/pages/tutorials">Tutorials</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/about-me">About</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/publications">Publications</a></li>
+                <li><a href="https://cocoaaa.github.io/blog_index">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="https://cocoaaa.github.io/">Small Simplicity</a></h1>
+            <h2>Understanding Intelligence from Computational Perspective</h2>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content">            <h4 class="date">Jan 12, 2020</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="https://cocoaaa.github.io/articles/2020/01/12/introduction-to-planet-api/" rel="bookmark" title="Permanent Link to &quot;Introduction to Planet API&quot;">Introduction to Planet API</a>
+                </h2>
+
+                
+                
+
+                <style type="text/css">/*!
+*
+* IPython notebook
+*
+*/
+/* CSS font colors for translated ANSI escape sequences */
+/* The color values are a mix of
+   http://www.xcolors.net/dl/baskerville-ivorylight and
+   http://www.xcolors.net/dl/euphrasia */
+.ansi-black-fg {
+  color: #3E424D;
+}
+.ansi-black-bg {
+  background-color: #3E424D;
+}
+.ansi-black-intense-fg {
+  color: #282C36;
+}
+.ansi-black-intense-bg {
+  background-color: #282C36;
+}
+.ansi-red-fg {
+  color: #E75C58;
+}
+.ansi-red-bg {
+  background-color: #E75C58;
+}
+.ansi-red-intense-fg {
+  color: #B22B31;
+}
+.ansi-red-intense-bg {
+  background-color: #B22B31;
+}
+.ansi-green-fg {
+  color: #00A250;
+}
+.ansi-green-bg {
+  background-color: #00A250;
+}
+.ansi-green-intense-fg {
+  color: #007427;
+}
+.ansi-green-intense-bg {
+  background-color: #007427;
+}
+.ansi-yellow-fg {
+  color: #DDB62B;
+}
+.ansi-yellow-bg {
+  background-color: #DDB62B;
+}
+.ansi-yellow-intense-fg {
+  color: #B27D12;
+}
+.ansi-yellow-intense-bg {
+  background-color: #B27D12;
+}
+.ansi-blue-fg {
+  color: #208FFB;
+}
+.ansi-blue-bg {
+  background-color: #208FFB;
+}
+.ansi-blue-intense-fg {
+  color: #0065CA;
+}
+.ansi-blue-intense-bg {
+  background-color: #0065CA;
+}
+.ansi-magenta-fg {
+  color: #D160C4;
+}
+.ansi-magenta-bg {
+  background-color: #D160C4;
+}
+.ansi-magenta-intense-fg {
+  color: #A03196;
+}
+.ansi-magenta-intense-bg {
+  background-color: #A03196;
+}
+.ansi-cyan-fg {
+  color: #60C6C8;
+}
+.ansi-cyan-bg {
+  background-color: #60C6C8;
+}
+.ansi-cyan-intense-fg {
+  color: #258F8F;
+}
+.ansi-cyan-intense-bg {
+  background-color: #258F8F;
+}
+.ansi-white-fg {
+  color: #C5C1B4;
+}
+.ansi-white-bg {
+  background-color: #C5C1B4;
+}
+.ansi-white-intense-fg {
+  color: #A1A6B2;
+}
+.ansi-white-intense-bg {
+  background-color: #A1A6B2;
+}
+.ansi-default-inverse-fg {
+  color: #FFFFFF;
+}
+.ansi-default-inverse-bg {
+  background-color: #000000;
+}
+.ansi-bold {
+  font-weight: bold;
+}
+.ansi-underline {
+  text-decoration: underline;
+}
+/* The following styles are deprecated an will be removed in a future version */
+.ansibold {
+  font-weight: bold;
+}
+.ansi-inverse {
+  outline: 0.5px dotted;
+}
+/* use dark versions for foreground, to improve visibility */
+.ansiblack {
+  color: black;
+}
+.ansired {
+  color: darkred;
+}
+.ansigreen {
+  color: darkgreen;
+}
+.ansiyellow {
+  color: #c4a000;
+}
+.ansiblue {
+  color: darkblue;
+}
+.ansipurple {
+  color: darkviolet;
+}
+.ansicyan {
+  color: steelblue;
+}
+.ansigray {
+  color: gray;
+}
+/* and light for background, for the same reason */
+.ansibgblack {
+  background-color: black;
+}
+.ansibgred {
+  background-color: red;
+}
+.ansibggreen {
+  background-color: green;
+}
+.ansibgyellow {
+  background-color: yellow;
+}
+.ansibgblue {
+  background-color: blue;
+}
+.ansibgpurple {
+  background-color: magenta;
+}
+.ansibgcyan {
+  background-color: cyan;
+}
+.ansibggray {
+  background-color: gray;
+}
+div.cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  width: 100%;
+  padding: 5px;
+  /* This acts as a spacer between cells, that is outside the border */
+  margin: 0px;
+  outline: none;
+  position: relative;
+  overflow: visible;
+}
+div.cell:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: transparent;
+}
+div.cell.jupyter-soft-selected {
+  border-left-color: #E3F2FD;
+  border-left-width: 1px;
+  padding-left: 5px;
+  border-right-color: #E3F2FD;
+  border-right-width: 1px;
+  background: #E3F2FD;
+}
+@media print {
+  div.cell.jupyter-soft-selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected,
+div.cell.selected.jupyter-soft-selected {
+  border-color: #ababab;
+}
+div.cell.selected:before,
+div.cell.selected.jupyter-soft-selected:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: #42A5F5;
+}
+@media print {
+  div.cell.selected,
+  div.cell.selected.jupyter-soft-selected {
+    border-color: transparent;
+  }
+}
+.edit_mode div.cell.selected {
+  border-color: #66BB6A;
+}
+.edit_mode div.cell.selected:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: #66BB6A;
+}
+@media print {
+  .edit_mode div.cell.selected {
+    border-color: transparent;
+  }
+}
+.prompt {
+  /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
+  min-width: 14ex;
+  /* This padding is tuned to match the padding on the CodeMirror editor. */
+  padding: 0.4em;
+  margin: 0px;
+  font-family: monospace;
+  text-align: right;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+  /* Don't highlight prompt number selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Use default cursor */
+  cursor: default;
+}
+@media (max-width: 540px) {
+  .prompt {
+    text-align: left;
+  }
+}
+div.inner_cell {
+  min-width: 0;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_area {
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  background: #f7f7f7;
+  line-height: 1.21429em;
+}
+/* This is needed so that empty prompt areas can collapse to zero height when there
+   is no content in the output_subarea and the prompt. The main purpose of this is
+   to make sure that empty JavaScript output_subareas have no height. */
+div.prompt:empty {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div.unrecognized_cell {
+  padding: 5px 5px 5px 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.unrecognized_cell .inner_cell {
+  border-radius: 2px;
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+  border: 1px solid #cfcfcf;
+  background: #eaeaea;
+}
+div.unrecognized_cell .inner_cell a {
+  color: inherit;
+  text-decoration: none;
+}
+div.unrecognized_cell .inner_cell a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 540px) {
+  div.unrecognized_cell > div.prompt {
+    display: none;
+  }
+}
+div.code_cell {
+  /* avoid page breaking on code cells when printing */
+}
+@media print {
+  div.code_cell {
+    page-break-inside: avoid;
+  }
+}
+/* any special styling for code cells that are currently running goes here */
+div.input {
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.input {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_prompt {
+  color: #303F9F;
+  border-top: 1px solid transparent;
+}
+div.input_area > div.highlight {
+  margin: 0.4em;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+div.input_area > div.highlight > pre {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+/* The following gets added to the <head> if it is detected that the user has a
+ * monospace font with inconsistent normal/bold/italic height.  See
+ * notebookmain.js.  Such fonts will have keywords vertically offset with
+ * respect to the rest of the text.  The user should select a better font.
+ * See: https://github.com/ipython/ipython/issues/1503
+ *
+ * .CodeMirror span {
+ *      vertical-align: bottom;
+ * }
+ */
+.CodeMirror {
+  line-height: 1.21429em;
+  /* Changed from 1em to our global default */
+  font-size: 14px;
+  height: auto;
+  /* Changed to auto to autogrow */
+  background: none;
+  /* Changed from white to allow our bg to show through */
+}
+.CodeMirror-scroll {
+  /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
+  /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.CodeMirror-lines {
+  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* we have set a different line-height and want this to scale with that. */
+  /* Note that this should set vertical padding only, since CodeMirror assumes
+       that horizontal padding will be set on CodeMirror pre */
+  padding: 0.4em 0;
+}
+.CodeMirror-linenumber {
+  padding: 0 8px 0 4px;
+}
+.CodeMirror-gutters {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.CodeMirror pre {
+  /* In CM3 this went to 4px from 0 in CM2. This sets horizontal padding only,
+    use .CodeMirror-lines for vertical */
+  padding: 0 0.4em;
+  border: 0;
+  border-radius: 0;
+}
+.CodeMirror-cursor {
+  border-left: 1.4px solid black;
+}
+@media screen and (min-width: 2138px) and (max-width: 4319px) {
+  .CodeMirror-cursor {
+    border-left: 2px solid black;
+  }
+}
+@media screen and (min-width: 4320px) {
+  .CodeMirror-cursor {
+    border-left: 4px solid black;
+  }
+}
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Adapted from GitHub theme
+
+*/
+.highlight-base {
+  color: #000;
+}
+.highlight-variable {
+  color: #000;
+}
+.highlight-variable-2 {
+  color: #1a1a1a;
+}
+.highlight-variable-3 {
+  color: #333333;
+}
+.highlight-string {
+  color: #BA2121;
+}
+.highlight-comment {
+  color: #408080;
+  font-style: italic;
+}
+.highlight-number {
+  color: #080;
+}
+.highlight-atom {
+  color: #88F;
+}
+.highlight-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.highlight-builtin {
+  color: #008000;
+}
+.highlight-error {
+  color: #f00;
+}
+.highlight-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.highlight-meta {
+  color: #AA22FF;
+}
+/* previously not defined, copying from default codemirror */
+.highlight-def {
+  color: #00f;
+}
+.highlight-string-2 {
+  color: #f50;
+}
+.highlight-qualifier {
+  color: #555;
+}
+.highlight-bracket {
+  color: #997;
+}
+.highlight-tag {
+  color: #170;
+}
+.highlight-attribute {
+  color: #00c;
+}
+.highlight-header {
+  color: blue;
+}
+.highlight-quote {
+  color: #090;
+}
+.highlight-link {
+  color: #00c;
+}
+/* apply the same style to codemirror */
+.cm-s-ipython span.cm-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-atom {
+  color: #88F;
+}
+.cm-s-ipython span.cm-number {
+  color: #080;
+}
+.cm-s-ipython span.cm-def {
+  color: #00f;
+}
+.cm-s-ipython span.cm-variable {
+  color: #000;
+}
+.cm-s-ipython span.cm-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-variable-2 {
+  color: #1a1a1a;
+}
+.cm-s-ipython span.cm-variable-3 {
+  color: #333333;
+}
+.cm-s-ipython span.cm-comment {
+  color: #408080;
+  font-style: italic;
+}
+.cm-s-ipython span.cm-string {
+  color: #BA2121;
+}
+.cm-s-ipython span.cm-string-2 {
+  color: #f50;
+}
+.cm-s-ipython span.cm-meta {
+  color: #AA22FF;
+}
+.cm-s-ipython span.cm-qualifier {
+  color: #555;
+}
+.cm-s-ipython span.cm-builtin {
+  color: #008000;
+}
+.cm-s-ipython span.cm-bracket {
+  color: #997;
+}
+.cm-s-ipython span.cm-tag {
+  color: #170;
+}
+.cm-s-ipython span.cm-attribute {
+  color: #00c;
+}
+.cm-s-ipython span.cm-header {
+  color: blue;
+}
+.cm-s-ipython span.cm-quote {
+  color: #090;
+}
+.cm-s-ipython span.cm-link {
+  color: #00c;
+}
+.cm-s-ipython span.cm-error {
+  color: #f00;
+}
+.cm-s-ipython span.cm-tab {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAAGFJREFUSMft1LsRQFAQheHPowAKoACx3IgEKtaEHujDjORSgWTH/ZOdnZOcM/sgk/kFFWY0qV8foQwS4MKBCS3qR6ixBJvElOobYAtivseIE120FaowJPN75GMu8j/LfMwNjh4HUpwg4LUAAAAASUVORK5CYII=);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+div.output_wrapper {
+  /* this position must be relative to enable descendents to be absolute within it */
+  position: relative;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 1;
+}
+/* class for the output area when it should be height-limited */
+div.output_scroll {
+  /* ideally, this would be max-height, but FF barfs all over that */
+  height: 24em;
+  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  width: 100%;
+  overflow: auto;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+/* output div while it is collapsed */
+div.output_collapsed {
+  margin: 0px;
+  padding: 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+div.out_prompt_overlay {
+  height: 100%;
+  padding: 0px 0.4em;
+  position: absolute;
+  border-radius: 2px;
+}
+div.out_prompt_overlay:hover {
+  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  -webkit-box-shadow: inset 0 0 1px #000;
+  box-shadow: inset 0 0 1px #000;
+  background: rgba(240, 240, 240, 0.5);
+}
+div.output_prompt {
+  color: #D84315;
+}
+/* This class is the outer container of all output sections. */
+div.output_area {
+  padding: 0px;
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.output_area .MathJax_Display {
+  text-align: left !important;
+}
+div.output_area 
+div.output_area 
+div.output_area img,
+div.output_area svg {
+  max-width: 100%;
+  height: auto;
+}
+div.output_area img.unconfined,
+div.output_area svg.unconfined {
+  max-width: none;
+}
+div.output_area .mglyph > img {
+  max-width: none;
+}
+/* This is needed to protect the pre formating from global settings such
+   as that of bootstrap */
+.output {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.output_area {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+div.output_area pre {
+  margin: 0;
+  padding: 1px 0 1px 0;
+  border: 0;
+  vertical-align: baseline;
+  color: black;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* This class is for the output subarea inside the output_area and after
+   the prompt div. */
+div.output_subarea {
+  overflow-x: auto;
+  padding: 0.4em;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+  max-width: calc(100% - 14ex);
+}
+div.output_scroll div.output_subarea {
+  overflow-x: visible;
+}
+/* The rest of the output_* classes are for special styling of the different
+   output types */
+/* all text output has this class: */
+div.output_text {
+  text-align: left;
+  color: #000;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+}
+/* stdout/stderr are 'text' as well as 'stream', but execute_result/error are *not* streams */
+div.output_stderr {
+  background: #fdd;
+  /* very light red background for stderr */
+}
+div.output_latex {
+  text-align: left;
+}
+/* Empty output_javascript divs should have no height */
+div.output_javascript:empty {
+  padding: 0;
+}
+.js-error {
+  color: darkred;
+}
+/* raw_input styles */
+div.raw_input_container {
+  line-height: 1.21429em;
+  padding-top: 5px;
+}
+pre.raw_input_prompt {
+  /* nothing needed here. */
+}
+input.raw_input {
+  font-family: monospace;
+  font-size: inherit;
+  color: inherit;
+  width: auto;
+  /* make sure input baseline aligns with prompt */
+  vertical-align: baseline;
+  /* padding + margin = 0.5em between prompt and cursor */
+  padding: 0em 0.25em;
+  margin: 0em 0.25em;
+}
+input.raw_input:focus {
+  box-shadow: none;
+}
+p.p-space {
+  margin-bottom: 10px;
+}
+div.output_unrecognized {
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+}
+div.output_unrecognized a {
+  color: inherit;
+  text-decoration: none;
+}
+div.output_unrecognized a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.rendered_html {
+  color: #000;
+  /* any extras will just be numbers: */
+}
+
+
+
+.rendered_html :link {
+  text-decoration: underline;
+}
+.rendered_html :visited {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.rendered_html h1:first-child {
+  margin-top: 0.538em;
+}
+.rendered_html h2:first-child {
+  margin-top: 0.636em;
+}
+.rendered_html h3:first-child {
+  margin-top: 0.777em;
+}
+.rendered_html h4:first-child {
+  margin-top: 1em;
+}
+.rendered_html h5:first-child {
+  margin-top: 1em;
+}
+.rendered_html h6:first-child {
+  margin-top: 1em;
+}
+.rendered_html ul:not(.list-inline),
+.rendered_html ol:not(.list-inline) {
+  padding-left: 2em;
+}
+
+
+
+
+
+
+
+
+.rendered_html * + ul {
+  margin-top: 1em;
+}
+.rendered_html * + ol {
+  margin-top: 1em;
+}
+
+
+
+
+
+.rendered_html pre,
+
+
+
+
+.rendered_html tr,
+.rendered_html th,
+
+
+.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+.rendered_html * + table {
+  margin-top: 1em;
+}
+
+.rendered_html * + p {
+  margin-top: 1em;
+}
+
+.rendered_html * + img {
+  margin-top: 1em;
+}
+.rendered_html img,
+
+.rendered_html img.unconfined,
+
+
+.rendered_html * + .alert {
+  margin-top: 1em;
+}
+[dir="rtl"] 
+div.text_cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.text_cell > div.prompt {
+    display: none;
+  }
+}
+div.text_cell_render {
+  /*font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+  outline: none;
+  resize: none;
+  width: inherit;
+  border-style: none;
+  padding: 0.5em 0.5em 0.5em 0.4em;
+  color: #000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a.anchor-link:link {
+  text-decoration: none;
+  padding: 0px 20px;
+  visibility: hidden;
+}
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  visibility: visible;
+}
+.text_cell.rendered .input_area {
+  display: none;
+}
+.text_cell.rendered 
+.text_cell.rendered .rendered_html tr,
+.text_cell.rendered .rendered_html th,
+.text_cell.rendered 
+.text_cell.unrendered .text_cell_render {
+  display: none;
+}
+.text_cell .dropzone .input_area {
+  border: 2px dashed #bababa;
+  margin: -1px;
+}
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cm-header-1 {
+  font-size: 185.7%;
+}
+.cm-header-2 {
+  font-size: 157.1%;
+}
+.cm-header-3 {
+  font-size: 128.6%;
+}
+.cm-header-4 {
+  font-size: 110%;
+}
+.cm-header-5 {
+  font-size: 100%;
+  font-style: italic;
+}
+.cm-header-6 {
+  font-size: 100%;
+  font-style: italic;
+}
+</style>
+<style type="text/css">.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style><body><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Planet-API-Introduction">Planet API Introduction<a class="anchor-link" href="#Planet-API-Introduction">&#182;</a></h1><ul>
+<li><a href="https://github.com/planetlabs/notebooks/blob/master/jupyter-notebooks/data-api-tutorials/planet_data_api_introduction.ipynb">Ref</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">json</span><span class="o">,</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">requests.auth</span> <span class="kn">import</span> <span class="n">HTTPBasicAuth</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;PL_API_KEY&#39;</span><span class="p">]</span>  <span class="o">=</span> <span class="s1">&#39;7d8af35b6e944f33bb5e33ada32ab4a0&#39;</span>
+<span class="n">PL_API_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;PL_API_KEY&#39;</span><span class="p">)</span>
+<span class="n">PL_AUTH</span> <span class="o">=</span> <span class="n">HTTPBasicAuth</span><span class="p">(</span><span class="n">PLANET_API_KEY</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="c1"># Setup Planet Data API base URL</span>
+<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://api.planet.com/data/v1&quot;</span>
+
+<span class="c1">#Setup the session</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">roi_data</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;FeatureCollection&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;features&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{},</span>
+      <span class="s2">&quot;geometry&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Polygon&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">[</span>
+            <span class="p">[</span>
+              <span class="o">-</span><span class="mf">118.2967472076416</span><span class="p">,</span>
+              <span class="mf">34.00578318672437</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+              <span class="o">-</span><span class="mf">118.22739601135252</span><span class="p">,</span>
+              <span class="mf">34.00578318672437</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+              <span class="o">-</span><span class="mf">118.22739601135252</span><span class="p">,</span>
+              <span class="mf">34.07846940942791</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+              <span class="o">-</span><span class="mf">118.2967472076416</span><span class="p">,</span>
+              <span class="mf">34.07846940942791</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+              <span class="o">-</span><span class="mf">118.2967472076416</span><span class="p">,</span>
+              <span class="mf">34.00578318672437</span>
+            <span class="p">]</span>
+          <span class="p">]</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">roi_geom</span> <span class="o">=</span> <span class="n">roi_data</span><span class="p">[</span><span class="s1">&#39;features&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;geometry&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">roi_geom</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;type&#39;: &#39;Polygon&#39;,
+ &#39;coordinates&#39;: [[[-118.2967472076416, 34.00578318672437],
+   [-118.22739601135252, 34.00578318672437],
+   [-118.22739601135252, 34.07846940942791],
+   [-118.2967472076416, 34.07846940942791],
+   [-118.2967472076416, 34.00578318672437]]]}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filters to download data</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">geom_filter</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;GeometryFilter&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;field_name&#39;</span><span class="p">:</span> <span class="s1">&#39;geometry&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;config&#39;</span><span class="p">:</span> <span class="n">roi_geom</span>
+<span class="p">}</span>
+
+<span class="n">date_range_filter</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;DateRangeFilter&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;field_name&#39;</span><span class="p">:</span> <span class="s1">&#39;acquired&#39;</span><span class="p">,</span> <span class="c1">#meaning, captured by satellite</span>
+    <span class="s1">&#39;config&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;gte&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-03-01T00:00:00.000Z&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lte&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-09-01T00:00:00.000Z&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">cloud_cover_filter</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;type&#39;</span><span class="p">:</span><span class="s1">&#39;RangeFilter&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;field_name&#39;</span><span class="p">:</span> <span class="s1">&#39;cloud_cover&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;config&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;lte&quot;</span><span class="p">:</span><span class="mf">0.1</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">combined_filter</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;AndFilter&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;config&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">geom_filter</span><span class="p">,</span> <span class="n">date_range_filter</span><span class="p">,</span> <span class="n">cloud_cover_filter</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Request-data">Request data<a class="anchor-link" href="#Request-data">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[157]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># PLANET_API_KEY = &#39;7d8af35b6e944f33bb5e33ada32ab4a0&#39;</span>
+<span class="n">ITEM_TYPE</span> <span class="o">=</span> <span class="s1">&#39;PSScene4Band&#39;</span>
+<span class="n">SEARCH_URL</span> <span class="o">=</span> <span class="s1">&#39;https://api.planet.com/data/v1/quick-search&#39;</span>
+<span class="n">ASSET_TYPE</span> <span class="o">=</span> <span class="s1">&#39;analytic&#39;</span>
+
+<span class="c1"># api request object</span>
+<span class="n">search_request</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;interval&#39;</span><span class="p">:</span> <span class="s1">&#39;day&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;item_types&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">ITEM_TYPE</span><span class="p">],</span>
+    <span class="s1">&#39;filter&#39;</span><span class="p">:</span> <span class="n">combined_filter</span>
+<span class="p">}</span>
+
+<span class="c1"># send the POST request</span>
+<span class="n">search_result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">SEARCH_URL</span><span class="p">,</span>
+                              <span class="n">auth</span><span class="o">=</span><span class="n">PL_AUTH</span><span class="p">,</span>
+                              <span class="n">json</span><span class="o">=</span><span class="n">search_request</span><span class="p">)</span>
+
+<span class="c1"># print(json.dumps(search_result.json(), indent=1))  </span>
+<span class="c1"># </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[130]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">search_result</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">search_result</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;_links&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dict_keys([&#39;_links&#39;, &#39;features&#39;, &#39;type&#39;])
+{&#39;_first&#39;: &#39;https://api.planet.com/data/v1/searches/41cf25ad243345938175b0f930e2af51/results?_page=eyJxdWVyeV9wYXJhbXMiOiB7fSwgInNvcnRfcHJldiI6IGZhbHNlLCAicGFnZV9zaXplIjogMjUwLCAic29ydF9ieSI6ICJwdWJsaXNoZWQiLCAic29ydF9zdGFydCI6IG51bGwsICJzb3J0X2xhc3RfaWQiOiBudWxsLCAic29ydF9kZXNjIjogdHJ1ZX0%3D&#39;,
+ &#39;_next&#39;: &#39;https://api.planet.com/data/v1/searches/41cf25ad243345938175b0f930e2af51/results?_page=eyJxdWVyeV9wYXJhbXMiOiB7fSwgInNvcnRfcHJldiI6IGZhbHNlLCAicGFnZV9zaXplIjogMjUwLCAic29ydF9ieSI6ICJwdWJsaXNoZWQiLCAic29ydF9zdGFydCI6ICIyMDE2LTA5LTE3VDIxOjA3OjQ5LjAwMDAwMFoiLCAic29ydF9sYXN0X2lkIjogIjIwMTYwODMxXzE3NDQ0MF8wZTBmIiwgInNvcnRfZGVzYyI6IHRydWV9&#39;,
+ &#39;_self&#39;: &#39;https://api.planet.com/data/v1/searches/41cf25ad243345938175b0f930e2af51/results?_page=eyJxdWVyeV9wYXJhbXMiOiB7fSwgInNvcnRfcHJldiI6IGZhbHNlLCAicGFnZV9zaXplIjogMjUwLCAic29ydF9ieSI6ICJwdWJsaXNoZWQiLCAic29ydF9zdGFydCI6IG51bGwsICJzb3J0X2xhc3RfaWQiOiBudWxsLCAic29ydF9kZXNjIjogdHJ1ZX0%3D&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[155]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">search_result</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;features&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of images retrieved: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">features</span><span class="p">))</span>
+<span class="n">scene_ids</span> <span class="o">=</span> <span class="p">[</span><span class="n">features</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">features</span><span class="p">))]</span>
+<span class="n">scene_links</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;_links&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">features</span><span class="p">]</span>
+<span class="n">pprint</span><span class="p">([(</span><span class="n">scene_id</span><span class="p">,</span> <span class="n">scene_link</span><span class="p">)</span> 
+        <span class="k">for</span> <span class="p">(</span><span class="n">scene_id</span><span class="p">,</span> <span class="n">scene_link</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">scene_ids</span><span class="p">[:</span><span class="mi">5</span><span class="p">],</span> <span class="n">scene_links</span><span class="p">[:</span><span class="mi">5</span><span class="p">])])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>number of images retrieved:  39
+[(&#39;20160715_174333_0e0e&#39;,
+  {&#39;_self&#39;: &#39;https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160715_174333_0e0e&#39;,
+   &#39;assets&#39;: &#39;https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160715_174333_0e0e/assets/&#39;,
+   &#39;thumbnail&#39;: &#39;https://tiles.planet.com/data/v1/item-types/PSScene4Band/items/20160715_174333_0e0e/thumb&#39;}),
+ (&#39;20160720_174501_0e3a&#39;,
+  {&#39;_self&#39;: &#39;https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160720_174501_0e3a&#39;,
+   &#39;assets&#39;: &#39;https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160720_174501_0e3a/assets/&#39;,
+   &#39;thumbnail&#39;: &#39;https://tiles.planet.com/data/v1/item-types/PSScene4Band/items/20160720_174501_0e3a/thumb&#39;}),
+ (&#39;20160720_174502_0e3a&#39;,
+  {&#39;_self&#39;: &#39;https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160720_174502_0e3a&#39;,
+   &#39;assets&#39;: &#39;https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160720_174502_0e3a/assets/&#39;,
+   &#39;thumbnail&#39;: &#39;https://tiles.planet.com/data/v1/item-types/PSScene4Band/items/20160720_174502_0e3a/thumb&#39;}),
+ (&#39;20160715_174334_0e0e&#39;,
+  {&#39;_self&#39;: &#39;https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160715_174334_0e0e&#39;,
+   &#39;assets&#39;: &#39;https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160715_174334_0e0e/assets/&#39;,
+   &#39;thumbnail&#39;: &#39;https://tiles.planet.com/data/v1/item-types/PSScene4Band/items/20160715_174334_0e0e/thumb&#39;}),
+ (&#39;20160731_174506_0e30&#39;,
+  {&#39;_self&#39;: &#39;https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160731_174506_0e30&#39;,
+   &#39;assets&#39;: &#39;https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160731_174506_0e30/assets/&#39;,
+   &#39;thumbnail&#39;: &#39;https://tiles.planet.com/data/v1/item-types/PSScene4Band/items/20160731_174506_0e30/thumb&#39;})]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[135]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">id0</span> <span class="o">=</span> <span class="n">img_ids</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">id0_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://api.planet.com/data/v1/item-types/</span><span class="si">{item_type}</span><span class="s1">/items/</span><span class="si">{id0}</span><span class="s1">/assets&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;id0_url: &#39;</span><span class="p">,</span> <span class="n">id0_url</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>id0_url:  https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160715_174333_0e0e/assets
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[139]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_asset_url</span><span class="p">(</span><span class="n">item_type</span><span class="p">,</span><span class="n">scene_id</span><span class="p">):</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;https://api.planet.com/data/v1/item-types/</span><span class="si">{item_type}</span><span class="s1">/items/</span><span class="si">{scene_id}</span><span class="s1">/assets&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">ASSET_URL</span><span class="p">(</span><span class="n">ITEM_TYPE</span><span class="p">,</span> <span class="n">id0</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>https://api.planet.com/data/v1/item-types/PSScene4Band/items/20160715_174333_0e0e/assets
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[140]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># which assets are available for this image?</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="n">id0_url</span><span class="p">,</span>
+    <span class="n">auth</span><span class="o">=</span><span class="n">PL_AUTH</span>
+<span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dict_keys([&#39;analytic&#39;, &#39;analytic_dn&#39;, &#39;analytic_dn_xml&#39;, &#39;analytic_sr&#39;, &#39;analytic_xml&#39;, &#39;basic_analytic&#39;, &#39;basic_analytic_dn&#39;, &#39;basic_analytic_dn_nitf&#39;, &#39;basic_analytic_dn_rpc&#39;, &#39;basic_analytic_dn_rpc_nitf&#39;, &#39;basic_analytic_dn_xml&#39;, &#39;basic_analytic_dn_xml_nitf&#39;, &#39;basic_analytic_nitf&#39;, &#39;basic_analytic_rpc&#39;, &#39;basic_analytic_rpc_nitf&#39;, &#39;basic_analytic_xml&#39;, &#39;basic_analytic_xml_nitf&#39;, &#39;basic_udm&#39;, &#39;udm&#39;])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Clip-scenes-to-AOI">Clip scenes to AOI<a class="anchor-link" href="#Clip-scenes-to-AOI">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[165]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#clip API request payload</span>
+<span class="n">CLIP_URL</span> <span class="o">=</span> <span class="s1">&#39;https://api.planet.com/compute/ops/clips/v1&#39;</span>
+<span class="n">clip_payload</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;aoi&#39;</span><span class="p">:</span> <span class="n">roi_geom</span><span class="p">,</span>
+    <span class="s1">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;item_id&#39;</span><span class="p">:</span> <span class="n">sid</span><span class="p">,</span> 
+                <span class="s1">&#39;item_type&#39;</span><span class="p">:</span> <span class="n">ITEM_TYPE</span><span class="p">,</span>
+                <span class="s1">&#39;asset_type&#39;</span><span class="p">:</span> <span class="n">ASSET_TYPE</span><span class="p">}</span> <span class="k">for</span> <span class="n">sid</span> <span class="ow">in</span> <span class="n">scene_ids</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
+               <span class="p">]</span>
+<span class="p">}</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">clip_payload</span><span class="p">[</span><span class="s1">&#39;targets&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{&#39;asset_type&#39;: &#39;analytic&#39;,
+  &#39;item_id&#39;: &#39;20160715_174333_0e0e&#39;,
+  &#39;item_type&#39;: &#39;PSScene4Band&#39;}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Request clip operation on target scenes</span>
+<span class="n">clip_response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="n">CLIP_URL</span><span class="p">,</span>
+    <span class="n">auth</span><span class="o">=</span><span class="n">PL_AUTH</span><span class="p">,</span>
+    <span class="n">json</span><span class="o">=</span><span class="n">clip_payload</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result_url</span> <span class="o">=</span> <span class="n">clip_response</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[198]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">check_state_request</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="n">clip_response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;_links&#39;</span><span class="p">][</span><span class="s1">&#39;_self&#39;</span><span class="p">],</span>
+    <span class="n">auth</span><span class="o">=</span><span class="n">PL_AUTH</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[203]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">check_state_request</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;succeeded&#39;</span><span class="p">:</span>
+    <span class="n">clip_download_url</span> <span class="o">=</span> <span class="n">check_state_request</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;_links&#39;</span><span class="p">][</span><span class="s1">&#39;results&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[204]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">clip_download_url</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[204]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;https://api.planet.com/data/v1/download?token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTcyODY2NjEsInN1YiI6IllsK2ZTaGZabjBqL24zRlZvdmZDSmFOdXRCZ002ZTFxanhCc2dnVjBMWWk5TVdKRGdmN0NMblRndGRpL3R6WWRXd2prY25IbFo3V3EzeFpYWTlKSCt3PT0iLCJ0b2tlbl90eXBlIjoiZG93bmxvYWQtYXNzZXQtc3RhY2siLCJhb2kiOiJ7XCJ0eXBlXCI6IFwiUG9seWdvblwiLCBcImNvb3JkaW5hdGVzXCI6IFtbWy0xMTguMjk2NzQ3MjA3NjQxNiwgMzQuMDA1NzgzMTg2NzI0MzddLCBbLTExOC4yMjczOTYwMTEzNTI1MiwgMzQuMDA1NzgzMTg2NzI0MzddLCBbLTExOC4yMjczOTYwMTEzNTI1MiwgMzQuMDc4NDY5NDA5NDI3OTFdLCBbLTExOC4yOTY3NDcyMDc2NDE2LCAzNC4wNzg0Njk0MDk0Mjc5MV0sIFstMTE4LjI5Njc0NzIwNzY0MTYsIDM0LjAwNTc4MzE4NjcyNDM3XV1dfSIsImFzc2V0cyI6W3siaXRlbV90eXBlIjoiUFNTY2VuZTRCYW5kIiwiYXNzZXRfdHlwZSI6ImFuYWx5dGljIiwiaXRlbV9pZCI6IjIwMTYwNzE1XzE3NDMzM18wZTBlIn1dLCJ1cmwiOiJodHRwczovL3BsYW5ldC1wbGF0Zm9ybS1jb21wdXRlZC1hc3NldHMuczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vY2VlNTQ3NjAtODRhYS00NDgxLThjOWQtMjBkNDMwYmE5MmIwLWNsaXBzLnppcD9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1Nlx1MDAyNlgtQW16LUNyZWRlbnRpYWw9QUtJQUpLN1I0UEFSVFBTUFpIREElMkYyMDE5MDUwNyUyRnVzLXdlc3QtMiUyRnMzJTJGYXdzNF9yZXF1ZXN0XHUwMDI2WC1BbXotRGF0ZT0yMDE5MDUwN1QyMTM3NDFaXHUwMDI2WC1BbXotRXhwaXJlcz0zNjBcdTAwMjZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3RcdTAwMjZYLUFtei1TaWduYXR1cmU9MDRkZjhmNTRkODE5ZTY0YjliNDA2Yzk2YjI2Mjc5NGM3MjE0NzkxN2NhOWU0NmJlZGY1MDBhYzQwNTg0NDYwNCIsInNvdXJjZSI6ImNsaXBfYW5kX3NoaXAifQ.rVCgEr_Y8OCKkkpnTucvQFFG7BcJ_fSIyhdV9iiSLQBguS03Wwl4SGIbAmyIuE1yA82r19p7KeTKmIITLOvOTw&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[205]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">clip_download_response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">clip_download_url</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./output/temp.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">clip_download_response</span><span class="o">.</span><span class="n">iter_content</span><span class="p">()):</span>
+        <span class="n">w</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>
+
+0it [00:00, ?it/s]
+
+367it [00:00, 162254.62it/s]</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[208]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#unzip</span>
+<span class="n">zipped</span> <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="s1">&#39;./output/temp.zip&#39;</span><span class="p">)</span>
+<span class="n">zipped</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="s1">&#39;./output/temp&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">BadZipFile</span>                                Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-208-5ed56a7c5b9f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg">#unzip</span>
+<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>zipped <span class="ansi-blue-fg">=</span> zipfile<span class="ansi-blue-fg">.</span>ZipFile<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;./output/temp.zip&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> zipped<span class="ansi-blue-fg">.</span>extractall<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;./output/temp&#39;</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/zipfile.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, file, mode, compression, allowZip64)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1129</span>         <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   1130</span>             <span class="ansi-green-fg">if</span> mode <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#39;r&#39;</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 1131</span><span class="ansi-red-fg">                 </span>self<span class="ansi-blue-fg">.</span>_RealGetContents<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1132</span>             <span class="ansi-green-fg">elif</span> mode <span class="ansi-green-fg">in</span> <span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;w&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;x&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   1133</span>                 <span class="ansi-red-fg"># set the modified flag so central directory gets written</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/zipfile.py</span> in <span class="ansi-cyan-fg">_RealGetContents</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1196</span>             <span class="ansi-green-fg">raise</span> BadZipFile<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;File is not a zip file&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1197</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> endrec<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 1198</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">raise</span> BadZipFile<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;File is not a zip file&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1199</span>         <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>debug <span class="ansi-blue-fg">&gt;</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   1200</span>             print<span class="ansi-blue-fg">(</span>endrec<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">BadZipFile</span>: File is not a zip file</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[212]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ls output
+<span class="o">!</span>unzip output/temp.zip
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>temp.zip
+Archive:  output/temp.zip
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of output/temp.zip or
+        output/temp.zip.zip, and cannot find output/temp.zip.ZIP, period.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Activation-and-Downloading">Activation and Downloading<a class="anchor-link" href="#Activation-and-Downloading">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">activate</span><span class="p">(</span><span class="n">scene_ids</span><span class="p">,</span> <span class="n">item_links</span><span class="p">,</span> 
+             <span class="n">item_type</span><span class="o">=</span><span class="n">ITEM_TYPE</span><span class="p">,</span> <span class="n">asset_type</span><span class="o">=</span><span class="n">ASSET_TYPE</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">scene_id</span> <span class="ow">in</span> <span class="n">scene_ids</span><span class="p">:</span>
+        <span class="n">head_asset_url</span> <span class="o">=</span> <span class="n">get_asset_url</span><span class="p">(</span><span class="n">item_type</span><span class="p">,</span> <span class="n">scene_id</span><span class="p">)</span>
+        <span class="n">asset_response</span> <span class="o">=</span> <span class="n">responses</span><span class="o">.</span><span class="n">get</span>
+    
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[141]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#is this image&#39;s analytic asset already activated?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;analytic&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;analytic&#39;</span><span class="p">][</span><span class="s1">&#39;status&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dict_keys([&#39;_links&#39;, &#39;_permissions&#39;, &#39;expires_at&#39;, &#39;location&#39;, &#39;md5_digest&#39;, &#39;status&#39;, &#39;type&#39;])
+active
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[142]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let&#39;s activate this asset for download</span>
+<span class="c1"># some useful links</span>
+<span class="n">links</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;analytic&#39;</span><span class="p">][</span><span class="s1">&#39;_links&#39;</span><span class="p">];</span><span class="nb">print</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
+<span class="n">self_link</span> <span class="o">=</span> <span class="n">links</span><span class="p">[</span><span class="s1">&#39;_self&#39;</span><span class="p">]</span>
+<span class="n">activation_link</span> <span class="o">=</span> <span class="n">links</span><span class="p">[</span><span class="s1">&#39;activate&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;_self&#39;: &#39;https://api.planet.com/data/v1/assets/eyJpIjogIjIwMTYwNzE1XzE3NDMzM18wZTBlIiwgImMiOiAiUFNTY2VuZTRCYW5kIiwgInQiOiAiYW5hbHl0aWMiLCAiY3QiOiAiaXRlbS10eXBlIn0&#39;, &#39;activate&#39;: &#39;https://api.planet.com/data/v1/assets/eyJpIjogIjIwMTYwNzE1XzE3NDMzM18wZTBlIiwgImMiOiAiUFNTY2VuZTRCYW5kIiwgInQiOiAiYW5hbHl0aWMiLCAiY3QiOiAiaXRlbS10eXBlIn0/activate&#39;, &#39;type&#39;: &#39;https://api.planet.com/data/v1/asset-types/analytic&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[143]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># request the activation of this asset</span>
+<span class="n">activate_result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="n">activation_link</span><span class="p">,</span>
+    <span class="n">auth</span><span class="o">=</span><span class="n">PL_AUTH</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[144]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># check if the asset is activated</span>
+<span class="n">activation_status_result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="n">self_link</span><span class="p">,</span>
+    <span class="n">auth</span><span class="o">=</span><span class="n">PL_AUTH</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[145]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">activation_status_result</span> <span class="o">=</span> <span class="n">activation_status_result</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[146]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pprint</span><span class="p">(</span><span class="n">activation_status_result</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;_links&#39;: {&#39;_self&#39;: &#39;https://api.planet.com/data/v1/assets/eyJpIjogIjIwMTYwNzE1XzE3NDMzM18wZTBlIiwgImMiOiAiUFNTY2VuZTRCYW5kIiwgInQiOiAiYW5hbHl0aWMiLCAiY3QiOiAiaXRlbS10eXBlIn0&#39;,
+            &#39;activate&#39;: &#39;https://api.planet.com/data/v1/assets/eyJpIjogIjIwMTYwNzE1XzE3NDMzM18wZTBlIiwgImMiOiAiUFNTY2VuZTRCYW5kIiwgInQiOiAiYW5hbHl0aWMiLCAiY3QiOiAiaXRlbS10eXBlIn0/activate&#39;,
+            &#39;type&#39;: &#39;https://api.planet.com/data/v1/asset-types/analytic&#39;},
+ &#39;_permissions&#39;: [&#39;download&#39;],
+ &#39;expires_at&#39;: &#39;2019-05-07T21:55:40.948580&#39;,
+ &#39;location&#39;: &#39;https://api.planet.com/data/v1/download?token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJYV3U1dU43L0NabXluSkFuWGlJWlhvT09HcTNRbCtJak1pNmI5aEZVTkU5eWlCKzNWNElCUjV3RXE3Smdvb1NTamFNUWJwMG9ERjZ3bTcxTU51c3FQdz09IiwiaXRlbV90eXBlX2lkIjoiUFNTY2VuZTRCYW5kIiwidG9rZW5fdHlwZSI6InR5cGVkLWl0ZW0iLCJleHAiOjE1NTcyNjYxNDAsIml0ZW1faWQiOiIyMDE2MDcxNV8xNzQzMzNfMGUwZSIsImFzc2V0X3R5cGUiOiJhbmFseXRpYyJ9.qGZSIvHE-_l-QGju_0KJdLf8ATLmT4MuIMbqEMt5gY4UQRpKKzXQ_4zMT-SXa3d8Aiy1TvFe_Xxb2bdCtmqfhQ&#39;,
+ &#39;md5_digest&#39;: &#39;98ab48c724c5ddd62a2a4fa1e3971b99&#39;,
+ &#39;status&#39;: &#39;active&#39;,
+ &#39;type&#39;: &#39;analytic&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[147]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># download link</span>
+<span class="n">dlink</span> <span class="o">=</span> <span class="n">activation_status_result</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;download link: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">dlink</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>download link: 
+ https://api.planet.com/data/v1/download?token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJYV3U1dU43L0NabXluSkFuWGlJWlhvT09HcTNRbCtJak1pNmI5aEZVTkU5eWlCKzNWNElCUjV3RXE3Smdvb1NTamFNUWJwMG9ERjZ3bTcxTU51c3FQdz09IiwiaXRlbV90eXBlX2lkIjoiUFNTY2VuZTRCYW5kIiwidG9rZW5fdHlwZSI6InR5cGVkLWl0ZW0iLCJleHAiOjE1NTcyNjYxNDAsIml0ZW1faWQiOiIyMDE2MDcxNV8xNzQzMzNfMGUwZSIsImFzc2V0X3R5cGUiOiJhbmFseXRpYyJ9.qGZSIvHE-_l-QGju_0KJdLf8ATLmT4MuIMbqEMt5gY4UQRpKKzXQ_4zMT-SXa3d8Aiy1TvFe_Xxb2bdCtmqfhQ
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[148]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dlink_response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+        <span class="n">dlink</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[149]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">zipfile</span>
+<span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[150]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># scene_id = &#39;20160715_174333_0e0e&#39;</span>
+<span class="n">scene_id</span> <span class="o">=</span> <span class="s1">&#39;sample&#39;</span>
+<span class="n">outname</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;./output/</span><span class="si">{scene_id}</span><span class="s1">.zip&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outname</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">dlink_response</span><span class="o">.</span><span class="n">iter_content</span><span class="p">()):</span>
+        <span class="n">w</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>
+0it [00:00, ?it/s]
+13799it [00:00, 137988.82it/s]
+28331it [00:00, 140106.84it/s]
+42845it [00:00, 141579.09it/s]
+58063it [00:00, 144598.95it/s]
+73414it [00:00, 147159.94it/s]
+88890it [00:00, 149360.35it/s]
+104222it [00:00, 150523.79it/s]
+119644it [00:00, 151613.64it/s]
+135122it [00:00, 152547.64it/s]
+150519it [00:01, 152970.54it/s]
+166051it [00:01, 153665.64it/s]
+181554it [00:01, 154069.51it/s]
+197055it [00:01, 154348.74it/s]
+212504it [00:01, 154390.14it/s]
+227997it [00:01, 154549.32it/s]</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">SysCallError</span>                              Traceback (most recent call last)
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/urllib3/contrib/pyopenssl.py</span> in <span class="ansi-cyan-fg">recv_into</span><span class="ansi-blue-fg">(self, *args, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    296</span>         <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 297</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>connection<span class="ansi-blue-fg">.</span>recv_into<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    298</span>         <span class="ansi-green-fg">except</span> OpenSSL<span class="ansi-blue-fg">.</span>SSL<span class="ansi-blue-fg">.</span>SysCallError <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/OpenSSL/SSL.py</span> in <span class="ansi-cyan-fg">recv_into</span><span class="ansi-blue-fg">(self, buffer, nbytes, flags)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1821</span>             result <span class="ansi-blue-fg">=</span> _lib<span class="ansi-blue-fg">.</span>SSL_read<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_ssl<span class="ansi-blue-fg">,</span> buf<span class="ansi-blue-fg">,</span> nbytes<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">-&gt; 1822</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_raise_ssl_error<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_ssl<span class="ansi-blue-fg">,</span> result<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1823</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/OpenSSL/SSL.py</span> in <span class="ansi-cyan-fg">_raise_ssl_error</span><span class="ansi-blue-fg">(self, ssl, result)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1638</span>                     <span class="ansi-green-fg">if</span> errno <span class="ansi-blue-fg">!=</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 1639</span><span class="ansi-red-fg">                         </span><span class="ansi-green-fg">raise</span> SysCallError<span class="ansi-blue-fg">(</span>errno<span class="ansi-blue-fg">,</span> errorcode<span class="ansi-blue-fg">.</span>get<span class="ansi-blue-fg">(</span>errno<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1640</span>                 <span class="ansi-green-fg">raise</span> SysCallError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;Unexpected EOF&#34;</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">SysCallError</span>: (104, &#39;ECONNRESET&#39;)
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">OSError</span>                                   Traceback (most recent call last)
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/urllib3/response.py</span> in <span class="ansi-cyan-fg">_error_catcher</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    359</span>             <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 360</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">yield</span>
+<span class="ansi-green-intense-fg ansi-bold">    361</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/urllib3/response.py</span> in <span class="ansi-cyan-fg">read</span><span class="ansi-blue-fg">(self, amt, decode_content, cache_content)</span>
+<span class="ansi-green-intense-fg ansi-bold">    441</span>                 cache_content <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">False</span>
+<span class="ansi-green-fg">--&gt; 442</span><span class="ansi-red-fg">                 </span>data <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_fp<span class="ansi-blue-fg">.</span>read<span class="ansi-blue-fg">(</span>amt<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    443</span>                 <span class="ansi-green-fg">if</span> amt <span class="ansi-blue-fg">!=</span> <span class="ansi-cyan-fg">0</span> <span class="ansi-green-fg">and</span> <span class="ansi-green-fg">not</span> data<span class="ansi-blue-fg">:</span>  <span class="ansi-red-fg"># Platform-specific: Buggy versions of Python.</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/http/client.py</span> in <span class="ansi-cyan-fg">read</span><span class="ansi-blue-fg">(self, amt)</span>
+<span class="ansi-green-intense-fg ansi-bold">    448</span>             b <span class="ansi-blue-fg">=</span> bytearray<span class="ansi-blue-fg">(</span>amt<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 449</span><span class="ansi-red-fg">             </span>n <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>readinto<span class="ansi-blue-fg">(</span>b<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    450</span>             <span class="ansi-green-fg">return</span> memoryview<span class="ansi-blue-fg">(</span>b<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span>n<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>tobytes<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/http/client.py</span> in <span class="ansi-cyan-fg">readinto</span><span class="ansi-blue-fg">(self, b)</span>
+<span class="ansi-green-intense-fg ansi-bold">    492</span>         <span class="ansi-red-fg"># (for example, reading in 1k chunks)</span>
+<span class="ansi-green-fg">--&gt; 493</span><span class="ansi-red-fg">         </span>n <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>fp<span class="ansi-blue-fg">.</span>readinto<span class="ansi-blue-fg">(</span>b<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    494</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> n <span class="ansi-green-fg">and</span> b<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/socket.py</span> in <span class="ansi-cyan-fg">readinto</span><span class="ansi-blue-fg">(self, b)</span>
+<span class="ansi-green-intense-fg ansi-bold">    585</span>             <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 586</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_sock<span class="ansi-blue-fg">.</span>recv_into<span class="ansi-blue-fg">(</span>b<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    587</span>             <span class="ansi-green-fg">except</span> timeout<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/urllib3/contrib/pyopenssl.py</span> in <span class="ansi-cyan-fg">recv_into</span><span class="ansi-blue-fg">(self, *args, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    301</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 302</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">raise</span> SocketError<span class="ansi-blue-fg">(</span>str<span class="ansi-blue-fg">(</span>e<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    303</span>         <span class="ansi-green-fg">except</span> OpenSSL<span class="ansi-blue-fg">.</span>SSL<span class="ansi-blue-fg">.</span>ZeroReturnError <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-red-fg">OSError</span>: (104, &#39;ECONNRESET&#39;)
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">ProtocolError</span>                             Traceback (most recent call last)
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/requests/models.py</span> in <span class="ansi-cyan-fg">generate</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">    749</span>                 <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 750</span><span class="ansi-red-fg">                     </span><span class="ansi-green-fg">for</span> chunk <span class="ansi-green-fg">in</span> self<span class="ansi-blue-fg">.</span>raw<span class="ansi-blue-fg">.</span>stream<span class="ansi-blue-fg">(</span>chunk_size<span class="ansi-blue-fg">,</span> decode_content<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    751</span>                         <span class="ansi-green-fg">yield</span> chunk
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/urllib3/response.py</span> in <span class="ansi-cyan-fg">stream</span><span class="ansi-blue-fg">(self, amt, decode_content)</span>
+<span class="ansi-green-intense-fg ansi-bold">    493</span>             <span class="ansi-green-fg">while</span> <span class="ansi-green-fg">not</span> is_fp_closed<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_fp<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 494</span><span class="ansi-red-fg">                 </span>data <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>read<span class="ansi-blue-fg">(</span>amt<span class="ansi-blue-fg">=</span>amt<span class="ansi-blue-fg">,</span> decode_content<span class="ansi-blue-fg">=</span>decode_content<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    495</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/urllib3/response.py</span> in <span class="ansi-cyan-fg">read</span><span class="ansi-blue-fg">(self, amt, decode_content, cache_content)</span>
+<span class="ansi-green-intense-fg ansi-bold">    458</span>                         <span class="ansi-red-fg"># Content-Length are caught.</span>
+<span class="ansi-green-fg">--&gt; 459</span><span class="ansi-red-fg">                         </span><span class="ansi-green-fg">raise</span> IncompleteRead<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_fp_bytes_read<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>length_remaining<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    460</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/contextlib.py</span> in <span class="ansi-cyan-fg">__exit__</span><span class="ansi-blue-fg">(self, type, value, traceback)</span>
+<span class="ansi-green-intense-fg ansi-bold">     98</span>             <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 99</span><span class="ansi-red-fg">                 </span>self<span class="ansi-blue-fg">.</span>gen<span class="ansi-blue-fg">.</span>throw<span class="ansi-blue-fg">(</span>type<span class="ansi-blue-fg">,</span> value<span class="ansi-blue-fg">,</span> traceback<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    100</span>             <span class="ansi-green-fg">except</span> StopIteration <span class="ansi-green-fg">as</span> exc<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/urllib3/response.py</span> in <span class="ansi-cyan-fg">_error_catcher</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    377</span>                 <span class="ansi-red-fg"># This includes IncompleteRead.</span>
+<span class="ansi-green-fg">--&gt; 378</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">raise</span> ProtocolError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;Connection broken: %r&#39;</span> <span class="ansi-blue-fg">%</span> e<span class="ansi-blue-fg">,</span> e<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    379</span> 
+
+<span class="ansi-red-fg">ProtocolError</span>: (&#39;Connection broken: OSError(&#34;(104, \&#39;ECONNRESET\&#39;)&#34;,)&#39;, OSError(&#34;(104, &#39;ECONNRESET&#39;)&#34;,))
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">ChunkedEncodingError</span>                      Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-150-2e722e282e5e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> outname <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">f&#39;./output/{scene_id}.zip&#39;</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-green-fg">with</span> open<span class="ansi-blue-fg">(</span>outname<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;wb&#39;</span><span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">as</span> w<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">for</span> data <span class="ansi-green-fg">in</span> tqdm<span class="ansi-blue-fg">(</span>dlink_response<span class="ansi-blue-fg">.</span>iter_content<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span>         w<span class="ansi-blue-fg">.</span>write<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      7</span> 
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/tqdm/_tqdm.py</span> in <span class="ansi-cyan-fg">__iter__</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1020</span>                 &#34;&#34;&#34;), fp_write=getattr(self.fp, &#39;write&#39;, sys.stderr.write))
+<span class="ansi-green-intense-fg ansi-bold">   1021</span> 
+<span class="ansi-green-fg">-&gt; 1022</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">for</span> obj <span class="ansi-green-fg">in</span> iterable<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   1023</span>                 <span class="ansi-green-fg">yield</span> obj
+<span class="ansi-green-intense-fg ansi-bold">   1024</span>                 <span class="ansi-red-fg"># Update and possibly print the progressbar.</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/requests/models.py</span> in <span class="ansi-cyan-fg">generate</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">    751</span>                         <span class="ansi-green-fg">yield</span> chunk
+<span class="ansi-green-intense-fg ansi-bold">    752</span>                 <span class="ansi-green-fg">except</span> ProtocolError <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 753</span><span class="ansi-red-fg">                     </span><span class="ansi-green-fg">raise</span> ChunkedEncodingError<span class="ansi-blue-fg">(</span>e<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    754</span>                 <span class="ansi-green-fg">except</span> DecodeError <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    755</span>                     <span class="ansi-green-fg">raise</span> ContentDecodingError<span class="ansi-blue-fg">(</span>e<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">ChunkedEncodingError</span>: (&#39;Connection broken: OSError(&#34;(104, \&#39;ECONNRESET\&#39;)&#34;,)&#39;, OSError(&#34;(104, &#39;ECONNRESET&#39;)&#34;,))</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[151]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dlink_result</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-151-d72f481019cc&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>dlink_result<span class="ansi-blue-fg">.</span>json<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/requests/models.py</span> in <span class="ansi-cyan-fg">json</span><span class="ansi-blue-fg">(self, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    895</span>                     <span class="ansi-red-fg"># used.</span>
+<span class="ansi-green-intense-fg ansi-bold">    896</span>                     <span class="ansi-green-fg">pass</span>
+<span class="ansi-green-fg">--&gt; 897</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> complexjson<span class="ansi-blue-fg">.</span>loads<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>text<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    898</span> 
+<span class="ansi-green-intense-fg ansi-bold">    899</span>     <span class="ansi-blue-fg">@</span>property
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/requests/models.py</span> in <span class="ansi-cyan-fg">text</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    855</span>         <span class="ansi-red-fg"># Fallback to auto-detected encoding.</span>
+<span class="ansi-green-intense-fg ansi-bold">    856</span>         <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>encoding <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 857</span><span class="ansi-red-fg">             </span>encoding <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>apparent_encoding
+<span class="ansi-green-intense-fg ansi-bold">    858</span> 
+<span class="ansi-green-intense-fg ansi-bold">    859</span>         <span class="ansi-red-fg"># Decode unicode from given encoding.</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/requests/models.py</span> in <span class="ansi-cyan-fg">apparent_encoding</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    725</span>     <span class="ansi-green-fg">def</span> apparent_encoding<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    726</span>         <span class="ansi-blue-fg">&#34;&#34;&#34;The apparent encoding, provided by the chardet library.&#34;&#34;&#34;</span>
+<span class="ansi-green-fg">--&gt; 727</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> chardet<span class="ansi-blue-fg">.</span>detect<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>content<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;encoding&#39;</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    728</span> 
+<span class="ansi-green-intense-fg ansi-bold">    729</span>     <span class="ansi-green-fg">def</span> iter_content<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> chunk_size<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> decode_unicode<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/chardet/__init__.py</span> in <span class="ansi-cyan-fg">detect</span><span class="ansi-blue-fg">(byte_str)</span>
+<span class="ansi-green-intense-fg ansi-bold">     36</span>             byte_str <span class="ansi-blue-fg">=</span> bytearray<span class="ansi-blue-fg">(</span>byte_str<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     37</span>     detector <span class="ansi-blue-fg">=</span> UniversalDetector<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 38</span><span class="ansi-red-fg">     </span>detector<span class="ansi-blue-fg">.</span>feed<span class="ansi-blue-fg">(</span>byte_str<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     39</span>     <span class="ansi-green-fg">return</span> detector<span class="ansi-blue-fg">.</span>close<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/chardet/universaldetector.py</span> in <span class="ansi-cyan-fg">feed</span><span class="ansi-blue-fg">(self, byte_str)</span>
+<span class="ansi-green-intense-fg ansi-bold">    209</span>                 self<span class="ansi-blue-fg">.</span>_charset_probers<span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span>Latin1Prober<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    210</span>             <span class="ansi-green-fg">for</span> prober <span class="ansi-green-fg">in</span> self<span class="ansi-blue-fg">.</span>_charset_probers<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 211</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">if</span> prober<span class="ansi-blue-fg">.</span>feed<span class="ansi-blue-fg">(</span>byte_str<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> ProbingState<span class="ansi-blue-fg">.</span>FOUND_IT<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    212</span>                     self.result = {&#39;encoding&#39;: prober.charset_name,
+<span class="ansi-green-intense-fg ansi-bold">    213</span>                                    <span class="ansi-blue-fg">&#39;confidence&#39;</span><span class="ansi-blue-fg">:</span> prober<span class="ansi-blue-fg">.</span>get_confidence<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/chardet/charsetgroupprober.py</span> in <span class="ansi-cyan-fg">feed</span><span class="ansi-blue-fg">(self, byte_str)</span>
+<span class="ansi-green-intense-fg ansi-bold">     69</span>             <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> prober<span class="ansi-blue-fg">.</span>active<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     70</span>                 <span class="ansi-green-fg">continue</span>
+<span class="ansi-green-fg">---&gt; 71</span><span class="ansi-red-fg">             </span>state <span class="ansi-blue-fg">=</span> prober<span class="ansi-blue-fg">.</span>feed<span class="ansi-blue-fg">(</span>byte_str<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     72</span>             <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> state<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     73</span>                 <span class="ansi-green-fg">continue</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/chardet/sbcharsetprober.py</span> in <span class="ansi-cyan-fg">feed</span><span class="ansi-blue-fg">(self, byte_str)</span>
+<span class="ansi-green-intense-fg ansi-bold">     77</span>     <span class="ansi-green-fg">def</span> feed<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> byte_str<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     78</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> self<span class="ansi-blue-fg">.</span>_model<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;keep_english_letter&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 79</span><span class="ansi-red-fg">             </span>byte_str <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>filter_international_words<span class="ansi-blue-fg">(</span>byte_str<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     80</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> byte_str<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     81</span>             <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>state
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/site-packages/chardet/charsetprober.py</span> in <span class="ansi-cyan-fg">filter_international_words</span><span class="ansi-blue-fg">(buf)</span>
+<span class="ansi-green-intense-fg ansi-bold">     85</span>         <span class="ansi-red-fg"># the end.</span>
+<span class="ansi-green-intense-fg ansi-bold">     86</span>         words = re.findall(b&#39;[a-zA-Z]*[\x80-\xFF]+[a-zA-Z]*[^a-zA-Z\x80-\xFF]?&#39;,
+<span class="ansi-green-fg">---&gt; 87</span><span class="ansi-red-fg">                            buf)
+</span><span class="ansi-green-intense-fg ansi-bold">     88</span> 
+<span class="ansi-green-intense-fg ansi-bold">     89</span>         <span class="ansi-green-fg">for</span> word <span class="ansi-green-fg">in</span> words<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">~/miniconda3/envs/pyviz/lib/python3.6/re.py</span> in <span class="ansi-cyan-fg">findall</span><span class="ansi-blue-fg">(pattern, string, flags)</span>
+<span class="ansi-green-intense-fg ansi-bold">    220</span> 
+<span class="ansi-green-intense-fg ansi-bold">    221</span>     Empty matches are included in the result.&#34;&#34;&#34;
+<span class="ansi-green-fg">--&gt; 222</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> _compile<span class="ansi-blue-fg">(</span>pattern<span class="ansi-blue-fg">,</span> flags<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>findall<span class="ansi-blue-fg">(</span>string<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    223</span> 
+<span class="ansi-green-intense-fg ansi-bold">    224</span> <span class="ansi-green-fg">def</span> finditer<span class="ansi-blue-fg">(</span>pattern<span class="ansi-blue-fg">,</span> string<span class="ansi-blue-fg">,</span> flags<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="View-downloaded-image-using-rasterio">View downloaded image using rasterio<a class="anchor-link" href="#View-downloaded-image-using-rasterio">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[186]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">rasterio</span> <span class="k">as</span> <span class="nn">rio</span>
+<span class="kn">from</span> <span class="nn">rasterio.plot</span> <span class="kn">import</span> <span class="n">reshape_as_image</span><span class="p">,</span> <span class="n">reshape_as_raster</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="kn">import</span> <span class="nn">pdb</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[225]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;./images/20160731_174506_0e30_3B_AnalyticMS.tif&#39;</span>
+<span class="n">img</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="k">with</span> <span class="n">rio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">ds</span><span class="p">:</span>
+<span class="c1">#     pdb.set_trace()</span>
+    <span class="n">b</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">n</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dstack</span><span class="p">([</span><span class="n">r</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">b</span><span class="p">])</span>
+<span class="c1">#     img = reshape_as_image(ds.read())</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[225]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.image.AxesImage at 0x7f80f0772400&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[238]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span><span class="p">,</span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">cimg</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="n">r</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">b</span><span class="p">]):</span>
+    <span class="n">ax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">cimg</span><span class="p">))</span>
+    
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[224]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dstack</span><span class="p">([</span><span class="n">b</span><span class="p">,</span><span class="n">g</span><span class="p">]);</span> <span class="nb">print</span><span class="p">(</span><span class="n">temp</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(4798, 9035, 2)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+ 
+
+</body>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        " linebreaks: { automatic: true, width: '95% container' }, " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="https://cocoaaa.github.io/articles/2020/01/12/introduction-to-planet-api/">posted at 16:25</a>
+                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/Geospatial" rel="tag">Geospatial</a>
+                </div>
+            </article>
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+                &middot;
+                <a href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="alternate">Atom Feed</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+
+</html>

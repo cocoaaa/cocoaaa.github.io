@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - ML</title><link href="http://cocoaaa.github.io/" rel="alternate"></link><link href="http://cocoaaa.github.io/feeds/ML.atom.xml" rel="self"></link><id>http://cocoaaa.github.io/</id><updated>2019-05-17T17:00:08-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Interactive demo of precision-recall metric</title><link href="http://cocoaaa.github.io/articles/2019/05/17/interactive-demo-of-precision-recall-metric/" rel="alternate"></link><published>2019-05-17T17:00:08-07:00</published><updated>2019-05-17T17:00:08-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-05-17:articles/2019/05/17/interactive-demo-of-precision-recall-metric/</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - ML</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/ML.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2020-01-12T16:25:33-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Perceptron with MNIST dataset</title><link href="https://cocoaaa.github.io/articles/2020/01/12/perceptron-with-mnist-dataset/" rel="alternate"></link><published>2020-01-12T16:25:33-08:00</published><updated>2020-01-12T16:25:33-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-12:articles/2020/01/12/perceptron-with-mnist-dataset/</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Load-libraries"&gt;Load libraries&lt;a class="anchor-link" href="#Load-libraries"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;
@@ -7,7 +7,8 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;</summary></entry><entry><title>Perceptron with MNIST dataset</title><link href="http://cocoaaa.github.io/articles/2019/05/17/perceptron-with-mnist-dataset/" rel="alternate"></link><published>2019-05-17T17:00:03-07:00</published><updated>2019-05-17T17:00:03-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-05-17:articles/2019/05/17/perceptron-with-mnist-dataset/</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;div class="input"&gt;</summary></entry><entry><title>Perceptron algorithm</title><link href="https://cocoaaa.github.io/articles/2020/01/12/perceptron-algorithm/" rel="alternate"></link><published>2020-01-12T16:25:33-08:00</published><updated>2020-01-12T16:25:33-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-12:articles/2020/01/12/perceptron-algorithm/</id><summary type="html">&lt;p&gt;Interactive exploration on what is perceptron algorithm, how it works,
+and its relationships to logistic regression(ie. linear classifier)&lt;/p&gt;</summary></entry><entry><title>Interactive demo of precision-recall metric</title><link href="https://cocoaaa.github.io/articles/2020/01/12/interactive-demo-of-precision-recall-metric/" rel="alternate"></link><published>2020-01-12T16:25:33-08:00</published><updated>2020-01-12T16:25:33-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-12:articles/2020/01/12/interactive-demo-of-precision-recall-metric/</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Load-libraries"&gt;Load libraries&lt;a class="anchor-link" href="#Load-libraries"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;
@@ -15,7 +16,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;</summary></entry><entry><title>Interactive demo of the sigmoid activation function</title><link href="http://cocoaaa.github.io/articles/2019/05/17/interactive-demo-of-the-sigmoid-activation-function/" rel="alternate"></link><published>2019-05-17T16:59:56-07:00</published><updated>2019-05-17T16:59:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-05-17:articles/2019/05/17/interactive-demo-of-the-sigmoid-activation-function/</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;div class="input"&gt;</summary></entry><entry><title>Interactive demo of the sigmoid activation function</title><link href="https://cocoaaa.github.io/articles/2020/01/12/interactive-demo-of-the-sigmoid-activation-function/" rel="alternate"></link><published>2020-01-12T16:25:33-08:00</published><updated>2020-01-12T16:25:33-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-12:articles/2020/01/12/interactive-demo-of-the-sigmoid-activation-function/</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Load-libraries"&gt;Load libraries&lt;a class="anchor-link" href="#Load-libraries"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;
@@ -23,32 +24,12 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;</summary></entry><entry><title>Introduction to Clustering</title><link href="http://cocoaaa.github.io/articles/2019/05/16/introduction-to-clustering/" rel="alternate"></link><published>2019-05-16T17:46:22-07:00</published><updated>2019-05-16T17:46:22-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-05-16:articles/2019/05/16/introduction-to-clustering/</id><summary type="html">&lt;!--status: draft--&gt;
-
-&lt;h1&gt;Outline&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Clustering as a method of Unsupervised Learning&lt;/li&gt;
-&lt;li&gt;Problem setup&lt;/li&gt;
-&lt;li&gt;Examples&lt;/li&gt;
-&lt;li&gt;Categorize current approaches and give examples/applications&lt;/li&gt;
-&lt;li&gt;Set up the image segmentation problem&lt;/li&gt;
-&lt;li&gt;Mathematical setup&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;TODO&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;[ ] &lt;/li&gt;
-&lt;li&gt;[ ] &lt;/li&gt;
-&lt;li&gt;[ ] &lt;/li&gt;
-&lt;li&gt;[ ] &lt;/li&gt;
-&lt;li&gt;[ ] &lt;/li&gt;
-&lt;li&gt;[ ] &lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>Linear Regression</title><link href="http://cocoaaa.github.io/articles/2019/05/16/linear-regression/" rel="alternate"></link><published>2019-05-16T17:46:17-07:00</published><updated>2019-05-16T17:46:17-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-05-16:articles/2019/05/16/linear-regression/</id><summary type="html">&lt;p&gt;Todo:
+&lt;div class="input"&gt;</summary></entry><entry><title>Linear Regression</title><link href="https://cocoaaa.github.io/articles/2020/01/12/linear-regression/" rel="alternate"></link><published>2020-01-12T16:25:33-08:00</published><updated>2020-01-12T16:25:33-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-12:articles/2020/01/12/linear-regression/</id><summary type="html">&lt;p&gt;Todo:
 - [ ] Set up the problem
 - [ ] Simple housing problem
 - [ ] Frequentist view - minimize the squared-loss
 - [ ] Probablistic view - Discriminative classifier to model conditional distribution
-- [ ] Interactive example using &lt;code&gt;holoviews&lt;/code&gt; or &lt;code&gt;ipywwidgets&lt;/code&gt;&lt;/p&gt;</summary></entry><entry><title>Perceptron algorithm</title><link href="http://cocoaaa.github.io/articles/2019/05/16/perceptron-algorithm/" rel="alternate"></link><published>2019-05-16T17:46:12-07:00</published><updated>2019-05-16T17:46:12-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-05-16:articles/2019/05/16/perceptron-algorithm/</id><summary type="html">&lt;p&gt;Interactive exploration on what is perceptron algorithm, how it works,
-and its relationships to logistic regression(ie. linear classifier)&lt;/p&gt;</summary></entry><entry><title>Demo on CIFAR10 dataset</title><link href="http://cocoaaa.github.io/articles/2019/03/31/demo-cifar10/" rel="alternate"></link><published>2019-03-31T16:52:33-07:00</published><updated>2019-03-31T16:52:33-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-03-31:articles/2019/03/31/demo-cifar10/</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+- [ ] Interactive example using &lt;code&gt;holoviews&lt;/code&gt; or &lt;code&gt;ipywwidgets&lt;/code&gt;&lt;/p&gt;</summary></entry><entry><title>Demo on CIFAR10 dataset</title><link href="https://cocoaaa.github.io/articles/2020/01/12/demo-cifar10/" rel="alternate"></link><published>2020-01-12T16:25:32-08:00</published><updated>2020-01-12T16:25:32-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-12:articles/2020/01/12/demo-cifar10/</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h1 id="CNN-example-from-official-PyTorch"&gt;CNN example from official PyTorch&lt;a class="anchor-link" href="#CNN-example-from-official-PyTorch"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;ul&gt;
@@ -67,4 +48,23 @@ and its relationships to logistic regression(ie. linear classifier)&lt;/p&gt;</s
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;</summary></entry></feed>
+&lt;div class="input"&gt;</summary></entry><entry><title>Introduction to Clustering</title><link href="https://cocoaaa.github.io/articles/2020/01/12/introduction-to-clustering/" rel="alternate"></link><published>2020-01-12T16:25:32-08:00</published><updated>2020-01-12T16:25:32-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-12:articles/2020/01/12/introduction-to-clustering/</id><summary type="html">&lt;!--status: draft--&gt;
+
+&lt;h1&gt;Outline&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Clustering as a method of Unsupervised Learning&lt;/li&gt;
+&lt;li&gt;Problem setup&lt;/li&gt;
+&lt;li&gt;Examples&lt;/li&gt;
+&lt;li&gt;Categorize current approaches and give examples/applications&lt;/li&gt;
+&lt;li&gt;Set up the image segmentation problem&lt;/li&gt;
+&lt;li&gt;Mathematical setup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;TODO&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;li&gt;[ ] &lt;/li&gt;
+&lt;/ul&gt;</summary></entry></feed>
