@@ -340,3 +340,14 @@ footer p { margin: 0; }
 .right { float: right; }
 
 .clear { clear: both; }
+
+/*For imchart map and chart diagrams*/
+#mapdiv {
+  height: 400px;
+  background-color:#f3f6fa;
+}
+
+#chartdiv {
+  height: 180px;
+  background-color:#f3f6fa;
+}
