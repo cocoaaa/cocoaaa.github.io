@@ -211,7 +211,7 @@ chart.data = [
   {
     category: "",
     year: "2007",
-    text: "Hotchkiss High"// \n(CT, USA)"
+    text: "Hotchkiss \nHigh School"// \n(CT, USA)"
   },
   {
     category: "",
