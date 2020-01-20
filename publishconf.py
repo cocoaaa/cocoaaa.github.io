@@ -11,7 +11,7 @@ from pelicanconf_blue_penguin import *
 print('theme: ', THEME)
 
 # pdb.set_trace()
-SITEURL = 'http://cocoaaa.github.io'
+SITEURL = 'https://cocoaaa.github.io'
 RELATIVE_URLS = False
 
 SHOW_FEED = True
