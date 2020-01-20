@@ -5,6 +5,7 @@ License: none (public domain)
 /* Mockingbird Theme by Nevan Scott nevanscott.com */
 /* Modified by Jody Frankowski */
 /* Modified by ix5 */
+/*Modified by cocoaaa*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -105,7 +106,7 @@ blockquote {
 
 .date {
     color: #CCC;
-    float: left;
+    /*float: left;*/
     clear: both;
     width: 130px;
     font-size: 1.5em;
@@ -340,3 +341,28 @@ footer p { margin: 0; }
 .right { float: right; }
 
 .clear { clear: both; }
+
+/*For imchart map and chart diagrams*/
+#mapdiv {
+  height: 400px;
+  background-color:#f3f6fa;
+}
+
+#chartdiv {
+  height: 180px;
+  background-color:#f3f6fa;
+}
+a, figure {
+    display: inline-block;
+}
+
+figcaption {
+    margin: 10px 0 0 0;
+    font-variant: small-caps;
+    font-family: Arial;
+    font-weight: bold;
+    color: #bb3333;
+}
+figure {
+    padding: 5px;
+}
