@@ -1,12 +1,14 @@
 Title: Welcome! 
-URL:
-save_as: index.html
-memo: home
+Modified: 2020-01-14  
+Template: home  
+URL:  
+save_as: index.html  
+memo: home  
 javascripts: https://www.amcharts.com/lib/4/core.js, https://www.amcharts.com/lib/4/charts.js, https://www.amcharts.com/lib/4/maps.js, https://www.amcharts.com/lib/4/geodata/worldLow.js, https://www.amcharts.com/lib/4/geodata/usaTerritoriesLow.js, https://www.amcharts.com/lib/4/themes/animated.js, https://www.amcharts.com/lib/4/plugins/timeline.js,  my_trajectory.js
 stylesheets: my_trajectory.css
 
-<div id="chartdiv"></div>
-<div id="mapdiv"></div>
+<div id="chartdiv" height="400"></div>
+<div id="mapdiv" height="600"></div>
 
 I'm a 2nd year PhD @ USC studying the lower-dimensional representation of complex unstructured datasets (eg. multi-spectral satellite images, 3D MRI scans) using deep learning. My work lies in the intersection of statistical machine learning, information theory and coding theory.  I also work on interactive visualization of high-dimensional datasets and complex models (eg. deep neural nets) for a guide to better insight and understanding.
 
@@ -26,13 +28,19 @@ More about [me](/pages/about-me.html) and papers [here](/pages/publications.html
 ---
 More on my research interest 
 
-I'm interested in distilling the informational content from the representational structure imposed by domain-specific structures (eg. natural  images satisfy and define a set of  rules that make us('intelligent' entities) to recognize them as 'natural' images,  whereas there is an implicit  set of rules that defines what a proper 'English' sentence (as opposed to 'French' langauge or a video data).   also work on understanding the dynamics of neural networks from information-theoretic perspectives. 
+I'm interested in distilling the informational content from the representational structure imposed by domain-specific structures (eg. natural  images satisfy and define a set of  rules that make us('intelligent' entities) to recognize them as 'natural' images,  whereas there is an implicit  set of rules that defines what a proper 'English' sentence (as opposed to 'French' language or a video data).   also work on understanding the dynamics of neural networks from information-theoretic perspectives. 
 
 
 
 ## Recent updates
-- I gave my first tutorial @ PyData LA, 2019 on "Experimental ML with Holoviews/Geoviews + Pyorch". Here are my [talk](#) and [materials](https://github.com/cocoaaa/PyData-LA-2019)!
-- I participated in [Geo4Good](https://sites.google.com/earthoutreach.org/geoforgood19/home) @ Google in Mtn View, CA! Check out some [highlights](#) of inspiring project going on in Google Earth Engine and Studio. <!-- todo --> 
+- I gave my first tutorial @ PyData LA, 2019 on "Experimental ML with Holoviews/Geoviews + Pyorch". Here are my talk [slides](/pdfs/experimental-ml-2019-hayley.pdf), [video](#), and [jupyter notebook materials](https://github.com/cocoaaa/PyData-LA-2019)!
+
+| | | |
+|---|---|---|
+|![pydata-0](/images/pydata-0.png)|![pydata-1](/images/pydata-1.png)|![pydata-1-2](/images/pydata-1-2.png) |
+|![pydata-2](/images/pydata-2.png)|![pydata-3](/images/pydata-3.png)| ![pydata-4](/images/pydata-4.png)|
+
+- I participated in [Geo4Good](https://sites.google.com/earthoutreach.org/geoforgood19/home) @ Google in Mtn View, CA! Check out some [highlights](https://tinyurl.com/wdoyepy) of inspiring project going on using Google Earth Engine and Studio. 
 - New post: "Total variation, KL-Divergence, Maximum Likelihood"
 - New post: "Let's be honest: peeling the assumptions that get us to Variational Autoencoders"
 - New post: "Thinking about an observer vs. the observed"
