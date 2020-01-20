@@ -211,34 +211,34 @@ chart.data = [
   {
     category: "",
     year: "2007",
-    text: "Hotchkiss High \n(CT, USA)"
+    text: "Hotchkiss \nHigh School"// \n(CT, USA)"
   },
   {
     category: "",
     year: "2012",
-    text: "MIT \n(Cambridge, MA)"
+    text: "MIT"// \n(Cambridge, MA)"
   },
   {
     category: "",
     year: "2015",
-    text: "INRIA \n(France)"
+    text: "INRIA"// \n(France)"
   },
   {
     category: "",
     year: "2016",
-    text: "Keecker \n(France)"
+    text: "Keecker \nRobotics"// \n(France)"
   },
   {
     category: "",
     year: "2018",
     month: "02",
-    text: "Apple Inc. \n(Sunnyvale)"
+    text: "Apple Inc." // \n(Sunnyvale)"
   },
   {
     category: "",
     year: "2019",
     month: "09",
-    text: "USC \n(Los Angeles)"
+    text: "USC"// \n(Los Angeles)"
   }
   // {
   //   "category": "",
@@ -257,7 +257,7 @@ chart.data = [
 chart.dateFormatter.inputDateFormat = "yyyy";
 
 chart.fontSize = 12;
-chart.tooltipContainer.fontSize = 11;
+chart.tooltipContainer.fontSize = 12;
 
 var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
 categoryAxis.dataFields.category = "category";
@@ -290,8 +290,8 @@ var interfaceColors = new am4core.InterfaceColorSet();
 
 series.tooltip.pointerOrientation = "down";
 
-var distance = 70;
-var angle = 55;
+var distance = 30;
+var angle = 50;
 
 var bullet = series.bullets.push(new am4charts.Bullet());
 
@@ -340,6 +340,7 @@ yearLabel.interactionsEnabled = false;
 var label = bullet.createChild(am4core.Label);
 label.propertyFields.text = "text";
 label.strokeOpacity = 1;
+label.fontSize = 12;
 // label.stroke = "#fff";
 
 label.horizontalCenter = "right";
