@@ -71,7 +71,7 @@ INDEX_SAVE_AS = 'blog_index.html' #'/index.html'
 # AUTHOR_SAVE_AS = 'about.html'
 AUTHORS_SAVE_AS = '' # Empty string to prevent this html page from being generated
 
-ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}'
 ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 
 PAGE_URL = 'pages/{slug}'
