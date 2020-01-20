@@ -20,9 +20,9 @@ representation of complex, unstructured geospatial datasets like multi-spectral 
 - hybrid intelligent systems that incorporate **knowledge-based 
 (symbolic) AI** to **neural networks**
 
-At USC, I'm working with Professor [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
-at ISI's [Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/) and
-Professor [Yao-Yi Chiang](https://yaoyichi.github.io/) at the [Spatial Computing and Informatics](http://spatial-computing.github.io/)) lab.
+At USC, I'm working with 
+Prof. [Yao-Yi Chiang](https://yaoyichi.github.io/) at the [Spatial Computing and Informatics](http://spatial-computing.github.io/) lab and Prof. [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
+at ISI's [Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/).
 
 
 Before USC, I studied at **Massachusetts Institute of Technology** Mathematics and Electrical Engineering and Computer Science (EECS)
