@@ -1,1 +1,15 @@
 Title: Xarray Introduction
+Date: 2019-07-01
+Summary: This is my sketchpad to understand xr.DataArray and xr.Dataset constructors.
+<p>
+Keys:
+- xarray's main motivation is to model after netcdf format
+- it handles pandas's limitation on 2D (or 3D at max) dataframe
+- it maintains the pandas's named dimensions idea
+- we can think of it as a multidimensional array(numpy.ndarray) with named dimensions
+	- each dimension has a name and tick-marks
+	- These tick-marks are called coordinates
+	- numpy doesn't have this feature, so all of its indexing is by integer/order based
+	- In xarray, since we have a name for each dimension (ie. axis) as well as a list of coordinates (ie. tick-marks) for each dimension (again, ie. axis), we can refer to a value in the xrray DataArray container with more semantic-aware indexing.
+</p>
+
