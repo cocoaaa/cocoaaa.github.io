@@ -13,7 +13,7 @@ Often confusing categorization of a mathematical model:
 - ...? vs. stochastic/random 
     - a stochastic (or random) process means, 
     
-    ![stochastic-process](images/stochastic-process.png)
+    <p hidden>![stochastic-process](images/stochastic-process.png)</p>
 
 I think better way to put this confusion into words is: "Nondeterinistc vs. Probabilistic models"
 - [lavalle 2006](http://planning.cs.uiuc.edu/node440.html)

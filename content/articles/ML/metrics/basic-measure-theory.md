@@ -1,3 +1,7 @@
+Title: Basic concepts in measure theory
+Date: 2020-02-22
+Tags: measure-theory, random-variable, measure, probability-theory
+
 ## Measure
 
 ![orbanz-1-2][/pdfs/Orbanz-1-2.pdf]
