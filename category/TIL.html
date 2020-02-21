@@ -42,18 +42,32 @@
 
             <article class="post">
                 <h2 class="title">
-                    <a href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking" rel="bookmark" title="Permanent Link to &quot;Stochastic Thinking&quot;">Stochastic Thinking</a>
+                    <a href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking-predictive-non-determinism" rel="bookmark" title="Permanent Link to &quot;Stochastic Thinking: Predictive non-determinism&quot;">Stochastic Thinking: Predictive non-determinism</a>
                 </h2>
 
                 
                 
 
                 <p>MIT 6.0002 Lec4: Stochastic Thinking
-- <a href="https://www.youtube.com/watch?v=-1BnXEwHUok">YOUTUBE</a></p>
+- <a href="https://www.youtube.com/watch?v=-1BnXEwHUok">YOUTUBE</a>
+- <img alt="predictive-nondeterminism" src="images/predictive-nondeterminism.png"></p>
+<p>Often confusing categorization of a mathematical model:
+- <a href="https://tinyurl.com/sxg4ejt">SE</a>
+    - NB: in CS, people often use "deterministic" to mean non-randomized. This causes confusion:
+        &gt; "Determinism" means non-randomized. But, "Non-determinism" does <strong>not</strong> mean "randomized".
+- Determinism vs. Non-Determinism
+- ...? vs. stochastic/random 
+    - a stochastic (or random) process means, </p>
+<div class="highlight"><pre><span></span><span class="err">&amp;lt;p hidden&amp;gt;![stochastic-process](images/stochastic-process.png)&amp;lt;/p&amp;gt;</span>
+</pre></div>
+
+
+<p>I think better way to put this confusion into words is: "Nondeterinistc vs. Probabilistic models"
+- <a href="http://planning.cs.uiuc.edu/node440.html">lavalle 2006</a></p>
                 <div class="clear"></div>
 
                 <div class="info">
-                    <a href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking">posted at 11:28</a>
+                    <a href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking-predictive-non-determinism">posted at 00:00</a>
                     &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
                 </div>
             </article>            <h4 class="date">Jan 15, 2020</h4>
@@ -235,7 +249,7 @@ development config file</p>
 the local branch <code>local-gh-branch</code></li>
 </ol>
 <h2>Workflow</h2>
-<p>Key: Do every work in <code>dev</code> branch. Do not touch <code>blog-build</code> or <code>master</code>
+<p>Key: Do every work in <code>dev</code> branch. Do not touch <code>blog-build</code> or <code>master</code>. 
 <code>blog-build</code> will be indirectly modified by <code>ghp-import</code> (or <code>make publish-to-github</code>)
 and <code>master</code> is the branch that Github will access to show my website. 
 So, manage the source (and outputs) only in <code>dev</code> branch.</p>
@@ -244,33 +258,44 @@ So, manage the source (and outputs) only in <code>dev</code> branch.</p>
 </ul>
 <div class="highlight"><pre><span></span>conda activate pelican-blog
 <span class="nb">cd</span> ~/Workspace/Blog
-<span class="c1"># add new files  under `content`</span>
-make devserver
+
+<span class="c1"># Make sure you are on `dev` branch</span>
+git checkout dev
+
+<span class="c1"># Add new files  under `content`</span>
+git add my-article.md
+
+<span class="c1"># Generate the content with pelican</span>
 make html <span class="c1"># or, make regenerate </span>
-<span class="c1"># open a browser and go to localhost:8000</span>
+
+<span class="c1"># Start a local server </span>
+make devserver
+
+<span class="c1"># Open a browser and go to localhost:8000</span>
 </pre></div>
 
 
 <ul>
 <li>
 <p>Global dev  </p>
-<ul>
+<ol>
 <li>Use <code>make publish</code> instead of <code>make html</code></li>
 <li>Update the <code>blog-build</code> branch with contents in <code>output</code> folder</li>
 <li>Push the <code>blog-build</code> branch's content to <code>origin/master</code></li>
-<li>In one line: </li>
-</ul>
-<p><code>bash
+</ol>
+<p>These three steps can be done in one line: 
+<code>bash
 make publish-to-github</code></p>
 </li>
 <li>
-<p>Version control the source</p>
+<p>Version control the source<br>
+  Important: Write new contents only on the <code>dev</code> branch
+    <code>bash
+    git add &lt;files&gt; # make sure not to push the output folder
+    git cm "&lt;commit message&gt;"
+    git push origin dev #origin/dev is the remote branch that keeps track of blog sources</code></p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span>git add &lt;files&gt; <span class="c1"># make sure not to push the output folder</span>
-git cm <span class="s2">&quot;&lt;commit message&gt;&quot;</span>
-git push origin dev <span class="c1">#origin/dev is the remote branch that keeps track of blog sources</span>
-</pre></div>
                 <div class="clear"></div>
 
                 <div class="info">

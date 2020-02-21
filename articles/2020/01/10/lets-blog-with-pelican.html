@@ -65,7 +65,7 @@ development config file</p>
 the local branch <code>local-gh-branch</code></li>
 </ol>
 <h2>Workflow</h2>
-<p>Key: Do every work in <code>dev</code> branch. Do not touch <code>blog-build</code> or <code>master</code>
+<p>Key: Do every work in <code>dev</code> branch. Do not touch <code>blog-build</code> or <code>master</code>. 
 <code>blog-build</code> will be indirectly modified by <code>ghp-import</code> (or <code>make publish-to-github</code>)
 and <code>master</code> is the branch that Github will access to show my website. 
 So, manage the source (and outputs) only in <code>dev</code> branch.</p>
@@ -74,33 +74,44 @@ So, manage the source (and outputs) only in <code>dev</code> branch.</p>
 </ul>
 <div class="highlight"><pre><span></span>conda activate pelican-blog
 <span class="nb">cd</span> ~/Workspace/Blog
-<span class="c1"># add new files  under `content`</span>
-make devserver
+
+<span class="c1"># Make sure you are on `dev` branch</span>
+git checkout dev
+
+<span class="c1"># Add new files  under `content`</span>
+git add my-article.md
+
+<span class="c1"># Generate the content with pelican</span>
 make html <span class="c1"># or, make regenerate </span>
-<span class="c1"># open a browser and go to localhost:8000</span>
+
+<span class="c1"># Start a local server </span>
+make devserver
+
+<span class="c1"># Open a browser and go to localhost:8000</span>
 </pre></div>
 
 
 <ul>
 <li>
 <p>Global dev  </p>
-<ul>
+<ol>
 <li>Use <code>make publish</code> instead of <code>make html</code></li>
 <li>Update the <code>blog-build</code> branch with contents in <code>output</code> folder</li>
 <li>Push the <code>blog-build</code> branch's content to <code>origin/master</code></li>
-<li>In one line: </li>
-</ul>
-<p><code>bash
+</ol>
+<p>These three steps can be done in one line: 
+<code>bash
 make publish-to-github</code></p>
 </li>
 <li>
-<p>Version control the source</p>
+<p>Version control the source<br>
+  Important: Write new contents only on the <code>dev</code> branch
+    <code>bash
+    git add &lt;files&gt; # make sure not to push the output folder
+    git cm "&lt;commit message&gt;"
+    git push origin dev #origin/dev is the remote branch that keeps track of blog sources</code></p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span>git add &lt;files&gt; <span class="c1"># make sure not to push the output folder</span>
-git cm <span class="s2">&quot;&lt;commit message&gt;&quot;</span>
-git push origin dev <span class="c1">#origin/dev is the remote branch that keeps track of blog sources</span>
-</pre></div>
                 <div class="clear"></div>
 
                 <div class="info">
