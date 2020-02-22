@@ -1368,7 +1368,7 @@ lower right in CRS:  [-115.1636076, 36.1212776997]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">!</span>gdalinfo <span class="s1">&#39;./data/osgeo-workshop/geomatrix.tif&#39;</span>
@@ -1378,125 +1378,16 @@ lower right in CRS:  [-115.1636076, 36.1212776997]
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Driver: GTiff/GeoTIFF
-Files: ./data/osgeo-workshop/geomatrix.tif
-Size is 20, 20
-Coordinate System is:
-PROJCS[&#34;WGS 84 / UTM zone 11N&#34;,
-    GEOGCS[&#34;WGS 84&#34;,
-        DATUM[&#34;WGS_1984&#34;,
-            SPHEROID[&#34;WGS 84&#34;,6378137,298.257223563,
-                AUTHORITY[&#34;EPSG&#34;,&#34;7030&#34;]],
-            AUTHORITY[&#34;EPSG&#34;,&#34;6326&#34;]],
-        PRIMEM[&#34;Greenwich&#34;,0,
-            AUTHORITY[&#34;EPSG&#34;,&#34;8901&#34;]],
-        UNIT[&#34;degree&#34;,0.0174532925199433,
-            AUTHORITY[&#34;EPSG&#34;,&#34;9122&#34;]],
-        AUTHORITY[&#34;EPSG&#34;,&#34;4326&#34;]],
-    PROJECTION[&#34;Transverse_Mercator&#34;],
-    PARAMETER[&#34;latitude_of_origin&#34;,0],
-    PARAMETER[&#34;central_meridian&#34;,-117],
-    PARAMETER[&#34;scale_factor&#34;,0.9996],
-    PARAMETER[&#34;false_easting&#34;,500000],
-    PARAMETER[&#34;false_northing&#34;,0],
-    UNIT[&#34;metre&#34;,1,
-        AUTHORITY[&#34;EPSG&#34;,&#34;9001&#34;]],
-    AXIS[&#34;Easting&#34;,EAST],
-    AXIS[&#34;Northing&#34;,NORTH],
-    AUTHORITY[&#34;EPSG&#34;,&#34;32611&#34;]]
-GeoTransform =
-  1841001.75, 1.5, -5
-  1144003.25, -5, -1.5
-Metadata:
-  AREA_OR_POINT=Point
-Image Structure Metadata:
-  INTERLEAVE=BAND
-Corner Coordinates:
-Upper Left  ( 1841001.750, 1144003.250) (104d50&#39;47.45&#34;W, 10d 7&#39;13.55&#34;N)
-Lower Left  ( 1840901.750, 1143973.250) (104d50&#39;50.69&#34;W, 10d 7&#39;12.72&#34;N)
-Upper Right ( 1841031.750, 1143903.250) (104d50&#39;46.60&#34;W, 10d 7&#39;10.33&#34;N)
-Lower Right ( 1840931.750, 1143873.250) (104d50&#39;49.85&#34;W, 10d 7&#39; 9.50&#34;N)
-Center      ( 1840966.750, 1143938.250) (104d50&#39;48.65&#34;W, 10d 7&#39;11.53&#34;N)
-Band 1 Block=20x20 Type=Byte, ColorInterp=Gray
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">!</span>gdalinfo <span class="s1">&#39;/home/hayley/mercator.tif&#39;</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Driver: GTiff/GeoTIFF
-Files: /home/hayley/mercator.tif
-Size is 1158, 1428
-Coordinate System is:
-PROJCS[&#34;unnamed&#34;,
-    GEOGCS[&#34;WGS 84&#34;,
-        DATUM[&#34;WGS_1984&#34;,
-            SPHEROID[&#34;WGS 84&#34;,6378137,298.257223563,
-                AUTHORITY[&#34;EPSG&#34;,&#34;7030&#34;]],
-            AUTHORITY[&#34;EPSG&#34;,&#34;6326&#34;]],
-        PRIMEM[&#34;Greenwich&#34;,0],
-        UNIT[&#34;degree&#34;,0.0174532925199433],
-        AUTHORITY[&#34;EPSG&#34;,&#34;4326&#34;]],
-    PROJECTION[&#34;Mercator_1SP&#34;],
-    PARAMETER[&#34;central_meridian&#34;,0],
-    PARAMETER[&#34;scale_factor&#34;,1],
-    PARAMETER[&#34;false_easting&#34;,0],
-    PARAMETER[&#34;false_northing&#34;,0],
-    UNIT[&#34;metre&#34;,1,
-        AUTHORITY[&#34;EPSG&#34;,&#34;9001&#34;]]]
-Origin = (-12833239.023979641497135,4298876.683791127055883)
-Pixel Size = (0.337450527159042,-0.337450527159042)
-Metadata:
-  AREA_OR_POINT=Area
-Image Structure Metadata:
-  INTERLEAVE=PIXEL
-Corner Coordinates:
-Upper Left  (-12833239.024, 4298876.684) (115d16&#39;58.61&#34;W, 36d10&#39;13.50&#34;N)
-Lower Left  (-12833239.024, 4298394.804) (115d16&#39;58.61&#34;W, 36d10&#39; 0.87&#34;N)
-Upper Right (-12832848.256, 4298876.684) (115d16&#39;45.97&#34;W, 36d10&#39;13.50&#34;N)
-Lower Right (-12832848.256, 4298394.804) (115d16&#39;45.97&#34;W, 36d10&#39; 0.87&#34;N)
-Center      (-12833043.640, 4298635.744) (115d16&#39;52.29&#34;W, 36d10&#39; 7.19&#34;N)
-Band 1 Block=1158x1 Type=UInt16, ColorInterp=Red
-Band 2 Block=1158x1 Type=UInt16, ColorInterp=Green
-Band 3 Block=1158x1 Type=UInt16, ColorInterp=Blue
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1535,7 +1426,7 @@ Band 3 Block=1158x1 Type=UInt16, ColorInterp=Blue
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">!</span>gdalinfo -noct ./data/osgeo-workshop/wellington_west.png
@@ -1545,71 +1436,16 @@ Band 3 Block=1158x1 Type=UInt16, ColorInterp=Blue
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Driver: PNG/Portable Network Graphics
-Files: ./data/osgeo-workshop/wellington_west.png
-       ./data/osgeo-workshop/wellington_west.wld
-Size is 1831, 1835
-Coordinate System is `&#39;
-Origin = (1731543.836827248800546,5461586.738620690070093)
-Pixel Size = (28.001501693600002,-28.001034482800002)
-Corner Coordinates:
-Upper Left  ( 1731543.837, 5461586.739) 
-Lower Left  ( 1731543.837, 5410204.840) 
-Upper Right ( 1782814.586, 5461586.739) 
-Lower Right ( 1782814.586, 5410204.840) 
-Center      ( 1757179.212, 5435895.789) 
-Band 1 Block=1831x1 Type=Byte, ColorInterp=Palette
-  Color Table (RGB with 256 entries)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">!</span>cat ./data/osgeo-workshop/wellington_west.wld
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>28.0015016936
-0.0000000000
-0.0000000000
--28.0010344828
-1731557.8375780955
-5461572.7381034484
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1648,69 +1484,13 @@ Band 1 Block=1831x1 Type=Byte, ColorInterp=Palette
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">!</span>gdalinfo -noct wellington_west.tif
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Driver: GTiff/GeoTIFF
-Files: wellington_west.tif
-Size is 1831, 1835
-Coordinate System is:
-PROJCS[&#34;NZGD2000 / New Zealand Transverse Mercator 2000&#34;,
-    GEOGCS[&#34;NZGD2000&#34;,
-        DATUM[&#34;New_Zealand_Geodetic_Datum_2000&#34;,
-            SPHEROID[&#34;GRS 1980&#34;,6378137,298.257222101,
-                AUTHORITY[&#34;EPSG&#34;,&#34;7019&#34;]],
-            TOWGS84[0,0,0,0,0,0,0],
-            AUTHORITY[&#34;EPSG&#34;,&#34;6167&#34;]],
-        PRIMEM[&#34;Greenwich&#34;,0,
-            AUTHORITY[&#34;EPSG&#34;,&#34;8901&#34;]],
-        UNIT[&#34;degree&#34;,0.0174532925199433,
-            AUTHORITY[&#34;EPSG&#34;,&#34;9122&#34;]],
-        AUTHORITY[&#34;EPSG&#34;,&#34;4167&#34;]],
-    PROJECTION[&#34;Transverse_Mercator&#34;],
-    PARAMETER[&#34;latitude_of_origin&#34;,0],
-    PARAMETER[&#34;central_meridian&#34;,173],
-    PARAMETER[&#34;scale_factor&#34;,0.9996],
-    PARAMETER[&#34;false_easting&#34;,1600000],
-    PARAMETER[&#34;false_northing&#34;,10000000],
-    UNIT[&#34;metre&#34;,1,
-        AUTHORITY[&#34;EPSG&#34;,&#34;9001&#34;]],
-    AUTHORITY[&#34;EPSG&#34;,&#34;2193&#34;]]
-Origin = (1731543.836827248800546,5461586.738620690070093)
-Pixel Size = (28.001501693600002,-28.001034482800002)
-Metadata:
-  AREA_OR_POINT=Area
-Image Structure Metadata:
-  INTERLEAVE=BAND
-Corner Coordinates:
-Upper Left  ( 1731543.837, 5461586.739) (174d33&#39;49.52&#34;E, 40d59&#39;10.66&#34;S)
-Lower Left  ( 1731543.837, 5410204.840) (174d34&#39;29.34&#34;E, 41d26&#39;56.27&#34;S)
-Upper Right ( 1782814.586, 5461586.739) (175d10&#39;22.40&#34;E, 40d58&#39;35.11&#34;S)
-Lower Right ( 1782814.586, 5410204.840) (175d11&#39;17.70&#34;E, 41d26&#39;20.14&#34;S)
-Center      ( 1757179.212, 5435895.789) (174d52&#39;29.74&#34;E, 41d12&#39;47.03&#34;S)
-Band 1 Block=1831x4 Type=Byte, ColorInterp=Palette
-  Color Table (RGB with 256 entries)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1946,60 +1726,13 @@ Band 1 Block=1831x4 Type=Byte, ColorInterp=Palette
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">!</span>ogrinfo -so -al <span class="nv">$vec_path</span> 
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO: Open of `/home/hayley/Data_Spacenet/SpaceNet_Roads_Sample/AOI_2_Vegas_Roads_Sample/geojson/spacenetroads/spacenetroads_AOI_2_Vegas_img1454.geojson&#39;
-      using driver `GeoJSON&#39; successful.
-
-Layer name: spacenetroads_AOI_2_Vegas_img1454
-Geometry: Line String
-Feature Count: 23
-Extent: (-115.167118, 36.121577) - (-115.163608, 36.124788)
-Layer SRS WKT:
-GEOGCS[&#34;WGS 84&#34;,
-    DATUM[&#34;WGS_1984&#34;,
-        SPHEROID[&#34;WGS 84&#34;,6378137,298.257223563,
-            AUTHORITY[&#34;EPSG&#34;,&#34;7030&#34;]],
-        AUTHORITY[&#34;EPSG&#34;,&#34;6326&#34;]],
-    PRIMEM[&#34;Greenwich&#34;,0,
-        AUTHORITY[&#34;EPSG&#34;,&#34;8901&#34;]],
-    UNIT[&#34;degree&#34;,0.0174532925199433,
-        AUTHORITY[&#34;EPSG&#34;,&#34;9122&#34;]],
-    AUTHORITY[&#34;EPSG&#34;,&#34;4326&#34;]]
-bridge_typ: String (0.0)
-heading: String (0.0)
-lane_numbe: String (0.0)
-lane_number: String (0.0)
-one_way_ty: String (0.0)
-paved: String (0.0)
-road_id: Integer (0.0)
-road_type: String (0.0)
-origarea: Integer (0.0)
-origlen: Real (0.0)
-partialDec: Integer (0.0)
-truncated: Integer (0.0)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -2101,55 +1834,13 @@ truncated: Integer (0.0)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">!</span>ogrinfo -so -al <span class="nv">$buffer_path</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>INFO: Open of `/home/hayley/Data_Spacenet/SpaceNet_Roads_Sample/AOI_2_Vegas_Roads_Sample/geojson/buffer/buffer_AOI_2_Vegas_img1454.geojson&#39;
-      using driver `GeoJSON&#39; successful.
-
-Layer name: buffer_AOI_2_Vegas_img1454
-Geometry: Polygon
-Feature Count: 23
-Extent: (-115.167234, 36.121450) - (-115.163491, 36.124882)
-Layer SRS WKT:
-GEOGCS[&#34;WGS 84&#34;,
-    DATUM[&#34;WGS_1984&#34;,
-        SPHEROID[&#34;WGS 84&#34;,6378137,298.257223563,
-            AUTHORITY[&#34;EPSG&#34;,&#34;7030&#34;]],
-        AUTHORITY[&#34;EPSG&#34;,&#34;6326&#34;]],
-    PRIMEM[&#34;Greenwich&#34;,0,
-        AUTHORITY[&#34;EPSG&#34;,&#34;8901&#34;]],
-    UNIT[&#34;degree&#34;,0.0174532925199433,
-        AUTHORITY[&#34;EPSG&#34;,&#34;9122&#34;]],
-    AUTHORITY[&#34;EPSG&#34;,&#34;4326&#34;]]
-bridge_type: Integer (0.0)
-lane_number: Integer (0.0)
-one_way_type: Integer (0.0)
-paved: Integer (0.0)
-road_id: Integer (0.0)
-road_type: Integer (0.0)
-radius: Real (0.0)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -2167,58 +1858,13 @@ radius: Real (0.0)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">!</span>gdalinfo 8bits.png
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Driver: PNG/Portable Network Graphics
-Files: 8bits.png
-       8bits.png.aux.xml
-Size is 1300, 1300
-Coordinate System is:
-GEOGCS[&#34;WGS 84&#34;,
-    DATUM[&#34;WGS_1984&#34;,
-        SPHEROID[&#34;WGS 84&#34;,6378137,298.257223563,
-            AUTHORITY[&#34;EPSG&#34;,&#34;7030&#34;]],
-        AUTHORITY[&#34;EPSG&#34;,&#34;6326&#34;]],
-    PRIMEM[&#34;Greenwich&#34;,0],
-    UNIT[&#34;degree&#34;,0.0174532925199433],
-    AUTHORITY[&#34;EPSG&#34;,&#34;4326&#34;]]
-Origin = (-115.167117599999997,36.124787699700001)
-Pixel Size = (0.000002700000000,-0.000002700000000)
-Metadata:
-  AREA_OR_POINT=Area
-Image Structure Metadata:
-  INTERLEAVE=PIXEL
-Corner Coordinates:
-Upper Left  (-115.1671176,  36.1247877) (115d10&#39; 1.62&#34;W, 36d 7&#39;29.24&#34;N)
-Lower Left  (-115.1671176,  36.1212777) (115d10&#39; 1.62&#34;W, 36d 7&#39;16.60&#34;N)
-Upper Right (-115.1636076,  36.1247877) (115d 9&#39;48.99&#34;W, 36d 7&#39;29.24&#34;N)
-Lower Right (-115.1636076,  36.1212777) (115d 9&#39;48.99&#34;W, 36d 7&#39;16.60&#34;N)
-Center      (-115.1653626,  36.1230327) (115d 9&#39;55.31&#34;W, 36d 7&#39;22.92&#34;N)
-Band 1 Block=1300x1 Type=Byte, ColorInterp=Red
-Band 2 Block=1300x1 Type=Byte, ColorInterp=Green
-Band 3 Block=1300x1 Type=Byte, ColorInterp=Blue
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -2263,39 +1909,6 @@ Band 3 Block=1300x1 Type=Byte, ColorInterp=Blue
 </pre></div>
 
     </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">buff_raster</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[38]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>255</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -2401,13 +2014,13 @@ Band 3 Block=1300x1 Type=Byte, ColorInterp=Blue
 
  
  
-<div id="875e0184-bf35-4125-bc43-66cf177e97d7"></div>
+<div id="1387cad0-4082-4243-8941-7e01b69082cf"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#875e0184-bf35-4125-bc43-66cf177e97d7');
+var element = $('#1387cad0-4082-4243-8941-7e01b69082cf');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "36d538e819f84e568330a16ec2c5f286", "version_minor": 0}
+{"version_minor": 0, "model_id": "36d538e819f84e568330a16ec2c5f286", "version_major": 2}
 </script>
 </div>
 
@@ -2445,253 +2058,14 @@ var element = $('#875e0184-bf35-4125-bc43-66cf177e97d7');
 
  
  
-<div id="95c8a4f1-47a3-4221-a326-e54a3c8c98fb"></div>
+<div id="78dce570-44e1-4f15-b548-d5d03c00d0ff"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#95c8a4f1-47a3-4221-a326-e54a3c8c98fb');
+var element = $('#78dce570-44e1-4f15-b548-d5d03c00d0ff');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "", "version_minor": 0}
+{"version_minor": 0, "model_id": "", "version_major": 2}
 </script>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-
- 
- 
-<div id="a8c3f097-aed4-4ddc-a116-ac67a6a530f2"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#a8c3f097-aed4-4ddc-a116-ac67a6a530f2');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "", "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">w</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">w</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">()</span>
-<span class="n">display</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-
- 
- 
-<div id="8f3501cd-9db0-4554-9641-2656733ce4df"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#8f3501cd-9db0-4554-9641-2656733ce4df');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "4d0b97d9275342ff948d180f9d3c2b04", "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">w</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">23</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">w</span><span class="o">.</span><span class="n">keys</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[47]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;_view_name&#39;,
- &#39;style&#39;,
- &#39;layout&#39;,
- &#39;orientation&#39;,
- &#39;min&#39;,
- &#39;_dom_classes&#39;,
- &#39;max&#39;,
- &#39;_model_name&#39;,
- &#39;_view_module&#39;,
- &#39;_model_module_version&#39;,
- &#39;value&#39;,
- &#39;_view_count&#39;,
- &#39;disabled&#39;,
- &#39;_view_module_version&#39;,
- &#39;step&#39;,
- &#39;continuous_update&#39;,
- &#39;readout_format&#39;,
- &#39;description_tooltip&#39;,
- &#39;readout&#39;,
- &#39;_model_module&#39;,
- &#39;description&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-
- 
- 
-<div id="32ff86bc-9b22-4aa5-ac68-8ea221ba395b"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#32ff86bc-9b22-4aa5-ac68-8ea221ba395b');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "4d0b97d9275342ff948d180f9d3c2b04", "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">w</span><span class="o">.</span><span class="n">description</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[49]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>u&#39;&#39;</pre>
 </div>
 
 </div>
@@ -2791,13 +2165,13 @@ At the basic level. <code>interact</code> autogenerates UI controls for function
 
  
  
-<div id="29c37a09-2bc9-4ec7-bd5a-6dd45b3fd44d"></div>
+<div id="f976495c-c035-4b94-9cde-3d0b205ecb56"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#29c37a09-2bc9-4ec7-bd5a-6dd45b3fd44d');
+var element = $('#f976495c-c035-4b94-9cde-3d0b205ecb56');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "7b86913951434b33b55e43648e08d1bc", "version_minor": 0}
+{"version_minor": 0, "model_id": "7b86913951434b33b55e43648e08d1bc", "version_major": 2}
 </script>
 </div>
 
@@ -2846,13 +2220,13 @@ var element = $('#29c37a09-2bc9-4ec7-bd5a-6dd45b3fd44d');
 
  
  
-<div id="60ae5941-6b93-4783-a94d-afeb75e220c7"></div>
+<div id="d05523c9-6ac7-40bb-a8ee-7c09ad9a46f4"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#60ae5941-6b93-4783-a94d-afeb75e220c7');
+var element = $('#d05523c9-6ac7-40bb-a8ee-7c09ad9a46f4');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "de80d21811d348ac80e87d9e4529ecad", "version_minor": 0}
+{"version_minor": 0, "model_id": "de80d21811d348ac80e87d9e4529ecad", "version_major": 2}
 </script>
 </div>
 
@@ -2949,13 +2323,13 @@ var element = $('#60ae5941-6b93-4783-a94d-afeb75e220c7');
 
  
  
-<div id="0122f90e-835a-4bee-883e-e1586ff7c3ac"></div>
+<div id="f9098a5c-8d92-45b5-829f-1838b754d163"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#0122f90e-835a-4bee-883e-e1586ff7c3ac');
+var element = $('#f9098a5c-8d92-45b5-829f-1838b754d163');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "83b91a5ec1d64fd8b730469ff022c418", "version_minor": 0}
+{"version_minor": 0, "model_id": "83b91a5ec1d64fd8b730469ff022c418", "version_major": 2}
 </script>
 </div>
 
@@ -3152,13 +2526,13 @@ Wall time: 524 ms
 
  
  
-<div id="8d5cd394-68c4-4f0a-8dd4-5996ab2c61e8"></div>
+<div id="40e9dc88-14f3-4be7-bfc4-06c5031660c1"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#8d5cd394-68c4-4f0a-8dd4-5996ab2c61e8');
+var element = $('#40e9dc88-14f3-4be7-bfc4-06c5031660c1');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "f9bfc87ba8ba427cb8d1aeb44485241b", "version_minor": 0}
+{"version_minor": 0, "model_id": "f9bfc87ba8ba427cb8d1aeb44485241b", "version_major": 2}
 </script>
 </div>
 
@@ -3215,13 +2589,13 @@ var element = $('#8d5cd394-68c4-4f0a-8dd4-5996ab2c61e8');
 
  
  
-<div id="4ad0aaa1-ce6c-4e2a-9bfd-f690389ac934"></div>
+<div id="cb87fcc0-09d5-4834-983c-0e4aed60d6cb"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#4ad0aaa1-ce6c-4e2a-9bfd-f690389ac934');
+var element = $('#cb87fcc0-09d5-4834-983c-0e4aed60d6cb');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "2347e59ddd6242e18a5dbb7904a5e7cc", "version_minor": 0}
+{"version_minor": 0, "model_id": "2347e59ddd6242e18a5dbb7904a5e7cc", "version_major": 2}
 </script>
 </div>
 
@@ -3394,13 +2768,13 @@ var element = $('#4ad0aaa1-ce6c-4e2a-9bfd-f690389ac934');
 
  
  
-<div id="900fd51b-fe74-4cda-b166-58bf80f46516"></div>
+<div id="531a3753-9faa-4922-b42c-a0b3903f363f"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#900fd51b-fe74-4cda-b166-58bf80f46516');
+var element = $('#531a3753-9faa-4922-b42c-a0b3903f363f');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "7fb3bc6f0dd14d9aaeace8e0cbe3507d", "version_minor": 0}
+{"version_minor": 0, "model_id": "7fb3bc6f0dd14d9aaeace8e0cbe3507d", "version_major": 2}
 </script>
 </div>
 
@@ -3447,13 +2821,13 @@ var element = $('#900fd51b-fe74-4cda-b166-58bf80f46516');
 
  
  
-<div id="53ee1ddd-31bf-4a7e-a164-f0f2ef1c0ba0"></div>
+<div id="028419eb-763f-49eb-9a5e-26388f4ed06a"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#53ee1ddd-31bf-4a7e-a164-f0f2ef1c0ba0');
+var element = $('#028419eb-763f-49eb-9a5e-26388f4ed06a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "d85b20851eb54ca8a8c9ef1de365f23e", "version_minor": 0}
+{"version_minor": 0, "model_id": "d85b20851eb54ca8a8c9ef1de365f23e", "version_major": 2}
 </script>
 </div>
 
@@ -3507,13 +2881,13 @@ var element = $('#53ee1ddd-31bf-4a7e-a164-f0f2ef1c0ba0');
 
  
  
-<div id="87a7436b-b60d-446e-bb23-16ebae01b4ce"></div>
+<div id="1be767f2-20f5-4eb9-89d4-96fb9f66ee2f"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#87a7436b-b60d-446e-bb23-16ebae01b4ce');
+var element = $('#1be767f2-20f5-4eb9-89d4-96fb9f66ee2f');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "fa20c0358ce544b1ad04b192101a7df3", "version_minor": 0}
+{"version_minor": 0, "model_id": "fa20c0358ce544b1ad04b192101a7df3", "version_major": 2}
 </script>
 </div>
 
@@ -3529,13 +2903,13 @@ var element = $('#87a7436b-b60d-446e-bb23-16ebae01b4ce');
 
  
  
-<div id="7bcc7134-95b3-4a44-891a-bf8847959bc5"></div>
+<div id="e950f469-d02a-4a8f-92e9-4a09d66b7025"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#7bcc7134-95b3-4a44-891a-bf8847959bc5');
+var element = $('#e950f469-d02a-4a8f-92e9-4a09d66b7025');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "df382a3de2504d6697e1352099f6b999", "version_minor": 0}
+{"version_minor": 0, "model_id": "df382a3de2504d6697e1352099f6b999", "version_major": 2}
 </script>
 </div>
 
@@ -3571,13 +2945,13 @@ var element = $('#7bcc7134-95b3-4a44-891a-bf8847959bc5');
 
  
  
-<div id="c96d9846-15d7-45f2-b768-6a90cda027b7"></div>
+<div id="8f352b52-c138-4315-b1bc-0cf8de603aba"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#c96d9846-15d7-45f2-b768-6a90cda027b7');
+var element = $('#8f352b52-c138-4315-b1bc-0cf8de603aba');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "2c7bafda954e4f56bcd93c942b9a0af5", "version_minor": 0}
+{"version_minor": 0, "model_id": "2c7bafda954e4f56bcd93c942b9a0af5", "version_major": 2}
 </script>
 </div>
 
@@ -3617,13 +2991,13 @@ var element = $('#c96d9846-15d7-45f2-b768-6a90cda027b7');
 
  
  
-<div id="c2664eb0-1410-469b-a2e4-1c9e27dc7e5a"></div>
+<div id="4f7126b1-13cc-40ae-8960-db8fc9e9cd81"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#c2664eb0-1410-469b-a2e4-1c9e27dc7e5a');
+var element = $('#4f7126b1-13cc-40ae-8960-db8fc9e9cd81');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "6cdebf78284e4540b8906071d5899be5", "version_minor": 0}
+{"version_minor": 0, "model_id": "6cdebf78284e4540b8906071d5899be5", "version_major": 2}
 </script>
 </div>
 
@@ -3717,13 +3091,13 @@ var element = $('#c2664eb0-1410-469b-a2e4-1c9e27dc7e5a');
 
  
  
-<div id="7eba71ad-ba21-4a1b-95ac-17cd2feb2a17"></div>
+<div id="abfcede8-6734-4a1d-8d07-05f824a611e6"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#7eba71ad-ba21-4a1b-95ac-17cd2feb2a17');
+var element = $('#abfcede8-6734-4a1d-8d07-05f824a611e6');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "eab765d5816e4bd5b35b39b90d4dd60b", "version_minor": 0}
+{"version_minor": 0, "model_id": "eab765d5816e4bd5b35b39b90d4dd60b", "version_major": 2}
 </script>
 </div>
 
@@ -3913,13 +3287,13 @@ var element = $('#7eba71ad-ba21-4a1b-95ac-17cd2feb2a17');
 
  
  
-<div id="618a3baa-fa83-4d24-b6ee-d4a1c549b7cd"></div>
+<div id="f64549ea-9fbd-4fbc-b07d-4b4bed7ca89d"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#618a3baa-fa83-4d24-b6ee-d4a1c549b7cd');
+var element = $('#f64549ea-9fbd-4fbc-b07d-4b4bed7ca89d');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "b5ca2c28b40c4caf96e61f47718873cf", "version_minor": 0}
+{"version_minor": 0, "model_id": "b5ca2c28b40c4caf96e61f47718873cf", "version_major": 2}
 </script>
 </div>
 
@@ -4154,66 +3528,14 @@ var element = $('#618a3baa-fa83-4d24-b6ee-d4a1c549b7cd');
 
  
  
-<div id="fcab4638-c3d0-4f2e-b570-057bdc44899d"></div>
+<div id="98211434-af79-4154-ab10-7c3a9b135a39"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#fcab4638-c3d0-4f2e-b570-057bdc44899d');
+var element = $('#98211434-af79-4154-ab10-7c3a9b135a39');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "029f153e30454c679f20054878bb5cb0", "version_minor": 0}
+{"version_minor": 0, "model_id": "029f153e30454c679f20054878bb5cb0", "version_major": 2}
 </script>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[234]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">__all__</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[234]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;data_dir&#39;,
- &#39;load&#39;,
- &#39;astronaut&#39;,
- &#39;binary_blobs&#39;,
- &#39;camera&#39;,
- &#39;checkerboard&#39;,
- &#39;chelsea&#39;,
- &#39;clock&#39;,
- &#39;coffee&#39;,
- &#39;coins&#39;,
- &#39;horse&#39;,
- &#39;hubble_deep_field&#39;,
- &#39;immunohistochemistry&#39;,
- &#39;lfw_subset&#39;,
- &#39;logo&#39;,
- &#39;moon&#39;,
- &#39;page&#39;,
- &#39;text&#39;,
- &#39;rocket&#39;,
- &#39;stereo_motorcycle&#39;]</pre>
 </div>
 
 </div>
@@ -4264,13 +3586,13 @@ var element = $('#fcab4638-c3d0-4f2e-b570-057bdc44899d');
 
  
  
-<div id="689de938-e061-433e-9858-4ae85bca8752"></div>
+<div id="ed1c40c9-feb5-4837-9bc1-d9680c32ad27"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#689de938-e061-433e-9858-4ae85bca8752');
+var element = $('#ed1c40c9-feb5-4837-9bc1-d9680c32ad27');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "model_id": "dbb1d7c509724d71954d61e15068b23a", "version_minor": 0}
+{"version_minor": 0, "model_id": "dbb1d7c509724d71954d61e15068b23a", "version_major": 2}
 </script>
 </div>
 
@@ -4845,7 +4167,7 @@ outname:  RGB-PanSharpen-8bits_AOI_2_Vegas_img1454.tif
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[299]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">sample_rgb_dir</span> <span class="ow">in</span> <span class="n">sample_rgb_dirs</span><span class="p">:</span>
@@ -4853,80 +4175,6 @@ outname:  RGB-PanSharpen-8bits_AOI_2_Vegas_img1454.tif
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>in:  /home/hayley/Data_Spacenet/SpaceNet_Roads_Sample/AOI_2_Vegas_Roads_Sample/RGB-PanSharpen
-out:  /home/hayley/Data_Spacenet/SpaceNet_Roads_Sample/AOI_2_Vegas_Roads_Sample/RGB-PanSharpen-8bits
-&gt; &lt;ipython-input-296-17923757bfd4&gt;(12)batch_convert_to_8Bit()
--&gt; if not out_rgb_dir.exists():
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-
-<span class="ansi-red-fg">BdbQuit</span>Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-299-38917e752f4a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">for</span> sample_rgb_dir <span class="ansi-green-fg">in</span> sample_rgb_dirs<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg">     </span>batch_convert_to_8Bit<span class="ansi-blue-fg">(</span>sample_rgb_dir<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">&lt;ipython-input-296-17923757bfd4&gt;</span> in <span class="ansi-cyan-fg">batch_convert_to_8Bit</span><span class="ansi-blue-fg">(in_rgb_dir, out_dir_name)</span>
-<span class="ansi-green-intense-fg ansi-bold">     10</span>     pdb<span class="ansi-blue-fg">.</span>set_trace<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     11</span> 
-<span class="ansi-green-fg">---&gt; 12</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> out_rgb_dir<span class="ansi-blue-fg">.</span>exists<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     13</span>         out_rgb_dir<span class="ansi-blue-fg">.</span>mkdir<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span> 
-
-<span class="ansi-green-fg">&lt;ipython-input-296-17923757bfd4&gt;</span> in <span class="ansi-cyan-fg">batch_convert_to_8Bit</span><span class="ansi-blue-fg">(in_rgb_dir, out_dir_name)</span>
-<span class="ansi-green-intense-fg ansi-bold">     10</span>     pdb<span class="ansi-blue-fg">.</span>set_trace<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     11</span> 
-<span class="ansi-green-fg">---&gt; 12</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> out_rgb_dir<span class="ansi-blue-fg">.</span>exists<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     13</span>         out_rgb_dir<span class="ansi-blue-fg">.</span>mkdir<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span> 
-
-<span class="ansi-green-fg">/home/hayley/miniconda3/envs/apls_environment/lib/python2.7/bdb.pyc</span> in <span class="ansi-cyan-fg">trace_dispatch</span><span class="ansi-blue-fg">(self, frame, event, arg)</span>
-<span class="ansi-green-intense-fg ansi-bold">     47</span>             <span class="ansi-green-fg">return</span> <span class="ansi-red-fg"># None</span>
-<span class="ansi-green-intense-fg ansi-bold">     48</span>         <span class="ansi-green-fg">if</span> event <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#39;line&#39;</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 49</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>dispatch_line<span class="ansi-blue-fg">(</span>frame<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     50</span>         <span class="ansi-green-fg">if</span> event <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">&#39;call&#39;</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     51</span>             <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>dispatch_call<span class="ansi-blue-fg">(</span>frame<span class="ansi-blue-fg">,</span> arg<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/home/hayley/miniconda3/envs/apls_environment/lib/python2.7/bdb.pyc</span> in <span class="ansi-cyan-fg">dispatch_line</span><span class="ansi-blue-fg">(self, frame)</span>
-<span class="ansi-green-intense-fg ansi-bold">     66</span>         <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>stop_here<span class="ansi-blue-fg">(</span>frame<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">or</span> self<span class="ansi-blue-fg">.</span>break_here<span class="ansi-blue-fg">(</span>frame<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     67</span>             self<span class="ansi-blue-fg">.</span>user_line<span class="ansi-blue-fg">(</span>frame<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">---&gt; 68</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>quitting<span class="ansi-blue-fg">:</span> <span class="ansi-green-fg">raise</span> BdbQuit
-<span class="ansi-green-intense-fg ansi-bold">     69</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>trace_dispatch
-<span class="ansi-green-intense-fg ansi-bold">     70</span> 
-
-<span class="ansi-red-fg">BdbQuit</span>: </pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -5017,7 +4265,7 @@ out:  /home/hayley/Data_Spacenet/SpaceNet_Roads_Sample/AOI_2_Vegas_Roads_Sample/
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[312]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">original_counts</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
@@ -5036,27 +4284,6 @@ out:  /home/hayley/Data_Spacenet/SpaceNet_Roads_Sample/AOI_2_Vegas_Roads_Sample/
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Original:
-{0: Counter({&#39;.tif&#39;: 989}), 1: Counter({&#39;.tif&#39;: 310}), 2: Counter({&#39;.tif&#39;: 1198}), 3: Counter({&#39;.tif&#39;: 283})}
-8bits:
-{0: Counter({&#39;.tif&#39;: 989}), 1: Counter({&#39;.tif&#39;: 310}), 2: Counter({&#39;.tif&#39;: 1198}), 3: Counter({&#39;.tif&#39;: 283})}
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -5229,29 +4456,6 @@ For model training, however, we will probably use the 16 bit images since it has
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>================================================================================
-AOI_2_Vegas_Roads_Train
-0
-198
-297
-396
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -5304,23 +4508,11 @@ AOI_2_Vegas_Roads_Train
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[332]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">fiona</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[355]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">rasterio.mask</span> <span class="kn">import</span> <span class="n">mask</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">fiona</span>
+<span class="kn">from</span> <span class="nn">rasterio.mask</span> <span class="kn">import</span> <span class="n">mask</span>
 <span class="kn">from</span> <span class="nn">rasterio.plot</span> <span class="kn">import</span> <span class="n">reshape_as_image</span><span class="p">,</span> <span class="n">reshape_as_raster</span>
 </pre></div>
 
