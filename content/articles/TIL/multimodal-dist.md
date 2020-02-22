@@ -1,6 +1,6 @@
 Title: Multimodal Distribution in Image or Text domain
 Subtitle: What does "multimodal distribution" mean in cv literature (eg. image-to-image translation) 
-Date: 2019-02-01
+Date: 2020-02-01
 Tags: generative-modeling, multimodal, one-to-many-mapping
 
 Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?
