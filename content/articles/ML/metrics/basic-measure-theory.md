@@ -1,5 +1,5 @@
 Title: Basic concepts in measure theory
-Date: 2020-02-22
+Date: 2020-02-23
 Tags: measure-theory, random-variable, measure, probability-theory
 
 ## Measure
