@@ -1,4 +1,5 @@
 Title: Git refspec
+Date: 2017-01-01
 
 Resource: [git-book](https://git-scm.com/book/en/v2/Git-Internals-The-Refspec)
 

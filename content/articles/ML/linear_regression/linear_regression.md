@@ -1,6 +1,7 @@
 Title: Linear Regression
+Date: 2020-01-01
 
-Todo:
+## Todo:
 - [ ] Set up the problem
 - [ ] Simple housing problem
 - [ ] Frequentist view - minimize the squared-loss

@@ -1,5 +1,6 @@
 Title: Xarray Introduction
 Date: 2019-07-01
+Created: 2019-07-01
 Summary: This is my sketchpad to understand xr.DataArray and xr.Dataset constructors.
 <p>
 Keys:

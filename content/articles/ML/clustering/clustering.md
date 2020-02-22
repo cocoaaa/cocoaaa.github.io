@@ -1,5 +1,5 @@
 Title: Introduction to Clustering
-<!--status: draft-->
+Status: draft
 
 
 # Outline
