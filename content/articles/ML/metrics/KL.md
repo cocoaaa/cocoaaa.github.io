@@ -3,9 +3,6 @@ Subtitle:
 Date: 2020-02-22
 Tags: divergence, similarity
 
-Let $X$ be a random variable over
-
-
 ##Resource
 - [Lec on VAE](https://tinyurl.com/uta23v5), by Ali Ghodsi: This lecture motivates KL Divergence as the measurement of difference in the average information content of two random varialbes, whose distributions are $p$ and $q$ in in the article.
 - [Wiki](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence): It clears up different terminologies that are (misused) to refer to the KL.
