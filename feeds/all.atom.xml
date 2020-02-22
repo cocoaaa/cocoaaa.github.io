@@ -7,7 +7,27 @@ For example, in geometric case, $\mu(A)$ can be interpreted as a (physical) leng
 &lt;h2&gt;Resource&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://tinyurl.com/uta23v5"&gt;Lec on VAE&lt;/a&gt;, by Ali Ghodsi: This lecture motivates KL Divergence as the measurement of difference in the average information content of two random varialbes, whose distributions are $p$ and $q$ in in the article.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Kullback–Leibler_divergence"&gt;Wiki&lt;/a&gt;: It clears up different terminologies that …&lt;/li&gt;&lt;/ul&gt;</summary><category term="divergence"></category><category term="similarity"></category></entry><entry><title>Stochastic Thinking: Predictive non-determinism</title><link href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking-predictive-non-determinism" rel="alternate"></link><published>2020-01-20T00:00:00-08:00</published><updated>2020-01-20T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-20:articles/2020/01/20/stochastic-thinking-predictive-non-determinism</id><summary type="html">&lt;p&gt;MIT 6.0002 Lec4: Stochastic Thinking
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Kullback–Leibler_divergence"&gt;Wiki&lt;/a&gt;: It clears up different terminologies that …&lt;/li&gt;&lt;/ul&gt;</summary><category term="divergence"></category><category term="similarity"></category></entry><entry><title>Use `Make` for Reproduible Research</title><link href="https://cocoaaa.github.io/articles/2020/02/22/use-make-for-reproduible-research" rel="alternate"></link><published>2020-02-22T00:00:00-08:00</published><updated>2020-02-22T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-22:articles/2020/02/22/use-make-for-reproduible-research</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h1 id="Reproducible-Research"&gt;Reproducible Research&lt;a class="anchor-link" href="#Reproducible-Research"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;h2 id="use-Make"&gt;use &lt;code&gt;Make&lt;/code&gt;&lt;a class="anchor-link" href="#use-Make"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Date: 2020-02-22&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;A research project ca be seen as a tree of dependencies&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the report depends on the figures and tables&lt;/li&gt;
+&lt;li&gt;the figurese and tables depend on the data and the analysis scripts used to process this data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Make is a tool for creating output files from their dependencies through pre-specified rules&lt;/p&gt;</summary></entry><entry><title>Stochastic Thinking: Predictive non-determinism</title><link href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking-predictive-non-determinism" rel="alternate"></link><published>2020-01-20T00:00:00-08:00</published><updated>2020-01-20T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-20:articles/2020/01/20/stochastic-thinking-predictive-non-determinism</id><summary type="html">&lt;p&gt;MIT 6.0002 Lec4: Stochastic Thinking
 - &lt;a href="https://www.youtube.com/watch?v=-1BnXEwHUok"&gt;YOUTUBE&lt;/a&gt;
 - &lt;img alt="predictive-nondeterminism" src="images/predictive-nondeterminism.png"&gt;&lt;/p&gt;
 &lt;p&gt;Often confusing categorization of a mathematical model:
