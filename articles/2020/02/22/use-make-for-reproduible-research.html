@@ -1161,7 +1161,7 @@ h6:hover .anchor-link {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style><body><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Basics-of-Make-for-reproducible-research">Basics of <code>Make</code> for reproducible research<a class="anchor-link" href="#Basics-of-Make-for-reproducible-research">&#182;</a></h2>
+<h2 id="Basics-of-make-for-Reproducible-Research">Basics of <code>make</code> for Reproducible Research<a class="anchor-link" href="#Basics-of-make-for-Reproducible-Research">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -1204,17 +1204,15 @@ h6:hover .anchor-link {
 <span class="nv">INPUT_CSV</span> <span class="o">=</span> <span class="k">$(</span>wildcard data/input_file_*.csv<span class="k">)</span>
 <span class="nv">DATA</span> <span class="o">=</span> <span class="k">$(</span>filter-out <span class="k">$(</span>INPUT_CSV<span class="k">)</span>,<span class="k">$(</span>ALL_CSV<span class="k">)</span>
 </pre></div>
-</li>
+## Caveats</li>
 </ul>
 </li>
-</ul>
-<h3 id="Caveats">Caveats<a class="anchor-link" href="#Caveats">&#182;</a></h3><ul>
 <li>Use space as the delimiter. Don't use <code>,</code>.</li>
 <li>Indent with <strong>tabs</strong> in Makefiles. Makefiles do not accept indentation with spaces</li>
 <li>Make executes each line of a Makefile <strong>independently</strong> in a <strong>separate subshell</strong></li>
 <li>Make executes the <strong>first target</strong> when no explicit target is given</li>
 </ul>
-<h3 id="Recommendation">Recommendation<a class="anchor-link" href="#Recommendation">&#182;</a></h3><ul>
+<h2 id="Recommendation">Recommendation<a class="anchor-link" href="#Recommendation">&#182;</a></h2><ul>
 <li>Put <code>all</code> as the first target in the Makefile</li>
 <li>Name the main target <code>all</code>: it's a convention many people follow<ul>
 <li><code>all</code> == reference to the main target of the Makefile </li>
@@ -1241,7 +1239,7 @@ h6:hover .anchor-link {
 <li>the Turing Way: <a href="https://the-turing-way.netlify.com/make/make.html#makefile-no-4-automatic-variables-and-pattern-rules">jupyter book</a></li>
 </ul>
 <h2 id="More">More<a class="anchor-link" href="#More">&#182;</a></h2><ul>
-<li><a href="https://snakemake.readthedocs.io/en/stable/">SnakeMake</a>: a Python3-based alternative to Make<ul>
+<li>[SnakeMake]: a Python3-based alternative to Make<ul>
 <li><a href="https://tinyurl.com/sfdlljp">video</a>, <a href="https://tinyurl.com/rqb2rnq">slides</a></li>
 <li><a href="https://snakemake.readthedocs.io/en/stable/">doc</a></li>
 </ul>
