@@ -1,34 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Research</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/Research.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2020-02-22T00:00:00-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Use `Make` for Reproduible Research</title><link href="https://cocoaaa.github.io/articles/2020/02/22/use-make-for-reproduible-research" rel="alternate"></link><published>2020-02-22T00:00:00-08:00</published><updated>2020-02-22T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-22:articles/2020/02/22/use-make-for-reproduible-research</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="Reproducible-Research"&gt;Reproducible Research&lt;a class="anchor-link" href="#Reproducible-Research"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;h2 id="use-Make"&gt;use &lt;code&gt;Make&lt;/code&gt;&lt;a class="anchor-link" href="#use-Make"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Date: 2020-02-22&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;A research project ca be seen as a tree of dependencies&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the report depends on the figures and tables&lt;/li&gt;
-&lt;li&gt;the figurese and tables depend on the data and the analysis scripts used to process this data&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Make is a tool for creating output files from their dependencies through pre-specified rules&lt;/p&gt;</summary></entry><entry><title>[Paper] Data Analysis with Latent Variable Models</title><link href="https://cocoaaa.github.io/articles/2020/01/17/paper-data-analysis-with-latent-variable-models" rel="alternate"></link><published>2020-01-17T00:00:00-08:00</published><updated>2020-01-17T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-17:articles/2020/01/17/paper-data-analysis-with-latent-variable-models</id><summary type="html">&lt;p&gt;This is my reading notes for David Blei's Data Analysis with Latent Variable Models, published in Annual Stat Review in 2014: &lt;a href="https://www.annualreviews.org/doi/pdf/10.1146/annurev-statistics-022513-115657"&gt;link&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>How to read a paper</title><link href="https://cocoaaa.github.io/articles/2020/01/16/how-to-read-a-paper" rel="alternate"></link><published>2020-01-16T00:00:00-08:00</published><updated>2020-01-16T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-16:articles/2020/01/16/how-to-read-a-paper</id><summary type="html">&lt;ul&gt;
-&lt;li&gt;Ref: &lt;a href="https://tinyurl.com/teh4dhg"&gt;medium&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Before you start&lt;/h2&gt;
-&lt;p&gt;Q: &lt;strong&gt;"why are you reading this?"&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Write it down where you can see it while reading the paper&lt;ul&gt;
-&lt;li&gt;Your purpose/goal of reading may change later.  You will have a different experience then. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Is there a clear answer for this question? If not,  you probably …&lt;/li&gt;&lt;/ul&gt;</summary></entry><entry><title>Generate road buffer mask</title><link href="https://cocoaaa.github.io/articles/2020/01/12/generate-road-buffer-mask" rel="alternate"></link><published>2020-01-12T16:25:33-08:00</published><updated>2020-01-12T16:25:33-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-12:articles/2020/01/12/generate-road-buffer-mask</id><summary type="html">&lt;p&gt;This is a writeup on how to generate road buffer mask 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Research</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/Research.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2020-01-12T16:25:33-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Generate road buffer mask</title><link href="https://cocoaaa.github.io/articles/2020/01/12/generate-road-buffer-mask" rel="alternate"></link><published>2020-01-12T16:25:33-08:00</published><updated>2020-01-12T16:25:33-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-12:articles/2020/01/12/generate-road-buffer-mask</id><summary type="html">&lt;p&gt;This is a writeup on how to generate road buffer mask 
 for the Spacenet Dataset using geospatial libraries available
 in the python ecosystem.&lt;/p&gt;</summary></entry></feed>
