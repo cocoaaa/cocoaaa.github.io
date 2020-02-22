@@ -38,158 +38,7 @@
         </div>
     </header>
     <div id="wrapper">
-        <div id="content">            <h4 class="date">Feb 22, 2020</h4>
-
-            <article class="post">
-                <h2 class="title">
-                    <a href="https://cocoaaa.github.io/articles/2020/02/22/multimodal-distribution-in-image-or-text-domain" rel="bookmark" title="Permanent Link to &quot;Multimodal Distribution in Image or Text domain&quot;">Multimodal Distribution in Image or Text domain</a>
-                </h2>
-
-                
-                
-
-                <p>Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?</p>
-<p>While reading papers on conditional image generation using generative modeling (eg. <a href="https://tinyurl.com/s5drg9c">"Toward Multimodal Image-to-Image Translation"</a> by Zhu et al (NIPS 2017)), I wasn't clear what was meant by "one-to-many mapping" between input image domain and output image domain, "multimodal distribution" in the output image domain, or "multi-modal outputs" (eg. <a href="https://tinyurl.com/szjmmzf">Quora</a>). </p>
-<h3>Definition</h3>
-<blockquote>
-<p>In statistics, a <code>multimodal distribution</code> is a continuous probability distribution with two or more modes (distinct peaks; local maxima) - <a href="https://tinyurl.com/pa47gte">wikipedia</a></p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>(single-variable) bimodal distribution</th>
-<th>bivariate multimodal distribution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="/images/bimodal.png" alt="bimodal" /></td>
-<td><img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" /></td>
-</tr>
-</tbody>
-</table>
-<!--|<img src="/images/bimodal.png" alt="bimodal" width="250px"/> | <img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" width="250px"/>-->
-
-<p>In high-dimensional space (such as an Image domain: $P(X)$ where X lives in $d$-dim space where $d$ is the number of pixels, eg. $32x32=1024$. If each pixel $X_i$ takes a binary value (0 or 1), the size of this image domain is $2^{1024}$.  If each pixel takes an integer value $\in [0,255]$, then the size of this image domain is $256^{1024}$. This, by the way, is too big to compute for Mac's spotlight:</p>
-<p><img src="/images/too-big.png" alt="too-big" width="500px"/>    </p>
-<p>What it means by saying "the distribution of (output) image is multimodal" is to say, there are multiple images (ie. realization of the random variable (vector) X) with the (local) maxima value of the probability. In Figure below, the green dots represent the local maxima, ie. modes of the distribution. The configurations (ie. specific values/realizations) that achieves the (local) maximum probability density are the "probable/likely" images. </p>
-<figure>
-    <img src='images/gan-multimodal-outputs.jpg' alt='gan-multimodal-outputs' width="250px"/>
-     <img src='images/bivariate-multimodal-annot.png' alt='multimodal-annot' width="250px"/>
-    <figcaption>The green dots representing modes of the distribution over the image domain (which is abstracted into a 2Dim space for visualization, in this case)</figcaption>
-</figure>
-
-<p>So, given one input image, if the distribution of the output image random variable is multi-modal, the standard problem of <pre>Find $x$ s.t. $\underset{x \in \mathcal{X}}{\arg\max} P(X)$ ($\mathcal{X}$ is the image space)</pre> has multiple solutions. According to the paper (Toward Multimodal Image-to-Image Translation), many previous works have produced a "single" output image as "the" argmax of the output image distribution. But this is not accurate if the output image distribution is multi-modal.  We would like to see/generate as many of those argmax configurations/output images. One way to do so, is by sampling from the output image distribution.  This is the paper's approach. </p>
-<hr>
-<h3>Multimodal distribution as the distribution over the space of target domains [Domain adaption/transfer leraning]</h3>
-<p>So far, I viewed the multimodal distribution as a distribution over a specific domain (eg. Image domain), and the random variable corresponded to a realization, eg. an observed/sampled/output image instance. However, </p>
-                <div class="clear"></div>
-
-                <div class="info">
-                    <a href="https://cocoaaa.github.io/articles/2020/02/22/multimodal-distribution-in-image-or-text-domain">posted at 12:56</a>
-                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
-                    &nbsp;&middot;
-                    &nbsp;<a href="https://cocoaaa.github.io/tag/generative-modeling.html" class="tags">generative-modeling</a>
-                    &nbsp;<a href="https://cocoaaa.github.io/tag/multimodal.html" class="tags">multimodal</a>
-                    &nbsp;<a href="https://cocoaaa.github.io/tag/one-to-many-mapping.html" class="tags">one-to-many-mapping</a>
-                </div>
-            </article>            <h4 class="date">Feb 22, 2020</h4>
-
-            <article class="post">
-                <h2 class="title">
-                    <a href="https://cocoaaa.github.io/articles/2020/02/22/git-refspec" rel="bookmark" title="Permanent Link to &quot;Git refspec&quot;">Git refspec</a>
-                </h2>
-
-                
-                
-
-                <p>Resource: <a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec">git-book</a></p>
-<h2>Git Remotes</h2>
-<blockquote>
-<p>Remote repositories: versions of your project that are hosted on the internet</p>
-</blockquote>
-<h3><code>git remote -v</code></h3>
-<p>Let's say I cloned a repository from some repository, for instance
-<code>git@github.com:cocoaaa/dip.git</code>, by running:</p>
-<div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">cocoaaa</span><span class="o">/</span><span class="n">dip</span><span class="o">.</span><span class="n">git</span>
-</pre></div>
-
-
-<p>Then, in this cloned repo's directory in my local machine, 
-<code>git remote</code> will list the shortnames of each remote handle I've specified. 
-By default, Git gives to the server I've just cloned the shortname, <code>origin</code>.
-Use <code>git remote -v</code> to see both the shortname and the URLs that Git has stored for
-each shortname to use for reading and writing to that remote.</p>
-<p><img alt="git-remote" src="https://cocoaaa.github.io/images/git-remote.png"></p>
-<h3><code>git remote add &lt;shortname&gt; &lt;URL&gt;</code></h3>
-<dl>
-<dd>adds a remote in <code>&lt;URL&gt;</code> with the shortname of <code>&lt;shortname&gt;</code></dd>
-</dl>
-<h3><code>git fetch &lt;remote&gt;</code></h3>
-<p>The command goes out to that remote project and pulls down all the data from that
-remote project that I don't have yet. It does so for all branches in the remote.
-Upon the command execution, I should have references to all the branches from that
-remote, and I can merge in or inspect them at any time.</p>
-<p>Remember that <code>git fetch</code> command only downloads the data to my local repository,
-and does <em>NOT</em> automatically merge it with any of my work or modify what I'm currently
-working on. So, it is safer than <code>git pull</code>, yet I'm required to merge it into my 
-work whenever I'm ready. </p>
-<p>For fetching and pushing, my current branch needs be set up to track a remote 
-<em>branch</em>. In other words, setting up the URL to the remote repository is not enough, 
-and we need to specify which local branch will track which remote branch.  </p>
-<p><code>git clone &lt;some-repo-url&gt;</code> automatically sets up my local <code>master</code> branch to 
-track the remote default branch (often also <code>master</code>) on the server I cloned from,
-ie. <code>&lt;URL&gt;</code>.</p>
-<h3>Push my (local) changes to the remote server (upstream)</h3>
-<p><code>git push &lt;remote&gt; &lt;branch&gt;</code> pushes my local <code>branch</code> to my <code>remote</code> server. 
-For example, if I want to push my <code>master</code> branch to my <code>origin</code> server (recall 
-that these names are set up by <code>git clone &lt;some-repo-url&gt;</code> command automatically),
-run: <code>git push origin master</code>. Again, <code>origin</code> is the shortname assigned to the 
-remote server URL, and <code>master</code> is the name of the local branch I'm pushing.</p>
-<p>If I want to push my local <code>dev-local</code> branch to my remote repository called <code>origin</code>'s 
-<code>dev-remote</code> branch, I'd run <code>git push origin dev-local:dev-remote</code>. 
-The colon syntax follows <code>src_refspec</code>:<code>dst_refspec</code> where <code>src_refspec</code> and <code>dst_refspec</code>
-are the refspecs of the source branch (in local) and the destination branch (in remote)
-of the <code>git push</code> action, respectively.</p>
-<blockquote>
-<p>Q: wait, we don't need to specify which branch in the remote server to push 
-the local branch?</p>
-</blockquote>
-<h3>Inspecting a remote</h3>
-<p><code>git remote show &lt;remote-shortname&gt;</code> command shows the details of the particular 
-remote. </p>
-<p><img alt="git-remote-show" src="https://cocoaaa.github.io/images/git-remote-show.png"></p>
-                <div class="clear"></div>
-
-                <div class="info">
-                    <a href="https://cocoaaa.github.io/articles/2020/02/22/git-refspec">posted at 12:56</a>
-                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
-                </div>
-            </article>            <h4 class="date">Feb 22, 2020</h4>
-
-            <article class="post">
-                <h2 class="title">
-                    <a href="https://cocoaaa.github.io/articles/2020/02/22/cool-chart-tool-amcharts" rel="bookmark" title="Permanent Link to &quot;Cool Chart tool: `amcharts`&quot;">Cool Chart tool: `amcharts`</a>
-                </h2>
-
-                
-                
-
-                <p>While making a visualization for my part whereabouts for the <a href="#">front page</a> of this blog, I came across this easy-to-use visualization examples using <code>amcharts</code>.  Initially, I wanted to use Google Earth Studio but it required me to import country boundaries (in KML files) as well as time to learn new toolsuites, so I find this javascript based demos more useful for my need. </p>
-<p>List of timeline + map charts
-- <a href="https://www.amcharts.com/demos/fishbone-timeline/">Fishbone timeline</a>
-- <a href="https://www.amcharts.com/demos/flight-routes-map/">Fight routes on map</a>
-- <a href="https://www.amcharts.com/demos/animations-along-lines/">Flight animation on map</a>
-- <a href="https://www.amcharts.com/demos/map-line-chart-gauge/">Timeline animation with fligh on map</a>
-- and many more <a href="https://www.amcharts.com/demos/#maps">demos</a></p>
-<p>Pretty neat!</p>
-                <div class="clear"></div>
-
-                <div class="info">
-                    <a href="https://cocoaaa.github.io/articles/2020/02/22/cool-chart-tool-amcharts">posted at 12:56</a>
-                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
-                </div>
-            </article>            <h4 class="date">Jan 20, 2020</h4>
+        <div id="content">            <h4 class="date">Jan 20, 2020</h4>
 
             <article class="post">
                 <h2 class="title">
@@ -300,6 +149,157 @@ make publish-to-github</code></p>
 
                 <div class="info">
                     <a href="https://cocoaaa.github.io/articles/2020/01/10/lets-blog-with-pelican">posted at 00:00</a>
+                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+                </div>
+            </article>            <h4 class="date">Dec 31, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="https://cocoaaa.github.io/articles/2019/12/31/cool-chart-tool-amcharts" rel="bookmark" title="Permanent Link to &quot;Cool Chart tool: `amcharts`&quot;">Cool Chart tool: `amcharts`</a>
+                </h2>
+
+                
+                
+
+                <p>While making a visualization for my part whereabouts for the <a href="#">front page</a> of this blog, I came across this easy-to-use visualization examples using <code>amcharts</code>.  Initially, I wanted to use Google Earth Studio but it required me to import country boundaries (in KML files) as well as time to learn new toolsuites, so I find this javascript based demos more useful for my need. </p>
+<p>List of timeline + map charts
+- <a href="https://www.amcharts.com/demos/fishbone-timeline/">Fishbone timeline</a>
+- <a href="https://www.amcharts.com/demos/flight-routes-map/">Fight routes on map</a>
+- <a href="https://www.amcharts.com/demos/animations-along-lines/">Flight animation on map</a>
+- <a href="https://www.amcharts.com/demos/map-line-chart-gauge/">Timeline animation with fligh on map</a>
+- and many more <a href="https://www.amcharts.com/demos/#maps">demos</a></p>
+<p>Pretty neat!</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="https://cocoaaa.github.io/articles/2019/12/31/cool-chart-tool-amcharts">posted at 00:00</a>
+                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+                </div>
+            </article>            <h4 class="date">Feb 01, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="https://cocoaaa.github.io/articles/2019/02/01/multimodal-distribution-in-image-or-text-domain" rel="bookmark" title="Permanent Link to &quot;Multimodal Distribution in Image or Text domain&quot;">Multimodal Distribution in Image or Text domain</a>
+                </h2>
+
+                
+                
+
+                <p>Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?</p>
+<p>While reading papers on conditional image generation using generative modeling (eg. <a href="https://tinyurl.com/s5drg9c">"Toward Multimodal Image-to-Image Translation"</a> by Zhu et al (NIPS 2017)), I wasn't clear what was meant by "one-to-many mapping" between input image domain and output image domain, "multimodal distribution" in the output image domain, or "multi-modal outputs" (eg. <a href="https://tinyurl.com/szjmmzf">Quora</a>). </p>
+<h3>Definition</h3>
+<blockquote>
+<p>In statistics, a <code>multimodal distribution</code> is a continuous probability distribution with two or more modes (distinct peaks; local maxima) - <a href="https://tinyurl.com/pa47gte">wikipedia</a></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>(single-variable) bimodal distribution</th>
+<th>bivariate multimodal distribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/images/bimodal.png" alt="bimodal" /></td>
+<td><img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" /></td>
+</tr>
+</tbody>
+</table>
+<!--|<img src="/images/bimodal.png" alt="bimodal" width="250px"/> | <img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" width="250px"/>-->
+
+<p>In high-dimensional space (such as an Image domain: $P(X)$ where X lives in $d$-dim space where $d$ is the number of pixels, eg. $32x32=1024$. If each pixel $X_i$ takes a binary value (0 or 1), the size of this image domain is $2^{1024}$.  If each pixel takes an integer value $\in [0,255]$, then the size of this image domain is $256^{1024}$. This, by the way, is too big to compute for Mac's spotlight:</p>
+<p><img src="/images/too-big.png" alt="too-big" width="500px"/>    </p>
+<p>What it means by saying "the distribution of (output) image is multimodal" is to say, there are multiple images (ie. realization of the random variable (vector) X) with the (local) maxima value of the probability. In Figure below, the green dots represent the local maxima, ie. modes of the distribution. The configurations (ie. specific values/realizations) that achieves the (local) maximum probability density are the "probable/likely" images. </p>
+<figure>
+    <img src='images/gan-multimodal-outputs.jpg' alt='gan-multimodal-outputs' width="250px"/>
+     <img src='images/bivariate-multimodal-annot.png' alt='multimodal-annot' width="250px"/>
+    <figcaption>The green dots representing modes of the distribution over the image domain (which is abstracted into a 2Dim space for visualization, in this case)</figcaption>
+</figure>
+
+<p>So, given one input image, if the distribution of the output image random variable is multi-modal, the standard problem of <pre>Find $x$ s.t. $\underset{x \in \mathcal{X}}{\arg\max} P(X)$ ($\mathcal{X}$ is the image space)</pre> has multiple solutions. According to the paper (Toward Multimodal Image-to-Image Translation), many previous works have produced a "single" output image as "the" argmax of the output image distribution. But this is not accurate if the output image distribution is multi-modal.  We would like to see/generate as many of those argmax configurations/output images. One way to do so, is by sampling from the output image distribution.  This is the paper's approach. </p>
+<hr>
+<h3>Multimodal distribution as the distribution over the space of target domains [Domain adaption/transfer leraning]</h3>
+<p>So far, I viewed the multimodal distribution as a distribution over a specific domain (eg. Image domain), and the random variable corresponded to a realization, eg. an observed/sampled/output image instance. However, </p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="https://cocoaaa.github.io/articles/2019/02/01/multimodal-distribution-in-image-or-text-domain">posted at 00:00</a>
+                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="https://cocoaaa.github.io/tag/generative-modeling.html" class="tags">generative-modeling</a>
+                    &nbsp;<a href="https://cocoaaa.github.io/tag/multimodal.html" class="tags">multimodal</a>
+                    &nbsp;<a href="https://cocoaaa.github.io/tag/one-to-many-mapping.html" class="tags">one-to-many-mapping</a>
+                </div>
+            </article>            <h4 class="date">Jan 01, 2017</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec" rel="bookmark" title="Permanent Link to &quot;Git refspec&quot;">Git refspec</a>
+                </h2>
+
+                
+                
+
+                <p>Resource: <a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec">git-book</a></p>
+<h2>Git Remotes</h2>
+<blockquote>
+<p>Remote repositories: versions of your project that are hosted on the internet</p>
+</blockquote>
+<h3><code>git remote -v</code></h3>
+<p>Let's say I cloned a repository from some repository, for instance
+<code>git@github.com:cocoaaa/dip.git</code>, by running:</p>
+<div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">cocoaaa</span><span class="o">/</span><span class="n">dip</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+
+
+<p>Then, in this cloned repo's directory in my local machine, 
+<code>git remote</code> will list the shortnames of each remote handle I've specified. 
+By default, Git gives to the server I've just cloned the shortname, <code>origin</code>.
+Use <code>git remote -v</code> to see both the shortname and the URLs that Git has stored for
+each shortname to use for reading and writing to that remote.</p>
+<p><img alt="git-remote" src="https://cocoaaa.github.io/images/git-remote.png"></p>
+<h3><code>git remote add &lt;shortname&gt; &lt;URL&gt;</code></h3>
+<dl>
+<dd>adds a remote in <code>&lt;URL&gt;</code> with the shortname of <code>&lt;shortname&gt;</code></dd>
+</dl>
+<h3><code>git fetch &lt;remote&gt;</code></h3>
+<p>The command goes out to that remote project and pulls down all the data from that
+remote project that I don't have yet. It does so for all branches in the remote.
+Upon the command execution, I should have references to all the branches from that
+remote, and I can merge in or inspect them at any time.</p>
+<p>Remember that <code>git fetch</code> command only downloads the data to my local repository,
+and does <em>NOT</em> automatically merge it with any of my work or modify what I'm currently
+working on. So, it is safer than <code>git pull</code>, yet I'm required to merge it into my 
+work whenever I'm ready. </p>
+<p>For fetching and pushing, my current branch needs be set up to track a remote 
+<em>branch</em>. In other words, setting up the URL to the remote repository is not enough, 
+and we need to specify which local branch will track which remote branch.  </p>
+<p><code>git clone &lt;some-repo-url&gt;</code> automatically sets up my local <code>master</code> branch to 
+track the remote default branch (often also <code>master</code>) on the server I cloned from,
+ie. <code>&lt;URL&gt;</code>.</p>
+<h3>Push my (local) changes to the remote server (upstream)</h3>
+<p><code>git push &lt;remote&gt; &lt;branch&gt;</code> pushes my local <code>branch</code> to my <code>remote</code> server. 
+For example, if I want to push my <code>master</code> branch to my <code>origin</code> server (recall 
+that these names are set up by <code>git clone &lt;some-repo-url&gt;</code> command automatically),
+run: <code>git push origin master</code>. Again, <code>origin</code> is the shortname assigned to the 
+remote server URL, and <code>master</code> is the name of the local branch I'm pushing.</p>
+<p>If I want to push my local <code>dev-local</code> branch to my remote repository called <code>origin</code>'s 
+<code>dev-remote</code> branch, I'd run <code>git push origin dev-local:dev-remote</code>. 
+The colon syntax follows <code>src_refspec</code>:<code>dst_refspec</code> where <code>src_refspec</code> and <code>dst_refspec</code>
+are the refspecs of the source branch (in local) and the destination branch (in remote)
+of the <code>git push</code> action, respectively.</p>
+<blockquote>
+<p>Q: wait, we don't need to specify which branch in the remote server to push 
+the local branch?</p>
+</blockquote>
+<h3>Inspecting a remote</h3>
+<p><code>git remote show &lt;remote-shortname&gt;</code> command shows the details of the particular 
+remote. </p>
+<p><img alt="git-remote-show" src="https://cocoaaa.github.io/images/git-remote-show.png"></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec">posted at 00:00</a>
                     &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
                 </div>
             </article>
