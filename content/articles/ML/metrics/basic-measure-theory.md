@@ -3,16 +3,13 @@ Date: 2020-02-22
 Tags: measure-theory, random-variable, measure, probability-theory
 
 ## Measure
-
-![orbanz-1-2][/pdfs/Orbanz-1-2.pdf]
+![orbanz-1-2](images/orbanz-1-2.png)
 - Intuition: roughly a measure is an integral as a function of its region
 $$ \mu(A) = \int_{A} dx ~~\text{or,} ~~~\mu(A) = \int_{A} p(x) dx $$
 For example, in geometric case, $\mu(A)$ can be interpreted as a (physical) length (if $A$ is one dimensional), mass (if $A$ is two dimensional), or volumn (if three-dim) of a region $A$. In the case that $\mu$ is a measure of probability, $\mu(A)$ is the probability mass of event, "random variable $X$ takes values in the set $A$ (also called event $A$)"
 
 ## Density
-![orbanz-1-3][/pdfs/Orbanz-1-3.pdf]
-
-
+![orbanz-1-3](images/orbanz-1-3.png)
 A (probability) density is a function that transforms one measure to another measure by pointwise reweighting (on the abstract sample space $\Omega$)
 ![probability-density](/images/Orbanz-probability-density.png)
 
@@ -24,7 +21,7 @@ A (probability) density is a function that transforms one measure to another mea
 Think of the abstract probability space as the entire system of the universe. A point in the space is a state of the universe (eg. a long vector of values assigned to all existing atoms' states). We often don't have a direct access to this "state", ie. it is not fully observable to us. Instead we observe/measure variables that are some functions of this atomic configuration/state ($w$). This mapping from a state of the universe to a value that the variable of our interest is observed/measured to take is called a "Random Variable". 
 
 ## Random Variable
-![orbanz-1-4][/pdfs/Orbanz-1-4.pdf]
+![orbanz-1-4](images/orbanz-1-4.png)
 - is a function that maps a outcome in the abstract probability space's sample space $\Lambda$ to the sample space of the observation space $\Omega$ (often $\mathbb{R}$)
 - it is the key component that connects the abstract probability space (which we don't get to directly observe) to the observation space
 - Image measure $\mu_{X}$ is the (derived/induced) measure on the observation space that is related to the abstract probability space via the random variable $X$. 
