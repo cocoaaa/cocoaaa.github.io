@@ -24,7 +24,10 @@ development config file&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;make devserver&lt;/code&gt;: (re)starts a http server in the &lt;code&gt;output …&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary></entry><entry><title>Cool Chart tool: `amcharts`</title><link href="https://cocoaaa.github.io/articles/2019/12/31/cool-chart-tool-amcharts" rel="alternate"></link><published>2019-12-31T00:00:00-08:00</published><updated>2019-12-31T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-12-31:articles/2019/12/31/cool-chart-tool-amcharts</id><summary type="html">&lt;p&gt;While making a visualization for my part whereabouts for the &lt;a href="#"&gt;front page&lt;/a&gt; of this blog, I came across this easy-to-use visualization examples using &lt;code&gt;amcharts&lt;/code&gt;.  Initially, I wanted to use Google Earth Studio but it required me to import country boundaries (in KML files) as well as time to learn new …&lt;/p&gt;</summary></entry><entry><title>Basics of Python Image Library (PIL)</title><link href="https://cocoaaa.github.io/articles/2019/08/01/basics-of-python-image-library-pil" rel="alternate"></link><published>2019-08-01T00:00:00-07:00</published><updated>2019-08-01T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-08-01:articles/2019/08/01/basics-of-python-image-library-pil</id><summary type="html">&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Python-Imaging-Library-(PIL)"&gt;Python Imaging Library (PIL)&lt;a class="anchor-link" href="#Python-Imaging-Library-(PIL)"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="Python-Imaging-Library-(PIL)"&gt;Python Imaging Library (PIL)&lt;a class="anchor-link" href="#Python-Imaging-Library-(PIL)"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Date: 2020-03-01 (Sun)&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

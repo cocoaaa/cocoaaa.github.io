@@ -1354,7 +1354,10 @@ h6:hover .anchor-link {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style><body><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Python-Imaging-Library-(PIL)">Python Imaging Library (PIL)<a class="anchor-link" href="#Python-Imaging-Library-(PIL)">&#182;</a></h2>
+<h2 id="Python-Imaging-Library-(PIL)">Python Imaging Library (PIL)<a class="anchor-link" href="#Python-Imaging-Library-(PIL)">&#182;</a></h2><ul>
+<li>Date: 2020-03-01 (Sun)</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -1870,6 +1873,362 @@ shape:  (256, 256)
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conversions-between-PIL.Image-and-torch.tensor">Conversions between <code>PIL.Image</code> and <code>torch.tensor</code><a class="anchor-link" href="#Conversions-between-PIL.Image-and-torch.tensor">&#182;</a></h2><p>Use <code>torchvision.transforms</code></p>
+<ol>
+<li><code>tvts.ToTensor()</code>(pil_im) $\Rightarrow$ <code>torch.FloatTensor</code> of shsape (C,H,W)<ul>
+<li>this transform scales the values to range [0.0, 1.0] if the PIL.Image belongs to one of modes in (1, L, LA, P, RGB, YCbCr, RGBA, CMYK,  I, F,). Note this list of modes covers most of the cases</li>
+<li>this function can take <code>np.ndarray</code> as an input to return a <code>torch.FloatTensor</code>.<ul>
+<li>assumes the <code>np.ndarray</code> follows (H,W,C) numpy image convension.</li>
+<li>scaling to range [0.0, 1.0] happens if the <code>np.ndarray</code> had dtype of <code>np.uint8</code>
+Let's check if the scaling effect of <code>tvts.ToTensor()</code> actually happens only when its input <code>np.ndarray</code> is of dtype == <code>np.uint8</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>PIL.Image</code> object with its <code>mode</code> == <code>F</code> stores each pixel as 32-bit float in range of [0.0, 256.0).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">im_F</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;F&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;PIL Image mode: &#39;</span><span class="p">,</span> <span class="n">im_F</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>PIL Image mode:  F
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np_im_F</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">im_F</span><span class="p">)</span>
+<span class="n">print_info</span><span class="p">(</span><span class="n">np_im_F</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dtype:  float32
+range:  ((0.456, 253.256))
+shape:  (256, 256)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, let's try to convert this 32-bit floating point <code>np.ndarray</code> to a <code>torch.tensor</code> object using <code>torchvision.transforms.ToTensor()</code> class</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torchvision.transforms</span> <span class="k">as</span> <span class="nn">tvts</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t_from_pil</span> <span class="o">=</span> <span class="n">tvts</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">()(</span><span class="n">im_F</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=== t_from_pil ===&#39;</span><span class="p">)</span>
+<span class="n">print_info</span><span class="p">(</span><span class="n">t_from_pil</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>=== t_from_pil ===
+dtype:  torch.float32
+range:  ((tensor(0.4560), tensor(253.2560)))
+shape:  torch.Size([1, 256, 256])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t_from_np</span> <span class="o">=</span> <span class="n">tvts</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">()(</span><span class="n">np_im_F</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=== t_from_np ===&#39;</span><span class="p">)</span>
+<span class="n">print_info</span><span class="p">(</span><span class="n">t_from_np</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>=== t_from_np ===
+dtype:  torch.float32
+range:  ((tensor(0.4560), tensor(253.2560)))
+shape:  torch.Size([1, 256, 256])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can see that the output tensors are still <code>torch.FloatTensor</code> (ie. <code>torch.tensor</code> of dtype of float32) but the values are not normalized to range [0.0, 1.0].  This confirms that the <code>tvts.ToTensor()</code> scales its input <code>PIL.Image</code> or <code>np.nadarray</code> object to range [0.0, 1.0] only when the input's dtype == <code>uint8</code>. Note that the returned <code>torch.Tensor</code> always has <strong>3 dims</strong>.</p>
+<p>Now, let's check if it does the scaling when the input <code>np.ndarray</code>or <code>PIL.Image</code> indeed has dtype of unsigned 8bit-integer (ie. <code>uint8</code>). We are going to use <code>PIL.Image</code> with mode <code>RGB</code> as an example.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">im_rgb</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">im</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>RGB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np_rgb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">im_rgb</span><span class="p">)</span>
+<span class="n">print_info</span><span class="p">(</span><span class="n">np_rgb</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dtype:  uint8
+range:  ((0, 255))
+shape:  (256, 256, 3)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># to tensor</span>
+<span class="n">t_from_pil_rgb</span> <span class="o">=</span> <span class="n">tvts</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">()(</span><span class="n">im_rgb</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; === t_from_pil_rgb === &#39;</span><span class="p">)</span>
+<span class="n">print_info</span><span class="p">(</span><span class="n">t_from_pil_rgb</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> === t_from_pil_rgb === 
+dtype:  torch.float32
+range:  ((tensor(0.), tensor(1.)))
+shape:  torch.Size([3, 256, 256])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t_from_np_rgb</span> <span class="o">=</span> <span class="n">tvts</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">()(</span><span class="n">np_rgb</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; === t_from_np_rgb === &#39;</span><span class="p">)</span>
+<span class="n">print_info</span><span class="p">(</span><span class="n">t_from_np_rgb</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> === t_from_np_rgb === 
+dtype:  torch.float32
+range:  ((tensor(0.), tensor(1.)))
+shape:  torch.Size([3, 256, 256])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice the range of the returned <code>torch.Tensor</code>s. They are both in range of [0.0, 1.0].</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
