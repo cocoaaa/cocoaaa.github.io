@@ -112,24 +112,27 @@ Let's denote the set of all parameters in the model, <span class="math">\(\theta
 <p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis(<span class="math">\(\theta\)</span>) as more evidence or information becomes available <a href="#">wikipedia</a>.</p>
 <ul>
 <li>My sketch<br>
-![bayesian-inference](/images/bayesian-inference.jpg</li>
+<img alt="bayesian-inference" src="/images/bayesian/bayesian-inference.jpg"></li>
 </ul>
 <p>It is <strong>not</strong> a model, it is a general <strong>method</strong>(aka. <strong>technique</strong>, <strong>algorithm</strong>) that allows to infer unknowns probabilistically via computing, eg. marginal and conditional distributions of the model, the distribution over the parameters given observed data, the conditional distribution over the latent variables given the observed data.  </p>
 <p>Since it is a general technique (or an appoarch to doing inference) that is not tied to a specific model or a problem, we can use it whenever a suitable setup is presented.  In the Bayesian Data analysis workflow, I see two places where we can use the Bayes theorem to infer some unknown quantities in the model (ie. use bayesian inference to compute unknowns given knowns).</p>
 <ol>
-<li>Use bayesian inference method to learn the model from the observed data. That is, what is the probability of the parameter of the model given observation?</li>
-</ol>
+<li>
+<p>Use bayesian inference method to learn the model from the observed data. That is, what is the probability of the parameter of the model given observation?
 <div class="math">$$ P(\theta \mid \bar{X})$$</div>
-<ol>
-<li>Use bayes' theorem to compute the conditional distribution of latent variables given observed data and a fixed parameter (eg. the learned parameter from step 1)
+</p>
+</li>
+<li>
+<p>Use bayes' theorem to compute the conditional distribution of latent variables given observed data and a fixed parameter (eg. the learned parameter from step 1)
 <div class="math">$$ P(Z \mid \bar{X}, \bar{\theta})$$</div>
+</p>
 </li>
 </ol>
 <p>Note: I was living in the smog under the impression that "Bayesian inference" is tied to either 1 or 2. But now I understand "bayesian inference" just means computing probability distribution over the unknowns (either because they are unobservable (ie. conditional distribution of latent variables given observed data), or a subset of variables (ie. marginal distribution) that requires further computation on the joint distribution (aka. the probability model)). So, as Wikipedia's definition clarifies, anytime we have a quantity (with prior distribution) and make observations regarding a relevant process, we can <strong>update</strong> the prior distribution using the observed data via Bayes Theorem. That is all that is in the intimidating word "Bayesian inference". Gosh, can we please give another name to this way of doing computation with a probability model and  data assumed to come from the probability model? "Inference" is such intimidating word. I feel like I need to do philosophy to use this word and everytime I hear this term, I feel like I never understand what the heck it is about because I don't understand what inference means in Philosophy. Yikes! :[</p>
 <h2>Approximate Inference</h2>
 <p>When we cannot compute the "flipped" probability ("flipped" using the Bayes Theorem) because it is, for example, too computationally expensive, we sometimes resort to an approximation of the true "flipped" probability. </p>
 <h3>Variational Approximate Inference</h3>
-<p>People call this "Variational Bayes", which I find it very loaded and unclear whether if the term refers to a method of inference or some model family becuase both "V" and "B" are captialized and it gives me an impressions that it's a name of some specific class of probability distributions. Yikes2! :[ Please give another name to it. </p>
+<p>People call this "Variational Bayes", which I find it very loaded and unclear whether if the term refers to a method of inference or some model family because both "V" and "B" are captialized and it gives me an impressions that it's a name of some specific class of probability distributions. Yikes2! :[ Please give another name to it. </p>
 <p>Variational Approximate Bayesian Inference is:</p>
 <blockquote>
 <p>a method of finding a "good" <strong>approximate</strong> distribution to the "flipped" distribution of your probability model (ie. <span class="math">\(P\)</span> with a fixed parameter <span class="math">\(\bar{\theta}\)</span>) (ie2: <strong>"flipped" using Bayes theorem</strong> given your probability model) by formulating a proper <strong>optimization</strong> problem. </p>
@@ -138,7 +141,7 @@ Let's denote the set of all parameters in the model, <span class="math">\(\theta
 <ul>
 <li>Sketch for understanding the motivation for variational bayesian inference method (aka. Variational Bayes)</li>
 </ul>
-<p><img alt="variational-bayes" src="/images/variational-bayes.jpg"></p>
+<p><img alt="variational-bayes" src="/images/bayesian/variational-bayes.jpg"></p>
 <p>To be continued...</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
