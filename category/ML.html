@@ -257,23 +257,36 @@ Think of the abstract probability space as the entire system of the universe. A 
 <p>Bayesian data analysis is a way to iteratively building a mathemtical description of a physical phenomenon of interest using observed data. </p>
 <h2>Setup</h2>
 <p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (<span class="math">\(\theta\)</span>) as more evidence or information becomes available [wikipedia].</p>
-<p>Therefore, it is used in the following scenario. I'll refer to the workflow as the workflow of "Bayesian data analysis" following Gelman.
-1. We have some physical phenomenon (aka. process) of interest that we want to describe with mathematical language. Why? because once we have the description (aka. mathematical model of the physical phenomenon), we can use it to explain how the phenomenon works as a function of its inner components, predict how it would behave as the inner components or its input variables take different values, (... any other usage of the mathematical model?)
-2. We decide how to describe the phenomenon using a mathematical language by specifying:
-  - Variables 
-  - Relations
-This is the step of "choosing a model family (aka. a statistical model)"
-3. Now we have specified a family of probability models, each of which corresponds to a particular hypothesis/explaination of the physical process of interest. What we need to do is, to choose the "best" hypothesis from all of these possible hypotheses. To do so, we need to observe how the physical phenomenon manifests by collecting data of the outcomes of the phenomenon.
-4. Collect data of the outcomes of the phenomenon.
-5. "Learn"/"Fit" the model to the data.  (aka, "estimate" the parameters (<span class="math">\(\theta\)</span>) with the data). In English, this corresponds to "find a hypothesis of the phenomenon that matches the observed data "best"".  To find such hypothesis <span class="math">\(\theta \in \Theta\)</span>, we need to define what is means to be the "best" hypothesis given the model (aka. Hypothesis space) and the observed data. We formulate this step as an optimization problem:
-  - choose a loss function <span class="math">\(L(\theta \mid \text{model}, \bar{X})\)</span>
-  - Solve the optimization problem of finding argmin of the loss:
-  </p>
-<div class="math">$$ \theta^{*} = \arg min  ~~ L(\theta \mid \text{model}, \bar{x})$$</div>
-<p>
-  - Note: <span class="math">\(L(\theta \mid \text{model}, \bar{x}) \equiv L(\theta \mid \Theta, \bar{X})\)</span>. So we can rewrite the optimization objection as: 
-  </p>
-<div class="math">$$ \theta^{*} = \arg min_{\theta \in \Theta}  ~~ L(\theta \mid  \bar{x})$$</div>
+<p>Therefore, it is used in the following scenario. I'll refer to the workflow as the workflow of "Bayesian data analysis" following Gelman.</p>
+<ol>
+<li>
+<p>We have some physical phenomenon (aka. process) of interest that we want to describe with mathematical language. Why? because once we have the description (aka. mathematical model of the physical phenomenon), we can use it to explain how the phenomenon works as a function of its inner components, predict how it would behave as the inner components or its input variables take different values, (... any other usage of the mathematical model?)</p>
+</li>
+<li>
+<p>We decide how to describe the phenomenon using a mathematical language by specifying:</p>
+</li>
+<li>Variables </li>
+<li>
+<p>Relations
+This is the step of "choosing a model family (aka. a statistical model)"</p>
+</li>
+<li>
+<p>Now we have specified a family of probability models, each of which corresponds to a particular hypothesis/explanation of the physical process of interest. What we need to do is, to choose the "best" hypothesis from all of these possible hypotheses. To do so, we need to observe how the physical phenomenon manifests by collecting data of the outcomes of the phenomenon.</p>
+</li>
+<li>
+<p>Collect data of the outcomes of the phenomenon.</p>
+</li>
+<li>
+<p>"Learn"/"Fit" the model to the data.  (aka, "estimate" the parameters (<span class="math">\(\theta\)</span>) with the data). In English, this corresponds to "find a hypothesis of the phenomenon that matches the observed data "best"".  To find such hypothesis <span class="math">\(\theta \in \Theta\)</span>, we need to define what is means to be the "best" hypothesis given the model (aka. Hypothesis space) and the observed data. We formulate this step as an optimization problem:</p>
+</li>
+<li>choose a loss function <span class="math">\(L(\theta \mid \text{model}, \bar{X})\)</span></li>
+<li>Solve the optimization problem of finding argmin of the loss:
+  <div class="math">$$ \theta^{*} = \arg min  ~~ L(\theta \mid \text{model}, \bar{x})$$</div>
+</li>
+<li>Note: <span class="math">\(L(\theta \mid \text{model}, \bar{x}) \equiv L(\theta \mid \Theta, \bar{X})\)</span>. So we can rewrite the optimization objection as: 
+  <div class="math">$$ \theta^{*} = \arg min_{\theta \in \Theta}  ~~ L(\theta \mid  \bar{x})$$</div>
+</li>
+</ol>
 <h2>More specific scenario: a phenomenon with unobservable variables</h2>
 <p>Most physical phenomenon involves variables that we can't directly observe. These are called "Latent variables", and a statiscal model with such unobservable variables (in addition to observed/data variables) are called "Latent Variable Model".  When we are focusing on the latent variable model, we often use <span class="math">\(Z\)</span> as the latent variables and <span class="math">\(X\)</span> as the data sample variable. That is, if we have <span class="math">\(N\)</span> observation, the sample variable will be a vector of <span class="math">\(N\)</span> data variables: <span class="math">\(X = {X_1, X_2, \dots , X_N }\)</span>.  The general setup of Bayesian data analysis workflow above (ie. choose a model <span class="math">\(\rightarrow\)</span> collect data <span class="math">\(\rightarrow\)</span> fit the model to the data <span class="math">\(\rightarrow\)</span> criticize the model <span class="math">\(\rightarrow\)</span> repeat).  We can express the bayesian data analysis workflow using these notations as follows:
 (Note these notations are consistent with Blei MLSS2019.)</p>
