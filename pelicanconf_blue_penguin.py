@@ -107,7 +107,7 @@ MONTH_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/{date:%m}/index.html'
 ################################################################################
 # Note: these two values do not take effect in the current theme
 # Instead, the menu bar items are manually set in `theme/templates/base.html`
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False #True
 # DISPLAY_CATEGORIES_ON_MENU = True
 # The following variable names must match the names used as varnames in the navbar
 # class of `theme/templates/base.html`

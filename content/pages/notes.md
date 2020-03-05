@@ -1,6 +1,6 @@
 Title: Notes  
 Modified: 2020-01-12
-
+status: draft
 ---
 # Pelican blog setup references
 1. Site generation setting variable definitions: [pelican doc](http://docs.getpelican.com/en/stable/settings.html)

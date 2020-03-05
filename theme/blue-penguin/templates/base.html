@@ -54,13 +54,13 @@
                 {% if DISPLAY_HOME or DISPLAY_HOME is not defined %}
                 <li{% if output_file == "index.html" %} class="selected"{% endif %}><a href="{{ SITEURL }}/">Home</a></li>
                 {% endif %}
-                {% if DISPLAY_PAGES_ON_MENU %}
-                {% for p in pages %}
-                    {%  if output_file != "index.html" %}
-                        <li{% if p == page %} class="selected"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-                    {% endif %}
-                {% endfor %}
-                {% endif %}
+{#                {% if DISPLAY_PAGES_ON_MENU %}#}
+{#                    {% for p in pages %}#}
+{#                        {%  if output_file != "index.html" %}#}
+{#                            <li{% if p == page %} class="selected"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>#}
+{#                        {% endif %}#}
+{#                    {% endfor %}#}
+{#                {% endif %}#}
                 {% for title, link in MENUITEMS %}
                 <li><a href="{{ link }}">{{ title }}</a></li>
                 {% endfor %}

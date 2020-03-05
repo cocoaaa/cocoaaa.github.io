@@ -1,4 +1,5 @@
 Title: Projects
+Status: draft 
 
 This file will contain descriptions of my past and present projects.
 
