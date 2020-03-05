@@ -186,6 +186,7 @@ MENU_INTERNAL_PAGES = (
 ################################################################################
 PLUGIN_PATHS = ['./plugins', './plugins/pelican-plugins']
 PLUGINS = [
+    'render_math',
     'pelican_javascript',
     'summary',       # auto-summarizing articles
     'feed_summary',  # use summaries for RSS, not full articles
