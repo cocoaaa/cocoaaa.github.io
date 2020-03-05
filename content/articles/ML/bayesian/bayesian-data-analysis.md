@@ -49,7 +49,7 @@ Generally speaking, inference (which stems from the Philosophy of Science)
 ### Bayesian inference method
 Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis ($\theta$) as more evidence or information becomes available [wikipedia].
 - My sketch
-![IMAGE](resources/EF0EE1536F7D4D504FFE9DA77F9F81D7.jpg =500x)
+![bayesian-inference](images/bayesian-inference.jpg =500x)
 
 It is __not__ a model, it is a general __method__(aka. __technique__, __algorithm__) that allows to infer unknowns probabilistically via computing, eg. marginal and conditional distributions of the model, the distribution over the parameters given observed data, the conditional distribution over the latent variables given the observed data.  
 
@@ -78,6 +78,6 @@ So far, we have discussed about "bayesian inferece", and the need to sometimes b
 
 - Sketch for understanding the motivation for variational bayesian inference method (aka. Variational Bayes)
 
-![IMAGE](resources/2260F69EAA8B990E27B111CB8A80556B.jpg =500x)
+![variational-bayes](images/variational-bayes.jpg =500x)
 
-[to be continued.....]
+To be continued...
