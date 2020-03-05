@@ -57,11 +57,11 @@
 </li>
 <li>
 <p>We decide how to describe the phenomenon using a mathematical language by specifying:</p>
-</li>
+<ul>
 <li>Variables </li>
-<li>
-<p>Relations
-This is the step of "choosing a model family (aka. a statistical model)"</p>
+<li>Relations
+This is the step of "choosing a model family (aka. a statistical model)"</li>
+</ul>
 </li>
 <li>
 <p>Now we have specified a family of probability models, each of which corresponds to a particular hypothesis/explanation of the physical process of interest. What we need to do is, to choose the "best" hypothesis from all of these possible hypotheses. To do so, we need to observe how the physical phenomenon manifests by collecting data of the outcomes of the phenomenon.</p>
@@ -71,13 +71,15 @@ This is the step of "choosing a model family (aka. a statistical model)"</p>
 </li>
 <li>
 <p>"Learn"/"Fit" the model to the data.  (aka, "estimate" the parameters (<span class="math">\(\theta\)</span>) with the data). In English, this corresponds to "find a hypothesis of the phenomenon that matches the observed data "best"".  To find such hypothesis <span class="math">\(\theta \in \Theta\)</span>, we need to define what is means to be the "best" hypothesis given the model (aka. Hypothesis space) and the observed data. We formulate this step as an optimization problem:</p>
-</li>
+<ul>
 <li>choose a loss function <span class="math">\(L(\theta \mid \text{model}, \bar{X})\)</span></li>
 <li>Solve the optimization problem of finding argmin of the loss:
   <div class="math">$$ \theta^{*} = \arg min  ~~ L(\theta \mid \text{model}, \bar{x})$$</div>
 </li>
 <li>Note: <span class="math">\(L(\theta \mid \text{model}, \bar{x}) \equiv L(\theta \mid \Theta, \bar{X})\)</span>. So we can rewrite the optimization objection as: 
   <div class="math">$$ \theta^{*} = \arg min_{\theta \in \Theta}  ~~ L(\theta \mid  \bar{x})$$</div>
+</li>
+</ul>
 </li>
 </ol>
 <h2>More specific scenario: a phenomenon with unobservable variables</h2>
@@ -103,8 +105,10 @@ Let's denote the set of all parameters in the model, <span class="math">\(\theta
 <li>
 <p>Collect data: <span class="math">\(\bar{X}\)</span></p>
 </li>
-<li>Fit the model to the observed data</li>
+<li>Fit the model to the observed data<ul>
 <li>Choose a loss function (a function wrt parameters): <span class="math">\(L(\theta;\bar{X})\)</span> for <span class="math">\(\theta \in \Theta\)</span></li>
+</ul>
+</li>
 </ul>
 <h2>Inference</h2>
 <p>Generally speaking, inference (which stems from the Philosophy of Science)</p>
