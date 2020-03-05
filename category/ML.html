@@ -259,7 +259,7 @@ Think of the abstract probability space as the entire system of the universe. A 
 <p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (<span class="math">\(\theta\)</span>) as more evidence or information becomes available [wikipedia].</p>
 <p>Therefore, it is used in the following scenario. I'll refer to the workflow as the workflow of "Bayesian data analysis" following Gelman.
 1. We have some physical phenomenon (aka. process) of interest that we want to describe with mathematical language. Why? because once we have the description (aka. mathematical model of the physical phenomenon), we can use it to explain how the phenomenon works as a function of its inner components, predict how it would behave as the inner components or its input variables take different values, (... any other usage of the mathematical model?)
-2. We decide how to describe the phenomenon using a mathematical language by specifing:
+2. We decide how to describe the phenomenon using a mathematical language by specifying:
   - Variables 
   - Relations
 This is the step of "choosing a model family (aka. a statistical model)"
@@ -275,7 +275,7 @@ This is the step of "choosing a model family (aka. a statistical model)"
   </p>
 <div class="math">$$ \theta^{*} = \arg min_{\theta \in \Theta}  ~~ L(\theta \mid  \bar{x})$$</div>
 <h2>More specific scenario: a phenomenon with unobservable variables</h2>
-<p>Most physical phenomenon involves variables that we can't directly observe. These are called "Latent variables", and a statiscal model with such unobservable variables (in addition to observed/data variables) are called "Latent Variable Model".  When we are focusing on the latent variable model, we often use <span class="math">\(Z\)</span> as the latent variables and <span class="math">\(X\)</span> as the data sample variable. That is, if we have <span class="math">\(N\)</span> observation, the sample variable will be a vector of <span class="math">\(N\)</span> data variables: <span class="math">\(X = \{X_1, X_2, \dots , X_N \}\)</span>.  The general setup of Bayesian data analysis workflow above (ie. choose a model <span class="math">\(\rightarrow\)</span> collect data <span class="math">\(\rightarrow\)</span> fit the model to the data <span class="math">\(\rightarrow\)</span> criticize the model <span class="math">\(\rightarrow\)</span> repeat).  We can express the bayesian data analysis workflow using these notations as follows:
+<p>Most physical phenomenon involves variables that we can't directly observe. These are called "Latent variables", and a statiscal model with such unobservable variables (in addition to observed/data variables) are called "Latent Variable Model".  When we are focusing on the latent variable model, we often use <span class="math">\(Z\)</span> as the latent variables and <span class="math">\(X\)</span> as the data sample variable. That is, if we have <span class="math">\(N\)</span> observation, the sample variable will be a vector of <span class="math">\(N\)</span> data variables: <span class="math">\(X = {X_1, X_2, \dots , X_N }\)</span>.  The general setup of Bayesian data analysis workflow above (ie. choose a model <span class="math">\(\rightarrow\)</span> collect data <span class="math">\(\rightarrow\)</span> fit the model to the data <span class="math">\(\rightarrow\)</span> criticize the model <span class="math">\(\rightarrow\)</span> repeat).  We can express the bayesian data analysis workflow using these notations as follows:
 (Note these notations are consistent with Blei MLSS2019.)</p>
 <ul>
 <li>In English, describe what is the physical phenomenon of interest</li>
@@ -300,7 +300,7 @@ This is the step of "choosing a model family (aka. a statistical model)"
 <h3>Bayesian inference method</h3>
 <p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (<span class="math">\(\theta\)</span>) as more evidence or information becomes available [wikipedia].
 - My sketch
-<img alt="bayesian-inference" src="images/bayesian-inference.jpg =500x"></p>
+<img alt="bayesian-inference" src="/images/bayesian-inference.jpg =500x"></p>
 <p>It is <strong>not</strong> a model, it is a general <strong>method</strong>(aka. <strong>technique</strong>, <strong>algorithm</strong>) that allows to infer unknowns probabilistically via computing, eg. marginal and conditional distributions of the model, the distribution over the parameters given observed data, the conditional distribution over the latent variables given the observed data.  </p>
 <p>Since it is a general technique (or an appoarch to doing inference) that is not tied to a specific model or a problem, we can use it whenever a suitable setup is presented.  In the Bayesian Data analysis workflow, I see two places where we can use the Bayes theorem to infer some unknown quantities in the model (ie. use bayesian inference to compute unknowns given knowns).</p>
 <ol>
@@ -312,20 +312,20 @@ This is the step of "choosing a model family (aka. a statistical model)"
 <div class="math">$$ P(Z \mid \bar{X}, \bar{\theta})$$</div>
 </li>
 </ol>
-<p>Note: I was living in the smog under the impression that "Bayeisan inference" is tied to either 1 or 2. But now I understand "bayesian inference" just means computing probability distribution over the unknowns (either because they are unobservable (ie. coditional distribution of latent variables given observed data), or a subset of variables (ie. marginal distribution) that requires further computation on the joint distribution (aka. the probability model)). So, as Wikipedia's definition clarifies, anytime we have a quantitiy (with prior distribution) and make observations regarding a relevant process, we can <strong>update</strong> the prior distribution using the observed data via Bayes Theorem. That is all that is in the intimidating word "Bayesian inferece". Gosh, can we please give another name to this way of doing computation with a probability model and  data assumed to come from the probability model? "Inference" is such intimedating word. I feel like I need to do philosophy to use this word and everytime I hear this term, I feel like I never understand what the heck it is about because I don't understand what inference means in Philosophy. Yikes! :[</p>
+<p>Note: I was living in the smog under the impression that "Bayesian inference" is tied to either 1 or 2. But now I understand "bayesian inference" just means computing probability distribution over the unknowns (either because they are unobservable (ie. conditional distribution of latent variables given observed data), or a subset of variables (ie. marginal distribution) that requires further computation on the joint distribution (aka. the probability model)). So, as Wikipedia's definition clarifies, anytime we have a quantity (with prior distribution) and make observations regarding a relevant process, we can <strong>update</strong> the prior distribution using the observed data via Bayes Theorem. That is all that is in the intimidating word "Bayesian inference". Gosh, can we please give another name to this way of doing computation with a probability model and  data assumed to come from the probability model? "Inference" is such intimedating word. I feel like I need to do philosophy to use this word and everytime I hear this term, I feel like I never understand what the heck it is about because I don't understand what inference means in Philosophy. Yikes! :[</p>
 <h2>Approximate Inference</h2>
-<p>When we cannot compute the "flipped" probability ("flipped" using the Bayes Theorem) because it is, for examplge, too computationally expensive, we sometimes resort to an approximation of the true "flipped" probability. </p>
+<p>When we cannot compute the "flipped" probability ("flipped" using the Bayes Theorem) because it is, for example, too computationally expensive, we sometimes resort to an approximation of the true "flipped" probability. </p>
 <h3>Variational Approximate Inference</h3>
 <p>People call this "Variational Bayes", which I find it very loaded and unclear whether if the term refers to a method of inference or some model family becuase both "V" and "B" are captialized and it gives me an impressions that it's a name of some specific class of probability distributions. Yikes2! :[ Please give another name to it. </p>
 <p>Variational Approximate Bayesian Inference is:</p>
 <blockquote>
 <p>a method of finding a "good" <strong>approximate</strong> distribution to the "flipped" distribution of your probabity model (ie. <span class="math">\(P\)</span> with a fixed parameter <span class="math">\(\bar{\theta}\)</span>) (ie2: <strong>"flipped" using Bayes theorem</strong> given your probability model) by formulating a proper <strong>optimization</strong> problem. </p>
 </blockquote>
-<p>So far, we have discussed about "bayesian inferece", and the need to sometimes be content with an "approximation" to the "flipped" distribution (given a fixed parameter and obsered data). The last thing to understand is the "variational" part, which correpsonds to formulating the search for a "good" approximation distribution as an optimization problem. As usual for an optimization problem, we need to define "goodness", or in this case "loss"</p>
+<p>So far, we have discussed about "bayesian inferece", and the need to sometimes be content with an "approximation" to the "flipped" distribution (given a fixed parameter and observed data). The last thing to understand is the "variational" part, which correpsonds to formulating the search for a "good" approximation distribution as an optimization problem. As usual for an optimization problem, we need to define "goodness", or in this case "loss"</p>
 <ul>
 <li>Sketch for understanding the motivation for variational bayesian inference method (aka. Variational Bayes)</li>
 </ul>
-<p><img alt="variational-bayes" src="images/variational-bayes.jpg =500x"></p>
+<p><img alt="variational-bayes" src="/images/variational-bayes.jpg =500x"></p>
 <p>To be continued...</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
