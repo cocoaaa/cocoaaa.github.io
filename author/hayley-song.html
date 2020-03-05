@@ -50,29 +50,33 @@
                 <h2>Measure</h2>
 <p><img alt="orbanz-1-2" src="images/orbanz-1-2.png">
 - Intuition: roughly a measure is an integral as a function of its region
-$$ \mu(A) = \int_{A} dx ~~\text{or,} ~~~\mu(A) = \int_{A} p(x) dx $$
-For example, in geometric case, $\mu(A)$ can be interpreted as a (physical) length (if $A$ is one dimensional), mass (if $A$ is two dimensional), or volumn (if three-dim) of a region $A$. In the case that $\mu$ is a measure of probability, $\mu(A)$ is the probability mass of event, "random variable $X$ takes values in the set $A$ (also called event $A$)"</p>
+</p>
+<div class="math">$$ \mu(A) = \int_{A} dx ~~\text{or,} ~~~\mu(A) = \int_{A} p(x) dx $$</div>
+<p>
+For example, in geometric case, <span class="math">\(\mu(A)\)</span> can be interpreted as a (physical) length (if <span class="math">\(A\)</span> is one dimensional), mass (if <span class="math">\(A\)</span> is two dimensional), or volumn (if three-dim) of a region <span class="math">\(A\)</span>. In the case that <span class="math">\(\mu\)</span> is a measure of probability, <span class="math">\(\mu(A)\)</span> is the probability mass of event, "random variable <span class="math">\(X\)</span> takes values in the set <span class="math">\(A\)</span> (also called event <span class="math">\(A\)</span>)"</p>
 <h2>Density</h2>
 <p><img alt="orbanz-1-3" src="images/orbanz-1-3.png">
-A (probability) density is a function that transforms one measure to another measure by pointwise reweighting (on the abstract sample space $\Omega$)
+A (probability) density is a function that transforms one measure to another measure by pointwise reweighting (on the abstract sample space <span class="math">\(\Omega\)</span>)
 <img alt="probability-density" src="/images/Orbanz-probability-density.png"></p>
 <h2>Measure-theoretic formalism for Probability</h2>
 <p><img alt="measure-theory-framework" src="/images/Orbanz-probability-formal-framework.png"></p>
 <ul>
 <li>abstract probability space vs. observation space
-Think of the abstract probability space as the entire system of the universe. A point in the space is a state of the universe (eg. a long vector of values assigned to all existing atoms' states). We often don't have a direct access to this "state", ie. it is not fully observable to us. Instead we observe/measure variables that are some functions of this atomic configuration/state ($w$). This mapping from a state of the universe to a value that the variable of our interest is observed/measured to take is called a "Random Variable". </li>
+Think of the abstract probability space as the entire system of the universe. A point in the space is a state of the universe (eg. a long vector of values assigned to all existing atoms' states). We often don't have a direct access to this "state", ie. it is not fully observable to us. Instead we observe/measure variables that are some functions of this atomic configuration/state (<span class="math">\(w\)</span>). This mapping from a state of the universe to a value that the variable of our interest is observed/measured to take is called a "Random Variable". </li>
 </ul>
 <h2>Random Variable</h2>
 <p><img alt="orbanz-1-4" src="images/orbanz-1-4.png">
-- is a function that maps a outcome in the abstract probability space's sample space $\Lambda$ to the sample space of the observation space $\Omega$ (often $\mathbb{R}$)
+- is a function that maps a outcome in the abstract probability space's sample space <span class="math">\(\Lambda\)</span> to the sample space of the observation space <span class="math">\(\Omega\)</span> (often <span class="math">\(\mathbb{R}\)</span>)
 - it is the key component that connects the abstract probability space (which we don't get to directly observe) to the observation space
-- Image measure $\mu_{X}$ is the (derived/induced) measure on the observation space that is related to the abstract probability space via the random variable $X$. 
-  - We need it since the measure on the abstract probability space $\mathbb{P}$ is not known explicitly, but we need to have a way to descirbe the measure of sets in the Borel set of the observation space. 
-  - To assign measures to an event in the observation space, we use "Image measure" $\mu_{X}$ which is linked to $\mathbb{P}$ via:
-    $$ \mu_{X}(A) := \mathbb{P}(X^{-1}(A))$$
-  - In other words, we compute the probability measure of an event $A$ (ie.the probability that the random variable X takes a value in the set A) by:
-     1. Map the set A in the observation space to a space in the abstract probability space, $A^{\leftarrow} = X^{-1}(A)$
-     2. Compute the probability of event $A^{\leftarrow}$ using $\mathbb{P}$</p>
+- Image measure <span class="math">\(\mu_{X}\)</span> is the (derived/induced) measure on the observation space that is related to the abstract probability space via the random variable <span class="math">\(X\)</span>. 
+  - We need it since the measure on the abstract probability space <span class="math">\(\mathbb{P}\)</span> is not known explicitly, but we need to have a way to descirbe the measure of sets in the Borel set of the observation space. 
+  - To assign measures to an event in the observation space, we use "Image measure" <span class="math">\(\mu_{X}\)</span> which is linked to <span class="math">\(\mathbb{P}\)</span> via:
+    </p>
+<div class="math">$$ \mu_{X}(A) := \mathbb{P}(X^{-1}(A))$$</div>
+<p>
+  - In other words, we compute the probability measure of an event <span class="math">\(A\)</span> (ie.the probability that the random variable X takes a value in the set A) by:
+     1. Map the set A in the observation space to a space in the abstract probability space, <span class="math">\(A^{\leftarrow} = X^{-1}(A)\)</span>
+     2. Compute the probability of event <span class="math">\(A^{\leftarrow}\)</span> using <span class="math">\(\mathbb{P}\)</span></p>
 <h2>Relationship between two random variables and their image measures</h2>
 <h2>"Density" describes the relationship between two random variables and their image measures:</h2>
 <h2>Source</h2>
@@ -83,6 +87,63 @@ Think of the abstract probability space as the entire system of the universe. A 
 <ul>
 <li>MLSS09 all lecture and slide links: <a href="http://mlg.eng.cam.ac.uk/mlss09/schedule.htm">here</a></li>
 </ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <div class="clear"></div>
 
                 <div class="info">
@@ -106,15 +167,72 @@ Think of the abstract probability space as the entire system of the universe. A 
 
                 <h2>Resource</h2>
 <ul>
-<li><a href="https://tinyurl.com/uta23v5">Lec on VAE</a>, by Ali Ghodsi: This lecture motivates KL Divergence as the measurement of difference in the average information content of two random varialbes, whose distributions are $p$ and $q$ in in the article.</li>
+<li><a href="https://tinyurl.com/uta23v5">Lec on VAE</a>, by Ali Ghodsi: This lecture motivates KL Divergence as the measurement of difference in the average information content of two random varialbes, whose distributions are <span class="math">\(p\)</span> and <span class="math">\(q\)</span> in in the article.</li>
 <li><a href="https://en.wikipedia.org/wiki/Kullback–Leibler_divergence">Wiki</a>: It clears up different terminologies that are (misused) to refer to the KL.</li>
 <li><a href="http://tuvalu.santafe.edu/~simon/it.pdf">Information Theory for Intelligent People</a>, by Simon Dedeo<ul>
 <li>It gives a great example of "answering 20 questions" problem as a way to think about basic concepts in info theory, including entropy, KL divergence and mutual information.</li>
-<li>$H(X)$ is equal to the average <em>length of an arbitrary tree</em>, which is the number of questions to get to choice $x$</li>
-<li>"(Using $H(X)$,) (f)or any probability distribution, we can now talk about "how uncertain we are about the outcome", "how much information is in the process", or "how much entropy the process has", and even measure it, in bits" (p.3)</li>
+<li><span class="math">\(H(X)\)</span> is equal to the average <em>length of an arbitrary tree</em>, which is the number of questions to get to choice <span class="math">\(x\)</span></li>
+<li>"(Using <span class="math">\(H(X)\)</span>,) (f)or any probability distribution, we can now talk about "how uncertain we are about the outcome", "how much information is in the process", or "how much entropy the process has", and even measure it, in bits" (p.3)</li>
 </ul>
 </li>
 </ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <div class="clear"></div>
 
                 <div class="info">

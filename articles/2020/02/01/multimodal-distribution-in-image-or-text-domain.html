@@ -70,7 +70,7 @@
 </table>
 <!--|<img src="/images/bimodal.png" alt="bimodal" width="250px"/> | <img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" width="250px"/>-->
 
-<p>In high-dimensional space (such as an Image domain: $P(X)$ where X lives in $d$-dim space where $d$ is the number of pixels, eg. $32x32=1024$. If each pixel $X_i$ takes a binary value (0 or 1), the size of this image domain is $2^{1024}$.  If each pixel takes an integer value $\in [0,255]$, then the size of this image domain is $256^{1024}$. This, by the way, is too big to compute for Mac's spotlight:</p>
+<p>In high-dimensional space (such as an Image domain: <span class="math">\(P(X)\)</span> where X lives in <span class="math">\(d\)</span>-dim space where <span class="math">\(d\)</span> is the number of pixels, eg. <span class="math">\(32x32=1024\)</span>. If each pixel <span class="math">\(X_i\)</span> takes a binary value (0 or 1), the size of this image domain is <span class="math">\(2^{1024}\)</span>.  If each pixel takes an integer value <span class="math">\(\in [0,255]\)</span>, then the size of this image domain is <span class="math">\(256^{1024}\)</span>. This, by the way, is too big to compute for Mac's spotlight:</p>
 <p><img src="/images/too-big.png" alt="too-big" width="500px"/>    </p>
 <p>What it means by saying "the distribution of (output) image is multimodal" is to say, there are multiple images (ie. realization of the random variable (vector) X) with the (local) maxima value of the probability. In Figure below, the green dots represent the local maxima, ie. modes of the distribution. The configurations (ie. specific values/realizations) that achieves the (local) maximum probability density are the "probable/likely" images. </p>
 <figure>
@@ -79,10 +79,67 @@
     <figcaption>The green dots representing modes of the distribution over the image domain (which is abstracted into a 2Dim space for visualization, in this case)</figcaption>
 </figure>
 
-<p>So, given one input image, if the distribution of the output image random variable is multi-modal, the standard problem of <pre>Find $x$ s.t. $\underset{x \in \mathcal{X}}{\arg\max} P(X)$ ($\mathcal{X}$ is the image space)</pre> has multiple solutions. According to the paper (Toward Multimodal Image-to-Image Translation), many previous works have produced a "single" output image as "the" argmax of the output image distribution. But this is not accurate if the output image distribution is multi-modal.  We would like to see/generate as many of those argmax configurations/output images. One way to do so, is by sampling from the output image distribution.  This is the paper's approach. </p>
+<p>So, given one input image, if the distribution of the output image random variable is multi-modal, the standard problem of <pre>Find <span class="math">\(x\)</span> s.t. <span class="math">\(\underset{x \in \mathcal{X}}{\arg\max} P(X)\)</span> (<span class="math">\(\mathcal{X}\)</span> is the image space)</pre> has multiple solutions. According to the paper (Toward Multimodal Image-to-Image Translation), many previous works have produced a "single" output image as "the" argmax of the output image distribution. But this is not accurate if the output image distribution is multi-modal.  We would like to see/generate as many of those argmax configurations/output images. One way to do so, is by sampling from the output image distribution.  This is the paper's approach. </p>
 <hr>
 <h3>Multimodal distribution as the distribution over the space of target domains [Domain adaption/transfer leraning]</h3>
 <p>So far, I viewed the multimodal distribution as a distribution over a specific domain (eg. Image domain), and the random variable corresponded to a realization, eg. an observed/sampled/output image instance. However, </p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <div class="clear"></div>
 
                 <div class="info">

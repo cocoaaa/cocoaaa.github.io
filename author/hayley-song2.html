@@ -50,7 +50,7 @@
                 <h2>Explaining physical phenomenon consistent with observations</h2>
 <p>Bayesian data analysis is a way to iteratively building a mathemtical description of a physical phenomenon of interest using observed data. </p>
 <h2>Setup</h2>
-<p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis ($\theta$) as more evidence or information becomes available [wikipedia].</p>
+<p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (<span class="math">\(\theta\)</span>) as more evidence or information becomes available [wikipedia].</p>
 <p>Therefore, it is used in the following scenario. I'll refer to the workflow as the workflow of "Bayesian data analysis" following Gelman.
 1. We have some physical phenomenon (aka. process) of interest that we want to describe with mathematical language. Why? because once we have the description (aka. mathematical model of the physical phenomenon), we can use it to explain how the phenomenon works as a function of its inner components, predict how it would behave as the inner components or its input variables take different values, (... any other usage of the mathematical model?)
 2. We decide how to describe the phenomenon using a mathematical language by specifing:
@@ -59,21 +59,24 @@
 This is the step of "choosing a model family (aka. a statistical model)"
 3. Now we have specified a family of probability models, each of which corresponds to a particular hypothesis/explaination of the physical process of interest. What we need to do is, to choose the "best" hypothesis from all of these possible hypotheses. To do so, we need to observe how the physical phenomenon manifests by collecting data of the outcomes of the phenomenon.
 4. Collect data of the outcomes of the phenomenon.
-5. "Learn"/"Fit" the model to the data.  (aka, "estimate" the parameters ($\theta$) with the data). In English, this corresponds to "find a hypothesis of the phenomenon that matches the observed data "best"".  To find such hypothesis $\theta \in \Theta$, we need to define what is means to be the "best" hypothesis given the model (aka. Hypothesis space) and the observed data. We formulate this step as an optimization problem:
-  - choose a loss function $L(\theta \mid \text{model}, \bar{X})$
+5. "Learn"/"Fit" the model to the data.  (aka, "estimate" the parameters (<span class="math">\(\theta\)</span>) with the data). In English, this corresponds to "find a hypothesis of the phenomenon that matches the observed data "best"".  To find such hypothesis <span class="math">\(\theta \in \Theta\)</span>, we need to define what is means to be the "best" hypothesis given the model (aka. Hypothesis space) and the observed data. We formulate this step as an optimization problem:
+  - choose a loss function <span class="math">\(L(\theta \mid \text{model}, \bar{X})\)</span>
   - Solve the optimization problem of finding argmin of the loss:
-  $$ \theta^{<em>} = \arg min  ~~ L(\theta \mid \text{model}, \bar{x})$$
-  - Note: $L(\theta \mid \text{model}, \bar{x}) \equiv L(\theta \mid \Theta, \bar{X})$. So we can rewrite the optimization objection as: 
-  $$ \theta^{</em>} = \arg min_{\theta \in \Theta}  ~~ L(\theta \mid  \bar{x})$$</p>
+  </p>
+<div class="math">$$ \theta^{*} = \arg min  ~~ L(\theta \mid \text{model}, \bar{x})$$</div>
+<p>
+  - Note: <span class="math">\(L(\theta \mid \text{model}, \bar{x}) \equiv L(\theta \mid \Theta, \bar{X})\)</span>. So we can rewrite the optimization objection as: 
+  </p>
+<div class="math">$$ \theta^{*} = \arg min_{\theta \in \Theta}  ~~ L(\theta \mid  \bar{x})$$</div>
 <h2>More specific scenario: a phenomenon with unobservable variables</h2>
-<p>Most physical phenomenon involves variables that we can't directly observe. These are called "Latent variables", and a statiscal model with such unobservable variables (in addition to observed/data variables) are called "Latent Variable Model".  When we are focusing on the latent variable model, we often use $Z$ as the latent variables and $X$ as the data sample variable. That is, if we have $N$ observation, the sample variable will be a vector of $N$ data variables: $X = {X_1, X_2, \dots , X_N }$.  The general setup of Bayesian data analysis workflow above (ie. choose a model $\rightarrow$ collect data $\rightarrow$ fit the model to the data $\rightarrow$ criticize the model $\rightarrow$ repeat).  We can express the bayesian data analysis workflow using these notations as follows:
+<p>Most physical phenomenon involves variables that we can't directly observe. These are called "Latent variables", and a statiscal model with such unobservable variables (in addition to observed/data variables) are called "Latent Variable Model".  When we are focusing on the latent variable model, we often use <span class="math">\(Z\)</span> as the latent variables and <span class="math">\(X\)</span> as the data sample variable. That is, if we have <span class="math">\(N\)</span> observation, the sample variable will be a vector of <span class="math">\(N\)</span> data variables: <span class="math">\(X = \{X_1, X_2, \dots , X_N \}\)</span>.  The general setup of Bayesian data analysis workflow above (ie. choose a model <span class="math">\(\rightarrow\)</span> collect data <span class="math">\(\rightarrow\)</span> fit the model to the data <span class="math">\(\rightarrow\)</span> criticize the model <span class="math">\(\rightarrow\)</span> repeat).  We can express the bayesian data analysis workflow using these notations as follows:
 (Note these notations are consistent with Blei MLSS2019.)</p>
 <ul>
 <li>In English, describe what is the physical phenomenon of interest</li>
 <li>Choose a statistical model by specifying</li>
 <li>variables (nodes in the graph)<ul>
-<li>data variables (aka. observable variables): $X$</li>
-<li>latent variables: $Z$</li>
+<li>data variables (aka. observable variables): <span class="math">\(X\)</span></li>
+<li>latent variables: <span class="math">\(Z\)</span></li>
 </ul>
 </li>
 <li>relations (edges in the graph)<ul>
@@ -81,15 +84,15 @@ This is the step of "choosing a model family (aka. a statistical model)"
 </ul>
 </li>
 </ul>
-<p>Let's denote the set of all parameters in the model, $\theta$
-  Our statistical model can be expressed as: $P(Z,X; \theta)$
-- Collect data: $\bar{X}$
+<p>Let's denote the set of all parameters in the model, <span class="math">\(\theta\)</span>
+  Our statistical model can be expressed as: <span class="math">\(P(Z,X; \theta)\)</span>
+- Collect data: <span class="math">\(\bar{X}\)</span>
 - Fit the model to the observed data
-  - Choose a loss function (a function wrt parameters): $L(\theta;\bar{X})$ for $\theta \in \Theta$</p>
+  - Choose a loss function (a function wrt parameters): <span class="math">\(L(\theta;\bar{X})\)</span> for <span class="math">\(\theta \in \Theta\)</span></p>
 <h2>Inference</h2>
 <p>Generally speaking, inference (which stems from the Philosophy of Science)</p>
 <h3>Bayesian inference method</h3>
-<p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis ($\theta$) as more evidence or information becomes available [wikipedia].
+<p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (<span class="math">\(\theta\)</span>) as more evidence or information becomes available [wikipedia].
 - My sketch
 <img alt="bayesian-inference" src="images/bayesian-inference.jpg =500x"></p>
 <p>It is <strong>not</strong> a model, it is a general <strong>method</strong>(aka. <strong>technique</strong>, <strong>algorithm</strong>) that allows to infer unknowns probabilistically via computing, eg. marginal and conditional distributions of the model, the distribution over the parameters given observed data, the conditional distribution over the latent variables given the observed data.  </p>
@@ -97,10 +100,11 @@ This is the step of "choosing a model family (aka. a statistical model)"
 <ol>
 <li>Use bayesian inference method to learn the model from the observed data. That is, what is the probability of the parameter of the model given observation?</li>
 </ol>
-<p>$$ P(\theta \mid \bar{X})$$</p>
+<div class="math">$$ P(\theta \mid \bar{X})$$</div>
 <ol>
 <li>Use bayes' theorem to compute the conditional distribution of latent variables given observed data and a fixed parameter (eg. the learned parameter from step 1)
-$$ P(Z \mid \bar{X}, \bar{\theta})$$</li>
+<div class="math">$$ P(Z \mid \bar{X}, \bar{\theta})$$</div>
+</li>
 </ol>
 <p>Note: I was living in the smog under the impression that "Bayeisan inference" is tied to either 1 or 2. But now I understand "bayesian inference" just means computing probability distribution over the unknowns (either because they are unobservable (ie. coditional distribution of latent variables given observed data), or a subset of variables (ie. marginal distribution) that requires further computation on the joint distribution (aka. the probability model)). So, as Wikipedia's definition clarifies, anytime we have a quantitiy (with prior distribution) and make observations regarding a relevant process, we can <strong>update</strong> the prior distribution using the observed data via Bayes Theorem. That is all that is in the intimidating word "Bayesian inferece". Gosh, can we please give another name to this way of doing computation with a probability model and  data assumed to come from the probability model? "Inference" is such intimedating word. I feel like I need to do philosophy to use this word and everytime I hear this term, I feel like I never understand what the heck it is about because I don't understand what inference means in Philosophy. Yikes! :[</p>
 <h2>Approximate Inference</h2>
@@ -109,7 +113,7 @@ $$ P(Z \mid \bar{X}, \bar{\theta})$$</li>
 <p>People call this "Variational Bayes", which I find it very loaded and unclear whether if the term refers to a method of inference or some model family becuase both "V" and "B" are captialized and it gives me an impressions that it's a name of some specific class of probability distributions. Yikes2! :[ Please give another name to it. </p>
 <p>Variational Approximate Bayesian Inference is:</p>
 <blockquote>
-<p>a method of finding a "good" <strong>approximate</strong> distribution to the "flipped" distribution of your probabity model (ie. $P$ with a fixed parameter $\bar{\theta}$) (ie2: <strong>"flipped" using Bayes theorem</strong> given your probability model) by formulating a proper <strong>optimization</strong> problem. </p>
+<p>a method of finding a "good" <strong>approximate</strong> distribution to the "flipped" distribution of your probabity model (ie. <span class="math">\(P\)</span> with a fixed parameter <span class="math">\(\bar{\theta}\)</span>) (ie2: <strong>"flipped" using Bayes theorem</strong> given your probability model) by formulating a proper <strong>optimization</strong> problem. </p>
 </blockquote>
 <p>So far, we have discussed about "bayesian inferece", and the need to sometimes be content with an "approximation" to the "flipped" distribution (given a fixed parameter and obsered data). The last thing to understand is the "variational" part, which correpsonds to formulating the search for a "good" approximation distribution as an optimization problem. As usual for an optimization problem, we need to define "goodness", or in this case "loss"</p>
 <ul>
@@ -117,6 +121,63 @@ $$ P(Z \mid \bar{X}, \bar{\theta})$$</li>
 </ul>
 <p><img alt="variational-bayes" src="images/variational-bayes.jpg =500x"></p>
 <p>To be continued...</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <div class="clear"></div>
 
                 <div class="info">
@@ -159,7 +220,7 @@ $$ P(Z \mid \bar{X}, \bar{\theta})$$</li>
 </table>
 <!--|<img src="/images/bimodal.png" alt="bimodal" width="250px"/> | <img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" width="250px"/>-->
 
-<p>In high-dimensional space (such as an Image domain: $P(X)$ where X lives in $d$-dim space where $d$ is the number of pixels, eg. $32x32=1024$. If each pixel $X_i$ takes a binary value (0 or 1), the size of this image domain is $2^{1024}$.  If each pixel takes an integer value $\in [0,255]$, then the size of this image domain is $256^{1024}$. This, by the way, is too big to compute for Mac's spotlight:</p>
+<p>In high-dimensional space (such as an Image domain: <span class="math">\(P(X)\)</span> where X lives in <span class="math">\(d\)</span>-dim space where <span class="math">\(d\)</span> is the number of pixels, eg. <span class="math">\(32x32=1024\)</span>. If each pixel <span class="math">\(X_i\)</span> takes a binary value (0 or 1), the size of this image domain is <span class="math">\(2^{1024}\)</span>.  If each pixel takes an integer value <span class="math">\(\in [0,255]\)</span>, then the size of this image domain is <span class="math">\(256^{1024}\)</span>. This, by the way, is too big to compute for Mac's spotlight:</p>
 <p><img src="/images/too-big.png" alt="too-big" width="500px"/>    </p>
 <p>What it means by saying "the distribution of (output) image is multimodal" is to say, there are multiple images (ie. realization of the random variable (vector) X) with the (local) maxima value of the probability. In Figure below, the green dots represent the local maxima, ie. modes of the distribution. The configurations (ie. specific values/realizations) that achieves the (local) maximum probability density are the "probable/likely" images. </p>
 <figure>
@@ -168,10 +229,67 @@ $$ P(Z \mid \bar{X}, \bar{\theta})$$</li>
     <figcaption>The green dots representing modes of the distribution over the image domain (which is abstracted into a 2Dim space for visualization, in this case)</figcaption>
 </figure>
 
-<p>So, given one input image, if the distribution of the output image random variable is multi-modal, the standard problem of <pre>Find $x$ s.t. $\underset{x \in \mathcal{X}}{\arg\max} P(X)$ ($\mathcal{X}$ is the image space)</pre> has multiple solutions. According to the paper (Toward Multimodal Image-to-Image Translation), many previous works have produced a "single" output image as "the" argmax of the output image distribution. But this is not accurate if the output image distribution is multi-modal.  We would like to see/generate as many of those argmax configurations/output images. One way to do so, is by sampling from the output image distribution.  This is the paper's approach. </p>
+<p>So, given one input image, if the distribution of the output image random variable is multi-modal, the standard problem of <pre>Find <span class="math">\(x\)</span> s.t. <span class="math">\(\underset{x \in \mathcal{X}}{\arg\max} P(X)\)</span> (<span class="math">\(\mathcal{X}\)</span> is the image space)</pre> has multiple solutions. According to the paper (Toward Multimodal Image-to-Image Translation), many previous works have produced a "single" output image as "the" argmax of the output image distribution. But this is not accurate if the output image distribution is multi-modal.  We would like to see/generate as many of those argmax configurations/output images. One way to do so, is by sampling from the output image distribution.  This is the paper's approach. </p>
 <hr>
 <h3>Multimodal distribution as the distribution over the space of target domains [Domain adaption/transfer leraning]</h3>
 <p>So far, I viewed the multimodal distribution as a distribution over a specific domain (eg. Image domain), and the random variable corresponded to a realization, eg. an observed/sampled/output image instance. However, </p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <div class="clear"></div>
 
                 <div class="info">

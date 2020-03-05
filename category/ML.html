@@ -51,29 +51,33 @@
                 <h2>Measure</h2>
 <p><img alt="orbanz-1-2" src="images/orbanz-1-2.png">
 - Intuition: roughly a measure is an integral as a function of its region
-$$ \mu(A) = \int_{A} dx ~~\text{or,} ~~~\mu(A) = \int_{A} p(x) dx $$
-For example, in geometric case, $\mu(A)$ can be interpreted as a (physical) length (if $A$ is one dimensional), mass (if $A$ is two dimensional), or volumn (if three-dim) of a region $A$. In the case that $\mu$ is a measure of probability, $\mu(A)$ is the probability mass of event, "random variable $X$ takes values in the set $A$ (also called event $A$)"</p>
+</p>
+<div class="math">$$ \mu(A) = \int_{A} dx ~~\text{or,} ~~~\mu(A) = \int_{A} p(x) dx $$</div>
+<p>
+For example, in geometric case, <span class="math">\(\mu(A)\)</span> can be interpreted as a (physical) length (if <span class="math">\(A\)</span> is one dimensional), mass (if <span class="math">\(A\)</span> is two dimensional), or volumn (if three-dim) of a region <span class="math">\(A\)</span>. In the case that <span class="math">\(\mu\)</span> is a measure of probability, <span class="math">\(\mu(A)\)</span> is the probability mass of event, "random variable <span class="math">\(X\)</span> takes values in the set <span class="math">\(A\)</span> (also called event <span class="math">\(A\)</span>)"</p>
 <h2>Density</h2>
 <p><img alt="orbanz-1-3" src="images/orbanz-1-3.png">
-A (probability) density is a function that transforms one measure to another measure by pointwise reweighting (on the abstract sample space $\Omega$)
+A (probability) density is a function that transforms one measure to another measure by pointwise reweighting (on the abstract sample space <span class="math">\(\Omega\)</span>)
 <img alt="probability-density" src="/images/Orbanz-probability-density.png"></p>
 <h2>Measure-theoretic formalism for Probability</h2>
 <p><img alt="measure-theory-framework" src="/images/Orbanz-probability-formal-framework.png"></p>
 <ul>
 <li>abstract probability space vs. observation space
-Think of the abstract probability space as the entire system of the universe. A point in the space is a state of the universe (eg. a long vector of values assigned to all existing atoms' states). We often don't have a direct access to this "state", ie. it is not fully observable to us. Instead we observe/measure variables that are some functions of this atomic configuration/state ($w$). This mapping from a state of the universe to a value that the variable of our interest is observed/measured to take is called a "Random Variable". </li>
+Think of the abstract probability space as the entire system of the universe. A point in the space is a state of the universe (eg. a long vector of values assigned to all existing atoms' states). We often don't have a direct access to this "state", ie. it is not fully observable to us. Instead we observe/measure variables that are some functions of this atomic configuration/state (<span class="math">\(w\)</span>). This mapping from a state of the universe to a value that the variable of our interest is observed/measured to take is called a "Random Variable". </li>
 </ul>
 <h2>Random Variable</h2>
 <p><img alt="orbanz-1-4" src="images/orbanz-1-4.png">
-- is a function that maps a outcome in the abstract probability space's sample space $\Lambda$ to the sample space of the observation space $\Omega$ (often $\mathbb{R}$)
+- is a function that maps a outcome in the abstract probability space's sample space <span class="math">\(\Lambda\)</span> to the sample space of the observation space <span class="math">\(\Omega\)</span> (often <span class="math">\(\mathbb{R}\)</span>)
 - it is the key component that connects the abstract probability space (which we don't get to directly observe) to the observation space
-- Image measure $\mu_{X}$ is the (derived/induced) measure on the observation space that is related to the abstract probability space via the random variable $X$. 
-  - We need it since the measure on the abstract probability space $\mathbb{P}$ is not known explicitly, but we need to have a way to descirbe the measure of sets in the Borel set of the observation space. 
-  - To assign measures to an event in the observation space, we use "Image measure" $\mu_{X}$ which is linked to $\mathbb{P}$ via:
-    $$ \mu_{X}(A) := \mathbb{P}(X^{-1}(A))$$
-  - In other words, we compute the probability measure of an event $A$ (ie.the probability that the random variable X takes a value in the set A) by:
-     1. Map the set A in the observation space to a space in the abstract probability space, $A^{\leftarrow} = X^{-1}(A)$
-     2. Compute the probability of event $A^{\leftarrow}$ using $\mathbb{P}$</p>
+- Image measure <span class="math">\(\mu_{X}\)</span> is the (derived/induced) measure on the observation space that is related to the abstract probability space via the random variable <span class="math">\(X\)</span>. 
+  - We need it since the measure on the abstract probability space <span class="math">\(\mathbb{P}\)</span> is not known explicitly, but we need to have a way to descirbe the measure of sets in the Borel set of the observation space. 
+  - To assign measures to an event in the observation space, we use "Image measure" <span class="math">\(\mu_{X}\)</span> which is linked to <span class="math">\(\mathbb{P}\)</span> via:
+    </p>
+<div class="math">$$ \mu_{X}(A) := \mathbb{P}(X^{-1}(A))$$</div>
+<p>
+  - In other words, we compute the probability measure of an event <span class="math">\(A\)</span> (ie.the probability that the random variable X takes a value in the set A) by:
+     1. Map the set A in the observation space to a space in the abstract probability space, <span class="math">\(A^{\leftarrow} = X^{-1}(A)\)</span>
+     2. Compute the probability of event <span class="math">\(A^{\leftarrow}\)</span> using <span class="math">\(\mathbb{P}\)</span></p>
 <h2>Relationship between two random variables and their image measures</h2>
 <h2>"Density" describes the relationship between two random variables and their image measures:</h2>
 <h2>Source</h2>
@@ -84,6 +88,63 @@ Think of the abstract probability space as the entire system of the universe. A 
 <ul>
 <li>MLSS09 all lecture and slide links: <a href="http://mlg.eng.cam.ac.uk/mlss09/schedule.htm">here</a></li>
 </ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <div class="clear"></div>
 
                 <div class="info">
@@ -107,15 +168,72 @@ Think of the abstract probability space as the entire system of the universe. A 
 
                 <h2>Resource</h2>
 <ul>
-<li><a href="https://tinyurl.com/uta23v5">Lec on VAE</a>, by Ali Ghodsi: This lecture motivates KL Divergence as the measurement of difference in the average information content of two random varialbes, whose distributions are $p$ and $q$ in in the article.</li>
+<li><a href="https://tinyurl.com/uta23v5">Lec on VAE</a>, by Ali Ghodsi: This lecture motivates KL Divergence as the measurement of difference in the average information content of two random varialbes, whose distributions are <span class="math">\(p\)</span> and <span class="math">\(q\)</span> in in the article.</li>
 <li><a href="https://en.wikipedia.org/wiki/Kullback–Leibler_divergence">Wiki</a>: It clears up different terminologies that are (misused) to refer to the KL.</li>
 <li><a href="http://tuvalu.santafe.edu/~simon/it.pdf">Information Theory for Intelligent People</a>, by Simon Dedeo<ul>
 <li>It gives a great example of "answering 20 questions" problem as a way to think about basic concepts in info theory, including entropy, KL divergence and mutual information.</li>
-<li>$H(X)$ is equal to the average <em>length of an arbitrary tree</em>, which is the number of questions to get to choice $x$</li>
-<li>"(Using $H(X)$,) (f)or any probability distribution, we can now talk about "how uncertain we are about the outcome", "how much information is in the process", or "how much entropy the process has", and even measure it, in bits" (p.3)</li>
+<li><span class="math">\(H(X)\)</span> is equal to the average <em>length of an arbitrary tree</em>, which is the number of questions to get to choice <span class="math">\(x\)</span></li>
+<li>"(Using <span class="math">\(H(X)\)</span>,) (f)or any probability distribution, we can now talk about "how uncertain we are about the outcome", "how much information is in the process", or "how much entropy the process has", and even measure it, in bits" (p.3)</li>
 </ul>
 </li>
 </ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <div class="clear"></div>
 
                 <div class="info">
@@ -138,7 +256,7 @@ Think of the abstract probability space as the entire system of the universe. A 
                 <h2>Explaining physical phenomenon consistent with observations</h2>
 <p>Bayesian data analysis is a way to iteratively building a mathemtical description of a physical phenomenon of interest using observed data. </p>
 <h2>Setup</h2>
-<p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis ($\theta$) as more evidence or information becomes available [wikipedia].</p>
+<p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (<span class="math">\(\theta\)</span>) as more evidence or information becomes available [wikipedia].</p>
 <p>Therefore, it is used in the following scenario. I'll refer to the workflow as the workflow of "Bayesian data analysis" following Gelman.
 1. We have some physical phenomenon (aka. process) of interest that we want to describe with mathematical language. Why? because once we have the description (aka. mathematical model of the physical phenomenon), we can use it to explain how the phenomenon works as a function of its inner components, predict how it would behave as the inner components or its input variables take different values, (... any other usage of the mathematical model?)
 2. We decide how to describe the phenomenon using a mathematical language by specifing:
@@ -147,21 +265,24 @@ Think of the abstract probability space as the entire system of the universe. A 
 This is the step of "choosing a model family (aka. a statistical model)"
 3. Now we have specified a family of probability models, each of which corresponds to a particular hypothesis/explaination of the physical process of interest. What we need to do is, to choose the "best" hypothesis from all of these possible hypotheses. To do so, we need to observe how the physical phenomenon manifests by collecting data of the outcomes of the phenomenon.
 4. Collect data of the outcomes of the phenomenon.
-5. "Learn"/"Fit" the model to the data.  (aka, "estimate" the parameters ($\theta$) with the data). In English, this corresponds to "find a hypothesis of the phenomenon that matches the observed data "best"".  To find such hypothesis $\theta \in \Theta$, we need to define what is means to be the "best" hypothesis given the model (aka. Hypothesis space) and the observed data. We formulate this step as an optimization problem:
-  - choose a loss function $L(\theta \mid \text{model}, \bar{X})$
+5. "Learn"/"Fit" the model to the data.  (aka, "estimate" the parameters (<span class="math">\(\theta\)</span>) with the data). In English, this corresponds to "find a hypothesis of the phenomenon that matches the observed data "best"".  To find such hypothesis <span class="math">\(\theta \in \Theta\)</span>, we need to define what is means to be the "best" hypothesis given the model (aka. Hypothesis space) and the observed data. We formulate this step as an optimization problem:
+  - choose a loss function <span class="math">\(L(\theta \mid \text{model}, \bar{X})\)</span>
   - Solve the optimization problem of finding argmin of the loss:
-  $$ \theta^{<em>} = \arg min  ~~ L(\theta \mid \text{model}, \bar{x})$$
-  - Note: $L(\theta \mid \text{model}, \bar{x}) \equiv L(\theta \mid \Theta, \bar{X})$. So we can rewrite the optimization objection as: 
-  $$ \theta^{</em>} = \arg min_{\theta \in \Theta}  ~~ L(\theta \mid  \bar{x})$$</p>
+  </p>
+<div class="math">$$ \theta^{*} = \arg min  ~~ L(\theta \mid \text{model}, \bar{x})$$</div>
+<p>
+  - Note: <span class="math">\(L(\theta \mid \text{model}, \bar{x}) \equiv L(\theta \mid \Theta, \bar{X})\)</span>. So we can rewrite the optimization objection as: 
+  </p>
+<div class="math">$$ \theta^{*} = \arg min_{\theta \in \Theta}  ~~ L(\theta \mid  \bar{x})$$</div>
 <h2>More specific scenario: a phenomenon with unobservable variables</h2>
-<p>Most physical phenomenon involves variables that we can't directly observe. These are called "Latent variables", and a statiscal model with such unobservable variables (in addition to observed/data variables) are called "Latent Variable Model".  When we are focusing on the latent variable model, we often use $Z$ as the latent variables and $X$ as the data sample variable. That is, if we have $N$ observation, the sample variable will be a vector of $N$ data variables: $X = {X_1, X_2, \dots , X_N }$.  The general setup of Bayesian data analysis workflow above (ie. choose a model $\rightarrow$ collect data $\rightarrow$ fit the model to the data $\rightarrow$ criticize the model $\rightarrow$ repeat).  We can express the bayesian data analysis workflow using these notations as follows:
+<p>Most physical phenomenon involves variables that we can't directly observe. These are called "Latent variables", and a statiscal model with such unobservable variables (in addition to observed/data variables) are called "Latent Variable Model".  When we are focusing on the latent variable model, we often use <span class="math">\(Z\)</span> as the latent variables and <span class="math">\(X\)</span> as the data sample variable. That is, if we have <span class="math">\(N\)</span> observation, the sample variable will be a vector of <span class="math">\(N\)</span> data variables: <span class="math">\(X = \{X_1, X_2, \dots , X_N \}\)</span>.  The general setup of Bayesian data analysis workflow above (ie. choose a model <span class="math">\(\rightarrow\)</span> collect data <span class="math">\(\rightarrow\)</span> fit the model to the data <span class="math">\(\rightarrow\)</span> criticize the model <span class="math">\(\rightarrow\)</span> repeat).  We can express the bayesian data analysis workflow using these notations as follows:
 (Note these notations are consistent with Blei MLSS2019.)</p>
 <ul>
 <li>In English, describe what is the physical phenomenon of interest</li>
 <li>Choose a statistical model by specifying</li>
 <li>variables (nodes in the graph)<ul>
-<li>data variables (aka. observable variables): $X$</li>
-<li>latent variables: $Z$</li>
+<li>data variables (aka. observable variables): <span class="math">\(X\)</span></li>
+<li>latent variables: <span class="math">\(Z\)</span></li>
 </ul>
 </li>
 <li>relations (edges in the graph)<ul>
@@ -169,15 +290,15 @@ This is the step of "choosing a model family (aka. a statistical model)"
 </ul>
 </li>
 </ul>
-<p>Let's denote the set of all parameters in the model, $\theta$
-  Our statistical model can be expressed as: $P(Z,X; \theta)$
-- Collect data: $\bar{X}$
+<p>Let's denote the set of all parameters in the model, <span class="math">\(\theta\)</span>
+  Our statistical model can be expressed as: <span class="math">\(P(Z,X; \theta)\)</span>
+- Collect data: <span class="math">\(\bar{X}\)</span>
 - Fit the model to the observed data
-  - Choose a loss function (a function wrt parameters): $L(\theta;\bar{X})$ for $\theta \in \Theta$</p>
+  - Choose a loss function (a function wrt parameters): <span class="math">\(L(\theta;\bar{X})\)</span> for <span class="math">\(\theta \in \Theta\)</span></p>
 <h2>Inference</h2>
 <p>Generally speaking, inference (which stems from the Philosophy of Science)</p>
 <h3>Bayesian inference method</h3>
-<p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis ($\theta$) as more evidence or information becomes available [wikipedia].
+<p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (<span class="math">\(\theta\)</span>) as more evidence or information becomes available [wikipedia].
 - My sketch
 <img alt="bayesian-inference" src="images/bayesian-inference.jpg =500x"></p>
 <p>It is <strong>not</strong> a model, it is a general <strong>method</strong>(aka. <strong>technique</strong>, <strong>algorithm</strong>) that allows to infer unknowns probabilistically via computing, eg. marginal and conditional distributions of the model, the distribution over the parameters given observed data, the conditional distribution over the latent variables given the observed data.  </p>
@@ -185,10 +306,11 @@ This is the step of "choosing a model family (aka. a statistical model)"
 <ol>
 <li>Use bayesian inference method to learn the model from the observed data. That is, what is the probability of the parameter of the model given observation?</li>
 </ol>
-<p>$$ P(\theta \mid \bar{X})$$</p>
+<div class="math">$$ P(\theta \mid \bar{X})$$</div>
 <ol>
 <li>Use bayes' theorem to compute the conditional distribution of latent variables given observed data and a fixed parameter (eg. the learned parameter from step 1)
-$$ P(Z \mid \bar{X}, \bar{\theta})$$</li>
+<div class="math">$$ P(Z \mid \bar{X}, \bar{\theta})$$</div>
+</li>
 </ol>
 <p>Note: I was living in the smog under the impression that "Bayeisan inference" is tied to either 1 or 2. But now I understand "bayesian inference" just means computing probability distribution over the unknowns (either because they are unobservable (ie. coditional distribution of latent variables given observed data), or a subset of variables (ie. marginal distribution) that requires further computation on the joint distribution (aka. the probability model)). So, as Wikipedia's definition clarifies, anytime we have a quantitiy (with prior distribution) and make observations regarding a relevant process, we can <strong>update</strong> the prior distribution using the observed data via Bayes Theorem. That is all that is in the intimidating word "Bayesian inferece". Gosh, can we please give another name to this way of doing computation with a probability model and  data assumed to come from the probability model? "Inference" is such intimedating word. I feel like I need to do philosophy to use this word and everytime I hear this term, I feel like I never understand what the heck it is about because I don't understand what inference means in Philosophy. Yikes! :[</p>
 <h2>Approximate Inference</h2>
@@ -197,7 +319,7 @@ $$ P(Z \mid \bar{X}, \bar{\theta})$$</li>
 <p>People call this "Variational Bayes", which I find it very loaded and unclear whether if the term refers to a method of inference or some model family becuase both "V" and "B" are captialized and it gives me an impressions that it's a name of some specific class of probability distributions. Yikes2! :[ Please give another name to it. </p>
 <p>Variational Approximate Bayesian Inference is:</p>
 <blockquote>
-<p>a method of finding a "good" <strong>approximate</strong> distribution to the "flipped" distribution of your probabity model (ie. $P$ with a fixed parameter $\bar{\theta}$) (ie2: <strong>"flipped" using Bayes theorem</strong> given your probability model) by formulating a proper <strong>optimization</strong> problem. </p>
+<p>a method of finding a "good" <strong>approximate</strong> distribution to the "flipped" distribution of your probabity model (ie. <span class="math">\(P\)</span> with a fixed parameter <span class="math">\(\bar{\theta}\)</span>) (ie2: <strong>"flipped" using Bayes theorem</strong> given your probability model) by formulating a proper <strong>optimization</strong> problem. </p>
 </blockquote>
 <p>So far, we have discussed about "bayesian inferece", and the need to sometimes be content with an "approximation" to the "flipped" distribution (given a fixed parameter and obsered data). The last thing to understand is the "variational" part, which correpsonds to formulating the search for a "good" approximation distribution as an optimization problem. As usual for an optimization problem, we need to define "goodness", or in this case "loss"</p>
 <ul>
@@ -205,6 +327,63 @@ $$ P(Z \mid \bar{X}, \bar{\theta})$$</li>
 </ul>
 <p><img alt="variational-bayes" src="images/variational-bayes.jpg =500x"></p>
 <p>To be continued...</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <div class="clear"></div>
 
                 <div class="info">
