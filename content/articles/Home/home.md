@@ -1,5 +1,5 @@
 Title: Welcome! 
-Modified: 2020-01-14  
+Modified: 2021-02-19  
 Template: home  
 URL:  
 save_as: index.html  
@@ -10,7 +10,27 @@ stylesheets: my_trajectory.css
 <div id="chartdiv" height="400"></div>
 <div id="mapdiv" height="600"></div>
 
-I'm a 2nd year PhD @ USC studying the lower-dimensional representation of complex unstructured datasets (eg. multi-spectral satellite images, 3D MRI scans) using deep learning. My work lies in the intersection of statistical machine learning, information theory and coding theory.  I also work on interactive visualization of high-dimensional datasets and complex models (eg. deep neural nets) for a guide to better insight and understanding.
+I'm a 3rd year Computer Science PhD at USC studying computational models of cognitive representation using generative models. 
+My general research interest lies at the intersection of representation learning and information theory,  inspired by the way human perceptual system integrates multimodal sensory inputs. 
+My journey started from noticing our own ability to (i) break down a complex data into abstract, digestable chunks of concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this process of abstraction and synthesis in Picasso's video and  The video of Picasso's abstracting process gives us a glimpse into an example of such process happening: 
+
+<iframe width="1195" height="671" src="https://www.youtube.com/embed/Xwbuw1CSFew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1195" height="691" src="https://www.youtube.com/embed/JU9oaD0e7uU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="672" height="480" src="https://www.youtube.com/embed/Nxes8pyHkJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="672" height="480" src="https://www.youtube.com/embed/ylh0X38yvQI?t=411" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+In particular, I'm intrigued by how a semantic content can be expressed in various forms (eg. in languages, in images, in gestures, in sounds, and infinitely many forms within each of the domains), and conversely, how seamlessly we extract a common semantic content from observations in vastly different representational forms.
+
+---
+
+
+
+studying the lower-dimensional representation of complex unstructured datasets (eg. multi-spectral satellite images, 3D MRI scans) using deep learning. My work lies in the intersection of statistical machine learning, information theory and coding theory.  I also work on interactive visualization of high-dimensional datasets and complex models (eg. deep neural nets) for a guide to better insight and understanding.
 
 - Information Distillation across domain and modality: Variational Autoencoder
 - Invariance in representation: information-theory, "nuisance"
