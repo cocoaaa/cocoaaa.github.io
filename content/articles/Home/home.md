@@ -32,10 +32,10 @@ Currently, I am exploring different ways to understand our proposed model, in pa
 
 - How we can quantify the amount of the shared semantic information captured by our model?
 - If we view each latent partition as a subsystem that constitutes a global system represented by the whole latent space, then we can view the the adversarial discriminator as a demon (like [Maxwell's Demon](https://en.wikipedia.org/wiki/Maxwell%27s_demon)) sitting at the boarder of the latent subsystems. 
-- (How) does the adversary -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?
-<!--- From this point of view, how does this adversarial discriminator achieves the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?-->
+<!--- (How) does the adversary -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?-->
+- From this point of view, (how) does this adversary -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?
 
-It's exciting to see how the ideas and tools in thermodynamics can help quantify --and visualize?-- this flow of semantic information in our model :)
+It's exciting to see how the ideas and tools in thermodynamics can help quantify and visualize this flow of semantic information in our model :)
 
 <br>
 ---
@@ -60,7 +60,8 @@ It's exciting to see how the ideas and tools in thermodynamics can help quantify
 <br>
 ---
 ## Research Questions  
-My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this process of abstraction and synthesis in this video of Picasso's live drawing.
+My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this dance between abstraction and synthesis in a video of Picasso's live drawing:
+
 <br>
 <div align="center">
 <iframe  width="672" height="480"" src="https://www.youtube.com/embed/JU9oaD0e7uU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -73,20 +74,21 @@ My journey started from noticing our own ability to (i) break down a complex obs
 -->
 
 
-I'm intrigued by how seamlessly we extract a common semantic content from observations in vastly different representational forms (such as languages, images, gestures or sounds, and infinitely many forms within each modality), and conversely, how a semantic content can be expressed in various representational forms without losing its (overall) meaning
+More specifically, I'm intrigued by how seamlessly we extract a common semantic content from observations in vastly different representational forms (such as languages, images, gestures or sounds, and infinitely many forms within each modality), and reversely, how a semantic content can be expressed in various forms without losing its (overall) meaning
 <label for="sn-note" class="margin-toggle sidenote-number"></label>
 <input type="checkbox" id="sn-note" class="margin-toggle"/>
 <span class="sidenote">
 Hmm.. coarse-graining?</span>.
 
 My exploration starts with an hypothesis that a phenomena in reality, from which
-our observations stem from, contains __semantic potentials __("potential" as in
-Potential Energy in Physics, or going back farther up the stream, as in Aristotle's
+our observations stem from, contains __semantic potentials__("potential" as in
+_potential energy_ in Physics, or going further up the stream, as in Aristotle's
 ["Potentiality and actuality"](https://en.wikipedia.org/wiki/Potentiality_and_actuality)
 <label for="sn-note" class="margin-toggle sidenote-number"></label>
 <input type="checkbox" id="sn-note" class="margin-toggle"/>
 <span class="sidenote">
-This idea influenced  Gottfried Wilhelm Leibniz to develop the science of "dynamics". Learning about this influence helped me understand what Leibniz was struggling to hit the chord, and gave me a new perspective on the idea of 'power' and 'action', i.e. Aristotle's "potential:actuality" vs. Leibniz's "power:action"</span>.) 
+This idea influenced Leibniz to develop the science of "dynamics". 
+Learning about such influence brings light into what Leibniz was struggling to hit the chord with ideas like 'power' and 'action'. Contemplate: Aristotle's "potential:actuality" vs. Leibniz's "power:action"</span>.) 
 
 I wonder,
 
