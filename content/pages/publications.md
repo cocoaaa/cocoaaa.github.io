@@ -52,7 +52,7 @@ MINT-GeoViz is an interactive visualization library for large geospatial dataset
 
 ---
 ### Generating Gaussian, Pictures, and Stories with Generative Adversarial Networks
-Hayley Song*, Adam Yala*
+Hayley Song\*, Adam Yala\*
 
 [paper](/pdfs/generating-gaussians-pictures.pdf) (2016 Fall)
 
@@ -64,7 +64,7 @@ In this paper, we explore the framework of Adversarial Training as introduced in
 
 ---
 ### Automatic Cell Detection using HOG features and SVM
-Nicha Apichitsopa*, Boying Meng*, Hayley Song*
+Nicha Apichitsopa\*, Boying Meng\*, Hayley Song\*
 
 [paper](/pdfs/6.869-cell-detection.pdf), [video](#), [slides](/pdfs/6.869-cell-detection-ppt.pdf) (2016 Fall)
 
@@ -87,7 +87,7 @@ FreeFlow is a software for the pen-style, hand-held device that allows a user to
 
 ---
 ### 3D Air Gesture Recognizer using Dynamic Time Warping and KNN
-Hayley Song*, Chongyuan Xiang*
+Hayley Song\*, Chongyuan Xiang\*
 
 [poster](/pdfs/3d-air-gestures-ppt.pdf),
 [code and dataset](https://github.com/xiangcy/AirGestureClassifier) (MIT CSAIL, 2016)
