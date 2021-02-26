@@ -8,6 +8,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
     <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
     <link href="https://cocoaaa.github.io/feeds/ML.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Categories Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
@@ -16,6 +26,7 @@
     <meta name="author" content="Hayley Song" />
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -31,18 +42,20 @@
             <h2>Understanding Intelligence from Computational Perspective</h2>
         </div>
     </header>
-    <div id="wrapper">
-        <div id="content">            <h4 class="date">Sep 01, 2018</h4>
 
-            <article class="post">
-                <h2 class="title">
-                    <a href="https://cocoaaa.github.io/articles/2018/09/01/interactive-demo-of-precision-recall-metric" rel="bookmark" title="Permanent Link to &quot;Interactive demo of precision-recall metric&quot;">Interactive demo of precision-recall metric</a>
-                </h2>
 
-                
-                
+    <div id="wrapper" class="pure-g">
 
-                <style type="text/css">/*!
+        <div id="content pure-u-1 pure-u-md-4-5">
+<h4 class="date">Sep 01, 2018</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2018/09/01/interactive-demo-of-precision-recall-metric" rel="bookmark" title="Permanent Link to &quot;Interactive demo of precision-recall metric&quot;">Interactive demo of precision-recall metric</a>
+</h2>
+
+
+<style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -3165,7 +3178,7 @@ Let's take a look at this new functionality.</li>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># hv.Div(1)</span>
-<span class="n">div_dmap</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">DynamicMap</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="n">hv</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;&lt;p&gt;x,y: </span><span class="si">{x}</span><span class="s1">,</span><span class="si">{y}</span><span class="s1">&lt;/p&gt;&#39;</span> <span class="p">),</span> 
+<span class="n">div_dmap</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">DynamicMap</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="n">hv</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;&lt;p&gt;x,y: </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">,</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1">&lt;/p&gt;&#39;</span> <span class="p">),</span> 
                          <span class="n">streams</span><span class="o">=</span><span class="p">[</span><span class="n">pointer</span><span class="p">])</span>
 </pre></div>
 
@@ -3237,7 +3250,7 @@ Let's take a look at this new functionality.</li>
     <span class="n">x</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span>
 <span class="c1">#     print(x,y)</span>
-    <span class="k">return</span> <span class="n">hv</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;&lt;p&gt;x,y: </span><span class="si">{x}</span><span class="s1">,</span><span class="si">{y}</span><span class="s1">&lt;/p&gt;&#39;</span> <span class="p">)</span><span class="o">.</span><span class="n">opts</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">hv</span><span class="o">.</span><span class="n">Div</span><span class="p">(</span> <span class="sa">f</span><span class="s1">&#39;&lt;p&gt;x,y: </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">,</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1">&lt;/p&gt;&#39;</span> <span class="p">)</span><span class="o">.</span><span class="n">opts</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">pointer</span><span class="o">.</span><span class="n">add_subscriber</span><span class="p">(</span><span class="n">subscriber_div</span><span class="p">)</span>
 </pre></div>
 
@@ -3660,13 +3673,14 @@ Let's take a look at this new functionality.</li>
 }
 </script>
 
-                <div class="clear"></div>
+<div class="clear"></div>
 
-                <div class="info">
-                    <a href="https://cocoaaa.github.io/articles/2018/09/01/interactive-demo-of-precision-recall-metric">posted at 00:00</a>
-                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/ML" rel="tag">ML</a>
-                </div>
-            </article>
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2018/09/01/interactive-demo-of-precision-recall-metric">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/ML" rel="tag">ML</a>
+</div>
+
+</article>
             <div class="clear"></div>
             <footer>
                 <p>

@@ -8,6 +8,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
     <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
     <link href="https://cocoaaa.github.io/feeds/Geospatial.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Categories Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
@@ -16,6 +26,7 @@
     <meta name="author" content="Hayley Song" />
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -31,18 +42,20 @@
             <h2>Understanding Intelligence from Computational Perspective</h2>
         </div>
     </header>
-    <div id="wrapper">
-        <div id="content">            <h4 class="date">Jan 10, 2019</h4>
 
-            <article class="post">
-                <h2 class="title">
-                    <a href="https://cocoaaa.github.io/articles/2019/01/10/introduction-to-planet-api" rel="bookmark" title="Permanent Link to &quot;Introduction to Planet API&quot;">Introduction to Planet API</a>
-                </h2>
 
-                
-                
+    <div id="wrapper" class="pure-g">
 
-                <style type="text/css">/*!
+        <div id="content pure-u-1 pure-u-md-4-5">
+<h4 class="date">Jan 10, 2019</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2019/01/10/introduction-to-planet-api" rel="bookmark" title="Permanent Link to &quot;Introduction to Planet API&quot;">Introduction to Planet API</a>
+</h2>
+
+
+<style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -1403,7 +1416,7 @@ h6:hover .anchor-link {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">id0</span> <span class="o">=</span> <span class="n">img_ids</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">id0_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://api.planet.com/data/v1/item-types/</span><span class="si">{item_type}</span><span class="s1">/items/</span><span class="si">{id0}</span><span class="s1">/assets&#39;</span>
+<span class="n">id0_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://api.planet.com/data/v1/item-types/</span><span class="si">{</span><span class="n">item_type</span><span class="si">}</span><span class="s1">/items/</span><span class="si">{</span><span class="n">id0</span><span class="si">}</span><span class="s1">/assets&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;id0_url: &#39;</span><span class="p">,</span> <span class="n">id0_url</span><span class="p">)</span>
 </pre></div>
 
@@ -1418,7 +1431,7 @@ h6:hover .anchor-link {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_asset_url</span><span class="p">(</span><span class="n">item_type</span><span class="p">,</span><span class="n">scene_id</span><span class="p">):</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;https://api.planet.com/data/v1/item-types/</span><span class="si">{item_type}</span><span class="s1">/items/</span><span class="si">{scene_id}</span><span class="s1">/assets&#39;</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;https://api.planet.com/data/v1/item-types/</span><span class="si">{</span><span class="n">item_type</span><span class="si">}</span><span class="s1">/items/</span><span class="si">{</span><span class="n">scene_id</span><span class="si">}</span><span class="s1">/assets&#39;</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">ASSET_URL</span><span class="p">(</span><span class="n">ITEM_TYPE</span><span class="p">,</span> <span class="n">id0</span><span class="p">))</span>
 </pre></div>
@@ -1761,7 +1774,7 @@ h6:hover .anchor-link {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># scene_id = &#39;20160715_174333_0e0e&#39;</span>
 <span class="n">scene_id</span> <span class="o">=</span> <span class="s1">&#39;sample&#39;</span>
-<span class="n">outname</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;./output/</span><span class="si">{scene_id}</span><span class="s1">.zip&#39;</span>
+<span class="n">outname</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;./output/</span><span class="si">{</span><span class="n">scene_id</span><span class="si">}</span><span class="s1">.zip&#39;</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outname</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">dlink_response</span><span class="o">.</span><span class="n">iter_content</span><span class="p">()):</span>
         <span class="n">w</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -1895,13 +1908,14 @@ h6:hover .anchor-link {
 }
 </script>
 
-                <div class="clear"></div>
+<div class="clear"></div>
 
-                <div class="info">
-                    <a href="https://cocoaaa.github.io/articles/2019/01/10/introduction-to-planet-api">posted at 00:00</a>
-                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/Geospatial" rel="tag">Geospatial</a>
-                </div>
-            </article>
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2019/01/10/introduction-to-planet-api">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/Geospatial" rel="tag">Geospatial</a>
+</div>
+
+</article>
             <div class="clear"></div>
             <footer>
                 <p>

@@ -8,6 +8,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
     <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
     <link href="https://cocoaaa.github.io/feeds/TIL.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Categories Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
@@ -16,6 +26,7 @@
     <meta name="author" content="Hayley Song" />
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -31,18 +42,20 @@
             <h2>Understanding Intelligence from Computational Perspective</h2>
         </div>
     </header>
-    <div id="wrapper">
-        <div id="content">            <h4 class="date">Jan 01, 2017</h4>
 
-            <article class="post">
-                <h2 class="title">
-                    <a href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec" rel="bookmark" title="Permanent Link to &quot;Git refspec&quot;">Git refspec</a>
-                </h2>
 
-                
-                
+    <div id="wrapper" class="pure-g">
 
-                <p>Resource: <a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec">git-book</a></p>
+        <div id="content pure-u-1 pure-u-md-4-5">
+<h4 class="date">Jan 01, 2017</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec" rel="bookmark" title="Permanent Link to &quot;Git refspec&quot;">Git refspec</a>
+</h2>
+
+
+<p>Resource: <a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec">git-book</a></p>
 <h2>Git Remotes</h2>
 <blockquote>
 <p>Remote repositories: versions of your project that are hosted on the internet</p>
@@ -50,9 +63,8 @@
 <h3><code>git remote -v</code></h3>
 <p>Let's say I cloned a repository from some repository, for instance
 <code>git@github.com:cocoaaa/dip.git</code>, by running:</p>
-<div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">cocoaaa</span><span class="o">/</span><span class="n">dip</span><span class="o">.</span><span class="n">git</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">cocoaaa</span><span class="o">/</span><span class="n">dip</span><span class="o">.</span><span class="n">git</span>
+</code></pre></div>
 
 <p>Then, in this cloned repo's directory in my local machine, 
 <code>git remote</code> will list the shortnames of each remote handle I've specified. 
@@ -98,13 +110,14 @@ the local branch?</p>
 <p><code>git remote show &lt;remote-shortname&gt;</code> command shows the details of the particular 
 remote. </p>
 <p><img alt="git-remote-show" src="https://cocoaaa.github.io/images/git-remote-show.png"></p>
-                <div class="clear"></div>
+<div class="clear"></div>
 
-                <div class="info">
-                    <a href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec">posted at 00:00</a>
-                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
-                </div>
-            </article>
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+</div>
+
+</article>
             <div class="clear"></div>
             <footer>
                 <p>

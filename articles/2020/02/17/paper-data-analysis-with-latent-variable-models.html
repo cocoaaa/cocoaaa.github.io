@@ -7,7 +7,17 @@
     <link rel="shortcut icon" type="image/png" href="https://cocoaaa.github.io/favicon.png">
     <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
     <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
-    <link href="https://cocoaaa.github.io/feeds/Reading.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Categories Atom Feed" />
+    <link href="https://cocoaaa.github.io/feeds/Research.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Categories Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
@@ -16,6 +26,7 @@
     <meta name="author" content="Hayley Song" />
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -31,18 +42,20 @@
             <h2>Understanding Intelligence from Computational Perspective</h2>
         </div>
     </header>
-    <div id="wrapper">
-        <div id="content">            <h4 class="date">Feb 17, 2020</h4>
 
-            <article class="post">
-                <h2 class="title">
-                    <a href="https://cocoaaa.github.io/articles/2020/02/17/paper-data-analysis-with-latent-variable-models" rel="bookmark" title="Permanent Link to &quot;[Paper] Data Analysis with Latent Variable Models&quot;">[Paper] Data Analysis with Latent Variable Models</a>
-                </h2>
 
-                
-                
+    <div id="wrapper" class="pure-g">
 
-                <style type="text/css">/*!
+        <div id="content pure-u-1 pure-u-md-4-5">
+<h4 class="date">Feb 17, 2020</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2020/02/17/paper-data-analysis-with-latent-variable-models" rel="bookmark" title="Permanent Link to &quot;[Paper] Data Analysis with Latent Variable Models&quot;">[Paper] Data Analysis with Latent Variable Models</a>
+</h2>
+
+
+<style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -1229,16 +1242,22 @@ So the first thing is to write this generative process (btw this is "your" choic
 <li>Step 1: Write in plain english what your hidden quantities that are assumed to have given rise to the observations</li>
 <li>Step 2: Write in plain english how they give rise to the observations. That is, what is the dependency like between the hidden quantities and the observations?</li>
 <li>Step 3: Now, translate the english description (that is, the definition of your model and the dependency relations) to mathematical expression using the joint distribution (&lt;- encodes your assumptions about the data generative process) and its facotirazation (&lt;- encodes depedency relations)</li>
-<li><p>Step 4: Represent the joint distribution (or the generative process) as a graphical model</p>
-</li>
-<li><p>Generative process</p>
-</li>
+<li>Step 4: Represent the joint distribution (or the generative process) as a graphical model</li>
+</ul>
+<ol>
+<li>Generative process</li>
+</ol>
+<ul>
 <li>indicates a pattern of dependence among the random variable</li>
 </ul>
 <ol>
 <li>Joint distribution</li>
+</ol>
+<ul>
 <li>The traditional way of representing a model is with the <em>factored joint distribution</em> of its hidden and observed variables</li>
 <li>This factorization comes directly from the generative process</li>
+</ul>
+<ol>
 <li>Graphical model</li>
 </ol>
 <h2 id="Aside:-Why-a-joint-distribution?">Aside: Why a joint distribution?<a class="anchor-link" href="#Aside:-Why-a-joint-distribution?">&#182;</a></h2><p>Q: What can we do with a joint distribution of the hidden and observable variables?
@@ -1279,13 +1298,13 @@ See Sec.2.1, 2.2, 2.3 for each of the three ways.<ul>
 <li>More general category is called "Factor models" </li>
 <li>Factor models are important as they are components in more complicated models (eg. the Kalman filter)</li>
 <li>Examples of statistical models that fall into this category: principal component analysis, factor analysis, canonical correlation anlysis</li>
-<li><p>Relation to Gaussian Mixture model: in Gussian mixture model, our z_n's are discrete random vars. Factor model's use 'continuous` hidden variable z.</p>
-</li>
-<li><p>Generative process</p>
-</li>
+<li>Relation to Gaussian Mixture model: in Gussian mixture model, our z_n's are discrete random vars. Factor model's use 'continuous` hidden variable z.</li>
+</ul>
+<ol>
+<li>Generative process</li>
 <li>Joint Distribution</li>
 <li>Represent the model as a graphical model</li>
-</ul>
+</ol>
 <h3 id="Mixed-Membership-model">Mixed-Membership model<a class="anchor-link" href="#Mixed-Membership-model">&#182;</a></h3><h3 id="Matrix-factorization-model">Matrix factorization model<a class="anchor-link" href="#Matrix-factorization-model">&#182;</a></h3><h3 id="Hidden-Markov-model">Hidden Markov model<a class="anchor-link" href="#Hidden-Markov-model">&#182;</a></h3><h3 id="Kalman-filter-model">Kalman filter model<a class="anchor-link" href="#Kalman-filter-model">&#182;</a></h3><hr>
 <details>
   <summary>Running list of definitions</summary>
@@ -1331,13 +1350,14 @@ See Sec.2.1, 2.2, 2.3 for each of the three ways.<ul>
 }
 </script>
 
-                <div class="clear"></div>
+<div class="clear"></div>
 
-                <div class="info">
-                    <a href="https://cocoaaa.github.io/articles/2020/02/17/paper-data-analysis-with-latent-variable-models">posted at 00:00</a>
-                    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/Reading" rel="tag">A collection of reading lists</a>
-                </div>
-            </article>
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2020/02/17/paper-data-analysis-with-latent-variable-models">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/Research" rel="tag">Research</a>
+</div>
+
+</article>
             <div class="clear"></div>
             <footer>
                 <p>

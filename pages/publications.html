@@ -7,6 +7,16 @@
     <link rel="shortcut icon" type="image/png" href="https://cocoaaa.github.io/favicon.png">
     <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
     <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
     <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
@@ -14,6 +24,7 @@
     <meta name="description" content="" />
     <meta name="author" content="Hayley Song" />
 </head>
+
 <body>
     <header>
         <nav>
@@ -29,15 +40,20 @@
             <h2>Understanding Intelligence from Computational Perspective</h2>
         </div>
     </header>
-    <div id="wrapper">
-        <div id="content">            <div class="page">
+
+
+    <div id="wrapper" class="pure-g">
+
+        <div id="content pure-u-1 pure-u-md-4-5">
+            <div class="page">
                 <h1>Publications</h1>
                 <hr>
 <h2>Talks</h2>
 <h3>Experimental ML with Holoviews/Geoviews + Pyorch</h3>
 <p>1.5hr tutorial session @ <a href="https://pydata.org/la2019/schedule/">PyData LA, 2019</a>
-- <a href="https://github.com/cocoaaa/PyData-LA-2019">materials</a>, <a href="#">video</a>
-<!-- (https://www.youtube.com/watch?v=xdux2jwoNw4) --></p>
+- <a href="https://github.com/cocoaaa/PyData-LA-2019">materials</a>, <a href="#">video</a></p>
+<!-- (https://www.youtube.com/watch?v=xdux2jwoNw4) -->
+
 <p>This tutorial introduces how to make your data exploration and model building process more interactive and exploratory by using the combination of JupyterLab, HoloViews, and PyTorch.  I will focus on the problem of classfying different types of roads on satellite images, defined as a "multi-class semantic segmentation problem". Starting from the data exploration to the trained model understanding, we will cover different ways to explore the data and models with simple, interactive GUIs in Jupyter notebooks.  Specifically, the tutorial covers, with the emphasis on the experimental nature of model building:
 - how to make your data exploration more intuitive and experimental using HoloViews libraries
 - how to turn your model script into a simple GUI that allows interactive hyperparameter tuning and model exploration
@@ -66,8 +82,13 @@
 </table>
 <hr>
 <h2>Papers</h2>
-<h3>Spatial Knowledge-aware Road Detection from Satellite Images with Reasoning and External Knowledge</h3>
-<p><a href="#">paper draft</a></p>
+<h3>An Energy Gradient-Based Approach for Coordinating Smart Vehicles and Traffic Lights at Intersections.</h3>
+<p>Manuel Rodriguez, Xiangxue Zhao, Hayley Song, Anastasia Mavrommati, Roberto Valenti, Akshay Rajhans, PieterMosterman, Yancy Diaz-Mercado, Hosam K. Fathy.
+2021 American Control Conference (ACC)</p>
+<hr>
+<!-- ### Spatial Knowledge-aware Road Detection from Satellite Images with Reasoning and External Knowledge -->
+<h3>Context-aware segmentation via external knowledge and structured neural net</h3>
+<p>[In preparation]</p>
 <p>Image segmentation in satellite images is a crucial task in computer vision, with important applications ranging from climate change monitoring, natural disaster responses, route planning, urban planning to security surveillance. Current state-of-the-art algorithms, including deep learning algorithms, have mostly focused on learning meaningful features exclusively from the given images. This results in neglecting a large amount of external information that provides important contexts and spatial cues that could help improve the visual tasks.   In this paper, we propose a new method to achieve a spatial knowledge-aware road detection that improves existing image segmentation algorithms by utilizing spatial semantics from an external knowledge base (ie. the OpenStreetMap database). Our main contribution is first to introduce a notion of \textit{spatial semantic score} that quantifies the spatial relationship and secondly to propose a new optimization framework to improve the initial prediction to better align with the spatial semantics observed in external knowledge bases. Finally, we show that our approach significantly increases performances measured by IoU, (Relaxed) F1 and Average Path Length Score (APLS) on our satellite dataset.</p>
 <hr>
 <h3>MINT NetCDF</h3>
