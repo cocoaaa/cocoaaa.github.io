@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2021-02-26T15:42:21-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2021-02-26T15:42:21-08:00</published><updated>2021-02-19T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-26:/</id><summary type="html">&lt;div id="chartdiv" height="400"&gt;&lt;/div&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2021-02-26T15:42:36-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2021-02-26T15:42:36-08:00</published><updated>2021-02-19T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-26:/</id><summary type="html">&lt;div id="chartdiv" height="400"&gt;&lt;/div&gt;
 &lt;div id="mapdiv" height="600"&gt;&lt;/div&gt;
 
 &lt;p&gt;I'm a Computer Science PhD student at USC interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
@@ -196,7 +196,7 @@ The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbo
 &lt;p&gt;See more details &lt;a href="/pages/publications.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;TMI: How much is Too Much Information?&lt;/h2&gt;
-&lt;p&gt;More importantly, I'm practicing to:
+&lt;p&gt;More importantly, I'm practicing to:&lt;br&gt;
 - observe without being entangled in what is personal
 - look at small thoughts carefully
 - not to rush
