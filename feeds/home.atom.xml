@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2021-02-26T12:39:02-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2021-02-26T12:39:02-08:00</published><updated>2021-02-19T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-26:/</id><summary type="html">&lt;div id="chartdiv" height="400"&gt;&lt;/div&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2021-02-26T14:59:31-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2021-02-26T14:59:31-08:00</published><updated>2021-02-19T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-26:/</id><summary type="html">&lt;div id="chartdiv" height="400"&gt;&lt;/div&gt;
 &lt;div id="mapdiv" height="600"&gt;&lt;/div&gt;
 
 &lt;p&gt;I'm a Computer Science PhD student at USC interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
@@ -9,7 +9,7 @@
 &lt;p&gt;I'm a Computer Science PhD student at USC interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
 &lt;p&gt;Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.  Along the way, I interned at a French robotics startup &lt;em&gt;Keecker&lt;/em&gt; and academic research labs in MIT's CSAIL, Media Lab, McGovern Institute and in INRIA.  After my Masters, I worked at Apple as a COOP for 9 months.&lt;/p&gt;
 &lt;p&gt;My research interest lies at the intersection of &lt;strong&gt;representation learning&lt;/strong&gt; and &lt;strong&gt;information&lt;/strong&gt; theory, inspired by the way our perceptual system integrates &lt;strong&gt;multimodal&lt;/strong&gt; sensory inputs via identifying &lt;strong&gt;invariant semantics&lt;/strong&gt;.  I am interested in understanding how the &lt;strong&gt;semantic information&lt;/strong&gt; flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow. &lt;/p&gt;
-&lt;p&gt;My current guiding questions is, &lt;/p&gt;
+&lt;p&gt;My current guiding question is, &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;How do we  extract the shared semantics from observations expressed in vastly different representational forms (eg. images,  sounds, written texts), and how do we create/actualize various forms of observations, starting from the semantics we want to communicate?&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -32,7 +32,7 @@
 &lt;li&gt;From this point of view, (how) does this adversary -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;It's exciting to see how the ideas and tools in thermodynamics can help quantify and visualize this flow of semantic information in our model :)&lt;/p&gt;
-&lt;h2&gt;&lt;br&gt;&lt;/h2&gt;
+&lt;hr&gt;
 &lt;h2&gt;Recent updates&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;I'm preparing for a talk at &lt;a href="https://www.scipy2021.scipy.org/"&gt;Scipy 2021&lt;/a&gt; in July.&lt;/li&gt;
@@ -66,7 +66,7 @@
 &lt;li&gt;New post: "Let's be honest: peeling the assumptions that get us to Variational Autoencoders"&lt;/li&gt;
 &lt;li&gt;New post: "Thinking about an observer vs. the observed"&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;br&gt;&lt;/h2&gt;
+&lt;hr&gt;
 &lt;h2&gt;Research Questions&lt;/h2&gt;
 &lt;p&gt;My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this dance between abstraction and synthesis in a video of Picasso's live drawing:&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -110,6 +110,7 @@ and &lt;em&gt;semantic potential&lt;/em&gt;, i.e. the underlying &lt;em&gt;field
 &lt;/li&gt;
 &lt;li&gt;Can we model these processes by &lt;strong&gt;learning a generative model from data collected from multiple modalities&lt;/strong&gt;?&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2&gt;Specific Example&lt;/h2&gt;
 &lt;p&gt;For instance, consider the following observations: &lt;span class="math"&gt;\(X^A\)&lt;/span&gt; is an image of a dog barking on the door, &lt;span class="math"&gt;\(X^B\)&lt;/span&gt; is a recording of a dog barking, and &lt;span class="math"&gt;\(X^C\)&lt;/span&gt; is a sentence written in the English language. The semantic content shared among the observations is "there is a dog barking", and each observation is the result of expressing (synm: rendering, stylizing) the semantic content into a form proper for its modality (ie. image, sound, written English language, respectively). &lt;/p&gt;
 &lt;p&gt;My question, at the representational level is, how do we identify the underlying, shared semantic contents from the information about domain-specific variations? 
@@ -144,7 +145,7 @@ The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbo
 &lt;hr&gt;
 &lt;h2&gt;Research Statement&lt;/h2&gt;
 &lt;h3&gt;Learning a generative model of multimodal representation&lt;/h3&gt;
-&lt;p&gt;In pursuit of this computational model of understanding and generating multimodal data, I am developing generative models with disentangled representation to jointly learn the analysis and synthesis processes of complex, high-dimensional data (eg. satellite images, knowledge bases) with compact and “meaningful” representations.  My current project with Prof. &lt;a href="https://usc-isi-i2.github.io/knoblock/"&gt;Craig Knoblock&lt;/a&gt; and Prof.&lt;a href="https://spatial.usc.edu/team-view/yao-yi-chiang/"&gt;Yao-Yi Chiang&lt;/a&gt; tackles this line of questions using geospatial data, and aims to learn spatial semantics from data that are collected from diverse sources (eg. satellites, Google Street Map, historical maps) and stored in diverse format (eg. images, graphs). This work has potential applications such as global-scale urban environment analysis, automated map synthesis and systems for monitoring environmental changes.&lt;/p&gt;
+&lt;p&gt;In pursuit of this computational model of understanding and generating multimodal data, I am developing generative models with disentangled representation to jointly learn the analysis and synthesis processes of complex, high-dimensional data (eg. satellite images, knowledge bases) with compact and “meaningful” representations.  My current project with  Prof.&lt;a href="https://spatial.usc.edu/team-view/yao-yi-chiang/"&gt;Yao-Yi Chiang&lt;/a&gt; and Prof. &lt;a href="https://usc-isi-i2.github.io/knoblock/"&gt;Craig Knoblock&lt;/a&gt; tackles this line of questions using geospatial data, and aims to learn spatial semantics from data that are collected from diverse sources (eg. satellites, Google Street Map, historical maps) and stored in diverse format (eg. images, graphs). This work has potential applications such as global-scale urban environment analysis, automated map synthesis and systems for monitoring environmental changes.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Read more about our maptile dataset &lt;a href="#"&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
@@ -192,7 +193,7 @@ The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbo
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See more details &lt;a href="/pages/publications.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See more details &lt;a href="/pages/publications.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;TMI: How much is Too Much Information?&lt;/h2&gt;
 &lt;p&gt;More importantly, I'm practicing to:
@@ -207,16 +208,16 @@ The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbo
 - relax in discomforts
 - greet what is as what is, nothing more, nothing less
 - stay open&lt;/p&gt;
-&lt;h2&gt;Quote to nimble&lt;/h2&gt;
+&lt;h2&gt;Quotes to nimble&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;‘Your act was unwise,’ I exclaimed ‘as you see
-by the outcome.’ He solemnly eyed me.&lt;br&gt;
+&lt;p&gt;‘Your act was unwise,’ I exclaimed ‘as you see by the outcome.’ &lt;br&gt;
+He solemnly eyed me.&lt;br&gt;
 ‘When choosing the course of my action,’ said he,
 ‘I had not the outcome to guide me.’ &lt;br&gt;
 - Ambrose Bierce&lt;/p&gt;
 &lt;p&gt;If you understand what you're doing, you're not learning anything. &lt;br&gt;
 - Einstein&lt;/p&gt;
-&lt;p&gt;Let questions guide your journey, free of motif and resting on an answer&lt;/p&gt;
+&lt;p&gt;Let questions guide your journey, free of motif or resting on an answer&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!--  
 - continuously bring stochasity to the current model of world as I believe and,
