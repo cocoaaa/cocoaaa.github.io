@@ -450,7 +450,7 @@ Based on: https://out-of-cheese-error.netlify.app/astrochelys#orge290e4d
 
 
 /*Margin Notes*/
-.body {
+body {
     counter-reset: sidenote-counter;
 }
 .sidenote,
@@ -474,11 +474,13 @@ Based on: https://out-of-cheese-error.netlify.app/astrochelys#orge290e4d
     vertical-align: baseline;
     color: var(--main-color);
 }
+
 .sidenote-number:after {
     content: counter(sidenote-counter);
     font-size: 80%;
     top: -0.5em;
 }
+
 .sidenote:before {
     content: counter(sidenote-counter);
     top: -0.5em;
@@ -492,9 +494,7 @@ blockquote .marginnote {
 .marginnote hr {
   color: var(--main-color);
 }
-label.sidenote-number {
-    display: inline;
-}
+
 label.margin-toggle:not(.sidenote-number) {
     display: none;
 }
