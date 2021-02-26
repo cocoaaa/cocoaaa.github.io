@@ -10,20 +10,25 @@ Title: About me
     <a href="/pages/publications.html"><img src="/images/lightbulb3.svg" alt="projects" width="40"/></a>
 </div>
 
+Hello! I'm Hayley, and I'm a Computer Science PhD student at **University of Southern California** (USC). 
+I am excited about problems regarding human perception of the world and how symbolic representation of knowledge can facilitate learning in a new domain via information transfer and generalization across domains and modalities.
 
-Hello!  I'm a PhD student at **University of Southern California** (USC) 
-in Computer Science, studying the dynamics of neural networks using information-theoretic approach and extracting lower dimensional
-representation of complex, unstructured geospatial datasets like multi-spectral satellite images.
+My research lies at the intersection of **representation learning** and **information** theory, inspired by the way our perceptual system integrates **multimodal** sensory inputs via identifying **invariant semantics**. 
 
-## Research interest
-- the **interpretability** and **transferability** of deep neural networks, and
-- hybrid intelligent systems that incorporate **knowledge-based 
-(symbolic) AI** to **neural networks**
+My current guiding question is,
+> How do we, an intelligent agent, understand observations from multiple modalities (e.g. images, audio signals and written texts), and 
 
-At USC, I'm working with 
-Prof. [Yao-Yi Chiang](https://yaoyichi.github.io/) at the [Spatial Computing and Informatics](http://spatial-computing.github.io/) lab and Prof. [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
-at ISI's [Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/).
+> How do we extract and build representations of the semantics that is invariant across the multimodal observations?
 
+I am developing generative models to jointly learn the analysis and synthesis processes of multimodal data.  My most recent work introduces a **generative model with disentangled representation** that learns spatial semantics from map tiles collected from diverse sources such as satellites, Google Street Map and custom rendering engines.
+I am also interested in understanding how the **semantic information** flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow.
+
+
+## Research homes
+---
+At USC, I'm working with Prof. [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
+at ISI's [Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/) and
+Prof. [Yao-Yi Chiang](https://yaoyichi.github.io/) at the [Spatial Computing and Informatics](http://spatial-computing.github.io/) lab.
 
 Before USC, I studied at **Massachusetts Institute of Technology** Mathematics and Electrical Engineering and Computer Science (EECS)
 for my Bachelors and Masters.
@@ -40,21 +45,12 @@ Professor [Wojciech Matusik](http://people.csail.mit.edu/wojciech/), and Dr.
 - Non-rigid registration of mammogram images using optical flow algorithms
 -->
 
-My current projects focus on using reasoning and deep neural networks to understand 
-complex **spatio-temporal** data collected from satellites. 
-
-- [Semantic Road](#): 
-- [MINT](#): 
-- [Model Poker](#):
-
-Please see my [project](/pages/publications.html) page for more details. 
-
----
-## Knowledge representation in Learning and Generalization
-
-{% youtube ow7eEWh37iU %}
+Please see the [project](/pages/publications.html) page for more details on my work.
 
 ## Lingering questions
+<details>
+<summary> <hr> </summary>
+
 In a bigger scheme, I am excited about the problems regarding human perception of 
 the world and how symbolic representation of knowledge can facilitate learning 
 in a new domain [via knowledge transfer across various domains/modalities].  I'm 
@@ -73,10 +69,9 @@ learning. <!-- todo: transfer learning? -->
 2. How can those knowledge be represented in a more abstract form so that it can be used for 
 learning in different domains 
 (keyword: [Knowledge Representation](#), [Transfer Learning](#)/[Domain Adaptation](#))
-
+</details>
 
 ##  Softwares
- 
 I use Python (eg. **PyTorch**, Numpy, scikit-learn) for machine learning
 [projects](#) and C++ for hardware systems (eg. Microsoft Kinnect and Intel RealSense)
 as in [this](#) project. 
@@ -88,9 +83,20 @@ I enjoy biking and swimming -- they help me connect to the dimension that
 is not about thinking and analyzing, and remind me we are more than our 
 thoughts and minds. I enjoy sharing such experiences with friends:)
  
- 
- 
- ---
+I occasionally write [here](/blog_index) to process and share what I learn. I would love to hear from you if you have any questions or thoughts:)
+
+## Contact
+Happy to meet new friends and share ideas! Feel free to contact me at:
+
+
+
+
+<div style="float:left;">
+    <img src="/images/about-moi/usc-courriel.png" alt="courriel" height="70px" width="140px" style="vertical-align:middle" />
+</div>
+<div style="float:left;">
+    <img src="/images/about-moi/courriel-domain.png" alt="domain" height="70px" width="140px" style="vertical-align:middle" />
+</div>
  
 <!--
 {% img ../images/profile.jpg %}  
