@@ -20,8 +20,14 @@ This tutorial introduces how to make your data exploration and model building pr
 
 ---
 ## Papers
-### Spatial Knowledge-aware Road Detection from Satellite Images with Reasoning and External Knowledge
-[paper draft](#)
+### An Energy Gradient-Based Approach for Coordinating Smart Vehicles and Traffic Lights at Intersections.
+Manuel Rodriguez, Xiangxue Zhao, Hayley Song, Anastasia Mavrommati, Roberto Valenti, Akshay Rajhans, PieterMosterman, Yancy Diaz-Mercado, Hosam K. Fathy.
+2021 American Control Conference (ACC)
+
+---
+<!-- ### Spatial Knowledge-aware Road Detection from Satellite Images with Reasoning and External Knowledge -->
+###Context-aware segmentation via external knowledge and structured neural net
+[In preparation]
 
 Image segmentation in satellite images is a crucial task in computer vision, with important applications ranging from climate change monitoring, natural disaster responses, route planning, urban planning to security surveillance. Current state-of-the-art algorithms, including deep learning algorithms, have mostly focused on learning meaningful features exclusively from the given images. This results in neglecting a large amount of external information that provides important contexts and spatial cues that could help improve the visual tasks.   In this paper, we propose a new method to achieve a spatial knowledge-aware road detection that improves existing image segmentation algorithms by utilizing spatial semantics from an external knowledge base (ie. the OpenStreetMap database). Our main contribution is first to introduce a notion of \textit{spatial semantic score} that quantifies the spatial relationship and secondly to propose a new optimization framework to improve the initial prediction to better align with the spatial semantics observed in external knowledge bases. Finally, we show that our approach significantly increases performances measured by IoU, (Relaxed) F1 and Average Path Length Score (APLS) on our satellite dataset.
 
