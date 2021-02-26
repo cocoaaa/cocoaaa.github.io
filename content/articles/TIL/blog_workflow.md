@@ -45,16 +45,16 @@ make devserver
     3. Push the `blog-build` branch's content to `origin/master`
     
     These three steps can be done in one line: 
-    ```bash
-    make publish-to-github
-    ```
+```bash
+make publish-to-github
+```
    
 - Version control the source  
   Important: Write new contents only on the `dev` branch
-    ```bash
-    git add <files> # make sure not to push the output folder
-    git cm "<commit message>"
-    git push origin dev #origin/dev is the remote branch that keeps track of blog sources
-    ```
+```bash
+git add <files> # make sure not to push the output folder
+git cm "<commit message>"
+git push origin dev #origin/dev is the remote branch that keeps track of blog sources
+```
 
 

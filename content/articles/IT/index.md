@@ -1,4 +1,4 @@
-Title: ML 
+Title: Information
 
 
-contains writeups about Machine Learning algorithms
+contains writeups about Information across multiple disciplines, including philosophy, physics and computation. 
