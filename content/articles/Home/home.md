@@ -107,22 +107,21 @@ and _semantic potential_, i.e. the underlying _field_ from which individual obse
 
 
 ## Specific Example
-For instance, consider the following observations: $X^A$ is an image of a dog barking on the door, $X^B$ is a recording of a dog barking, and $X^C$ is a sentence written in English language. The semantic content shared across the observations is "there is a dog barking", and each observation is the result of expressing (synm: rendering, stylizing) the semantic content into the form proper for its modality (ie. image, sound, written English language, respectively). 
+For instance, consider the following observations: $X^A$ is an image of a dog barking on the door, $X^B$ is a recording of a dog barking, and $X^C$ is a sentence written in the English language. The semantic content shared among the observations is "there is a dog barking", and each observation is the result of expressing (synm: rendering, stylizing) the semantic content into a form proper for its modality (ie. image, sound, written English language, respectively). 
 
-My question at the representational level is, how do we identify the underlying, shared semantic contents from the domain-specific variations? 
+My question, at the representational level is, how do we identify the underlying, shared semantic contents from the information about domain-specific variations? 
 ![multi-modal-encoding-of-semantics](/images/semantic_potential/encoding-semantics-from-origin.png)
 
-- How do we identify what is the type of information that is invariant among observations from multiple domains?
-- What discovery process goes into separating, or rather identifying, the shared contents (invariance across domain) from domain-specifics?  
-- Can we express the process computationally?  
-- Can we use learning-based approaches to build a computational model of the process (i)more efficiently, (ii)by leveraging large amount of data available?
+- How do we _identify_ what is the type of information that is invariant among observations from multiple domains?
+- What discovery process goes into separating the shared contents (invariance across domain) from the domain-specifics?  
+- Can we use learning-based approaches to build a computational model of such process (i)more efficiently, (ii)by leveraging large amounts of data available?
 
-Now let's flip the question and consider the generative direction. I tell you the content of our data point is about "a dog barking at the door", and ask you to express this content as image, sound, and an English sentence.  What would be the process of such domain-specific actualization of a semantic information?
+Now let's flip the question and consider the process of synthesis. I start with a concept that I'd like to express and communicate. For example, I want to actualize the idea of "a dog barking at the door". If I ask you to express this content as an image, sounds, and an English sentence, what would be the process of such domain-specific actualization of a semantic information?
 ![generating-semantics-in-multi-domains](/images/semantic_potential/generating-semantics-in-multiple-domains.png)
 
-- What is the process of recombining the encoded representations to make better decisions, derive new conclusions?
+- What is the process of recombining the encoded representations to make better decisions, derive new conclusions? In particular, what is the underlying structure that defines each modality?
 
-Geometry of modality space: imposes geometric constraints on an observation to satisfy a valid membership in that modality
+Geometry of a modality space: imposes geometric constraints that an instance must satisfy to be a valid observations of that modality
 ![geometry-of-modality-space](/images/semantic_potential/geometry-of-modality-space.png)
 
 - E.g. an observation in an image form must satisfy a different set of geometric constraints than that in an acoustic form.
@@ -130,11 +129,14 @@ Geometry of modality space: imposes geometric constraints on an observation to s
 
 The breakdown of main components of my questions looks as follows:
 
-- Semantic information: Address a limitation of Shannon's theory of Information
+- Semantic information: Address a limitation of Shannon's theory of Information<label for="sn-note" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sn-note" class="margin-toggle"/>
+<span class="sidenote">
+The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbols, yet disregards their identities. See [ITTP2018](http://tuvalu.santafe.edu/~simon/it.pdf)</span>.
 - Semantic potentials == a natural phenomena -- is this what "nature" is defined as?
-- The process of actualizing the semantic potentials 
+- The process of actualizing semantic potentials/information to different modalities
 - The process during which an observer builds an understanding of the actualized data point
-- Geometry of modality space: what is the underlying geometry of a modality space? Can we learn a model of such geometric rules via a generative model with neural networks?
+- Geometry of modality space: what is the underlying geometry that defines an observation as a valid image vs. a valid human voice vs. a valid text? 
 
 
 ---
@@ -213,7 +215,7 @@ by the outcome.’ He solemnly eyed me.
 > If you understand what you're doing, you're not learning anything.   
 - Einstein
 
-
+> Let questions guide your journey, free of motif and resting on an answer
 
 <!--  
 - continuously bring stochasity to the current model of world as I believe and,
