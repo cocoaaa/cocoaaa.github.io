@@ -10,14 +10,14 @@ stylesheets: my_trajectory.css
 <div id="chartdiv" height="400"></div>
 <div id="mapdiv" height="600"></div>
 
-I'm a Computer Science PhD student at USC interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts) and build abstract representations of the semantics that is invariant across the modalities.
+I'm a Computer Science PhD student at USC interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.
 
-Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.  Along the way, I interned at a French robotics startup _Keecker_ and several academic research labs in MIT CSAIL, MIT Media Lab and INRIA.  After my Masters, I worked at Apple as a COOP for 9 months.
+Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.  Along the way, I interned at a French robotics startup _Keecker_ and academic research labs in MIT's CSAIL, Media Lab, McGovern Institute and in INRIA.  After my Masters, I worked at Apple as a COOP for 9 months.
 
-My research interest lies at the intersection of __representation learning__ and __information__ theory, inspired by the way our perceptual system integrates __multimodal__ sensory inputs via identifying __invariant semantics__.  I am interested in how the __semantic information__ flows while processing observations from multiple modalities, using tools in deep learning and the thermodynamic approach to information flow. 
+My research interest lies at the intersection of __representation learning__ and __information__ theory, inspired by the way our perceptual system integrates __multimodal__ sensory inputs via identifying __invariant semantics__.  I am interested in understanding how the __semantic information__ flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow. 
 
 My current guiding questions is, 
-> _How do we  extract the shared semantics from observations expressed in vastly different representational forms (eg. images,  sounds, written texts), and how do we create/actualize various forms of observations, starting from the semantics we want to communicate/express?_
+> _How do we  extract the shared semantics from observations expressed in vastly different representational forms (eg. images,  sounds, written texts), and how do we create/actualize various forms of observations, starting from the semantics we want to communicate?_
 <figure>
     <img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fcocoaaa%2FOzdNmX2UzQ.png?alt=media&token=b246a2e5-5e52-418d-8c96-afbbbe84d1b7" alt="multimodal-inputs" style="width:60%">
 </figure>
@@ -31,9 +31,9 @@ I approach this question from an information-processing point of view and am dev
 Currently, I am exploring different ways to understand our proposed model, in particular, by measuring semantic information and studying the flow of information between the latent partitions.
 
 - How we can quantify the amount of the shared semantic information captured by our model?
-- (How) does the adversarial discriminator -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?
-- If we view each latent partition as a subsystem that constitutes a global system represented by the latent space, then we can view the the adversarial discriminator as a demon (like [Maxwell's Demon](https://en.wikipedia.org/wiki/Maxwell%27s_demon)) sitting at the boarder of  latent subsystems.  
-- From this point of view, how does this adversary achieves the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?
+- If we view each latent partition as a subsystem that constitutes a global system represented by the whole latent space, then we can view the the adversarial discriminator as a demon (like [Maxwell's Demon](https://en.wikipedia.org/wiki/Maxwell%27s_demon)) sitting at the boarder of the latent subsystems. 
+- (How) does the adversary -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?
+<!--- From this point of view, how does this adversarial discriminator achieves the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?-->
 
 It's exciting to see how the ideas and tools in thermodynamics can help quantify --and visualize?-- this flow of semantic information in our model :)
 
