@@ -1,4 +1,5 @@
-Title: About me
+Title: About me - old
+Status: draft
 
 <div align="center"> 
     <img src="/images/profile.jpg" alt="profile" width="250"/>
