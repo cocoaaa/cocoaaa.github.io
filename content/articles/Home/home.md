@@ -208,7 +208,7 @@ He solemnly eyed me.
 > If you understand what you're doing, you're not learning anything.   
 - Einstein
 
-> Let questions guide your journey, free of motif or resting on an answer
+> Let questions guide your journey, free of motif or resting on an answer.
 
 <!--  
 - continuously bring stochasity to the current model of world as I believe and,
