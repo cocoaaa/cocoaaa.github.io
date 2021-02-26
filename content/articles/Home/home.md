@@ -16,7 +16,7 @@ Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering a
 
 My research interest lies at the intersection of __representation learning__ and __information__ theory, inspired by the way our perceptual system integrates __multimodal__ sensory inputs via identifying __invariant semantics__.  I am interested in understanding how the __semantic information__ flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow. 
 
-My current guiding questions is, 
+My current guiding question is, 
 > _How do we  extract the shared semantics from observations expressed in vastly different representational forms (eg. images,  sounds, written texts), and how do we create/actualize various forms of observations, starting from the semantics we want to communicate?_
 <figure>
     <img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fcocoaaa%2FOzdNmX2UzQ.png?alt=media&token=b246a2e5-5e52-418d-8c96-afbbbe84d1b7" alt="multimodal-inputs" style="width:60%">
@@ -37,7 +37,6 @@ Currently, I am exploring different ways to understand our proposed model, in pa
 
 It's exciting to see how the ideas and tools in thermodynamics can help quantify and visualize this flow of semantic information in our model :)
 
-<br>
 ---
 ## Recent updates
 - I'm preparing for a talk at [Scipy 2021](https://www.scipy2021.scipy.org/) in July.
@@ -54,10 +53,6 @@ It's exciting to see how the ideas and tools in thermodynamics can help quantify
 - New post: "Let's be honest: peeling the assumptions that get us to Variational Autoencoders"
 - New post: "Thinking about an observer vs. the observed"
  
-    
-
-
-<br>
 ---
 ## Research Questions  
 My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this dance between abstraction and synthesis in a video of Picasso's live drawing:
@@ -104,8 +99,7 @@ and _semantic potential_, i.e. the underlying _field_ from which individual obse
     - How can we define and measure the semantic information in our representations, efficiently?
 - Can we model these processes by __learning a generative model from data collected from multiple modalities__?
 
-
-
+---
 ## Specific Example
 For instance, consider the following observations: $X^A$ is an image of a dog barking on the door, $X^B$ is a recording of a dog barking, and $X^C$ is a sentence written in the English language. The semantic content shared among the observations is "there is a dog barking", and each observation is the result of expressing (synm: rendering, stylizing) the semantic content into a form proper for its modality (ie. image, sound, written English language, respectively). 
 
@@ -142,7 +136,7 @@ The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbo
 ---
 ## Research Statement
 ### Learning a generative model of multimodal representation
-In pursuit of this computational model of understanding and generating multimodal data, I am developing generative models with disentangled representation to jointly learn the analysis and synthesis processes of complex, high-dimensional data (eg. satellite images, knowledge bases) with compact and “meaningful” representations.  My current project with Prof. [Craig Knoblock](https://usc-isi-i2.github.io/knoblock/) and Prof.[Yao-Yi Chiang](https://spatial.usc.edu/team-view/yao-yi-chiang/) tackles this line of questions using geospatial data, and aims to learn spatial semantics from data that are collected from diverse sources (eg. satellites, Google Street Map, historical maps) and stored in diverse format (eg. images, graphs). This work has potential applications such as global-scale urban environment analysis, automated map synthesis and systems for monitoring environmental changes.
+In pursuit of this computational model of understanding and generating multimodal data, I am developing generative models with disentangled representation to jointly learn the analysis and synthesis processes of complex, high-dimensional data (eg. satellite images, knowledge bases) with compact and “meaningful” representations.  My current project with  Prof.[Yao-Yi Chiang](https://spatial.usc.edu/team-view/yao-yi-chiang/) and Prof. [Craig Knoblock](https://usc-isi-i2.github.io/knoblock/) tackles this line of questions using geospatial data, and aims to learn spatial semantics from data that are collected from diverse sources (eg. satellites, Google Street Map, historical maps) and stored in diverse format (eg. images, graphs). This work has potential applications such as global-scale urban environment analysis, automated map synthesis and systems for monitoring environmental changes.
 
 - Read more about our maptile dataset [here](#).
     
@@ -186,7 +180,7 @@ My interests centers around _understanding_ of complex data and the _processes_ 
     - How does information flow across the layers of a neural network? Can we visualize this flow to help understand the learning process?
     
 
-See more details [here](/pages/publications.html)
+See more details [here](/pages/publications.html).
 
 
 ---
@@ -204,18 +198,17 @@ More importantly, I'm practicing to:
 - greet what is as what is, nothing more, nothing less
 - stay open
 
-## Quote to nimble
-> ‘Your act was unwise,’ I exclaimed ‘as you see
-by the outcome.’ He solemnly eyed me.  
+## Quotes to nimble
+> ‘Your act was unwise,’ I exclaimed ‘as you see by the outcome.’   
+He solemnly eyed me.  
 ‘When choosing the course of my action,’ said he,
 ‘I had not the outcome to guide me.’   
 - Ambrose Bierce
 
-
 > If you understand what you're doing, you're not learning anything.   
 - Einstein
 
-> Let questions guide your journey, free of motif and resting on an answer
+> Let questions guide your journey, free of motif or resting on an answer
 
 <!--  
 - continuously bring stochasity to the current model of world as I believe and,
