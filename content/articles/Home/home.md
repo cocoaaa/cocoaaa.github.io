@@ -92,17 +92,15 @@ Learning about such influence brings light into what Leibniz was struggling to h
 
 I wonder,
 
-- What is the relationship between the semantic information 
-<label for="sn-note" class="margin-toggle sidenote-number"></label>
+- What is the relationship between _semantic information_<label for="sn-note" class="margin-toggle sidenote-number"></label>
 <input type="checkbox" id="sn-note" class="margin-toggle"/>
 <span class="sidenote">
 See [An Outline of a Theory of Semantic Information](https://dspace.mit.edu/bitstream/handle/1721.1/4821/RLE-TR-247-03150899.pdf?sequence=1), a [survey](https://plato.stanford.edu/entries/information-semantic/), and more recent work by [Kolchinsky and Wolpert](https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0041)
 </span>
-and a _semantic potential_ that define a natural phenomena/an event, i.e. the underlying _field_ from which individual observations are actualized?
-
-- What is the process -- or geometric constraints -- that leads the same semantics to  different representational forms?
-- What is the process through which an observer builds an understanding -- a mental representation -- of an event?
-    - the process through which same underlying semantics is extracted and encoded from observations in various modalities?
+and _semantic potential_, i.e. the underlying _field_ from which individual observations are actualized into an instance of a natural phenomena, an event?
+- What is the process -- or geometric constraints -- that leads the same semantics to different representational forms? Can we learn this process from multimodal data?
+- What is the process through which an observer builds an understanding -- an internal representation -- of an event?
+    - What is the process through which we identify, extract and encode the invariant semantics from observations in diverse modalities?
     - How can we define and measure the semantic information in our representations, efficiently?
 - Can we model these processes by __learning a generative model from data collected from multiple modalities__?
 
