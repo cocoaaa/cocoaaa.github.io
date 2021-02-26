@@ -6,6 +6,12 @@ License: none (public domain)
 /* Modified by Jody Frankowski */
 /* Modified by ix5 */
 /*Modified by cocoaaa*/
+:root {
+  --fixed-font: "Fira Code Medium";
+  --variable-font: "Cantarell";
+  --condensed-font: "Fira Sans Condensed";
+  --sitename-font: "VT323";
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -32,6 +38,7 @@ em {
 }
 strong {
     font-weight: bold;
+    color: #2aa198;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -58,7 +65,8 @@ table {
 }
 
 body {
-    font-family: Georgia, serif;
+    /*font-family: Georgia, serif;*/
+    font-family: var(--variable-font), serif;
     font-size: 16px;
     line-height: 1.5em;
     color: #444;
@@ -85,7 +93,7 @@ ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
+   font-family:var(--condensed-font), sans-serif;
     font-weight: bold;
 }
 h1, h2, h3 {
@@ -101,7 +109,9 @@ img, p, .post > .highlight, .highlighttable, h4, h5, h6 {
 blockquote {
     margin: 1.5em 1.5em 1.5em .75em;
     padding-left: .75em;
-    border-left: 1px solid #EEE;
+    border-left: 2px solid #aaa;
+    background:var(--bg-color-secondary);
+
 }
 
 .date {
@@ -155,9 +165,14 @@ blockquote {
     margin: 0 90px;
 }
 
-.highlight {
-    border-radius: 3px;
+.blue {
+   color: #3683ff;
 }
+
+.green {
+    color: #2aa198;
+}
+
 .code > .highlight {
     border-radius: 0px 3px 3px 0px;
 }
@@ -357,12 +372,159 @@ a, figure {
 }
 
 figcaption {
-    margin: 10px 0 0 0;
-    font-variant: small-caps;
-    font-family: Arial;
-    font-weight: bold;
-    color: #bb3333;
+    /*margin: 10px 0 0 0;*/
+    /*font-variant: small-caps;*/
+    font-family: sans-serif;
+    color: #BBB;
+    text-align: center;
+    /*color: #bb3333;*/
+    /*font-weight: bold;*/
+    /*font-family: Arial;*/
 }
 figure {
     padding: 5px;
+}
+
+/*
+Adds Tufte-style side notes
+Based on: https://out-of-cheese-error.netlify.app/astrochelys#orge290e4d
+*/
+.sidebar {
+    background: var(--bg-color-secondary);
+    color: var(--secondary-color);
+    font-family: var(--condensed-font), sans-serif;
+}
+.sitename {
+    font-family: var(--sitename-font), monospace;
+    font-size: 1.3em;
+}
+.sidebar a {
+    font-weight: normal;
+    border: 2em;
+    background-color: unset;
+}
+.sidebar li a:hover, .sidebar .toc a:hover {
+    color: var(--main-color);
+}
+.sidebar li a, .sidebar .toc a {
+    color: var(--secondary-color);
+}
+.sidebar li {
+    line-height: 1.5em;
+    margin: 0 0 0.1em 0;
+}
+.sidebar-content {
+    margin: 10%;
+    width: 90%;
+    padding-right: 1.5em;
+    text-align: right;
+    font-size: 1em;
+    height: 70vh;
+    overflow-y: auto;
+}
+.sidebar-header {
+    margin: 5%;
+    width: 90%;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.1em;
+}
+.sidebar ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    font-size: 90%;
+}
+@media (min-width: 48em) {
+    .sidebar {
+	   position: fixed;
+	   top: 0;
+	   bottom: 0;
+       }
+}
+@media print {
+    .sidebar {
+	   display: none;
+       }
+}
+
+
+/*Margin Notes*/
+.body {
+    counter-reset: sidenote-counter;
+}
+.sidenote,
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -65%;
+    width: 55%;
+    font-size: 80%;
+    font-family: var(--variable-font), sans-serif;
+    vertical-align: baseline;
+    position: relative;
+}
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+.sidenote-number:after,
+.sidenote:before {
+    font-family: var(--fixed-font), monospace;
+    position: relative;
+    vertical-align: baseline;
+    color: var(--main-color);
+}
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 80%;
+    top: -0.5em;
+}
+.sidenote:before {
+    content: counter(sidenote-counter);
+    top: -0.5em;
+}
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+.marginnote hr {
+  color: var(--main-color);
+}
+label.sidenote-number {
+    display: inline;
+}
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+input.margin-toggle {
+    display: none;
+}
+label.sidenote-number {
+    display: inline;
+}
+@media screen and (max-width:48em) {
+    label.margin-toggle:not(.sidenote-number) {
+	display: inline;
+	color: var(--main-color);
+    }
+    .sidenote,
+    .marginnote {
+	display: none;
+    }
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+	display: block;
+	float: left;
+	left: 1em;
+	clear: both;
+	width: 95%;
+	margin: 1em 2.5%;
+	vertical-align: baseline;
+	position: relative;
+    }
+    label {
+	cursor: pointer;
+    }
 }
