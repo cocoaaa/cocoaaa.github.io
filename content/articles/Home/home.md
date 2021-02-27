@@ -185,7 +185,7 @@ See more details [here](/pages/publications.html).
 
 ---
 ## TMI: How much is Too Much Information?
-More importantly, I'm practicing to:
+More importantly, I'm practicing to:  
 - observe without being entangled in what is personal
 - look at small thoughts carefully
 - not to rush
@@ -199,7 +199,7 @@ More importantly, I'm practicing to:
 - stay open
 
 ## Quotes to nimble
-> ‘Your act was unwise,’ I exclaimed ‘as you see by the outcome.’   
+> ‘Your act was unwise,’ I exclaimed, ‘as you see by the outcome.’   
 He solemnly eyed me.  
 ‘When choosing the course of my action,’ said he,
 ‘I had not the outcome to guide me.’   

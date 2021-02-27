@@ -24,19 +24,14 @@ I am developing generative models to jointly learn the analysis and synthesis pr
 I am also interested in understanding how the **semantic information** flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow.
 
 
-## Research homes
----
+## Research Homes
 At USC, I'm working with Prof. [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
 at ISI's [Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/) and
 Prof. [Yao-Yi Chiang](https://yaoyichi.github.io/) at the [Spatial Computing and Informatics](http://spatial-computing.github.io/) lab.
 
-Before USC, I studied at **Massachusetts Institute of Technology** Mathematics and Electrical Engineering and Computer Science (EECS)
-for my Bachelors and Masters.
-During my Masters, I concentrated on Artificial Intelligence and worked under the joint 
-guidance of Professor [Regina Barzilay](https://people.csail.mit.edu/regina/), 
-Professor [Wojciech Matusik](http://people.csail.mit.edu/wojciech/), and Dr. 
-[Julian Straub](http://people.csail.mit.edu/jstraub/). My main projects were 
-(1) image registration of mammograms for breast cancer detection, and (2) 3D reconstruction of human arms for efficient [lymphedema](https://mayocl.in/2S5khTZ) screening.  You can find out more about them [here](/pages/publications.html)
+Before USC, I studied Mathematics and Electrical Engineering and Computer Science (EECS) for my Bachelors and Masters at **Massachusetts Institute of Technology**.
+During my Masters, I concentrated on Artificial Intelligence and worked under the joint guidance of Professor [Regina Barzilay](https://people.csail.mit.edu/regina/), Professor [Wojciech Matusik](http://people.csail.mit.edu/wojciech/), and Dr. [Julian Straub](http://people.csail.mit.edu/jstraub/). 
+My main projects were (1) image registration of mammograms for breast cancer detection, and (2) 3D reconstruction of human arms for efficient [lymphedema](https://mayocl.in/2S5khTZ) screening.  You can find out more about them [here](/pages/publications.html).
 
 
 <!--
@@ -49,34 +44,40 @@ Please see the [project](/pages/publications.html) page for more details on my w
 
 ## Lingering questions
 <details>
-<summary> <hr> </summary>
+<summary> Click to expand </summary>
 
 In a bigger scheme, I am excited about the problems regarding human perception of 
 the world and how symbolic representation of knowledge can facilitate learning 
-in a new domain [via knowledge transfer across various domains/modalities].  I'm 
-continuously exploring these questions in my research:
+in a new domain <em>via knowledge transfer across various domains/modalities</em>.  I'm continuously exploring these questions in my research:
 
-1. How can intelligent agents learn with less supervision, particularly in the domain of 
-vision and three-dimensional perception (<todo>:spatial reasonging?)
-    - via autonomously interacting with the environment
-    - via incorporating external knowledge 
-    - via incorporating common sense reasoning
-    
- My current [project](#semantic_road_project) on road detection from satellite images explores 
-this question using external geospatial knowledge base (OpenStreetMap) and reinforcement
-learning. <!-- todo: transfer learning? -->
+<ul>
+<li> How can intelligent agents learn with less supervision, particularly in the domain of vision and three-dimensional perception (<todo>:spatial reasonging?)</li>
+  <ul>
+  <li>via autonomously interacting with the environment</li>
+  <li>via incorporating external knowledge</li>
+  <li>via incorporating common sense reasoning</li>
+  </ul>
+   My [project](#semantic_road_project) on road detection from satellite images explores this question using external geospatial knowledge base (OpenStreetMap) and transfer learning. 
 
-2. How can those knowledge be represented in a more abstract form so that it can be used for 
-learning in different domains 
-(keyword: [Knowledge Representation](#), [Transfer Learning](#)/[Domain Adaptation](#))
+<li>How can those knowledge be represented in a more abstract form so that it can be used for learning in different domains</li>
+    <ul>
+    <li>Knowledge Representatio, Transfer Learning, Domain Adaptation</li>
+    </ul>
+
+</ul>
+
+
 </details>
 
-##  Softwares
+## Softwares
 I use Python (eg. **PyTorch**, Numpy, scikit-learn) for machine learning
-[projects](#) and C++ for hardware systems (eg. Microsoft Kinnect and Intel RealSense)
-as in [this](#) project. 
+[projects](#) and C++ for hardware systems (eg. Microsoft Kinnect and Intel RealSense) as in [this](#) project. 
+
 
 ---
+## 
+
+
 Besides working on my projects, I enjoy being in nature and trying out different sports. 
 Along the way, I became a certified scuba diver and have sky-dived in Czech sky! 
 I enjoy biking and swimming -- they help me connect to the dimension that 
@@ -85,7 +86,7 @@ thoughts and minds. I enjoy sharing such experiences with friends:)
  
 I occasionally write [here](/blog_index) to process and share what I learn. I would love to hear from you if you have any questions or thoughts:)
 
-## Contact
+## Contact 
 Happy to meet new friends and share ideas! Feel free to contact me at:
 
 
