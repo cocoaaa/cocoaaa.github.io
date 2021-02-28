@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2021-02-26T15:42:36-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2021-02-26T15:42:36-08:00</published><updated>2021-02-19T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-26:/</id><summary type="html">&lt;div id="chartdiv" height="400"&gt;&lt;/div&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2021-02-28T12:49:55-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2021-02-28T12:49:55-08:00</published><updated>2021-02-19T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-28:/</id><summary type="html">&lt;div id="chartdiv" height="400"&gt;&lt;/div&gt;
 &lt;div id="mapdiv" height="600"&gt;&lt;/div&gt;
 
 &lt;p&gt;I'm a Computer Science PhD student at USC interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
@@ -176,7 +176,7 @@ The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbo
 &lt;h2&gt;Research Traces&lt;/h2&gt;
 &lt;p&gt;&lt;img src="/images/semantic_potential/desert-rocks-adobe-academy.jpeg" alt="desert-rocks" style="width: 60%; height: 50%"/&gt;&lt;/p&gt;
 &lt;!--src: https://academy.substance3d.com/courses/desert-rocks-making-of-by-jonathan-benainous--&gt;
-&lt;p&gt;My interests centers around &lt;em&gt;understanding&lt;/em&gt; of complex data and the &lt;em&gt;processes&lt;/em&gt; through which such understanding happens. Here are some snapshots along that journey: &lt;/p&gt;
+&lt;p&gt;My interests center around &lt;em&gt;understanding&lt;/em&gt; of complex data and the &lt;em&gt;processes&lt;/em&gt; through which such understanding happens. Here are some snapshots along that journey: &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Interactive visualizations that represent high-dimensional data accurately and efficiently&lt;/p&gt;
