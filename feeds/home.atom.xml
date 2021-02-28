@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2021-02-28T14:54:10-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2021-02-28T14:54:10-08:00</published><updated>2021-02-19T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-28:/</id><summary type="html">&lt;div id="chartdiv" height="400"&gt;&lt;/div&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2021-02-28T14:54:59-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2021-02-28T14:54:59-08:00</published><updated>2021-02-19T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-28:/</id><summary type="html">&lt;div id="chartdiv" height="400"&gt;&lt;/div&gt;
 &lt;div id="mapdiv" height="600"&gt;&lt;/div&gt;
 
 &lt;p&gt;I'm a Computer Science PhD student at USC interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
@@ -216,11 +216,11 @@ He solemnly eyed me.&lt;br&gt;
 ‘When choosing the course of my action,’ said he,
 ‘I had not the outcome to guide me.’ &lt;br&gt;
 - Ambrose Bierce&lt;/p&gt;
-&lt;p&gt;If you understand what you're doing, you're not learning anything. &lt;br&gt;
-- Einstein&lt;/p&gt;
 &lt;p&gt;Intention and attention.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;!-- 
+&gt; If you understand what you're doing, you're not learning anything.   
+- Einstein
  Let questions guide your journey, free of motif or resting on an answer.
 - continuously bring stochasity to the current model of world as I believe and,
 I worry that too much hopping from the domain of AI/ML to physics, and then ultimately to philosophy will worry my PhD advisors. When the worry quiets itself, however, I see that beaconings of uncomfortable inklings/curious itches often point me to exactly what I should be doing at any moment. 
