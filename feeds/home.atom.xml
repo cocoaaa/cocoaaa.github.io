@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2021-02-28T15:19:39-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2021-02-28T15:19:39-08:00</published><updated>2021-02-19T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-28:/</id><summary type="html">&lt;div id="chartdiv" height="400"&gt;&lt;/div&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2021-03-01T12:53:05-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2021-03-01T12:53:05-08:00</published><updated>2021-02-19T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-03-01:/</id><summary type="html">&lt;div id="chartdiv" height="400"&gt;&lt;/div&gt;
 &lt;div id="mapdiv" height="600"&gt;&lt;/div&gt;
 
 &lt;p&gt;I'm a Computer Science PhD student at USC interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
@@ -19,8 +19,8 @@
 
 &lt;p&gt;I approach this question from an information-processing point of view and am developing &lt;strong&gt;generative models&lt;/strong&gt; with &lt;strong&gt;disentangled representation&lt;/strong&gt; to jointly learn the analysis and synthesis processes of multimodal data.  My most recent work introduces a generative model with adversarial training that learns spatial semantics from map tiles collected from diverse sources such as satellites, Google Street Map and custom rendering engines.   &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Read more about our dataset of multi-style map tiles &lt;a href="#"&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Read more about our work on &lt;a href="#"&gt;Learning a structured ...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Read more about our dataset of multi-style map tiles (&lt;a href="#"&gt;TBA&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Read more about our work on Learning a structured ... (&lt;a href="#"&gt;TBA&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Currently, I am exploring different ways to understand our proposed model, in particular, by measuring semantic information and studying the flow of information between the latent partitions.&lt;/p&gt;
 &lt;ul&gt;
