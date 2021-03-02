@@ -25,8 +25,8 @@ My current guiding question is,
 
 I approach this question from an information-processing point of view and am developing __generative models__ with __disentangled representation__ to jointly learn the analysis and synthesis processes of multimodal data.  My most recent work introduces a generative model with adversarial training that learns spatial semantics from map tiles collected from diverse sources such as satellites, Google Street Map and custom rendering engines.   
 
-- Read more about our dataset of multi-style map tiles [here](#)
-- Read more about our work on [Learning a structured ...](#)
+- Read more about our dataset of multi-style map tiles ([TBA](#))
+- Read more about our work on Learning a structured ... ([TBA](#))
 
 Currently, I am exploring different ways to understand our proposed model, in particular, by measuring semantic information and studying the flow of information between the latent partitions.
 
@@ -138,14 +138,13 @@ The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbo
 ### Learning a generative model of multimodal representation
 In pursuit of this computational model of understanding and generating multimodal data, I am developing generative models with disentangled representation to jointly learn the analysis and synthesis processes of complex, high-dimensional data (eg. satellite images, knowledge bases) with compact and “meaningful” representations.  My current project with  Prof.[Yao-Yi Chiang](https://spatial.usc.edu/team-view/yao-yi-chiang/) and Prof. [Craig Knoblock](https://usc-isi-i2.github.io/knoblock/) tackles this line of questions using geospatial data, and aims to learn spatial semantics from data that are collected from diverse sources (eg. satellites, Google Street Map, historical maps) and stored in diverse format (eg. images, graphs). This work has potential applications such as global-scale urban environment analysis, automated map synthesis and systems for monitoring environmental changes.
 
-- Read more about our maptile dataset [here](#).
+<!--- Read more about our maptile dataset [here](#).-->
     
 Within the domain of representation learning, I’m most interested in variational inference methods, especially recent developments in deep generative models such as variational autoencoders (VAEs) and the idea of adversarial training. 
 
 Using a VAE-variant model and adversarial training, I’m investigating how we can build a model that extracts invariance in a dataset of heterogeneous representations via VAEs and adversarial training.  One of my current projects investigates this question in the domain of spatial informatics, using our new dataset of map tiles from diverse sources.
 
-- Read more about my work, "Learning Bipartitioned Representation of ..." [here](#).
-
+- Read more about my work, "Learning Bipartitioned Representation of ..." -- [In Preparation].
 
 ### Next itches
 <details>
@@ -160,7 +159,7 @@ Using a VAE-variant model and adversarial training, I’m investigating how we c
  <li>Evaluation of the disentangled partition requires a measure of semantic information </li>
     <ul>
         <li>In order to evaluate how well our semantic latent space captures the semantic information in the inputs, we first need a well grounded _definition of the semantic information_, as well as _computational methods to efficiently compute_ the value.</li>
-        <li>See <a href="https://dspace.mit.edu/bitstream/handle/1721.1/4821/RLE-TR-247-03150899.pdf?sequence=1">An Outline of a Theory of Semantic Information]</a>, a nice<a href="https://plato.stanford.edu/entries/information-semantic/">survey</a>, and more recent work by <a href="https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0041">Kolchinsky and Wolpert</a>.</li>
+        <li>See <a href="https://dspace.mit.edu/bitstream/handle/1721.1/4821/RLE-TR-247-03150899.pdf?sequence=1">An Outline of a Theory of Semantic Information</a>, a nice <a href="https://plato.stanford.edu/entries/information-semantic/">survey</a>, and more recent work by <a href="https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0041">Kolchinsky and Wolpert</a>.</li>
     </ul>
 
 </details>
@@ -169,7 +168,7 @@ Using a VAE-variant model and adversarial training, I’m investigating how we c
 ## Research Traces
 <img src="/images/semantic_potential/desert-rocks-adobe-academy.jpeg" alt="desert-rocks" style="width: 60%; height: 50%"/>
 <!--src: https://academy.substance3d.com/courses/desert-rocks-making-of-by-jonathan-benainous-->
-My interests centers around _understanding_ of complex data and the _processes_ through which such understanding happens. Here are some snapshots along that journey: 
+My interests center around _understanding_ of complex data and the _processes_ through which such understanding happens. Here are some snapshots along that journey: 
 
 - Interactive visualizations that represent high-dimensional data accurately and efficiently
     - via learning a meaningful and compact representation of observations
@@ -195,22 +194,24 @@ More importantly, I'm practicing to:
 - be curious
 - question
 - relax in discomforts
-- greet what is as what is, nothing more, nothing less
+- greet what is as what is
+- nothing more, nothing less
 - stay open
 
-## Quotes to nimble
+<!--## Quotes to sit with-->
 > ‘Your act was unwise,’ I exclaimed, ‘as you see by the outcome.’   
 He solemnly eyed me.  
 ‘When choosing the course of my action,’ said he,
 ‘I had not the outcome to guide me.’   
 - Ambrose Bierce
 
+> Intention and attention.
+
+
+<!-- 
 > If you understand what you're doing, you're not learning anything.   
 - Einstein
-
-> Let questions guide your journey, free of motif or resting on an answer.
-
-<!--  
+ Let questions guide your journey, free of motif or resting on an answer.
 - continuously bring stochasity to the current model of world as I believe and,
 I worry that too much hopping from the domain of AI/ML to physics, and then ultimately to philosophy will worry my PhD advisors. When the worry quiets itself, however, I see that beaconings of uncomfortable inklings/curious itches often point me to exactly what I should be doing at any moment. 
 

@@ -1,13 +1,14 @@
 Title: Publications
 
 ---
-## Talks
-### Experimental ML with Holoviews/Geoviews + Pyorch
+## Tutorial
+#### Experimental Machine Learning with Holoviews, Geoviews and PyTorch
 1.5hr tutorial session @ [PyData LA, 2019](https://pydata.org/la2019/schedule/)
 - [materials](https://github.com/cocoaaa/PyData-LA-2019), [video](#)
 <!-- (https://www.youtube.com/watch?v=xdux2jwoNw4) -->
 
 This tutorial introduces how to make your data exploration and model building process more interactive and exploratory by using the combination of JupyterLab, HoloViews, and PyTorch.  I will focus on the problem of classfying different types of roads on satellite images, defined as a "multi-class semantic segmentation problem". Starting from the data exploration to the trained model understanding, we will cover different ways to explore the data and models with simple, interactive GUIs in Jupyter notebooks.  Specifically, the tutorial covers, with the emphasis on the experimental nature of model building:
+
 - how to make your data exploration more intuitive and experimental using HoloViews libraries
 - how to turn your model script into a simple GUI that allows interactive hyperparameter tuning and model exploration
 - how to monitor the training process in realtime
@@ -19,17 +20,27 @@ This tutorial introduces how to make your data exploration and model building pr
 |![pydata-2](/images/pydata-2.png)|![pydata-3](/images/pydata-3.png)| ![pydata-4](/images/pydata-4.png)|
 
 ---
-## Papers
-### An Energy Gradient-Based Approach for Coordinating Smart Vehicles and Traffic Lights at Intersections.
+## Papers and Projects
+
+#### An Energy Gradient-Based Approach for Coordinating Smart Vehicles and Traffic Lights at Intersections.
 Manuel Rodriguez, Xiangxue Zhao, Hayley Song, Anastasia Mavrommati, Roberto Valenti, Akshay Rajhans, PieterMosterman, Yancy Diaz-Mercado, Hosam K. Fathy.
 2021 American Control Conference (ACC)
 
----
+
+#### Application of Disentanglement to Map Registration
+[In Preparation]
+
 <!-- ### Spatial Knowledge-aware Road Detection from Satellite Images with Reasoning and External Knowledge -->
-###Context-aware segmentation via external knowledge and structured neural net
+#### Context-aware segmentation via external knowledge and structured neural net
 [In preparation]
 
-Image segmentation in satellite images is a crucial task in computer vision, with important applications ranging from climate change monitoring, natural disaster responses, route planning, urban planning to security surveillance. Current state-of-the-art algorithms, including deep learning algorithms, have mostly focused on learning meaningful features exclusively from the given images. This results in neglecting a large amount of external information that provides important contexts and spatial cues that could help improve the visual tasks.   In this paper, we propose a new method to achieve a spatial knowledge-aware road detection that improves existing image segmentation algorithms by utilizing spatial semantics from an external knowledge base (ie. the OpenStreetMap database). Our main contribution is first to introduce a notion of \textit{spatial semantic score} that quantifies the spatial relationship and secondly to propose a new optimization framework to improve the initial prediction to better align with the spatial semantics observed in external knowledge bases. Finally, we show that our approach significantly increases performances measured by IoU, (Relaxed) F1 and Average Path Length Score (APLS) on our satellite dataset.
+- Image segmentation in satellite images is a crucial task in computer vision, with important applications ranging from climate change monitoring, natural disaster responses, route planning, urban planning to security surveillance. Current state-of-the-art algorithms, including deep learning algorithms, have mostly focused on learning meaningful features exclusively from the given images. This results in neglecting a large amount of external information that provides important contexts and spatial cues that could help improve the visual tasks.   In this paper, we propose a new method to achieve a spatial knowledge-aware road detection that improves existing image segmentation algorithms by utilizing spatial semantics from an external knowledge base (ie. the OpenStreetMap database). Our main contribution is first to introduce a notion of spatial semantic score that quantifies the spatial relationship and secondly to propose a new optimization framework to improve the initial prediction to better align with the spatial semantics observed in external knowledge bases. Finally, we show that our approach significantly increases performances measured by IoU, (Relaxed) F1 and Average Path Length Score (APLS) on our satellite dataset.
+
+
+#### Non-rigid registration of mammogram images using large displacement optical flow with extended flexibility for manual interventions
+
+- Masters Thesis: M. Eng., Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science, 2018. [Link](https://dspace.mit.edu/handle/1721.1/119572).
+- This thesis presents a registration method for mammogram images with extended flexibility for manual inputs from medical specialists. The algorithm was developed as part of the Mammography project led by Professor. Regina Barzilay at MIT CSAIL. Given a sequence of mammogram images, the algorithm finds an optimal registration by considering both the global and local constraints as well as user-defined constraints such as manually selected matching points. This allows the registration process to be guided by both the algorithm itself and human experts. The second half of the thesis focuses on evaluating well-known optical flow and medical registration algorithms on mammogram images. It provides insights into how they perform when encountered by challenges and constraints that are unique in mammogram images.
 
 ---
 ### MINT NetCDF
@@ -54,7 +65,7 @@ MINT-GeoViz is an interactive visualization library for large geospatial dataset
 ### Generating Gaussian, Pictures, and Stories with Generative Adversarial Networks
 Hayley Song\*, Adam Yala\*
 
-[paper](/pdfs/generating-gaussians-pictures.pdf) (2016 Fall)
+[paper](/pdfs/generating-gaussians-pictures.pdf) <!--(2016 Fall)-->
 
 In this paper, we explore the framework of Adversarial Training as introduced in the original paper by Goodfellow et al.. Generative Aversarial Network (GAN) is a semi-supervised training method and has shown promising results in various tasks such as Image Generation, Transfer Learning, Imitation Learning and Text Generation. We aim to expose the issues and suceesses of GANs while experimenting through diverse generation tasks. Specifically, we work through generating a Gaussian distribution, images, and texts. For each experiement, we investigate the effects of parameters (e.g pre-training of the discriminator) on the convergence and the performance of the adversarial nets.
 
@@ -63,11 +74,26 @@ In this paper, we explore the framework of Adversarial Training as introduced in
 |![gan](/images/gan-1.png)|
 
 ---
+### Cost-effective 3D Reconstruction of Human Arms Using RGBD Sensor for Early Diagnosis of Lymphedema
+<em>Hayley Song, Julian Straub, Erik Nyguen, Fernando Yordan, Regina Barzilay</em>
+
+Arm lymphedema is an incurable condition characterized by large swelling of the arms and is commonly seen in breast cancer survivors.  Early detection is crucial for treatment to be effective in mitigating painful symptoms, and yet there is no method that allows physicians to monitor the progression of lymphedema in a way that is cost effective and reliable.  This study proposes a general purpose device that reconstructs a 3D model of objects in view of multiple RGB-D sensors.  This device reconstructs a patient's arm over time which directly extends to measuring and tracking volume change over time.  The accuracy of our system is comparable to the gold standard of water displacement, and is better than the state-of-the-art Perometer.  However it costs significantly less than the Perometer, and is more hygienic than the water displacement method.  It contributes to both short-term and long-term care for the lymphedema patients.  Medical practitioners will be able to provide more timely treatment via accurate reconstruction and volume calculation.  Further the generation of reliable data from our device will enable future studies of lymphedema and its progression.
+
+<div class="image123">
+<div class="imgContainer">
+    <img src="/images/3d_recons/mgh_tour1.jpg" alt="mgh_tour1" width="300"/>
+</div>
+
+<div class="imgContainer">
+    <img src="/images/3d_recons/skinInterferenceSR300.png" alt="sr300" width="300"/>
+</div>
+</div>
 ### Automatic Cell Detection using HOG features and SVM
 Nicha Apichitsopa\*, Boying Meng\*, Hayley Song\*
 
-[paper](/pdfs/6.869-cell-detection.pdf), [video](#), [slides](/pdfs/6.869-cell-detection-ppt.pdf) (2016 Fall)
+[paper](/pdfs/6.869-cell-detection.pdf), [slides](/pdfs/6.869-cell-detection-ppt.pdf) (2016 Fall)
 
+<!--TODO: Add video link-->
 The analysis of cell trajectories inside microchannels is a critical part of many microfluidic systems. This task requires automated cell detection and cell tracking algorithms in order to reliably extract cell positions over time. Such algorithms need be robust against shape deformation, variable illumination, and noises from sensors and cell movements. In this report, we prove the ability of our machine-learning detection algorithm based on the Histogram of Oriented Gradients (HOG) and Support Vector Machines (SVMs), and compare its performances to the classic image segmentation method. We also investiage different features extracted by various machine learning algorithms and discuss how they affect the performances of cell detection and tracking.
 
 | | |
