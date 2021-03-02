@@ -121,12 +121,12 @@ h1, h2, h3 {
 img, p, .post > .highlight, .highlighttable, h4, h5, h6 {
     margin-top: 1.2em;
 }
-.imgContainer{
-    float:left;
-    margin-left: 10px;
-    margin-right: 10px;
+/*.imgContainer{*/
+/*    float:left;*/
+/*    margin-left: 10px;*/
+/*    margin-right: 10px;*/
 
-}
+/*}*/
 blockquote {
     margin: 1.5em 1.5em 1.5em .75em;
     padding-left: .75em;
