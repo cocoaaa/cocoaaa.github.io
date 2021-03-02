@@ -123,6 +123,9 @@ img, p, .post > .highlight, .highlighttable, h4, h5, h6 {
 }
 .imgContainer{
     float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 blockquote {
     margin: 1.5em 1.5em 1.5em .75em;
