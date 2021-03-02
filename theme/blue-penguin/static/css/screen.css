@@ -88,6 +88,22 @@ ul {
     list-style: outside disc;
 }
 
+
+ul.equal-width {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+li.equal-width {
+    display: table-cell;
+    text-align: center;
+    border: 1px solid hotpink;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+
 ol {
     list-style: outside decimal;
 }
@@ -105,7 +121,9 @@ h1, h2, h3 {
 img, p, .post > .highlight, .highlighttable, h4, h5, h6 {
     margin-top: 1.2em;
 }
-
+.imgContainer{
+    float:left;
+}
 blockquote {
     margin: 1.5em 1.5em 1.5em .75em;
     padding-left: .75em;
