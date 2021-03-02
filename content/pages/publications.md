@@ -23,7 +23,7 @@ This tutorial introduces how to make your data exploration and model building pr
 ## Papers and Projects
 
 #### An Energy Gradient-Based Approach for Coordinating Smart Vehicles and Traffic Lights at Intersections.
-Manuel Rodriguez, Xiangxue Zhao, Hayley Song, Anastasia Mavrommati, Roberto Valenti, Akshay Rajhans, PieterMosterman, Yancy Diaz-Mercado, Hosam K. Fathy.
+Manuel Rodriguez, Xiangxue Zhao, <em>Hayley Song</em>, Anastasia Mavrommati, Roberto Valenti, Akshay Rajhans, PieterMosterman, Yancy Diaz-Mercado, Hosam K. Fathy.
 2021 American Control Conference (ACC)
 
 
@@ -79,15 +79,19 @@ In this paper, we explore the framework of Adversarial Training as introduced in
 
 Arm lymphedema is an incurable condition characterized by large swelling of the arms and is commonly seen in breast cancer survivors.  Early detection is crucial for treatment to be effective in mitigating painful symptoms, and yet there is no method that allows physicians to monitor the progression of lymphedema in a way that is cost effective and reliable.  This study proposes a general purpose device that reconstructs a 3D model of objects in view of multiple RGB-D sensors.  This device reconstructs a patient's arm over time which directly extends to measuring and tracking volume change over time.  The accuracy of our system is comparable to the gold standard of water displacement, and is better than the state-of-the-art Perometer.  However it costs significantly less than the Perometer, and is more hygienic than the water displacement method.  It contributes to both short-term and long-term care for the lymphedema patients.  Medical practitioners will be able to provide more timely treatment via accurate reconstruction and volume calculation.  Further the generation of reliable data from our device will enable future studies of lymphedema and its progression.
 
-<div class="image123">
-<div class="imgContainer">
-    <img src="/images/3d_recons/mgh_tour1.jpg" alt="mgh_tour1" width="300"/>
-</div>
+<img src="/images/3d_recons/3d_recon_prototype.png" alt="3d_recon_prototype" />
 
-<div class="imgContainer">
-    <img src="/images/3d_recons/skinInterferenceSR300.png" alt="sr300" width="300"/>
-</div>
-</div>
+<!-- <div class="image12"> -->
+<!-- <div class="imgContainer"> -->
+<!--     <img src="/images/3d_recons/mgh_tour1.jpg" alt="mgh_tour1" width="45%"/> -->
+<!-- </div> -->
+
+<!-- <div class="imgContainer"> -->
+<!--     <img src="/images/3d_recons/skinInterferenceSR300.png" alt="sr300" width="45%"/> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<hr>
 ### Automatic Cell Detection using HOG features and SVM
 Nicha Apichitsopa\*, Boying Meng\*, Hayley Song\*
 
