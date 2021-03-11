@@ -161,6 +161,10 @@ Using a VAE-variant model and adversarial training, I’m investigating how we c
         <li>In order to evaluate how well our semantic latent space captures the semantic information in the inputs, we first need a well grounded _definition of the semantic information_, as well as _computational methods to efficiently compute_ the value.</li>
         <li>See <a href="https://dspace.mit.edu/bitstream/handle/1721.1/4821/RLE-TR-247-03150899.pdf?sequence=1">An Outline of a Theory of Semantic Information</a>, a nice <a href="https://plato.stanford.edu/entries/information-semantic/">survey</a>, and more recent work by <a href="https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0041">Kolchinsky and Wolpert</a>.</li>
     </ul>
+    
+<li>Linking the discovered latent factors to external knowledge graph</li>
+
+<!--     - How can we map the learned latent factors to concepts in a more global knowledge graph (eg. Wikipedia)?-->
 
 </details>
 
