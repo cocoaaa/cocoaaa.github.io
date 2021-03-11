@@ -61,7 +61,7 @@ in a new domain <em>via knowledge transfer across various domains/modalities</em
 
 <li>How can those knowledge be represented in a more abstract form so that it can be used for learning in different domains</li>
     <ul>
-    <li>Knowledge Representatio, Transfer Learning, Domain Adaptation</li>
+    <li>Knowledge Representation, Transfer Learning, Domain Adaptation</li>
     </ul>
 
 </ul>
