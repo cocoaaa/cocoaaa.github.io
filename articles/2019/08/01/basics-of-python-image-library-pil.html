@@ -1200,7 +1200,7 @@ h6:hover .anchor-link {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_info</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dtype: &quot;</span><span class="p">,</span> <span class="n">arr</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;range: &quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;(</span><span class="si">{</span><span class="n">arr</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">arr</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;range: &quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;({arr.min(), arr.max()})&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shape: &quot;</span><span class="p">,</span> <span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
@@ -1421,18 +1421,12 @@ h6:hover .anchor-link {
 <p>List of standard modes:</p>
 </blockquote>
 </li>
-</ul>
-<ol>
 <li>Single channel image</li>
-</ol>
-<ul>
 <li><code>1</code>: 1-bit pixels, binary Black and White</li>
-<li><code>L</code>: 8-bit pixels, Greyscale in 256 degree. "L" for "Luminance" (not color)</li>
-</ul>
-<ol>
-<li>Multi-channel image</li>
-</ol>
-<ul>
+<li><p><code>L</code>: 8-bit pixels, Greyscale in 256 degree. "L" for "Luminance" (not color)</p>
+</li>
+<li><p>Multi-channel image</p>
+</li>
 <li><code>RGB</code>:(3x8-bit pixels), true color</li>
 <li><code>RGBA</code>: (4X8-bit pixels), true color with transparency mask</li>
 <li><code>CMYK</code>: (4X8-bit pixels), color separation</li>

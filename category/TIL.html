@@ -78,6 +78,7 @@
 </tbody>
 </table>
 <!--|<img src="/images/bimodal.png" alt="bimodal" width="250px"/> | <img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" width="250px"/>-->
+
 <p>In high-dimensional space (such as an Image domain: <span class="math">\(P(X)\)</span> where X lives in <span class="math">\(d\)</span>-dim space where <span class="math">\(d\)</span> is the number of pixels, eg. <span class="math">\(32x32=1024\)</span>. If each pixel <span class="math">\(X_i\)</span> takes a binary value (0 or 1), the size of this image domain is <span class="math">\(2^{1024}\)</span>.  If each pixel takes an integer value <span class="math">\(\in [0,255]\)</span>, then the size of this image domain is <span class="math">\(256^{1024}\)</span>. This, by the way, is too big to compute for Mac's spotlight:</p>
 <p><img src="/images/too-big.png" alt="too-big" width="500px"/>    </p>
 <p>What it means by saying "the distribution of (output) image is multimodal" is to say, there are multiple images (ie. realization of the random variable (vector) X) with the (local) maxima value of the probability. In Figure below, the green dots represent the local maxima, ie. modes of the distribution. The configurations (ie. specific values/realizations) that achieves the (local) maximum probability density are the "probable/likely" images. </p>
@@ -177,8 +178,9 @@
 - Determinism vs. Non-Determinism
 - ...? vs. stochastic/random 
     - a stochastic (or random) process means, </p>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;p</span> <span class="err">hidden</span><span class="nt">&gt;</span>![stochastic-process](images/stochastic-process.png)<span class="nt">&lt;/p&gt;</span>
-</code></pre></div>
+<div class="highlight"><pre><span></span><span class="err">&amp;lt;p hidden&amp;gt;![stochastic-process](images/stochastic-process.png)&amp;lt;/p&amp;gt;</span>
+</pre></div>
+
 
 <p>I think better way to put this confusion into words is: "Nondeterinistc vs. Probabilistic models"
 - <a href="http://planning.cs.uiuc.edu/node440.html">lavalle 2006</a></p>
@@ -222,7 +224,7 @@ So, manage the source (and outputs) only in <code>dev</code> branch.</p>
 <ul>
 <li>Local dev</li>
 </ul>
-<div class="highlight"><pre><span></span><code>conda activate pelican-blog
+<div class="highlight"><pre><span></span>conda activate pelican-blog
 <span class="nb">cd</span> ~/Workspace/Blog
 
 <span class="c1"># Make sure you are on `dev` branch</span>
@@ -238,7 +240,8 @@ make html <span class="c1"># or, make regenerate </span>
 make devserver
 
 <span class="c1"># Open a browser and go to localhost:8000</span>
-</code></pre></div>
+</pre></div>
+
 
 <ul>
 <li>
@@ -251,17 +254,18 @@ make devserver
 <p>These three steps can be done in one line: </p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>make publish-to-github
-</code></pre></div>
+<div class="highlight"><pre><span></span>make publish-to-github
+</pre></div>
+
 
 <ul>
 <li>Version control the source<br>
   Important: Write new contents only on the <code>dev</code> branch</li>
 </ul>
-<div class="highlight"><pre><span></span><code>git add &lt;files&gt; <span class="c1"># make sure not to push the output folder</span>
+<div class="highlight"><pre><span></span>git add &lt;files&gt; <span class="c1"># make sure not to push the output folder</span>
 git cm <span class="s2">&quot;&lt;commit message&gt;&quot;</span>
 git push origin dev <span class="c1">#origin/dev is the remote branch that keeps track of blog sources</span>
-</code></pre></div>
+</pre></div>
 <div class="clear"></div>
 
 <div class="info">
@@ -1444,7 +1448,7 @@ h6:hover .anchor-link {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_info</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dtype: &quot;</span><span class="p">,</span> <span class="n">arr</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;range: &quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;(</span><span class="si">{</span><span class="n">arr</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">arr</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;range: &quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;({arr.min(), arr.max()})&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shape: &quot;</span><span class="p">,</span> <span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
@@ -1665,18 +1669,12 @@ h6:hover .anchor-link {
 <p>List of standard modes:</p>
 </blockquote>
 </li>
-</ul>
-<ol>
 <li>Single channel image</li>
-</ol>
-<ul>
 <li><code>1</code>: 1-bit pixels, binary Black and White</li>
-<li><code>L</code>: 8-bit pixels, Greyscale in 256 degree. "L" for "Luminance" (not color)</li>
-</ul>
-<ol>
-<li>Multi-channel image</li>
-</ol>
-<ul>
+<li><p><code>L</code>: 8-bit pixels, Greyscale in 256 degree. "L" for "Luminance" (not color)</p>
+</li>
+<li><p>Multi-channel image</p>
+</li>
 <li><code>RGB</code>:(3x8-bit pixels), true color</li>
 <li><code>RGBA</code>: (4X8-bit pixels), true color with transparency mask</li>
 <li><code>CMYK</code>: (4X8-bit pixels), color separation</li>

@@ -1241,22 +1241,16 @@ So the first thing is to write this generative process (btw this is "your" choic
 <li>Step 1: Write in plain english what your hidden quantities that are assumed to have given rise to the observations</li>
 <li>Step 2: Write in plain english how they give rise to the observations. That is, what is the dependency like between the hidden quantities and the observations?</li>
 <li>Step 3: Now, translate the english description (that is, the definition of your model and the dependency relations) to mathematical expression using the joint distribution (&lt;- encodes your assumptions about the data generative process) and its facotirazation (&lt;- encodes depedency relations)</li>
-<li>Step 4: Represent the joint distribution (or the generative process) as a graphical model</li>
-</ul>
-<ol>
-<li>Generative process</li>
-</ol>
-<ul>
+<li><p>Step 4: Represent the joint distribution (or the generative process) as a graphical model</p>
+</li>
+<li><p>Generative process</p>
+</li>
 <li>indicates a pattern of dependence among the random variable</li>
 </ul>
 <ol>
 <li>Joint distribution</li>
-</ol>
-<ul>
 <li>The traditional way of representing a model is with the <em>factored joint distribution</em> of its hidden and observed variables</li>
 <li>This factorization comes directly from the generative process</li>
-</ul>
-<ol>
 <li>Graphical model</li>
 </ol>
 <h2 id="Aside:-Why-a-joint-distribution?">Aside: Why a joint distribution?<a class="anchor-link" href="#Aside:-Why-a-joint-distribution?">&#182;</a></h2><p>Q: What can we do with a joint distribution of the hidden and observable variables?
@@ -1297,13 +1291,13 @@ See Sec.2.1, 2.2, 2.3 for each of the three ways.<ul>
 <li>More general category is called "Factor models" </li>
 <li>Factor models are important as they are components in more complicated models (eg. the Kalman filter)</li>
 <li>Examples of statistical models that fall into this category: principal component analysis, factor analysis, canonical correlation anlysis</li>
-<li>Relation to Gaussian Mixture model: in Gussian mixture model, our z_n's are discrete random vars. Factor model's use 'continuous` hidden variable z.</li>
-</ul>
-<ol>
-<li>Generative process</li>
+<li><p>Relation to Gaussian Mixture model: in Gussian mixture model, our z_n's are discrete random vars. Factor model's use 'continuous` hidden variable z.</p>
+</li>
+<li><p>Generative process</p>
+</li>
 <li>Joint Distribution</li>
 <li>Represent the model as a graphical model</li>
-</ol>
+</ul>
 <h3 id="Mixed-Membership-model">Mixed-Membership model<a class="anchor-link" href="#Mixed-Membership-model">&#182;</a></h3><h3 id="Matrix-factorization-model">Matrix factorization model<a class="anchor-link" href="#Matrix-factorization-model">&#182;</a></h3><h3 id="Hidden-Markov-model">Hidden Markov model<a class="anchor-link" href="#Hidden-Markov-model">&#182;</a></h3><h3 id="Kalman-filter-model">Kalman filter model<a class="anchor-link" href="#Kalman-filter-model">&#182;</a></h3><hr>
 <details>
   <summary>Running list of definitions</summary>
@@ -1353,7 +1347,7 @@ See Sec.2.1, 2.2, 2.3 for each of the three ways.<ul>
 
 <div class="info">
     <a href="https://cocoaaa.github.io/articles/2020/02/17/paper-data-analysis-with-latent-variable-models">posted at 00:00</a>
-    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/Research" rel="tag">Research</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/Reading" rel="tag">A collection of reading lists</a>
 </div>
 
 </article><h4 class="date">Feb 01, 2020</h4>
@@ -1562,6 +1556,7 @@ Let's denote the set of all parameters in the model, <span class="math">\(\theta
 </tbody>
 </table>
 <!--|<img src="/images/bimodal.png" alt="bimodal" width="250px"/> | <img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" width="250px"/>-->
+
 <p>In high-dimensional space (such as an Image domain: <span class="math">\(P(X)\)</span> where X lives in <span class="math">\(d\)</span>-dim space where <span class="math">\(d\)</span> is the number of pixels, eg. <span class="math">\(32x32=1024\)</span>. If each pixel <span class="math">\(X_i\)</span> takes a binary value (0 or 1), the size of this image domain is <span class="math">\(2^{1024}\)</span>.  If each pixel takes an integer value <span class="math">\(\in [0,255]\)</span>, then the size of this image domain is <span class="math">\(256^{1024}\)</span>. This, by the way, is too big to compute for Mac's spotlight:</p>
 <p><img src="/images/too-big.png" alt="too-big" width="500px"/>    </p>
 <p>What it means by saying "the distribution of (output) image is multimodal" is to say, there are multiple images (ie. realization of the random variable (vector) X) with the (local) maxima value of the probability. In Figure below, the green dots represent the local maxima, ie. modes of the distribution. The configurations (ie. specific values/realizations) that achieves the (local) maximum probability density are the "probable/likely" images. </p>
@@ -1661,8 +1656,9 @@ Let's denote the set of all parameters in the model, <span class="math">\(\theta
 - Determinism vs. Non-Determinism
 - ...? vs. stochastic/random 
     - a stochastic (or random) process means, </p>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;p</span> <span class="err">hidden</span><span class="nt">&gt;</span>![stochastic-process](images/stochastic-process.png)<span class="nt">&lt;/p&gt;</span>
-</code></pre></div>
+<div class="highlight"><pre><span></span><span class="err">&amp;lt;p hidden&amp;gt;![stochastic-process](images/stochastic-process.png)&amp;lt;/p&amp;gt;</span>
+</pre></div>
+
 
 <p>I think better way to put this confusion into words is: "Nondeterinistc vs. Probabilistic models"
 - <a href="http://planning.cs.uiuc.edu/node440.html">lavalle 2006</a></p>
@@ -1832,7 +1828,7 @@ Modify it to suit your personality. </p>
 
 <div class="info">
     <a href="https://cocoaaa.github.io/articles/2020/01/16/how-to-read-a-paper">posted at 00:00</a>
-    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/Research" rel="tag">Research</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/Reading" rel="tag">A collection of reading lists</a>
 </div>
 
 </article>

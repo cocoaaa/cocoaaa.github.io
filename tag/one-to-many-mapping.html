@@ -76,6 +76,7 @@
 </tbody>
 </table>
 <!--|<img src="/images/bimodal.png" alt="bimodal" width="250px"/> | <img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" width="250px"/>-->
+
 <p>In high-dimensional space (such as an Image domain: <span class="math">\(P(X)\)</span> where X lives in <span class="math">\(d\)</span>-dim space where <span class="math">\(d\)</span> is the number of pixels, eg. <span class="math">\(32x32=1024\)</span>. If each pixel <span class="math">\(X_i\)</span> takes a binary value (0 or 1), the size of this image domain is <span class="math">\(2^{1024}\)</span>.  If each pixel takes an integer value <span class="math">\(\in [0,255]\)</span>, then the size of this image domain is <span class="math">\(256^{1024}\)</span>. This, by the way, is too big to compute for Mac's spotlight:</p>
 <p><img src="/images/too-big.png" alt="too-big" width="500px"/>    </p>
 <p>What it means by saying "the distribution of (output) image is multimodal" is to say, there are multiple images (ie. realization of the random variable (vector) X) with the (local) maxima value of the probability. In Figure below, the green dots represent the local maxima, ie. modes of the distribution. The configurations (ie. specific values/realizations) that achieves the (local) maximum probability density are the "probable/likely" images. </p>
