@@ -20,6 +20,7 @@ and `master` is the branch that Github will access to show my website.
 So, manage the source (and outputs) only in `dev` branch.
 
 - Local dev
+  
 ```bash
 conda activate pelican-blog
 cd ~/Workspace/Blog

@@ -25,7 +25,7 @@ I am also interested in understanding how the **semantic information** flows whi
 
 
 ## Research Homes
-At USC, I'm working with Prof. [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
+At USC, I'm working with Prof. Wael Abd-Almageed at ISI's [VIMAL](https://vimal.isi.edu/). I previously worked with Prof. [Craig Knoblock](http://usc-isi-i2.github.io/knoblock/) 
 at ISI's [Center on Knowledge Graphs](http://usc-isi-i2.github.io/home/) and
 Prof. [Yao-Yi Chiang](https://yaoyichi.github.io/) at the [Spatial Computing and Informatics](http://spatial-computing.github.io/) lab.
 

@@ -10,7 +10,7 @@ stylesheets: my_trajectory.css
 <div id="chartdiv" height="400"></div>
 <div id="mapdiv" height="600"></div>
 
-I'm a Computer Science PhD student at USC interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.
+I'm a Computer Science PhD student at USC's [VIMAL](https://vimal.isi.edu/) interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.
 
 Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.  Along the way, I interned at a French robotics startup _Keecker_ and academic research labs in MIT's CSAIL, Media Lab, McGovern Institute and in INRIA.  After my Masters, I worked at Apple as a COOP for 9 months.
 
@@ -136,7 +136,10 @@ The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbo
 ---
 ## Research Statement
 ### Learning a generative model of multimodal representation
-In pursuit of this computational model of understanding and generating multimodal data, I am developing generative models with disentangled representation to jointly learn the analysis and synthesis processes of complex, high-dimensional data (eg. satellite images, knowledge bases) with compact and “meaningful” representations.  My current project with  Prof.[Yao-Yi Chiang](https://spatial.usc.edu/team-view/yao-yi-chiang/) and Prof. [Craig Knoblock](https://usc-isi-i2.github.io/knoblock/) tackles this line of questions using geospatial data, and aims to learn spatial semantics from data that are collected from diverse sources (eg. satellites, Google Street Map, historical maps) and stored in diverse format (eg. images, graphs). This work has potential applications such as global-scale urban environment analysis, automated map synthesis and systems for monitoring environmental changes.
+In pursuit of this computational model of understanding and generating multimodal data, I am developing generative models with disentangled representation to jointly learn the analysis and synthesis processes of complex, high-dimensional data (eg. satellite images, knowledge bases) with compact and “meaningful” representations.  
+I'm working with Prof. Wael Abd-Almageed at ISI's [VIMAL](https://vimal.isi.edu/), 
+focusing on various types of generative models for this goal.
+My project with  Prof. [Yao-Yi Chiang](https://spatial.usc.edu/team-view/yao-yi-chiang/) and Prof. [Craig Knoblock](https://usc-isi-i2.github.io/knoblock/) tackles this line of questions using geospatial data, and aims to learn spatial semantics from data that are collected from diverse sources (eg. satellites, Google Street Map, historical maps) and stored in diverse format (eg. images, graphs). This work has potential applications such as global-scale urban environment analysis, automated map synthesis and systems for monitoring environmental changes.
 
 <!--- Read more about our maptile dataset [here](#).-->
     
