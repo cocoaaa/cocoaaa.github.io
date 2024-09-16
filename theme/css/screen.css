@@ -546,3 +546,13 @@ label.sidenote-number {
 	cursor: pointer;
     }
 }
+
+
+/* add text next to image
+https: //stackoverflow.com/questions/11438910/how-to-display-items-side-by-side-without-using-tables
+ */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
