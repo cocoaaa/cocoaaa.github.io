@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T10:05:40-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T10:05:40-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T10:11:55-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T10:11:55-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -19,6 +19,25 @@ testing sidebar
 &lt;figure&gt;
 &lt;img alt="profile" src="/images/profile.jpg" width="250"/&gt;
 &lt;/figure&gt;
+&lt;div&gt;
+&lt;h1 id="hae-jin-hayley-song"&gt;Hae Jin (Hayley) Song&lt;/h1&gt;
+&lt;br/&gt;
+Ph.D. Candidate in Computer Science
+&lt;br/&gt;
+
+USC Viterbi School of Engineering,
+&lt;br/&gt;
+
+Information Sciences Institute (ISI)
+&lt;br/&gt;
+
+4676 Admiralty Way, Suite 1001
+&lt;br/&gt;
+
+Marina Del Rey, CA 90292
+&lt;br/&gt;
+&lt;!-- email: haejinso@usc.edu  --&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;!-- Add my recent update section to the right side --&gt;
 &lt;div class="marginnote"&gt;
@@ -27,9 +46,7 @@ testing sidebar
 &lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
 &lt;div ;="" style="font-size:0.9em"&gt;
 &lt;ul&gt;
-&lt;li&gt;2024 Feb: Our paper (ManiFPT: On Defining and Analyzing the Fingerprints of Generative Models) is accepted to CVPR 2024!&lt;/li&gt;
-&lt;li&gt;2024 May: I am invited to an AI meeting hosted by LG AI Research in the Bay Area to give a spotlight talk on my research. Thank you!&lt;/li&gt;
-&lt;li&gt;2023 …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+&lt;li&gt;2024 Feb: Our paper (ManiFPT: On Defining and Analyzing the Fingerprints of Generative Models) is accepted to CVPR 2024 …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -49,6 +66,25 @@ testing sidebar
 &lt;figure&gt;
 &lt;img alt="profile" src="/images/profile.jpg" width="250"/&gt;
 &lt;/figure&gt;
+&lt;div&gt;
+&lt;h1 id="hae-jin-hayley-song"&gt;Hae Jin (Hayley) Song&lt;/h1&gt;
+&lt;br/&gt;
+Ph.D. Candidate in Computer Science
+&lt;br/&gt;
+
+USC Viterbi School of Engineering,
+&lt;br/&gt;
+
+Information Sciences Institute (ISI)
+&lt;br/&gt;
+
+4676 Admiralty Way, Suite 1001
+&lt;br/&gt;
+
+Marina Del Rey, CA 90292
+&lt;br/&gt;
+&lt;!-- email: haejinso@usc.edu  --&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;!-- Add my recent update section to the right side --&gt;
 &lt;div class="marginnote"&gt;
