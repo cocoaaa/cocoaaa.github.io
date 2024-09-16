@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T00:13:30-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T00:13:30-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T08:25:28-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T08:25:28-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -63,10 +63,8 @@ testing sidebar
 &lt;img alt="multimodal-inputs" src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fcocoaaa%2FOzdNmX2UzQ.png?alt=media&amp;amp;token=b246a2e5-5e52-418d-8c96-afbbbe84d1b7" style="width:60%"/&gt;
 &lt;/figure&gt;
 &lt;p&gt;I approach this question from an information-processing point of view and am developing &lt;strong&gt;generative models&lt;/strong&gt; with &lt;strong&gt;disentangled representation&lt;/strong&gt; to jointly learn the analysis and synthesis processes of multimodal data.  My most recent work introduces a generative model with adversarial training that learns spatial semantics from map tiles collected from diverse sources such as satellites, Google Street Map and custom rendering engines.   &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Read more about our dataset of multi-style map tiles (&lt;a href="#"&gt;TBA&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Read more about our work on Learning a structured ... (&lt;a href="#"&gt;TBA&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;!-- - Read more about our dataset of multi-style map tiles ([TBA](#))
+- Read more about our work on Learning a structured ... ([TBA](#)) --&gt;
 &lt;p&gt;Currently, I am exploring different ways to understand our proposed model, in particular, by measuring semantic information and studying the flow of information between the latent partitions.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;How we can quantify the amount of the shared semantic information captured by our model?&lt;/li&gt;
