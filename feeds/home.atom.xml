@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T10:11:55-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T10:11:55-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T10:22:08-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T10:22:08-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -21,9 +21,7 @@ testing sidebar
 &lt;/figure&gt;
 &lt;div&gt;
 &lt;h1 id="hae-jin-hayley-song"&gt;Hae Jin (Hayley) Song&lt;/h1&gt;
-&lt;br/&gt;
-Ph.D. Candidate in Computer Science
-&lt;br/&gt;
+&lt;h4 id="phd-candidate-in-computer-science"&gt;Ph.D. Candidate in Computer Science&lt;/h4&gt;
 
 USC Viterbi School of Engineering,
 &lt;br/&gt;
@@ -42,7 +40,7 @@ Marina Del Rey, CA 90292
 &lt;!-- Add my recent update section to the right side --&gt;
 &lt;div class="marginnote"&gt;
 &lt;!-- &lt;div class=marginnote align="center"&gt; --&gt;
-&lt;h1 align="center" id="recent-updates"&gt; Recent updates! &lt;/h1&gt;
+&lt;h1 align="center" id="recent-updates_1"&gt; Recent updates! &lt;/h1&gt;
 &lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
 &lt;div ;="" style="font-size:0.9em"&gt;
 &lt;ul&gt;
@@ -68,9 +66,7 @@ testing sidebar
 &lt;/figure&gt;
 &lt;div&gt;
 &lt;h1 id="hae-jin-hayley-song"&gt;Hae Jin (Hayley) Song&lt;/h1&gt;
-&lt;br/&gt;
-Ph.D. Candidate in Computer Science
-&lt;br/&gt;
+&lt;h4 id="phd-candidate-in-computer-science"&gt;Ph.D. Candidate in Computer Science&lt;/h4&gt;
 
 USC Viterbi School of Engineering,
 &lt;br/&gt;
@@ -89,7 +85,7 @@ Marina Del Rey, CA 90292
 &lt;!-- Add my recent update section to the right side --&gt;
 &lt;div class="marginnote"&gt;
 &lt;!-- &lt;div class=marginnote align="center"&gt; --&gt;
-&lt;h1 align="center" id="recent-updates"&gt; Recent updates! &lt;/h1&gt;
+&lt;h1 align="center" id="recent-updates_1"&gt; Recent updates! &lt;/h1&gt;
 &lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
 &lt;div ;="" style="font-size:0.9em"&gt;
 &lt;ul&gt;
@@ -143,9 +139,10 @@ to contribute to a safe and responsible integration of Generative A.I. into our 
 &lt;ul&gt;
 &lt;li&gt;From this point of view, (how) does this adversary -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;It's exciting to see how the ideas and tools in thermodynamics can help quantify and visualize this flow of semantic information in our model :)&lt;/p&gt;
+&lt;p&gt;It's exciting to see how the ideas and tools in thermodynamics can help quantify and visualize this flow of semantic information in our model!&lt;/p&gt;
+&lt;h4 id="please-see-more-details-on-my-research-in-my-publications-and-projects"&gt;Please see more details on my research in my &lt;a href="/pages/publications.html"&gt;publications&lt;/a&gt; and &lt;a href="/pages/projects.html"&gt;projects&lt;/a&gt; :)&lt;/h4&gt;
 &lt;hr/&gt;
-&lt;h2 id="more-details-on-my-research-questions"&gt;More Details (on My Research Questions)&lt;/h2&gt;
+&lt;h2 id="more-details-on-my-research-questions_1"&gt;More Details (on My Research Questions)&lt;/h2&gt;
 &lt;details&gt;
 &lt;summary&gt; Click to expand &lt;/summary&gt;
 My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this dance between abstraction and synthesis in a video of Picasso's live drawing:
