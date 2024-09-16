@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-15T23:01:52-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-15T23:01:52-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-15:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T00:13:30-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T00:13:30-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -20,13 +20,13 @@ testing sidebar
 &lt;img alt="profile" src="/images/profile.jpg" width="250"/&gt;
 &lt;/figure&gt;
 &lt;!-- Add my recent update section to the right side --&gt;
-&lt;h1 align="center" id="recent-updates"&gt; Recent updates! &lt;/h1&gt;
+&lt;!-- &lt;h1 align="center"&gt; Recent updates! &lt;/h1&gt; --&gt;
 &lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
 &lt;/div&gt;
 &lt;!-- end of testing playground --&gt;
 &lt;!--todo: resume here --&gt;
 &lt;p&gt;I'm a Computer Science PhD student at USC's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt; interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
-&lt;p&gt;Before starting my PhD, I …&lt;/p&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+&lt;p&gt;Before starting my PhD, I studied Mathematics …&lt;/p&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -47,7 +47,7 @@ testing sidebar
 &lt;img alt="profile" src="/images/profile.jpg" width="250"/&gt;
 &lt;/figure&gt;
 &lt;!-- Add my recent update section to the right side --&gt;
-&lt;h1 align="center" id="recent-updates"&gt; Recent updates! &lt;/h1&gt;
+&lt;!-- &lt;h1 align="center"&gt; Recent updates! &lt;/h1&gt; --&gt;
 &lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
 &lt;/div&gt;
 &lt;!-- end of testing playground --&gt;
@@ -78,7 +78,7 @@ testing sidebar
 &lt;/ul&gt;
 &lt;p&gt;It's exciting to see how the ideas and tools in thermodynamics can help quantify and visualize this flow of semantic information in our model :)&lt;/p&gt;
 &lt;hr/&gt;
-&lt;h2 id="recent-updates_1"&gt;Recent updates&lt;/h2&gt;
+&lt;h2 id="recent-updates"&gt;Recent updates&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;I'm preparing for a talk at &lt;a href="https://www.scipy2021.scipy.org/"&gt;Scipy 2021&lt;/a&gt; in July.&lt;/li&gt;
 &lt;li&gt;I got accepted to &lt;a href="https://www.santafe.edu/engage/learn/schools/sfi-complex-systems-summer-school"&gt;2021 Complex Systems Summer School&lt;/a&gt; at Santa Fe Institute, Woohoo!&lt;/li&gt;
