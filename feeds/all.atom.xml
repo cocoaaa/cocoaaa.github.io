@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T10:52:09-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T10:52:09-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T10:53:40-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T10:53:40-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -95,7 +95,7 @@ Marina Del Rey, CA 90292
 &lt;li&gt;I am preparing for a talk at &lt;a href="https://www.scipy2021.scipy.org"&gt;Scipy 2021&lt;/a&gt; in July.&lt;/li&gt;
 &lt;li&gt;I got accepted to &lt;a href="https://www.santafe.edu/engage/learn/schools/sfi-complex-systems-summer-school"&gt;2021 Complex Systems Summer School&lt;/a&gt; at Santa Fe Institute, Woohoo!&lt;/li&gt;
 &lt;li&gt;I gave my first tutorial @ PyData LA, 2019 on "Experimental ML with Holoviews/Geoviews + Pyorch". Here are my talk &lt;a href="/pdfs/experimental-ml-2019-hayley.pdf"&gt;slides&lt;/a&gt;, &lt;a href="#"&gt;video&lt;/a&gt; and &lt;a href="(https://github.com/cocoaaa/PyData-LA-2019"&gt;jupyter notebook materials&lt;/a&gt;!&lt;/li&gt;
-&lt;li&gt;I participated in &lt;a href="https://sites.google.com/earthoutreach.org/geoforgood19/home"&gt;Geo4Good&lt;/a&gt; @ Google in Mtn View, CA! Check out some &lt;a href="https://tinyurl.com/wdoyepy"&gt;highlights&lt;/a&gt; of inspiring project going on using Google Earth Engine and Studio. &lt;/li&gt;
+&lt;li&gt;I participated in &lt;a href="https://sites.google.com/earthoutreach.org/geoforgood19/home"&gt;Geo4Good&lt;/a&gt; @ Google in Mtn View, CA! Check out some &lt;a href="https://tinyurl.com/wdoyepy"&gt;highlights&lt;/a&gt; of inspiring projects based on Google Earth Engine and Studio. &lt;/li&gt;
 &lt;li&gt;New post: "Total variation, KL-Divergence, Maximum Likelihood"&lt;/li&gt;
 &lt;li&gt;New post: "Let's be honest: peeling the assumptions that get us to Variational Autoencoders"&lt;/li&gt;
 &lt;li&gt;New post: "Thinking about an observer vs. the observed"&lt;/li&gt;
