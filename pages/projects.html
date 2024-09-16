@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Small Simplicity</title>
+    <link rel="shortcut icon" type="image/png" href="https://cocoaaa.github.io/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
+    <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="Hayley Song" />
+</head>
+
+<body>
+    <header>
+        <!-- here: add menu items for navbar -->
+        <nav> 
+            <ul>
+                <li><a href="https://cocoaaa.github.io/">Home</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/about-me">About</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/publications">Publications</a></li>
+                <li class="selected"><a href="https://cocoaaa.github.io/pages/projects">Projects</a></li>
+                <li><a href="https://cocoaaa.github.io/blog_index">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="https://cocoaaa.github.io/">Small Simplicity</a></h1>
+            <h2>Understanding Intelligence from Computational Perspective</h2>
+        </div>
+    </header>
+
+<!-- here: main content section's css -->
+    <div id="wrapper" class="pure-g">
+
+        <div id="content pure-u-1 pure-u-md-4-5">
+            <div class="page">
+                <h1>Projects</h1>
+                <h1 id="my-previous-projects-tutorials-talks">My previous projects, tutorials, talks</h1>
+<hr/>
+<h2 id="tutorial">Tutorial</h2>
+<h4 id="experimental-machine-learning-with-holoviews-geoviews-and-pytorch">Experimental Machine Learning with Holoviews, Geoviews and PyTorch</h4>
+<p>1.5hr tutorial session @ <a href="https://pydata.org/la2019/schedule/">PyData LA, 2019</a>
+- <a href="https://github.com/cocoaaa/PyData-LA-2019">materials</a>, <a href="#">video</a></p>
+<!-- (https://www.youtube.com/watch?v=xdux2jwoNw4) -->
+<p>This tutorial introduces how to make your data exploration and model building process more interactive and exploratory by using the combination of JupyterLab, HoloViews, and PyTorch.  I will focus on the problem of classfying different types of roads on satellite images, defined as a "multi-class semantic segmentation problem". Starting from the data exploration to the trained model understanding, we will cover different ways to explore the data and models with simple, interactive GUIs in Jupyter notebooks.  Specifically, the tutorial covers, with the emphasis on the experimental nature of model building:</p>
+<ul>
+<li>how to make your data exploration more intuitive and experimental using HoloViews libraries</li>
+<li>how to turn your model script into a simple GUI that allows interactive hyperparameter tuning and model exploration</li>
+<li>how to monitor the training process in realtime</li>
+<li>how to quickly build a GUI tool to inspect the trained models in the same Jupyter notebook</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="pydata-0" src="/images/pydata-0.png"/></td>
+<td><img alt="pydata-1" src="/images/pydata-1.png"/></td>
+<td><img alt="pydata-1-2" src="/images/pydata-1-2.png"/></td>
+</tr>
+<tr>
+<td><img alt="pydata-2" src="/images/pydata-2.png"/></td>
+<td><img alt="pydata-3" src="/images/pydata-3.png"/></td>
+<td><img alt="pydata-4" src="/images/pydata-4.png"/></td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<h3 id="mint-netcdf_1">MINT NetCDF</h3>
+<p><a href="https://github.com/mintproject/MINT-NetCDF-Convention/blob/master/README.md">website</a></p>
+<p>We proposed a self-describing data format for structured gridded datasets for MINT data catalog and visualization based on the NetCDF and the CF convention.  The purpose of this specification is to establish a unified data format within MINT (and in the near future, among World Modelers and broader scientific community) for an efficient data exchange and knowledge discovery.  The document proposes three levels of specification ("Mandatory", "Recommended" and "Optional") for metadata related to space, time and domain-specific semantics of the data.  It provides a unified convention on which information to document as well as a specific format to represent/store the information.  As a result,  it facilitates the creation and sharing of scientific data across different scientific domains such as meteorology, oceanography and GIS, and also has a potential to contribute to novel, interdisciplinary discoveries.</p>
+<p>In addition to the proposal, we have created an interactive tool for exploring datasets conforming to this specification, called MINT-GeoViz.</p>
+<h2 id="_2"><br/></h2>
+<h3 id="mint-geoviz">MINT-GeoViz</h3>
+<p><a href="https://github.com/mintproject/MINT-GeoViz/tree/master?">code</a>, <a href="https://drive.google.com/drive/folders/1t9E5HsUOre0CgAevkdRAxgaRQghJ_i2v">demo</a></p>
+<p>MINT-GeoViz is an interactive visualization library for large geospatial datasets that follow our proposed MINT NetCDF convention.  Some examples of such datasets include a collection of year-long satellite images in Africa, global oceanographic time series and hydrographic measurements.  Using efficient data access (via Dask), parallelized computation (via Numba, DataShader) and accurate visualization techniques (via DataShader, ColorCat), it works with datasets of millions or billions of data points in real-time.  For example, a user can visualize the entire earthquake dataset (with 2.1 million seismological events) on a global map.  Our tool goes a step further by allowing the user to perform new computations as they explore the visualization, eg. computing aggregated statistics, transforming high dimensional data to a time series.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="fldas-demo-1" src="/videos/fldas-demo-opt-1-1.gif"/></td>
+<td><img alt="fldas-demo-1" src="/videos/fldas-demo-opt-1-2.gif"/></td>
+</tr>
+<tr>
+<td><img alt="fldas-demo-2" src="/videos/fldas-demo-opt-1-3.gif"/></td>
+<td><img alt="fldas-demo-3" src="/videos/fldas-demo-opt-1-4.gif"/></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4"><br/></h2>
+<h3 id="generating-gaussian-pictures-and-stories-with-generative-adversarial-networks">Generating Gaussian, Pictures, and Stories with Generative Adversarial Networks</h3>
+<p>Hayley Song*, Adam Yala*</p>
+<p><a href="/pdfs/generating-gaussians-pictures.pdf">paper</a> <!--(2016 Fall)--></p>
+<p>In this paper, we explore the framework of Adversarial Training as introduced in the original paper by Goodfellow et al.. Generative Aversarial Network (GAN) is a semi-supervised training method and has shown promising results in various tasks such as Image Generation, Transfer Learning, Imitation Learning and Text Generation. We aim to expose the issues and suceesses of GANs while experimenting through diverse generation tasks. Specifically, we work through generating a Gaussian distribution, images, and texts. For each experiement, we investigate the effects of parameters (e.g pre-training of the discriminator) on the convergence and the performance of the adversarial nets.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="gan" src="/images/gan-1.png"/></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6"><br/></h2>
+<h3 id="cost-effective-3d-reconstruction-of-human-arms-using-rgbd-sensor-for-early-diagnosis-of-lymphedema">Cost-effective 3D Reconstruction of Human Arms Using RGBD Sensor for Early Diagnosis of Lymphedema</h3>
+<p><em>Hayley Song, Julian Straub, Erik Nyguen, Fernando Yordan, Regina Barzilay</em></p>
+<p>Arm lymphedema is an incurable condition characterized by large swelling of the arms and is commonly seen in breast cancer survivors.  Early detection is crucial for treatment to be effective in mitigating painful symptoms, and yet there is no method that allows physicians to monitor the progression of lymphedema in a way that is cost effective and reliable.  This study proposes a general purpose device that reconstructs a 3D model of objects in view of multiple RGB-D sensors.  This device reconstructs a patient's arm over time which directly extends to measuring and tracking volume change over time.  The accuracy of our system is comparable to the gold standard of water displacement, and is better than the state-of-the-art Perometer.  However it costs significantly less than the Perometer, and is more hygienic than the water displacement method.  It contributes to both short-term and long-term care for the lymphedema patients.  Medical practitioners will be able to provide more timely treatment via accurate reconstruction and volume calculation.  Further the generation of reliable data from our device will enable future studies of lymphedema and its progression.</p>
+<p><img alt="3d_recon_prototype" src="/images/3d_recons/3d_recon_prototype.png"/></p>
+<!-- <div class="image12"> -->
+<!-- <div class="imgContainer"> -->
+<!--     <img src="/images/3d_recons/mgh_tour1.jpg" alt="mgh_tour1" width="45%"/> -->
+<!-- </div> -->
+<!-- <div class="imgContainer"> -->
+<!--     <img src="/images/3d_recons/skinInterferenceSR300.png" alt="sr300" width="45%"/> -->
+<!-- </div> -->
+<!-- </div> -->
+<h2 id="_8"><br/></h2>
+<h3 id="automatic-cell-detection-using-hog-features-and-svm">Automatic Cell Detection using HOG features and SVM</h3>
+<p>Nicha Apichitsopa*, Boying Meng*, Hayley Song*</p>
+<p><a href="/pdfs/6.869-cell-detection.pdf">paper</a>, <a href="/pdfs/6.869-cell-detection-ppt.pdf">slides</a> (2016 Fall)</p>
+<!--TODO: Add video link-->
+<p>The analysis of cell trajectories inside microchannels is a critical part of many microfluidic systems. This task requires automated cell detection and cell tracking algorithms in order to reliably extract cell positions over time. Such algorithms need be robust against shape deformation, variable illumination, and noises from sensors and cell movements. In this report, we prove the ability of our machine-learning detection algorithm based on the Histogram of Oriented Gradients (HOG) and Support Vector Machines (SVMs), and compare its performances to the classic image segmentation method. We also investiage different features extracted by various machine learning algorithms and discuss how they affect the performances of cell detection and tracking.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="cell-detection-1" src="/images/cell-detection-1.png"/></td>
+<td><img alt="cell-detection-" src="/images/cell-detection-2.png"/></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_10"><br/></h2>
+<h3 id="freeflow-unintrusive-reading-device-for-printed-texts">FreeFlow: Unintrusive Reading Device for Printed Texts</h3>
+<p>Hayley Song, Suvrit Sra</p>
+<p><a href="/pdfs/free-flow-hjsong.pdf">paper</a>, <a href="/pdfs/free-flow-hjsong-poster.png">poster</a> (2016 Spring)</p>
+<p><img alt="free-flow-demo" src="/pdfs/free-flow-demo.png"/>
+<img alt="free-flow-workflow" src="/pdfs/free-flow-workflow.png"/></p>
+<p>FreeFlow is a software for the pen-style, hand-held device that allows a user to search for definitions by &ldquo;clicking&rdquo; on the printed text. It is the first end-to-end system that performs such functions with high accuracy (95%) under variable illumination and motion blur from hand movements. It is composed of the four main modules: 1) capture, 2) preprocessing, 3) recogtnition and 4) dictionary search. In this paper, we discuss the details of our system and its performances under various real-world settings.</p>
+<h2 id="_12"><br/></h2>
+<h3 id="3d-air-gesture-recognizer-using-dynamic-time-warping-and-knn">3D Air Gesture Recognizer using Dynamic Time Warping and KNN</h3>
+<p>Hayley Song*, Chongyuan Xiang*</p>
+<p><a href="/pdfs/3d-air-gestures-ppt.pdf">poster</a>,
+<a href="https://github.com/xiangcy/AirGestureClassifier">code and dataset</a> (MIT CSAIL, 2016)</p>
+<p>In this project, we use the Dynamic Time Warping method and the Neearest Neighbor to design a recognizer for 3D alphabet gestures drawn in the air. We collected the air gesture data from 11 users, and designed the features using speed, acceleration and rotation in the three dimensional space.</p>
+<p><img alt="3d-air-gesture-workflow" src="/pdfs/3d-air-gesture-workflow.png"/></p>
+<hr/>
+<p>(*: Equal contribution)</p>
+<!--
+This file will contain descriptions of my past and present projects.
+
+## Anomaly Detection in Time Series using Convolutional Neural Networks
+@ Apple (2018)
+-->
+            </div>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+                &middot;
+                <a href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="alternate">Atom Feed</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+
+</html>

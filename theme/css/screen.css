@@ -111,6 +111,7 @@ img, p, .post > .highlight, .highlighttable, h4, h5, h6 {
     margin-right: 10px;
 
 }
+
 blockquote {
     margin: 1.5em 1.5em 1.5em .75em;
     padding-left: .75em;
@@ -554,5 +555,77 @@ https: //stackoverflow.com/questions/11438910/how-to-display-items-side-by-side-
 .image-text-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
+    width: 100%;
+}
+
+/* div.image  {
+
+}  */
+
+.image-text-container .image > img {
+    width: 30%;
+} 
+
+.image-text-container .text {   
+    width:70%;
+    padding-left: 0px;
+}
+
+
+/* from justin solomon's webpage's css */
+/* .about {
+    overflow: hidden;
+    width: 920px;
+    margin: 20px auto 0px auto;
+    padding: 40px 40px;
+    background: #FFFFFF url(images/page-gradient-bg.png) repeat-x left bottom;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 1);
+}
+
+.about .title {
+    padding-bottom: 20px;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+    color: #000000;
+} 
+*/
+
+
+/* https: //www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+.row {
+    display: flex;
+}
+
+.column-pub-img {
+    flex: 40%;
+    padding: 5px;
+}
+
+.column-pub-text {
+    flex: 60%;
+    padding: 5px;
+    padding-left: 5px;
+    align-items: center;
+}
+
+/* If the text has multiple lines, add the following: */
+.center {
+    /* line-height: 1.5; */
+    /* display: inline-block; */
+    padding-top: 30px;
+    vertical-align: middle;
+}
+
+/* .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+} */
+
+b {
+    font-weight: bold;
 }

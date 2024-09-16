@@ -28,11 +28,13 @@
 
 <body>
     <header>
-        <nav>
+        <!-- here: add menu items for navbar -->
+        <nav> 
             <ul>
                 <li><a href="https://cocoaaa.github.io/">Home</a></li>
                 <li><a href="https://cocoaaa.github.io/pages/about-me">About</a></li>
                 <li class="selected"><a href="https://cocoaaa.github.io/pages/publications">Publications</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/projects">Projects</a></li>
                 <li><a href="https://cocoaaa.github.io/blog_index">Blog</a></li>
             </ul>
         </nav>
@@ -42,94 +44,180 @@
         </div>
     </header>
 
-
+<!-- here: main content section's css -->
     <div id="wrapper" class="pure-g">
 
         <div id="content pure-u-1 pure-u-md-4-5">
             <div class="page">
                 <h1>Publications</h1>
-                <hr/>
-<h2 id="tutorial">Tutorial</h2>
-<h4 id="experimental-machine-learning-with-holoviews-geoviews-and-pytorch">Experimental Machine Learning with Holoviews, Geoviews and PyTorch</h4>
-<p>1.5hr tutorial session @ <a href="https://pydata.org/la2019/schedule/">PyData LA, 2019</a>
-- <a href="https://github.com/cocoaaa/PyData-LA-2019">materials</a>, <a href="#">video</a></p>
-<!-- (https://www.youtube.com/watch?v=xdux2jwoNw4) -->
-<p>This tutorial introduces how to make your data exploration and model building process more interactive and exploratory by using the combination of JupyterLab, HoloViews, and PyTorch.  I will focus on the problem of classfying different types of roads on satellite images, defined as a "multi-class semantic segmentation problem". Starting from the data exploration to the trained model understanding, we will cover different ways to explore the data and models with simple, interactive GUIs in Jupyter notebooks.  Specifically, the tutorial covers, with the emphasis on the experimental nature of model building:</p>
+                <!-- # Conferences and journals with peer-reviews  -->
+<div class="row">
+<div class="column-pub-img">
+<img alt="Snow" src="/images/pubs/artifact-defn.png" style="width:100%"/>
+</div>
+<div class="column-pub-text">
+<p class="center">
+<b>H.Song</b>, M.Khayatkhoei, W.AbdAlmageed. 
+        <b>ManiFPT: Defining and Analyzing Fingerprints of Generative Models.</b> Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). 2024. <a href="https://arxiv.org/abs/2402.10401">ArXiv: 2402.10401.</a>
+</p>
+</div>
+</div>
+<p><br/></p>
+<div class="row">
+<div class="column-pub-img">
+<img alt="Snow" src="/images/pubs/tsne-artifacts.png/" style="width:100%"/>
+</div>
+<div class="column-pub-text">
+<p class="center">
+<b>H.Song</b>, M.Khayatkhoei, W.AbdAlmageed. Formal Definition of Fingerprints Improves Attribution of Generative Models. NeurIPS Workshop on Attributing Model Behavior at Scale. 2023. <a href="https://openreview.net/forum?id=Zqj3YQ1QAC">OpenReview.</a>
+</p>
+</div>
+</div>
+<p><br/></p>
+<div class="row">
+<div class="column-pub-img">
+<img alt="mapregi-arch" src="/images/pubs/mapregi-archnew.jpg" style="width:100%"/>
+</div>
+<div class="column-pub-text">
+<p class="center">
+<b>H.Song</b>, P.Krawczuk, P.H.Huang. Application of Disentanglement to Map Registration Problem. arXiv preprint. 2024.  <a href="https://arxiv.org/abs/2408.14152">ArXiv: 2408.14152.</a>
+</p>
+</div>
+</div>
+<p><br/></p>
+<div class="row">
+<div class="column-pub-img">
+<img alt="set-encoder" src="/images/pubs/fingerprint-set-encoder.png" style="width:100%"/>
+</div>
+<div class="column-pub-text">
+<p class="center">
+<b>H.Song</b>, W.AbdAlmageed. Learning Robust Representations of Generative Models Using Set-Based Artificial Fingerprints. arXiv preprint. 2022. <a href="https://arxiv.org/abs/2206.02067 ">ArXiv: 2206.02067.</a>
+</p>
+</div>
+</div>
+<p><br/></p>
+<div class="row">
+<div class="column-pub-img">
+<img alt="mint-ygil" src="/images/pubs/mint-overview.png" style="width:100%"/>
+</div>
+<div class="column-pub-text">
+<p class="center">
+     Y.Gil et al. Artificial intelligence for modeling complex systems: taming the complexity of expert models to improve decision making. ACM Transactions on Interactive Intelligent Systems. 2021. <a href="https://dl.acm.org/doi/abs/10.1145/3453172">DOI: 10.1145/3453172.</a>
+</p>
+</div>
+</div>
+<p><br/></p>
+<div class="row">
+<div class="column-pub-img">
+<img alt="ieee-basel" src="/images/pubs/ieee-basel.png" style="width:100%"/>
+</div>
+<div class="column-pub-text">
+<p class="center">
+     B.Modad, X.Yu, <b>H.Song</b> Y.Chiang, A.Molisch. Cell-by-Cell Line-of-Sight Probability Models Based on Real-World Base Station Deployment. IEEE Global Communications Conference (GLOBECOM). 2022.  <a href="https://ieeexplore.ieee.org/abstract/document/10001179">IEEE: 10001179.</a>
+</p>
+</div>
+</div>
+<p><br/></p>
+<div class="row">
+<div class="column-pub-img">
+<img alt="traffic-coordination" src="/images/pubs/traffic-coordination.png" style="width:100%"/>
+</div>
+<div class="column-pub-text">
+<p class="center">
+     M.Rodriguez, X.Zhao, <b>H.Song</b>, A.Mavrommati, R.G.Valenti, A.Rajhans, P.J.Mosterman, Y.Diaz-Mercado, and H.Fathy, A gradient-based approach for coordinating smart vehicles and traffic lights at intersections. IEEE Control Systems Letters (2020), 5(6), pp.2144-2149. <a href="https://ieeexplore.ieee.org/abstract/document/9306786
+        2">IEEE: 9306786</a>
+</p>
+</div>
+</div>
+<!-- An Energy Gradient-Based Approach for Coordinating Smart Vehicles and Traffic Lights at Intersections.
+Manuel Rodriguez, Xiangxue Zhao, <em>Hayley Song</em>, Anastasia Mavrommati, Roberto Valenti, Akshay Rajhans, PieterMosterman, Yancy Diaz-Mercado, Hosam K. Fathy.
+2021 American Control Conference (ACC)
+https://ieeexplore.ieee.org/abstract/document/9306786
+<div>
+M.Rodriguez, X.Zhao, H.Song,... & H.Fathy. A Gradient-Based Approach for Coordinating Smart Vehicles and Traffic Lights at Intersections. IEEE Control Systems Letters. 2020
+
+</div> -->
+<!-- ## Preprints 
+<div>
+H.Song, P.Krawczuk, P.H.Huang. Application of Disentanglement to Map Registration Problem. arXiv preprint. 2024. https://arxiv.org/abs/2408.14152
+</div>
+
+<div>
+H.Song, W.AbdAlmageed. Learning Robust Representations of Generative Models Using Set-Based Artificial Finger- prints. arXiv preprint. 2022. https://arxiv.org/abs/2206.02067
+</div> -->
+<h2 id="masters-thesis">Master's Thesis</h2>
+<div class="row">
+<div class="column-pub-img">
+<img alt="my-meng-thesis-non-rigid" src="/images/pubs/non-rigid-meng-thesis.png" style="width:100%"/>
+</div>
+<div class="column-pub-text">
+<p class="center">
+<b>H.Song</b>, Non-rigid registration of mammogram images using Large Displacement Optical Flow with extended flexibility for manual interventions. Thesis: M. Eng., Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science, 2018. <a href="https://dspace.mit.edu/handle/1721.1/119572">URI.</a>
+</p>
+</div>
+</div>
+<!-- Non-rigid registration of mammogram images using large displacement optical flow with extended flexibility for manual interventions
+
+- Masters Thesis: M. Eng., Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science, 2018. [Link](https://dspace.mit.edu/handle/1721.1/119572). -->
 <ul>
-<li>how to make your data exploration more intuitive and experimental using HoloViews libraries</li>
-<li>how to turn your model script into a simple GUI that allows interactive hyperparameter tuning and model exploration</li>
-<li>how to monitor the training process in realtime</li>
-<li>how to quickly build a GUI tool to inspect the trained models in the same Jupyter notebook</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="pydata-0" src="/images/pydata-0.png"/></td>
-<td><img alt="pydata-1" src="/images/pydata-1.png"/></td>
-<td><img alt="pydata-1-2" src="/images/pydata-1-2.png"/></td>
-</tr>
-<tr>
-<td><img alt="pydata-2" src="/images/pydata-2.png"/></td>
-<td><img alt="pydata-3" src="/images/pydata-3.png"/></td>
-<td><img alt="pydata-4" src="/images/pydata-4.png"/></td>
-</tr>
-</tbody>
-</table>
-<hr/>
-<h2 id="papers-and-projects_1">Papers and Projects</h2>
-<h4 id="an-energy-gradient-based-approach-for-coordinating-smart-vehicles-and-traffic-lights-at-intersections">An Energy Gradient-Based Approach for Coordinating Smart Vehicles and Traffic Lights at Intersections.</h4>
-<p>Manuel Rodriguez, Xiangxue Zhao, <em>Hayley Song</em>, Anastasia Mavrommati, Roberto Valenti, Akshay Rajhans, PieterMosterman, Yancy Diaz-Mercado, Hosam K. Fathy.
-2021 American Control Conference (ACC)</p>
-<h4 id="application-of-disentanglement-to-map-registration">Application of Disentanglement to Map Registration</h4>
-<p>[In Preparation]</p>
-<!-- ### Spatial Knowledge-aware Road Detection from Satellite Images with Reasoning and External Knowledge -->
-<h4 id="context-aware-segmentation-via-external-knowledge-and-structured-neural-net">Context-aware segmentation via external knowledge and structured neural net</h4>
-<p>[In preparation]</p>
-<ul>
-<li>Image segmentation in satellite images is a crucial task in computer vision, with important applications ranging from climate change monitoring, natural disaster responses, route planning, urban planning to security surveillance. Current state-of-the-art algorithms, including deep learning algorithms, have mostly focused on learning meaningful features exclusively from the given images. This results in neglecting a large amount of external information that provides important contexts and spatial cues that could help improve the visual tasks.   In this paper, we propose a new method to achieve a spatial knowledge-aware road detection that improves existing image segmentation algorithms by utilizing spatial semantics from an external knowledge base (ie. the OpenStreetMap database). Our main contribution is first to introduce a notion of spatial semantic score that quantifies the spatial relationship and secondly to propose a new optimization framework to improve the initial prediction to better align with the spatial semantics observed in external knowledge bases. Finally, we show that our approach significantly increases performances measured by IoU, (Relaxed) F1 and Average Path Length Score (APLS) on our satellite dataset.</li>
-</ul>
-<h4 id="non-rigid-registration-of-mammogram-images-using-large-displacement-optical-flow-with-extended-flexibility-for-manual-interventions">Non-rigid registration of mammogram images using large displacement optical flow with extended flexibility for manual interventions</h4>
-<ul>
-<li>Masters Thesis: M. Eng., Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science, 2018. <a href="https://dspace.mit.edu/handle/1721.1/119572">Link</a>.</li>
 <li>This thesis presents a registration method for mammogram images with extended flexibility for manual inputs from medical specialists. The algorithm was developed as part of the Mammography project led by Professor. Regina Barzilay at MIT CSAIL. Given a sequence of mammogram images, the algorithm finds an optimal registration by considering both the global and local constraints as well as user-defined constraints such as manually selected matching points. This allows the registration process to be guided by both the algorithm itself and human experts. The second half of the thesis focuses on evaluating well-known optical flow and medical registration algorithms on mammogram images. It provides insights into how they perform when encountered by challenges and constraints that are unique in mammogram images.</li>
 </ul>
 <hr/>
-<h3 id="mint-netcdf_1">MINT NetCDF</h3>
-<p><a href="https://github.com/mintproject/MINT-NetCDF-Convention/blob/master/README.md">website</a></p>
-<p>We proposed a self-describing data format for structured gridded datasets for MINT data catalog and visualization based on the NetCDF and the CF convention.  The purpose of this specification is to establish a unified data format within MINT (and in the near future, among World Modelers and broader scientific community) for an efficient data exchange and knowledge discovery.  The document proposes three levels of specification ("Mandatory", "Recommended" and "Optional") for metadata related to space, time and domain-specific semantics of the data.  It provides a unified convention on which information to document as well as a specific format to represent/store the information.  As a result,  it facilitates the creation and sharing of scientific data across different scientific domains such as meteorology, oceanography and GIS, and also has a potential to contribute to novel, interdisciplinary discoveries.</p>
-<p>In addition to the proposal, we have created an interactive tool for exploring datasets conforming to this specification, called MINT-GeoViz.</p>
+<h1 id="in-preparation_1">(In Preparation)</h1>
+<h3 id="learning-to-align-the-dynamics-of-latent-sampling-of-gan-to-the-geometry-of-its-data-manifold">Learning to align the dynamics of latent sampling of GAN to the geometry of its data manifold</h3>
+<div>
+<img alt="bivae" src="/images/pubs/controlled-sampling-gan-differentials.png" style="width:50%;"/>
+</div>
+<!--
+ <div>
+    <img src="/images/pubs/controlled-sampling-exp1-semicircle-results-with-outliers-10k-samples.png" alt="bivae" style="width:100%">
+  </div>
+-->
+<ul>
+<li>Abstract: We develop a latent sampling method for GAN whose mixing
+dynamics on its latent space is guided by the geometry of the model&rsquo;s data mani-
+fold. The generator in GAN is trained to model the true, unknown data distribution by transforming a continuous unimodal noise variable z from a standard Guassian via a neural network. To our surprise, despite this continuous transformation of continuous, unimodal input variable, GANs can fit complex, multi-modal true distribution well. This success suggests that GAN&rsquo;s data-generating distribution often consists of multiple modes, each of which tries to cover points from a disconnected submanifold of the true data manifold. Given the nature of disconnected submaniofld of GAN, our project aims to find a latent sampling method that generate data points in a controlled manner so that we can collect samples from a single, chosen mode, or jump to a different mode to explore a different submanifold. In particular, we want to approach this problem from the perspectives of sampling based on dynamics, and explore a possibility of learning the dynamics on the latent space using information on the geometry of the model&rsquo;s data manifold as guidance. We will explore ideas from the pull-back geometry (Arvanitidis et al. (2021a)) and recent sampling methods based on dynamics and gradient information such as Welling &amp; Teh (2011), Girolami &amp; Calderhead (2011), Steeg &amp; Galstyan (2021) and Nijkamp et al. (2022).
+For experiments, we will start with a flow-based model, as it provides a distribution that is both explicit and invertible. Based on our findings on flows, we will expand our experiments to GANs. We will test on a synthetic dataset constructed from a mixture of five Gaussians as well as more complex datasets, MNIST, CelebA and ImageNet</li>
+</ul>
+<p><br/></p>
+<h3 id="bivae-learning-to-decouple-and-disentangle-multimodal-data-using-bi-partitioned-vae-and-adversarial-learning">BiVAE: Learning to decouple and disentangle multimodal data using bi-partitioned VAE and adversarial learning</h3>
+<div>
+<img alt="bivae" src="/images/pubs/bivae-bipartitioned.png" style="width:100%"/>
+</div>
+<ul>
+<li>Abstract: We consider the problem of encoding semantic information (&ldquo;content&rdquo;) and domain-specific information (&ldquo;style&rdquo;) separately from multimodal data in an unsupervised or semi-supervised setting. Unlike many existing work that learns representations strongly tied to particular supervised tasks, we aim to learn in an unsupervised or weakly-supervised way so that the representations are not tailored for any specific task, e.g. classification of the target variable, and are more representative of the data itself.  We formulate this problem as the problem of learning a representation with a bi-partitioned latent space, one for the semantic information shared across the modalities and the other for the domain-specific information.  Tosolve this problem, we propose the bi-latent VAE (BiVAE), a generative model that discoversand encodes the two types of information separately into proper latent partitions, with the guidance of an adversary that encourages the style to be contained exclusively in its partitionand the content partition to be agnostic of any domain-specific information.  We evaluate our method on benchmark datasets and a data set of multi-source map tiles that we curated for this purpose. Our experiments on datasets from various domains show that (i) BiVAE effectively learns to capture the semantics and domain-specifics into two separate latent partitions, (ii) is capable of generating new data with controls over two orthogonal axes (semantics and styles),and (iii) enables content-based information retrieval from a multi-source dataset.  In addition to our model, we introduce our new dataset, Overhead ImageNet, that serves as a new testbed for(but not limited to) the content-style disentanglement task. This dataset contains map tiles around the world collected from 5 sources such as satellites and OpenStreetMap.</li>
+</ul>
+<!-- ### Spatial Knowledge-aware Road Detection from Satellite Images with Reasoning and External Knowledge -->
+<h3 id="context-aware-segmentation-via-external-knowledge-and-structured-neural-net">Context-aware segmentation via external knowledge and structured neural net</h3>
+<ul>
+<li>Abstract: Image segmentation in satellite images is a crucial task in computer vision, with important applications ranging from climate change monitoring, natural disaster responses, route planning, urban planning to security surveillance. Current state-of-the-art algorithms, including deep learning algorithms, have mostly focused on learning meaningful features exclusively from the given images. This results in neglecting a large amount of external information that provides important contexts and spatial cues that could help improve the visual tasks.   In this paper, we propose a new method to achieve a spatial knowledge-aware road detection that improves existing image segmentation algorithms by utilizing spatial semantics from an external knowledge base (ie. the OpenStreetMap database). Our main contribution is first to introduce a notion of spatial semantic score that quantifies the spatial relationship and secondly to propose a new optimization framework to improve the initial prediction to better align with the spatial semantics observed in external knowledge bases. Finally, we show that our approach significantly increases performances measured by IoU, (Relaxed) F1 and Average Path Length Score (APLS) on our satellite dataset.</li>
+</ul>
+<!--
+---
+### MINT NetCDF
+[website](https://github.com/mintproject/MINT-NetCDF-Convention/blob/master/README.md)
+
+We proposed a self-describing data format for structured gridded datasets for MINT data catalog and visualization based on the NetCDF and the CF convention.  The purpose of this specification is to establish a unified data format within MINT (and in the near future, among World Modelers and broader scientific community) for an efficient data exchange and knowledge discovery.  The document proposes three levels of specification ("Mandatory", "Recommended" and "Optional") for metadata related to space, time and domain-specific semantics of the data.  It provides a unified convention on which information to document as well as a specific format to represent/store the information.  As a result,  it facilitates the creation and sharing of scientific data across different scientific domains such as meteorology, oceanography and GIS, and also has a potential to contribute to novel, interdisciplinary discoveries.
+
+In addition to the proposal, we have created an interactive tool for exploring datasets conforming to this specification, called MINT-GeoViz.
+
+---
+### MINT-GeoViz
+[code](https://github.com/mintproject/MINT-GeoViz/tree/master?), [demo](https://drive.google.com/drive/folders/1t9E5HsUOre0CgAevkdRAxgaRQghJ_i2v)
+
+MINT-GeoViz is an interactive visualization library for large geospatial datasets that follow our proposed MINT NetCDF convention.  Some examples of such datasets include a collection of year-long satellite images in Africa, global oceanographic time series and hydrographic measurements.  Using efficient data access (via Dask), parallelized computation (via Numba, DataShader) and accurate visualization techniques (via DataShader, ColorCat), it works with datasets of millions or billions of data points in real-time.  For example, a user can visualize the entire earthquake dataset (with 2.1 million seismological events) on a global map.  Our tool goes a step further by allowing the user to perform new computations as they explore the visualization, eg. computing aggregated statistics, transforming high dimensional data to a time series.
+
+| | |
+|---|---|
+|![fldas-demo-1](/videos/fldas-demo-opt-1-1.gif)| ![fldas-demo-1](/videos/fldas-demo-opt-1-2.gif)|
+|![fldas-demo-2](/videos/fldas-demo-opt-1-3.gif)| ![fldas-demo-3](/videos/fldas-demo-opt-1-4.gif)|
+-->
+<p><br/>
+<br/></p>
 <hr/>
-<h3 id="mint-geoviz">MINT-GeoViz</h3>
-<p><a href="https://github.com/mintproject/MINT-GeoViz/tree/master?">code</a>, <a href="https://drive.google.com/drive/folders/1t9E5HsUOre0CgAevkdRAxgaRQghJ_i2v">demo</a></p>
-<p>MINT-GeoViz is an interactive visualization library for large geospatial datasets that follow our proposed MINT NetCDF convention.  Some examples of such datasets include a collection of year-long satellite images in Africa, global oceanographic time series and hydrographic measurements.  Using efficient data access (via Dask), parallelized computation (via Numba, DataShader) and accurate visualization techniques (via DataShader, ColorCat), it works with datasets of millions or billions of data points in real-time.  For example, a user can visualize the entire earthquake dataset (with 2.1 million seismological events) on a global map.  Our tool goes a step further by allowing the user to perform new computations as they explore the visualization, eg. computing aggregated statistics, transforming high dimensional data to a time series.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="fldas-demo-1" src="/videos/fldas-demo-opt-1-1.gif"/></td>
-<td><img alt="fldas-demo-1" src="/videos/fldas-demo-opt-1-2.gif"/></td>
-</tr>
-<tr>
-<td><img alt="fldas-demo-2" src="/videos/fldas-demo-opt-1-3.gif"/></td>
-<td><img alt="fldas-demo-3" src="/videos/fldas-demo-opt-1-4.gif"/></td>
-</tr>
-</tbody>
-</table>
-<hr/>
+<h2 id="reports_1">Reports</h2>
 <h3 id="generating-gaussian-pictures-and-stories-with-generative-adversarial-networks">Generating Gaussian, Pictures, and Stories with Generative Adversarial Networks</h3>
-<p>Hayley Song*, Adam Yala*</p>
+<p><b>Hayley Song*</b>, Adam Yala*</p>
 <p><a href="/pdfs/generating-gaussians-pictures.pdf">paper</a> <!--(2016 Fall)--></p>
 <p>In this paper, we explore the framework of Adversarial Training as introduced in the original paper by Goodfellow et al.. Generative Aversarial Network (GAN) is a semi-supervised training method and has shown promising results in various tasks such as Image Generation, Transfer Learning, Imitation Learning and Text Generation. We aim to expose the issues and suceesses of GANs while experimenting through diverse generation tasks. Specifically, we work through generating a Gaussian distribution, images, and texts. For each experiement, we investigate the effects of parameters (e.g pre-training of the discriminator) on the convergence and the performance of the adversarial nets.</p>
 <table>
@@ -144,19 +232,6 @@
 </tr>
 </tbody>
 </table>
-<hr/>
-<h3 id="cost-effective-3d-reconstruction-of-human-arms-using-rgbd-sensor-for-early-diagnosis-of-lymphedema">Cost-effective 3D Reconstruction of Human Arms Using RGBD Sensor for Early Diagnosis of Lymphedema</h3>
-<p><em>Hayley Song, Julian Straub, Erik Nyguen, Fernando Yordan, Regina Barzilay</em></p>
-<p>Arm lymphedema is an incurable condition characterized by large swelling of the arms and is commonly seen in breast cancer survivors.  Early detection is crucial for treatment to be effective in mitigating painful symptoms, and yet there is no method that allows physicians to monitor the progression of lymphedema in a way that is cost effective and reliable.  This study proposes a general purpose device that reconstructs a 3D model of objects in view of multiple RGB-D sensors.  This device reconstructs a patient's arm over time which directly extends to measuring and tracking volume change over time.  The accuracy of our system is comparable to the gold standard of water displacement, and is better than the state-of-the-art Perometer.  However it costs significantly less than the Perometer, and is more hygienic than the water displacement method.  It contributes to both short-term and long-term care for the lymphedema patients.  Medical practitioners will be able to provide more timely treatment via accurate reconstruction and volume calculation.  Further the generation of reliable data from our device will enable future studies of lymphedema and its progression.</p>
-<p><img alt="3d_recon_prototype" src="/images/3d_recons/3d_recon_prototype.png"/></p>
-<!-- <div class="image12"> -->
-<!-- <div class="imgContainer"> -->
-<!--     <img src="/images/3d_recons/mgh_tour1.jpg" alt="mgh_tour1" width="45%"/> -->
-<!-- </div> -->
-<!-- <div class="imgContainer"> -->
-<!--     <img src="/images/3d_recons/skinInterferenceSR300.png" alt="sr300" width="45%"/> -->
-<!-- </div> -->
-<!-- </div> -->
 <hr/>
 <h3 id="automatic-cell-detection-using-hog-features-and-svm">Automatic Cell Detection using HOG features and SVM</h3>
 <p>Nicha Apichitsopa*, Boying Meng*, Hayley Song*</p>
@@ -180,10 +255,21 @@
 <hr/>
 <h3 id="freeflow-unintrusive-reading-device-for-printed-texts">FreeFlow: Unintrusive Reading Device for Printed Texts</h3>
 <p>Hayley Song, Suvrit Sra</p>
-<p><a href="/pdfs/free-flow-hjsong.pdf">paper</a>, <a href="/pdfs/free-flow-hjsong-poster.png">poster</a> (2016 Spring)</p>
-<p><img alt="free-flow-demo" src="/pdfs/free-flow-demo.png"/>
-<img alt="free-flow-workflow" src="/pdfs/free-flow-workflow.png"/></p>
-<p>FreeFlow is a software for the pen-style, hand-held device that allows a user to search for definitions by &ldquo;clicking&rdquo; on the printed text. It is the first end-to-end system that performs such functions with high accuracy (95%) under variable illumination and motion blur from hand movements. It is composed of the four main modules: 1) capture, 2) preprocessing, 3) recogtnition and 4) dictionary search. In this paper, we discuss the details of our system and its performances under various real-world settings.</p>
+<!-- <div class="image-text-container"> -->
+<div class="imgContainer">
+<div class="image">
+<img alt="free-flow-demo" src="/pdfs/free-flow-demo.png"/>
+<img alt="free-flow-workflow" src="/pdfs/free-flow-workflow.png"/>
+</div>
+<div class="text">
+<p> FreeFlow is a software for the pen-style, hand-held device that allows a user to search for definitions by &ldquo;clicking&rdquo; on the printed text. It is the first end-to-end system that performs such functions with high accuracy (95%) under variable illumination and motion blur from hand movements. It is composed of the four main modules: (1) capture, (2) preprocessing, (3) recogtnition and (4) dictionary search. In this paper, we discuss the details of our system and its performances under various real-world settings.
+        </p>
+</div>
+</div>
+<p><a href="/pdfs/free-flow-hjsong.pdf">paper</a>, <a href="/pdfs/free-flow-hjsong-poster.png">poster</a> (2016 Spring; MIT SuperUROP sponsored project)</p>
+<!-- 
+![free-flow-demo](/pdfs/free-flow-demo.png)
+![free-flow-workflow](/pdfs/free-flow-workflow.png) -->
 <hr/>
 <h3 id="3d-air-gesture-recognizer-using-dynamic-time-warping-and-knn">3D Air Gesture Recognizer using Dynamic Time Warping and KNN</h3>
 <p>Hayley Song*, Chongyuan Xiang*</p>
@@ -193,6 +279,25 @@
 <p><img alt="3d-air-gesture-workflow" src="/pdfs/3d-air-gesture-workflow.png"/></p>
 <hr/>
 <p>(*: Equal contribution)</p>
+<!-- js
+<table width="100%" border="0" cellspacing="5" cellpadding="0">
+    <tr>
+        <td>
+            <img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg" width="100" height="150"  style="padding:10px;" alt="" />
+        </td>
+        <td>
+            Shnitzer, Tal, Anthony Ou, M&iacute;rian Silva, Kate Soule, Yuekai Sun, Justin Solomon, Neil Thompson, and Mikhail Yurochkin. &quot;Large Language Model Routing with Benchmark Datasets.&quot; <a href="https://colmweb.org/">Conference on Language Modeling</a> 2024, Philadelphia. ArXiv: <a href="https://arxiv.org/pdf/2309.15789.pdf">2309.15789</a>. 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="assets/compressserve.jpg" width="150" height="150" alt="" />
+        </td>
+        <td>
+            Gabrielsson, Rickard, Jiacheng Zhu, Onkar Bhardwaj, Leshem Choshen, Kristjan Greenewald, Mikhail Yurochkin, and Justin Solomon. &quot;Compress then Serve: Serving Thousands of LoRA Adapters with Little Overhead.&quot;  <a href="https://es-fomo.com/">Efficient Systems for Foundation Models</a> (ICML 2024 workshop). ArXiv: <a href="https://arxiv.org/pdf/2407.00066.pdf">2407.00066</a>. 
+        </td>
+    </tr>
+</table> -->
             </div>
 
             <div class="clear"></div>
