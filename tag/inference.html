@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Small Simplicity | articles tagged "inference"</title>
+    <link rel="shortcut icon" type="image/png" href="https://cocoaaa.github.io/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
+    <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="Hayley Song" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="ephemeral selected"><a href="https://cocoaaa.github.io/tag/inference.html">inference</a></li>
+                <li><a href="https://cocoaaa.github.io/">Home</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/about-me">About</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/publications">Publications</a></li>
+                <li><a href="https://cocoaaa.github.io/blog_index">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="https://cocoaaa.github.io/">Small Simplicity</a></h1>
+            <h2>Understanding Intelligence from Computational Perspective</h2>
+        </div>
+    </header>
+
+
+    <div id="wrapper" class="pure-g">
+
+        <div id="content pure-u-1 pure-u-md-4-5">
+<h4 class="date">Feb 01, 2020</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2020/02/01/bayesian-data-analysis-for-dummies-like-me" rel="bookmark" title="Permanent Link to &quot;Bayesian Data Analysis for dummies like me&quot;">Bayesian Data Analysis for dummies like me</a>
+</h2>
+
+
+<h2 id="explaining-physical-phenomenon-consistent-with-observations">Explaining physical phenomenon consistent with observations</h2>
+<p>Bayesian data analysis is a way to iteratively building a mathemtical description of a physical phenomenon of interest using observed data. </p>
+<h2 id="setup">Setup</h2>
+<p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (<span class="math">\(\theta\)</span>) as more evidence or information becomes available [wikipedia].</p>
+<p>Therefore, it is used in the following scenario. I'll refer to the workflow as the workflow of "Bayesian data analysis" following Gelman.</p>
+<ol>
+<li>
+<p>We have some physical phenomenon (aka. process) of interest that we want to describe with mathematical language. Why? because once we have the description (aka. mathematical model of the physical phenomenon), we can use it to explain how the phenomenon works as a function of its inner components, predict how it would behave as the inner components or its input variables take different values, (... any other usage of the mathematical model?)</p>
+</li>
+<li>
+<p>We decide how to describe the phenomenon using a mathematical language by specifying:</p>
+<ul>
+<li>Variables </li>
+<li>Relations
+This is the step of "choosing a model family (aka. a statistical model)"</li>
+</ul>
+</li>
+<li>
+<p>Now we have specified a family of probability models, each of which corresponds to a particular hypothesis/explanation of the physical process of interest. What we need to do is, to choose the "best" hypothesis from all of these possible hypotheses. To do so, we need to observe how the physical phenomenon manifests by collecting data of the outcomes of the phenomenon.</p>
+</li>
+<li>
+<p>Collect data of the outcomes of the phenomenon.</p>
+</li>
+<li>
+<p>"Learn"/"Fit" the model to the data.  (aka, "estimate" the parameters (<span class="math">\(\theta\)</span>) with the data). In English, this corresponds to "find a hypothesis of the phenomenon that matches the observed data "best"".  To find such hypothesis <span class="math">\(\theta \in \Theta\)</span>, we need to define what is means to be the "best" hypothesis given the model (aka. Hypothesis space) and the observed data. We formulate this step as an optimization problem:</p>
+<ul>
+<li>choose a loss function <span class="math">\(L(\theta \mid \text{model}, \bar{X})\)</span></li>
+<li>Solve the optimization problem of finding argmin of the loss:
+  <div class="math">$$ \theta^{*} = \arg min  ~~ L(\theta \mid \text{model}, \bar{x})$$</div>
+</li>
+<li>Note: <span class="math">\(L(\theta \mid \text{model}, \bar{x}) \equiv L(\theta \mid \Theta, \bar{X})\)</span>. So we can rewrite the optimization objection as: 
+  <div class="math">$$ \theta^{*} = \arg min_{\theta \in \Theta}  ~~ L(\theta \mid  \bar{x})$$</div>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="more-specific-scenario-a-phenomenon-with-unobservable-variables">More specific scenario: a phenomenon with unobservable variables</h2>
+<p>Most physical phenomenon involves variables that we can't directly observe. These are called "Latent variables", and a statiscal model with such unobservable variables (in addition to observed/data variables) are called "Latent Variable Model".  When we are focusing on the latent variable model, we often use <span class="math">\(Z\)</span> as the latent variables and <span class="math">\(X\)</span> as the data sample variable. That is, if we have <span class="math">\(N\)</span> observation, the sample variable will be a vector of <span class="math">\(N\)</span> data variables: <span class="math">\(X = {X_1, X_2, \dots , X_N }\)</span>.  The general setup of Bayesian data analysis workflow above (ie. choose a model <span class="math">\(\rightarrow\)</span> collect data <span class="math">\(\rightarrow\)</span> fit the model to the data <span class="math">\(\rightarrow\)</span> criticize the model <span class="math">\(\rightarrow\)</span> repeat).  We can express the bayesian data analysis workflow using these notations as follows:
+(Note these notations are consistent with Blei MLSS2019.)</p>
+<ul>
+<li>In English, describe what is the physical phenomenon of interest</li>
+<li>
+<p>Choose a statistical model by specifying</p>
+<ul>
+<li>variables (nodes in the graph)<ul>
+<li>data variables (aka. observable variables): <span class="math">\(X\)</span></li>
+<li>latent variables: <span class="math">\(Z\)</span></li>
+</ul>
+</li>
+<li>relations (edges in the graph)<ul>
+<li>as a (parametrized) function of its nodes<br/>
+Let's denote the set of all parameters in the model, <span class="math">\(\theta\)</span>. Our statistical model can be expressed as: <span class="math">\(P(Z,X; \theta)\)</span>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Collect data: <span class="math">\(\bar{X}\)</span></p>
+</li>
+<li>Fit the model to the observed data<ul>
+<li>Choose a loss function (a function wrt parameters): <span class="math">\(L(\theta;\bar{X})\)</span> for <span class="math">\(\theta \in \Theta\)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="inference">Inference</h2>
+<p>Generally speaking, inference (which stems from the Philosophy of Science)</p>
+<h3 id="bayesian-inference-method">Bayesian inference method</h3>
+<p>Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis(<span class="math">\(\theta\)</span>) as more evidence or information becomes available <a href="#">wikipedia</a>.</p>
+<ul>
+<li>My sketch<br/>
+<img alt="bayesian-inference" src="/images/bayesian/bayesian-inference.jpg"/></li>
+</ul>
+<p>It is <strong>not</strong> a model, it is a general <strong>method</strong>(aka. <strong>technique</strong>, <strong>algorithm</strong>) that allows to infer unknowns probabilistically via computing, eg. marginal and conditional distributions of the model, the distribution over the parameters given observed data, the conditional distribution over the latent variables given the observed data.  </p>
+<p>Since it is a general technique (or an appoarch to doing inference) that is not tied to a specific model or a problem, we can use it whenever a suitable setup is presented.  In the Bayesian Data analysis workflow, I see two places where we can use the Bayes theorem to infer some unknown quantities in the model (ie. use bayesian inference to compute unknowns given knowns).</p>
+<ol>
+<li>
+<p>Use bayesian inference method to learn the model from the observed data. That is, what is the probability of the parameter of the model given observation?
+<div class="math">$$ P(\theta \mid \bar{X})$$</div>
+</p>
+</li>
+<li>
+<p>Use bayes' theorem to compute the conditional distribution of latent variables given observed data and a fixed parameter (eg. the learned parameter from step 1)
+<div class="math">$$ P(Z \mid \bar{X}, \bar{\theta})$$</div>
+</p>
+</li>
+</ol>
+<p>Note: I was living in the smog under the impression that "Bayesian inference" is tied to either 1 or 2. But now I understand "bayesian inference" just means computing probability distribution over the unknowns (either because they are unobservable (ie. conditional distribution of latent variables given observed data), or a subset of variables (ie. marginal distribution) that requires further computation on the joint distribution (aka. the probability model)). So, as Wikipedia's definition clarifies, anytime we have a quantity (with prior distribution) and make observations regarding a relevant process, we can <strong>update</strong> the prior distribution using the observed data via Bayes Theorem. That is all that is in the intimidating word "Bayesian inference". Gosh, can we please give another name to this way of doing computation with a probability model and  data assumed to come from the probability model? "Inference" is such intimidating word. I feel like I need to do philosophy to use this word and everytime I hear this term, I feel like I never understand what the heck it is about because I don't understand what inference means in Philosophy. Yikes! :[</p>
+<h2 id="approximate-inference_1">Approximate Inference</h2>
+<p>When we cannot compute the "flipped" probability ("flipped" using the Bayes Theorem) because it is, for example, too computationally expensive, we sometimes resort to an approximation of the true "flipped" probability. </p>
+<h3 id="variational-approximate-inference">Variational Approximate Inference</h3>
+<p>People call this "Variational Bayes", which I find it very loaded and unclear whether if the term refers to a method of inference or some model family because both "V" and "B" are captialized and it gives me an impressions that it's a name of some specific class of probability distributions. Yikes2! :[ Please give another name to it. </p>
+<p>Variational Approximate Bayesian Inference is:</p>
+<blockquote>
+<p>a method of finding a "good" <strong>approximate</strong> distribution to the "flipped" distribution of your probability model (ie. <span class="math">\(P\)</span> with a fixed parameter <span class="math">\(\bar{\theta}\)</span>) (ie2: <strong>"flipped" using Bayes theorem</strong> given your probability model) by formulating a proper <strong>optimization</strong> problem. </p>
+</blockquote>
+<p>So far, we have discussed about "bayesian inference", and the need to sometimes be content with an "approximation" to the "flipped" distribution (given a fixed parameter and observed data). The last thing to understand is the "variational" part, which correpsonds to formulating the search for a "good" approximation distribution as an optimization problem. As usual for an optimization problem, we need to define "goodness", or in this case "loss"</p>
+<ul>
+<li>Sketch for understanding the motivation for variational bayesian inference method (aka. Variational Bayes)</li>
+</ul>
+<p><img alt="variational-bayes" src="/images/bayesian/variational-bayes.jpg"/></p>
+<p>To be continued...</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+<div class="clear"></div>
+
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2020/02/01/bayesian-data-analysis-for-dummies-like-me">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/ML" rel="tag">ML</a>
+    &nbsp;&middot;
+    &nbsp;<a href="https://cocoaaa.github.io/tag/bayesian.html" class="tags">bayesian</a>
+    &nbsp;<a href="https://cocoaaa.github.io/tag/inference.html" class="tags selected">inference</a>
+    &nbsp;<a href="https://cocoaaa.github.io/tag/variational.html" class="tags">variational</a>
+</div>
+
+</article>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+                &middot;
+                <a href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="alternate">Atom Feed</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Small Simplicity | articles tagged "similarity"</title>
+    <link rel="shortcut icon" type="image/png" href="https://cocoaaa.github.io/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
+    <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="Hayley Song" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="ephemeral selected"><a href="https://cocoaaa.github.io/tag/similarity.html">similarity</a></li>
+                <li><a href="https://cocoaaa.github.io/">Home</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/about-me">About</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/publications">Publications</a></li>
+                <li><a href="https://cocoaaa.github.io/blog_index">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="https://cocoaaa.github.io/">Small Simplicity</a></h1>
+            <h2>Understanding Intelligence from Computational Perspective</h2>
+        </div>
+    </header>
+
+
+    <div id="wrapper" class="pure-g">
+
+        <div id="content pure-u-1 pure-u-md-4-5">
+<h4 class="date">Feb 22, 2020</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2020/02/22/kl-divergence" rel="bookmark" title="Permanent Link to &quot;KL Divergence&quot;">KL Divergence</a>
+</h2>
+
+
+<h2 id="resource">Resource</h2>
+<ul>
+<li><a href="https://tinyurl.com/uta23v5">Lec on VAE</a>, by Ali Ghodsi: This lecture motivates KL Divergence as the measurement of difference in the average information content of two random varialbes, whose distributions are <span class="math">\(p\)</span> and <span class="math">\(q\)</span> in in the article.</li>
+<li><a href="https://en.wikipedia.org/wiki/Kullback&ndash;Leibler_divergence">Wiki</a>: It clears up different terminologies that are (misused) to refer to the KL.</li>
+<li><a href="http://tuvalu.santafe.edu/~simon/it.pdf">Information Theory for Intelligent People</a>, by Simon Dedeo<ul>
+<li>It gives a great example of "answering 20 questions" problem as a way to think about basic concepts in info theory, including entropy, KL divergence and mutual information.</li>
+<li><span class="math">\(H(X)\)</span> is equal to the average <em>length of an arbitrary tree</em>, which is the number of questions to get to choice <span class="math">\(x\)</span></li>
+<li>"(Using <span class="math">\(H(X)\)</span>,) (f)or any probability distribution, we can now talk about "how uncertain we are about the outcome", "how much information is in the process", or "how much entropy the process has", and even measure it, in bits" (p.3)</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+<div class="clear"></div>
+
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2020/02/22/kl-divergence">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/ML" rel="tag">ML</a>
+    &nbsp;&middot;
+    &nbsp;<a href="https://cocoaaa.github.io/tag/divergence.html" class="tags">divergence</a>
+    &nbsp;<a href="https://cocoaaa.github.io/tag/similarity.html" class="tags selected">similarity</a>
+</div>
+
+</article>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+                &middot;
+                <a href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="alternate">Atom Feed</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+
+</html>

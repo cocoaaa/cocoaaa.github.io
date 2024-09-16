@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Small Simplicity | Let's blog with Pelican</title>
+    <link rel="shortcut icon" type="image/png" href="https://cocoaaa.github.io/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
+    <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
+    <link href="https://cocoaaa.github.io/feeds/TIL.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Categories Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="Hayley Song" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://cocoaaa.github.io/">Home</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/about-me">About</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/publications">Publications</a></li>
+                <li><a href="https://cocoaaa.github.io/blog_index">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="https://cocoaaa.github.io/">Small Simplicity</a></h1>
+            <h2>Understanding Intelligence from Computational Perspective</h2>
+        </div>
+    </header>
+
+
+    <div id="wrapper" class="pure-g">
+
+        <div id="content pure-u-1 pure-u-md-4-5">
+<h4 class="date">Jan 10, 2020</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2020/01/10/lets-blog-with-pelican" rel="bookmark" title="Permanent Link to &quot;Let's blog with Pelican&quot;">Let's blog with Pelican</a>
+</h2>
+
+
+<h2 id="makefile">Makefile</h2>
+<ol>
+<li>
+<p><code>make html</code>: generates output html files from files in <code>content</code> folder using
+development config file</p>
+<ul>
+<li><code>make regenerate</code>: do <code>make html</code> with "listening" to new changes</li>
+<li>vs. <code>make publish</code>: similar to <code>make html</code> except it uses settings in <code>pulishconf.py</code></li>
+</ul>
+</li>
+<li>
+<p><code>make serve</code>: (re)starts a http server in the <code>output</code> folder. Default port is 8000</p>
+</li>
+<li>Go to <code>localhost:&lt;PORT&gt;</code> to see the output website</li>
+<li><code>ghp-import -b &lt;local-gh-branch&gt; &lt;outputdir&gt;</code>: imports content in <output> to 
+the local branch <code>local-gh-branch</code></output></li>
+</ol>
+<h2 id="workflow">Workflow</h2>
+<p>Key points:</p>
+<ul>
+<li>Do every work in <code>dev</code> branch. </li>
+<li>Do not touch <code>blog-build</code> or <code>master</code>. </li>
+<li><code>blog-build</code> will be indirectly modified by <code>ghp-import</code> (or <code>make publish-to-github</code>)</li>
+<li>and <code>master</code> is the branch that Github will access to show my website. </li>
+<li>So, manage the source (and outputs) only in <code>dev</code> branch.</li>
+</ul>
+<h3 id="local-dev">Local dev</h3>
+<ol>
+<li>Activate the right conda env with <code>pelican</code> library</li>
+</ol>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>activate<span class="w"> </span>my-blog<span class="w"> </span>
+
+<span class="nb">cd</span><span class="w"> </span>~/Workspace/Blog
+</code></pre></div>
+<ol>
+<li>
+<p>Make sure you are on <code>dev</code> branch
+git checkout dev</p>
+</li>
+<li>
+<p>(this step is for github syncing) Add new files  under <code>content</code>
+git add my-article.md</p>
+</li>
+<li>
+<p>Generate the content with pelican
+make html # or, make regenerate </p>
+</li>
+<li>
+<p>Start a local server 
+make server</p>
+</li>
+<li>
+<p>Open a browser and go to localhost:8000 
+Or whatever the port number is, set in Makefile (under the variable name of PORT)</p>
+</li>
+</ol>
+<h3 id="global-dev">Global dev</h3>
+<ol>
+<li>Use <code>make publish</code> instead of <code>make html</code></li>
+<li>Update the <code>blog-build</code> branch with contents in <code>output</code> folder</li>
+<li>Push the <code>blog-build</code> branch's content to <code>origin/master</code></li>
+</ol>
+<p>These three steps can be done in one line: </p>
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>publish-to-github
+</code></pre></div>
+<h3 id="version-control-the-source">Version control the source</h3>
+<p>Important: Write new contents only on the <code>dev</code> branch</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>&lt;files&gt;<span class="w"> </span><span class="c1"># make sure not to push the output folder</span>
+
+git<span class="w"> </span>cm<span class="w"> </span><span class="s2">"&lt;commit message&gt;"</span>
+
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>dev<span class="w"> </span><span class="c1">#origin/dev is the remote branch that keeps track of blog sources</span>
+</code></pre></div>
+<div class="clear"></div>
+
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2020/01/10/lets-blog-with-pelican">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+</div>
+
+</article>
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+                &middot;
+                <a href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="alternate">Atom Feed</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+
+</html>

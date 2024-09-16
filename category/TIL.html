@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Small Simplicity | articles in the "TIL (Today I Learned)" category</title>
+    <link rel="shortcut icon" type="image/png" href="https://cocoaaa.github.io/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
+    <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
+    <link href="https://cocoaaa.github.io/feeds/TIL.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Categories Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="Hayley Song" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li class="ephemeral selected"><a href="https://cocoaaa.github.io/category/TIL.html">TIL (Today I Learned)</a></li>
+                <li><a href="https://cocoaaa.github.io/">Home</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/about-me">About</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/publications">Publications</a></li>
+                <li><a href="https://cocoaaa.github.io/blog_index">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="https://cocoaaa.github.io/">Small Simplicity</a></h1>
+            <h2>Understanding Intelligence from Computational Perspective</h2>
+        </div>
+    </header>
+
+
+    <div id="wrapper" class="pure-g">
+
+        <div id="content pure-u-1 pure-u-md-4-5">
+<h4 class="date">Feb 01, 2020</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2020/02/01/multimodal-distribution-in-image-or-text-domain" rel="bookmark" title="Permanent Link to &quot;Multimodal Distribution in Image or Text domain&quot;">Multimodal Distribution in Image or Text domain</a>
+</h2>
+
+
+<p>Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?</p>
+<p>While reading papers on conditional image generation using generative modeling (eg. <a href="https://tinyurl.com/s5drg9c">"Toward Multimodal Image-to-Image Translation"</a> by Zhu et al (NIPS 2017)), I wasn't clear what was meant by "one-to-many mapping" between input image domain and output image domain, "multimodal distribution" in the output image domain, or "multi-modal outputs" (eg. <a href="https://tinyurl.com/szjmmzf">Quora</a>). </p>
+<h3 id="definition">Definition</h3>
+<blockquote>
+<p>In statistics, a <code>multimodal distribution</code> is a continuous probability distribution with two or more modes (distinct peaks; local maxima) - <a href="https://tinyurl.com/pa47gte">wikipedia</a></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>(single-variable) bimodal distribution</th>
+<th>bivariate multimodal distribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="bimodal" src="/images/bimodal.png"/></td>
+<td><img alt="bivariate-multimodal" src="/images/bivariate-multimodal.png"/></td>
+</tr>
+</tbody>
+</table>
+<!--|<img src="/images/bimodal.png" alt="bimodal" width="250px"/> | <img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" width="250px"/>-->
+<p>In high-dimensional space (such as an Image domain: <span class="math">\(P(X)\)</span> where X lives in <span class="math">\(d\)</span>-dim space where <span class="math">\(d\)</span> is the number of pixels, eg. <span class="math">\(32x32=1024\)</span>. If each pixel <span class="math">\(X_i\)</span> takes a binary value (0 or 1), the size of this image domain is <span class="math">\(2^{1024}\)</span>.  If each pixel takes an integer value <span class="math">\(\in [0,255]\)</span>, then the size of this image domain is <span class="math">\(256^{1024}\)</span>. This, by the way, is too big to compute for Mac's spotlight:</p>
+<p><img alt="too-big" src="/images/too-big.png" width="500px"/> </p>
+<p>What it means by saying "the distribution of (output) image is multimodal" is to say, there are multiple images (ie. realization of the random variable (vector) X) with the (local) maxima value of the probability. In Figure below, the green dots represent the local maxima, ie. modes of the distribution. The configurations (ie. specific values/realizations) that achieves the (local) maximum probability density are the "probable/likely" images. </p>
+<figure>
+<img alt="gan-multimodal-outputs" src="images/gan-multimodal-outputs.jpg" width="250px"/>
+<img alt="multimodal-annot" src="images/bivariate-multimodal-annot.png" width="250px"/>
+<figcaption>The green dots representing modes of the distribution over the image domain (which is abstracted into a 2Dim space for visualization, in this case)</figcaption>
+</figure>
+<p>So, given one input image, if the distribution of the output image random variable is multi-modal, the standard problem of <pre>Find <span class="math">\(x\)</span> s.t. <span class="math">\(\underset{x \in \mathcal{X}}{\arg\max} P(X)\)</span> (<span class="math">\(\mathcal{X}\)</span> is the image space)</pre> has multiple solutions. According to the paper (Toward Multimodal Image-to-Image Translation), many previous works have produced a "single" output image as "the" argmax of the output image distribution. But this is not accurate if the output image distribution is multi-modal.  We would like to see/generate as many of those argmax configurations/output images. One way to do so, is by sampling from the output image distribution.  This is the paper's approach. </p>
+<hr/>
+<h3 id="multimodal-distribution-as-the-distribution-over-the-space-of-target-domains-domain-adaptiontransfer-leraning">Multimodal distribution as the distribution over the space of target domains [Domain adaption/transfer leraning]</h3>
+<p>So far, I viewed the multimodal distribution as a distribution over a specific domain (eg. Image domain), and the random variable corresponded to a realization, eg. an observed/sampled/output image instance. However, </p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+<div class="clear"></div>
+
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2020/02/01/multimodal-distribution-in-image-or-text-domain">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+    &nbsp;&middot;
+    &nbsp;<a href="https://cocoaaa.github.io/tag/generative-modeling.html" class="tags">generative-modeling</a>
+    &nbsp;<a href="https://cocoaaa.github.io/tag/multimodal.html" class="tags">multimodal</a>
+    &nbsp;<a href="https://cocoaaa.github.io/tag/one-to-many-mapping.html" class="tags">one-to-many-mapping</a>
+</div>
+
+</article><h4 class="date">Jan 20, 2020</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking-predictive-non-determinism" rel="bookmark" title="Permanent Link to &quot;Stochastic Thinking: Predictive non-determinism&quot;">Stochastic Thinking: Predictive non-determinism</a>
+</h2>
+
+
+<p>MIT 6.0002 Lec4: Stochastic Thinking
+- <a href="https://www.youtube.com/watch?v=-1BnXEwHUok">YOUTUBE</a>
+- <img alt="predictive-nondeterminism" src="images/predictive-nondeterminism.png"/></p>
+<p>Often confusing categorization of a mathematical model:
+- <a href="https://tinyurl.com/sxg4ejt">SE</a>
+    - NB: in CS, people often use "deterministic" to mean non-randomized. This causes confusion:
+        &gt; "Determinism" means non-randomized. But, "Non-determinism" does <strong>not</strong> mean "randomized".
+- Determinism vs. Non-Determinism
+- ...? vs. stochastic/random 
+    - a stochastic (or random) process means, </p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;p</span><span class="w"> </span><span class="err">hidden</span><span class="nt">&gt;</span>![stochastic-process](images/stochastic-process.png)<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
+<p>I think better way to put this confusion into words is: "Nondeterinistc vs. Probabilistic models"
+- <a href="http://planning.cs.uiuc.edu/node440.html">lavalle 2006</a></p>
+<div class="clear"></div>
+
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking-predictive-non-determinism">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+</div>
+
+</article><h4 class="date">Jan 10, 2020</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2020/01/10/lets-blog-with-pelican" rel="bookmark" title="Permanent Link to &quot;Let's blog with Pelican&quot;">Let's blog with Pelican</a>
+</h2>
+
+
+<h2 id="makefile">Makefile</h2>
+<ol>
+<li>
+<p><code>make html</code>: generates output html files from files in <code>content</code> folder using
+development config file</p>
+<ul>
+<li><code>make regenerate</code>: do <code>make html</code> with "listening" to new changes</li>
+<li>vs. <code>make publish</code>: similar to <code>make html</code> except it uses settings in <code>pulishconf.py</code></li>
+</ul>
+</li>
+<li>
+<p><code>make serve</code>: (re)starts a http server in the <code>output</code> folder. Default port is 8000</p>
+</li>
+<li>Go to <code>localhost:&lt;PORT&gt;</code> to see the output website</li>
+<li><code>ghp-import -b &lt;local-gh-branch&gt; &lt;outputdir&gt;</code>: imports content in <output> to 
+the local branch <code>local-gh-branch</code></output></li>
+</ol>
+<h2 id="workflow">Workflow</h2>
+<p>Key points:</p>
+<ul>
+<li>Do every work in <code>dev</code> branch. </li>
+<li>Do not touch <code>blog-build</code> or <code>master</code>. </li>
+<li><code>blog-build</code> will be indirectly modified by <code>ghp-import</code> (or <code>make publish-to-github</code>)</li>
+<li>and <code>master</code> is the branch that Github will access to show my website. </li>
+<li>So, manage the source (and outputs) only in <code>dev</code> branch.</li>
+</ul>
+<h3 id="local-dev">Local dev</h3>
+<ol>
+<li>Activate the right conda env with <code>pelican</code> library</li>
+</ol>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>activate<span class="w"> </span>my-blog<span class="w"> </span>
+
+<span class="nb">cd</span><span class="w"> </span>~/Workspace/Blog
+</code></pre></div>
+<ol>
+<li>
+<p>Make sure you are on <code>dev</code> branch
+git checkout dev</p>
+</li>
+<li>
+<p>(this step is for github syncing) Add new files  under <code>content</code>
+git add my-article.md</p>
+</li>
+<li>
+<p>Generate the content with pelican
+make html # or, make regenerate </p>
+</li>
+<li>
+<p>Start a local server 
+make server</p>
+</li>
+<li>
+<p>Open a browser and go to localhost:8000 
+Or whatever the port number is, set in Makefile (under the variable name of PORT)</p>
+</li>
+</ol>
+<h3 id="global-dev">Global dev</h3>
+<ol>
+<li>Use <code>make publish</code> instead of <code>make html</code></li>
+<li>Update the <code>blog-build</code> branch with contents in <code>output</code> folder</li>
+<li>Push the <code>blog-build</code> branch's content to <code>origin/master</code></li>
+</ol>
+<p>These three steps can be done in one line: </p>
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>publish-to-github
+</code></pre></div>
+<h3 id="version-control-the-source">Version control the source</h3>
+<p>Important: Write new contents only on the <code>dev</code> branch</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>&lt;files&gt;<span class="w"> </span><span class="c1"># make sure not to push the output folder</span>
+
+git<span class="w"> </span>cm<span class="w"> </span><span class="s2">"&lt;commit message&gt;"</span>
+
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>dev<span class="w"> </span><span class="c1">#origin/dev is the remote branch that keeps track of blog sources</span>
+</code></pre></div>
+<div class="clear"></div>
+
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2020/01/10/lets-blog-with-pelican">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+</div>
+
+</article><h4 class="date">Dec 31, 2019</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2019/12/31/cool-chart-tool-amcharts" rel="bookmark" title="Permanent Link to &quot;Cool Chart tool: `amcharts`&quot;">Cool Chart tool: `amcharts`</a>
+</h2>
+
+
+<p>While making a visualization for my part whereabouts for the <a href="#">front page</a> of this blog, I came across this easy-to-use visualization examples using <code>amcharts</code>.  Initially, I wanted to use Google Earth Studio but it required me to import country boundaries (in KML files) as well as time to learn new toolsuites, so I find this javascript based demos more useful for my need. </p>
+<p>List of timeline + map charts
+- <a href="https://www.amcharts.com/demos/fishbone-timeline/">Fishbone timeline</a>
+- <a href="https://www.amcharts.com/demos/flight-routes-map/">Fight routes on map</a>
+- <a href="https://www.amcharts.com/demos/animations-along-lines/">Flight animation on map</a>
+- <a href="https://www.amcharts.com/demos/map-line-chart-gauge/">Timeline animation with fligh on map</a>
+- and many more <a href="https://www.amcharts.com/demos/#maps">demos</a></p>
+<p>Pretty neat!</p>
+<div class="clear"></div>
+
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2019/12/31/cool-chart-tool-amcharts">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+</div>
+
+</article><h4 class="date">Jan 01, 2017</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec" rel="bookmark" title="Permanent Link to &quot;Git refspec&quot;">Git refspec</a>
+</h2>
+
+
+<p>Resource: <a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec">git-book</a></p>
+<h2 id="git-remotes">Git Remotes</h2>
+<blockquote>
+<p>Remote repositories: versions of your project that are hosted on the internet</p>
+</blockquote>
+<h3 id="git-remote-v"><code>git remote -v</code></h3>
+<p>Let's say I cloned a repository from some repository, for instance
+<code>git@github.com:cocoaaa/dip.git</code>, by running:</p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">cocoaaa</span><span class="o">/</span><span class="n">dip</span><span class="o">.</span><span class="n">git</span>
+</code></pre></div>
+<p>Then, in this cloned repo's directory in my local machine, 
+<code>git remote</code> will list the shortnames of each remote handle I've specified. 
+By default, Git gives to the server I've just cloned the shortname, <code>origin</code>.
+Use <code>git remote -v</code> to see both the shortname and the URLs that Git has stored for
+each shortname to use for reading and writing to that remote.</p>
+<p><img alt="git-remote" src="https://cocoaaa.github.io/images/git-remote.png"/></p>
+<h3 id="git-remote-add"><code>git remote add &lt;shortname&gt; &lt;URL&gt;</code></h3>
+<dl>
+<dd>adds a remote in <code>&lt;URL&gt;</code> with the shortname of <code>&lt;shortname&gt;</code></dd>
+</dl>
+<h3 id="git-fetch"><code>git fetch &lt;remote&gt;</code></h3>
+<p>The command goes out to that remote project and pulls down all the data from that
+remote project that I don't have yet. It does so for all branches in the remote.
+Upon the command execution, I should have references to all the branches from that
+remote, and I can merge in or inspect them at any time.</p>
+<p>Remember that <code>git fetch</code> command only downloads the data to my local repository,
+and does <em>NOT</em> automatically merge it with any of my work or modify what I'm currently
+working on. So, it is safer than <code>git pull</code>, yet I'm required to merge it into my 
+work whenever I'm ready. </p>
+<p>For fetching and pushing, my current branch needs be set up to track a remote 
+<em>branch</em>. In other words, setting up the URL to the remote repository is not enough, 
+and we need to specify which local branch will track which remote branch.  </p>
+<p><code>git clone &lt;some-repo-url&gt;</code> automatically sets up my local <code>master</code> branch to 
+track the remote default branch (often also <code>master</code>) on the server I cloned from,
+ie. <code>&lt;URL&gt;</code>.</p>
+<h3 id="push-my-local-changes-to-the-remote-server-upstream">Push my (local) changes to the remote server (upstream)</h3>
+<p><code>git push &lt;remote&gt; &lt;branch&gt;</code> pushes my local <code>branch</code> to my <code>remote</code> server. 
+For example, if I want to push my <code>master</code> branch to my <code>origin</code> server (recall 
+that these names are set up by <code>git clone &lt;some-repo-url&gt;</code> command automatically),
+run: <code>git push origin master</code>. Again, <code>origin</code> is the shortname assigned to the 
+remote server URL, and <code>master</code> is the name of the local branch I'm pushing.</p>
+<p>If I want to push my local <code>dev-local</code> branch to my remote repository called <code>origin</code>'s 
+<code>dev-remote</code> branch, I'd run <code>git push origin dev-local:dev-remote</code>. 
+The colon syntax follows <code>src_refspec</code>:<code>dst_refspec</code> where <code>src_refspec</code> and <code>dst_refspec</code>
+are the refspecs of the source branch (in local) and the destination branch (in remote)
+of the <code>git push</code> action, respectively.</p>
+<blockquote>
+<p>Q: wait, we don't need to specify which branch in the remote server to push 
+the local branch?</p>
+</blockquote>
+<h3 id="inspecting-a-remote">Inspecting a remote</h3>
+<p><code>git remote show &lt;remote-shortname&gt;</code> command shows the details of the particular 
+remote. </p>
+<p><img alt="git-remote-show" src="https://cocoaaa.github.io/images/git-remote-show.png"/></p>
+<div class="clear"></div>
+
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+</div>
+
+</article>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+                &middot;
+                <a href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="alternate">Atom Feed</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+
+</html>

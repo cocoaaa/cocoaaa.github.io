@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - TIL (Today I Learned)</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/TIL.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2022-06-14T23:43:56-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Multimodal Distribution in Image or Text domain</title><link href="https://cocoaaa.github.io/articles/2020/02/01/multimodal-distribution-in-image-or-text-domain" rel="alternate"></link><published>2020-02-01T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-01:/articles/2020/02/01/multimodal-distribution-in-image-or-text-domain</id><summary type="html">&lt;p&gt;Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?&lt;/p&gt;
+&lt;p&gt;While reading papers on conditional image generation using generative modeling (eg. &lt;a href="https://tinyurl.com/s5drg9c"&gt;"Toward Multimodal Image-to-Image Translation"&lt;/a&gt; by Zhu et al (NIPS 2017)), I wasn't clear what was meant by "one-to-many mapping" between input image domain and output image …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?&lt;/p&gt;
+&lt;p&gt;While reading papers on conditional image generation using generative modeling (eg. &lt;a href="https://tinyurl.com/s5drg9c"&gt;"Toward Multimodal Image-to-Image Translation"&lt;/a&gt; by Zhu et al (NIPS 2017)), I wasn't clear what was meant by "one-to-many mapping" between input image domain and output image domain, "multimodal distribution" in the output image domain, or "multi-modal outputs" (eg. &lt;a href="https://tinyurl.com/szjmmzf"&gt;Quora&lt;/a&gt;). &lt;/p&gt;
+&lt;h3 id="definition"&gt;Definition&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In statistics, a &lt;code&gt;multimodal distribution&lt;/code&gt; is a continuous probability distribution with two or more modes (distinct peaks; local maxima) - &lt;a href="https://tinyurl.com/pa47gte"&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;(single-variable) bimodal distribution&lt;/th&gt;
+&lt;th&gt;bivariate multimodal distribution&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img alt="bimodal" src="/images/bimodal.png"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="bivariate-multimodal" src="/images/bivariate-multimodal.png"/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--|&lt;img src="/images/bimodal.png" alt="bimodal" width="250px"/&gt; | &lt;img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" width="250px"/&gt;--&gt;
+&lt;p&gt;In high-dimensional space (such as an Image domain: &lt;span class="math"&gt;\(P(X)\)&lt;/span&gt; where X lives in &lt;span class="math"&gt;\(d\)&lt;/span&gt;-dim space where &lt;span class="math"&gt;\(d\)&lt;/span&gt; is the number of pixels, eg. &lt;span class="math"&gt;\(32x32=1024\)&lt;/span&gt;. If each pixel &lt;span class="math"&gt;\(X_i\)&lt;/span&gt; takes a binary value (0 or 1), the size of this image domain is &lt;span class="math"&gt;\(2^{1024}\)&lt;/span&gt;.  If each pixel takes an integer value &lt;span class="math"&gt;\(\in [0,255]\)&lt;/span&gt;, then the size of this image domain is &lt;span class="math"&gt;\(256^{1024}\)&lt;/span&gt;. This, by the way, is too big to compute for Mac's spotlight:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="too-big" src="/images/too-big.png" width="500px"/&gt; &lt;/p&gt;
+&lt;p&gt;What it means by saying "the distribution of (output) image is multimodal" is to say, there are multiple images (ie. realization of the random variable (vector) X) with the (local) maxima value of the probability. In Figure below, the green dots represent the local maxima, ie. modes of the distribution. The configurations (ie. specific values/realizations) that achieves the (local) maximum probability density are the "probable/likely" images. &lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt="gan-multimodal-outputs" src="images/gan-multimodal-outputs.jpg" width="250px"/&gt;
+&lt;img alt="multimodal-annot" src="images/bivariate-multimodal-annot.png" width="250px"/&gt;
+&lt;figcaption&gt;The green dots representing modes of the distribution over the image domain (which is abstracted into a 2Dim space for visualization, in this case)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;So, given one input image, if the distribution of the output image random variable is multi-modal, the standard problem of &lt;pre&gt;Find &lt;span class="math"&gt;\(x\)&lt;/span&gt; s.t. &lt;span class="math"&gt;\(\underset{x \in \mathcal{X}}{\arg\max} P(X)\)&lt;/span&gt; (&lt;span class="math"&gt;\(\mathcal{X}\)&lt;/span&gt; is the image space)&lt;/pre&gt; has multiple solutions. According to the paper (Toward Multimodal Image-to-Image Translation), many previous works have produced a "single" output image as "the" argmax of the output image distribution. But this is not accurate if the output image distribution is multi-modal.  We would like to see/generate as many of those argmax configurations/output images. One way to do so, is by sampling from the output image distribution.  This is the paper's approach. &lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3 id="multimodal-distribution-as-the-distribution-over-the-space-of-target-domains-domain-adaptiontransfer-leraning"&gt;Multimodal distribution as the distribution over the space of target domains [Domain adaption/transfer leraning]&lt;/h3&gt;
+&lt;p&gt;So far, I viewed the multimodal distribution as a distribution over a specific domain (eg. Image domain), and the random variable corresponded to a realization, eg. an observed/sampled/output image instance. However, &lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="TIL (Today I Learned)"></category><category term="generative-modeling"></category><category term="multimodal"></category><category term="one-to-many-mapping"></category></entry><entry><title>Stochastic Thinking: Predictive non-determinism</title><link href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking-predictive-non-determinism" rel="alternate"></link><published>2020-01-20T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-20:/articles/2020/01/20/stochastic-thinking-predictive-non-determinism</id><summary type="html">&lt;p&gt;MIT 6.0002 Lec4: Stochastic Thinking
+- &lt;a href="https://www.youtube.com/watch?v=-1BnXEwHUok"&gt;YOUTUBE&lt;/a&gt;
+- &lt;img alt="predictive-nondeterminism" src="images/predictive-nondeterminism.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Often confusing categorization of a mathematical model:
+- &lt;a href="https://tinyurl.com/sxg4ejt"&gt;SE&lt;/a&gt;
+    - NB: in CS, people often use "deterministic" to mean non-randomized. This causes confusion:
+        &amp;gt; "Determinism" means non-randomized. But, "Non-determinism" does &lt;strong&gt;not&lt;/strong&gt; mean "randomized".
+- Determinism vs. Non-Determinism
+- ...? vs. stochastic/random 
+    - a stochastic (or random) process means, &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;p …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;MIT 6.0002 Lec4: Stochastic Thinking
+- &lt;a href="https://www.youtube.com/watch?v=-1BnXEwHUok"&gt;YOUTUBE&lt;/a&gt;
+- &lt;img alt="predictive-nondeterminism" src="images/predictive-nondeterminism.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Often confusing categorization of a mathematical model:
+- &lt;a href="https://tinyurl.com/sxg4ejt"&gt;SE&lt;/a&gt;
+    - NB: in CS, people often use "deterministic" to mean non-randomized. This causes confusion:
+        &amp;gt; "Determinism" means non-randomized. But, "Non-determinism" does &lt;strong&gt;not&lt;/strong&gt; mean "randomized".
+- Determinism vs. Non-Determinism
+- ...? vs. stochastic/random 
+    - a stochastic (or random) process means, &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;hidden&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;![stochastic-process](images/stochastic-process.png)&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I think better way to put this confusion into words is: "Nondeterinistc vs. Probabilistic models"
+- &lt;a href="http://planning.cs.uiuc.edu/node440.html"&gt;lavalle 2006&lt;/a&gt;&lt;/p&gt;</content><category term="TIL (Today I Learned)"></category></entry><entry><title>Let's blog with Pelican</title><link href="https://cocoaaa.github.io/articles/2020/01/10/lets-blog-with-pelican" rel="alternate"></link><published>2020-01-10T00:00:00-08:00</published><updated>2020-01-11T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-10:/articles/2020/01/10/lets-blog-with-pelican</id><summary type="html">&lt;h2 id="makefile"&gt;Makefile&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;make html&lt;/code&gt;: generates output html files from files in &lt;code&gt;content&lt;/code&gt; folder using
+development config file&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make regenerate&lt;/code&gt;: do &lt;code&gt;make html&lt;/code&gt; with "listening" to new changes&lt;/li&gt;
+&lt;li&gt;vs. &lt;code&gt;make publish&lt;/code&gt;: similar to &lt;code&gt;make html&lt;/code&gt; except it uses settings in &lt;code&gt;pulishconf.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;make serve&lt;/code&gt;: (re)starts a http server in the &lt;code&gt;output …&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h2 id="makefile"&gt;Makefile&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;make html&lt;/code&gt;: generates output html files from files in &lt;code&gt;content&lt;/code&gt; folder using
+development config file&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make regenerate&lt;/code&gt;: do &lt;code&gt;make html&lt;/code&gt; with "listening" to new changes&lt;/li&gt;
+&lt;li&gt;vs. &lt;code&gt;make publish&lt;/code&gt;: similar to &lt;code&gt;make html&lt;/code&gt; except it uses settings in &lt;code&gt;pulishconf.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;make serve&lt;/code&gt;: (re)starts a http server in the &lt;code&gt;output&lt;/code&gt; folder. Default port is 8000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;localhost:&amp;lt;PORT&amp;gt;&lt;/code&gt; to see the output website&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ghp-import -b &amp;lt;local-gh-branch&amp;gt; &amp;lt;outputdir&amp;gt;&lt;/code&gt;: imports content in &lt;output&gt; to 
+the local branch &lt;code&gt;local-gh-branch&lt;/code&gt;&lt;/output&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="workflow"&gt;Workflow&lt;/h2&gt;
+&lt;p&gt;Key points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do every work in &lt;code&gt;dev&lt;/code&gt; branch. &lt;/li&gt;
+&lt;li&gt;Do not touch &lt;code&gt;blog-build&lt;/code&gt; or &lt;code&gt;master&lt;/code&gt;. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;blog-build&lt;/code&gt; will be indirectly modified by &lt;code&gt;ghp-import&lt;/code&gt; (or &lt;code&gt;make publish-to-github&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;and &lt;code&gt;master&lt;/code&gt; is the branch that Github will access to show my website. &lt;/li&gt;
+&lt;li&gt;So, manage the source (and outputs) only in &lt;code&gt;dev&lt;/code&gt; branch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="local-dev"&gt;Local dev&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Activate the right conda env with &lt;code&gt;pelican&lt;/code&gt; library&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;conda&lt;span class="w"&gt; &lt;/span&gt;activate&lt;span class="w"&gt; &lt;/span&gt;my-blog&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/Workspace/Blog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure you are on &lt;code&gt;dev&lt;/code&gt; branch
+git checkout dev&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(this step is for github syncing) Add new files  under &lt;code&gt;content&lt;/code&gt;
+git add my-article.md&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Generate the content with pelican
+make html # or, make regenerate &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start a local server 
+make server&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open a browser and go to localhost:8000 
+Or whatever the port number is, set in Makefile (under the variable name of PORT)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="global-dev"&gt;Global dev&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Use &lt;code&gt;make publish&lt;/code&gt; instead of &lt;code&gt;make html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Update the &lt;code&gt;blog-build&lt;/code&gt; branch with contents in &lt;code&gt;output&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Push the &lt;code&gt;blog-build&lt;/code&gt; branch's content to &lt;code&gt;origin/master&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These three steps can be done in one line: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make&lt;span class="w"&gt; &lt;/span&gt;publish-to-github
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="version-control-the-source"&gt;Version control the source&lt;/h3&gt;
+&lt;p&gt;Important: Write new contents only on the &lt;code&gt;dev&lt;/code&gt; branch&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;files&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# make sure not to push the output folder&lt;/span&gt;
+
+git&lt;span class="w"&gt; &lt;/span&gt;cm&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"&amp;lt;commit message&amp;gt;"&lt;/span&gt;
+
+git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;origin&lt;span class="w"&gt; &lt;/span&gt;dev&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;#origin/dev is the remote branch that keeps track of blog sources&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="TIL (Today I Learned)"></category></entry><entry><title>Cool Chart tool: `amcharts`</title><link href="https://cocoaaa.github.io/articles/2019/12/31/cool-chart-tool-amcharts" rel="alternate"></link><published>2019-12-31T00:00:00-08:00</published><updated>2019-12-31T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-12-31:/articles/2019/12/31/cool-chart-tool-amcharts</id><summary type="html">&lt;p&gt;While making a visualization for my part whereabouts for the &lt;a href="#"&gt;front page&lt;/a&gt; of this blog, I came across this easy-to-use visualization examples using &lt;code&gt;amcharts&lt;/code&gt;.  Initially, I wanted to use Google Earth Studio but it required me to import country boundaries (in KML files) as well as time to learn new …&lt;/p&gt;</summary><content type="html">&lt;p&gt;While making a visualization for my part whereabouts for the &lt;a href="#"&gt;front page&lt;/a&gt; of this blog, I came across this easy-to-use visualization examples using &lt;code&gt;amcharts&lt;/code&gt;.  Initially, I wanted to use Google Earth Studio but it required me to import country boundaries (in KML files) as well as time to learn new toolsuites, so I find this javascript based demos more useful for my need. &lt;/p&gt;
+&lt;p&gt;List of timeline + map charts
+- &lt;a href="https://www.amcharts.com/demos/fishbone-timeline/"&gt;Fishbone timeline&lt;/a&gt;
+- &lt;a href="https://www.amcharts.com/demos/flight-routes-map/"&gt;Fight routes on map&lt;/a&gt;
+- &lt;a href="https://www.amcharts.com/demos/animations-along-lines/"&gt;Flight animation on map&lt;/a&gt;
+- &lt;a href="https://www.amcharts.com/demos/map-line-chart-gauge/"&gt;Timeline animation with fligh on map&lt;/a&gt;
+- and many more &lt;a href="https://www.amcharts.com/demos/#maps"&gt;demos&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pretty neat!&lt;/p&gt;</content><category term="TIL (Today I Learned)"></category></entry><entry><title>Git refspec</title><link href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec" rel="alternate"></link><published>2017-01-01T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2017-01-01:/articles/2017/01/01/git-refspec</id><summary type="html">&lt;p&gt;Resource: &lt;a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec"&gt;git-book&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="git-remotes"&gt;Git Remotes&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remote repositories: versions of your project that are hosted on the internet&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="git-remote-v"&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Let's say I cloned a repository from some repository, for instance
+&lt;code&gt;git@github.com:cocoaaa/dip.git&lt;/code&gt;, by running:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nd"&gt;@github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;cocoaaa&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;dip&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, in this cloned …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Resource: &lt;a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec"&gt;git-book&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="git-remotes"&gt;Git Remotes&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remote repositories: versions of your project that are hosted on the internet&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="git-remote-v"&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Let's say I cloned a repository from some repository, for instance
+&lt;code&gt;git@github.com:cocoaaa/dip.git&lt;/code&gt;, by running:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nd"&gt;@github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;cocoaaa&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;dip&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, in this cloned repo's directory in my local machine, 
+&lt;code&gt;git remote&lt;/code&gt; will list the shortnames of each remote handle I've specified. 
+By default, Git gives to the server I've just cloned the shortname, &lt;code&gt;origin&lt;/code&gt;.
+Use &lt;code&gt;git remote -v&lt;/code&gt; to see both the shortname and the URLs that Git has stored for
+each shortname to use for reading and writing to that remote.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="git-remote" src="https://cocoaaa.github.io/images/git-remote.png"/&gt;&lt;/p&gt;
+&lt;h3 id="git-remote-add"&gt;&lt;code&gt;git remote add &amp;lt;shortname&amp;gt; &amp;lt;URL&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dd&gt;adds a remote in &lt;code&gt;&amp;lt;URL&amp;gt;&lt;/code&gt; with the shortname of &lt;code&gt;&amp;lt;shortname&amp;gt;&lt;/code&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h3 id="git-fetch"&gt;&lt;code&gt;git fetch &amp;lt;remote&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;The command goes out to that remote project and pulls down all the data from that
+remote project that I don't have yet. It does so for all branches in the remote.
+Upon the command execution, I should have references to all the branches from that
+remote, and I can merge in or inspect them at any time.&lt;/p&gt;
+&lt;p&gt;Remember that &lt;code&gt;git fetch&lt;/code&gt; command only downloads the data to my local repository,
+and does &lt;em&gt;NOT&lt;/em&gt; automatically merge it with any of my work or modify what I'm currently
+working on. So, it is safer than &lt;code&gt;git pull&lt;/code&gt;, yet I'm required to merge it into my 
+work whenever I'm ready. &lt;/p&gt;
+&lt;p&gt;For fetching and pushing, my current branch needs be set up to track a remote 
+&lt;em&gt;branch&lt;/em&gt;. In other words, setting up the URL to the remote repository is not enough, 
+and we need to specify which local branch will track which remote branch.  &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git clone &amp;lt;some-repo-url&amp;gt;&lt;/code&gt; automatically sets up my local &lt;code&gt;master&lt;/code&gt; branch to 
+track the remote default branch (often also &lt;code&gt;master&lt;/code&gt;) on the server I cloned from,
+ie. &lt;code&gt;&amp;lt;URL&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="push-my-local-changes-to-the-remote-server-upstream"&gt;Push my (local) changes to the remote server (upstream)&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;git push &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;&lt;/code&gt; pushes my local &lt;code&gt;branch&lt;/code&gt; to my &lt;code&gt;remote&lt;/code&gt; server. 
+For example, if I want to push my &lt;code&gt;master&lt;/code&gt; branch to my &lt;code&gt;origin&lt;/code&gt; server (recall 
+that these names are set up by &lt;code&gt;git clone &amp;lt;some-repo-url&amp;gt;&lt;/code&gt; command automatically),
+run: &lt;code&gt;git push origin master&lt;/code&gt;. Again, &lt;code&gt;origin&lt;/code&gt; is the shortname assigned to the 
+remote server URL, and &lt;code&gt;master&lt;/code&gt; is the name of the local branch I'm pushing.&lt;/p&gt;
+&lt;p&gt;If I want to push my local &lt;code&gt;dev-local&lt;/code&gt; branch to my remote repository called &lt;code&gt;origin&lt;/code&gt;'s 
+&lt;code&gt;dev-remote&lt;/code&gt; branch, I'd run &lt;code&gt;git push origin dev-local:dev-remote&lt;/code&gt;. 
+The colon syntax follows &lt;code&gt;src_refspec&lt;/code&gt;:&lt;code&gt;dst_refspec&lt;/code&gt; where &lt;code&gt;src_refspec&lt;/code&gt; and &lt;code&gt;dst_refspec&lt;/code&gt;
+are the refspecs of the source branch (in local) and the destination branch (in remote)
+of the &lt;code&gt;git push&lt;/code&gt; action, respectively.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: wait, we don't need to specify which branch in the remote server to push 
+the local branch?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="inspecting-a-remote"&gt;Inspecting a remote&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;git remote show &amp;lt;remote-shortname&amp;gt;&lt;/code&gt; command shows the details of the particular 
+remote. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="git-remote-show" src="https://cocoaaa.github.io/images/git-remote-show.png"/&gt;&lt;/p&gt;</content><category term="TIL (Today I Learned)"></category></entry></feed>

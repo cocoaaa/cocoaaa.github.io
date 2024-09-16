@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-15T23:01:52-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-15T23:01:52-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-15:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+&lt;!-- &lt;div class=sidebar&gt;
+testing sidebar
+- try also to add an image (eg. my profile)
+&lt;/div&gt; --&gt;
+&lt;!-- add my profile picture to the right side --&gt;
+&lt;!-- &lt;div class=marginnote&gt;
+&lt;figure&gt;
+    &lt;img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fcocoaaa%2FOzdNmX2UzQ.png?alt=media&amp;token=b246a2e5-5e52-418d-8c96-afbbbe84d1b7" alt="multimodal-inputs" style="width:60%"&gt;
+&lt;/figure&gt; --&gt;
+&lt;!-- Add my recent update section to the right side --&gt;
+&lt;!-- &lt;h1 align="center"&gt; Right margin: Recent updates! &lt;/h1&gt;
+
+&lt;/div&gt; --&gt;
+&lt;!-- add my profile picture to the left side margin --&gt;
+&lt;div align="center" class="marginnoteleft"&gt;
+&lt;!-- add my profile picture to the right side --&gt;
+&lt;figure&gt;
+&lt;img alt="profile" src="/images/profile.jpg" width="250"/&gt;
+&lt;/figure&gt;
+&lt;!-- Add my recent update section to the right side --&gt;
+&lt;h1 align="center" id="recent-updates"&gt; Recent updates! &lt;/h1&gt;
+&lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
+&lt;/div&gt;
+&lt;!-- end of testing playground --&gt;
+&lt;!--todo: resume here --&gt;
+&lt;p&gt;I'm a Computer Science PhD student at USC's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt; interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
+&lt;p&gt;Before starting my PhD, I …&lt;/p&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+&lt;!-- &lt;div class=sidebar&gt;
+testing sidebar
+- try also to add an image (eg. my profile)
+&lt;/div&gt; --&gt;
+&lt;!-- add my profile picture to the right side --&gt;
+&lt;!-- &lt;div class=marginnote&gt;
+&lt;figure&gt;
+    &lt;img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fcocoaaa%2FOzdNmX2UzQ.png?alt=media&amp;token=b246a2e5-5e52-418d-8c96-afbbbe84d1b7" alt="multimodal-inputs" style="width:60%"&gt;
+&lt;/figure&gt; --&gt;
+&lt;!-- Add my recent update section to the right side --&gt;
+&lt;!-- &lt;h1 align="center"&gt; Right margin: Recent updates! &lt;/h1&gt;
+
+&lt;/div&gt; --&gt;
+&lt;!-- add my profile picture to the left side margin --&gt;
+&lt;div align="center" class="marginnoteleft"&gt;
+&lt;!-- add my profile picture to the right side --&gt;
+&lt;figure&gt;
+&lt;img alt="profile" src="/images/profile.jpg" width="250"/&gt;
+&lt;/figure&gt;
+&lt;!-- Add my recent update section to the right side --&gt;
+&lt;h1 align="center" id="recent-updates"&gt; Recent updates! &lt;/h1&gt;
+&lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
+&lt;/div&gt;
+&lt;!-- end of testing playground --&gt;
+&lt;!--todo: resume here --&gt;
+&lt;p&gt;I'm a Computer Science PhD student at USC's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt; interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
+&lt;p&gt;Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.  Along the way, I interned at a French robotics startup &lt;em&gt;Keecker&lt;/em&gt; and academic research labs in MIT's CSAIL, Media Lab, McGovern Institute and in INRIA.  After my Masters, I worked at Apple as a COOP for 9 months.&lt;/p&gt;
+&lt;p&gt;My research interest lies at the intersection of &lt;strong&gt;representation learning&lt;/strong&gt; and &lt;strong&gt;information&lt;/strong&gt; theory, inspired by the way our perceptual system integrates &lt;strong&gt;multimodal&lt;/strong&gt; sensory inputs via identifying &lt;strong&gt;invariant semantics&lt;/strong&gt;.  I am interested in understanding how the &lt;strong&gt;semantic information&lt;/strong&gt; flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow. &lt;/p&gt;
+&lt;p&gt;My current guiding question is, &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;How do we  extract the shared semantics from observations expressed in vastly different representational forms (eg. images,  sounds, written texts), and how do we create/actualize various forms of observations, starting from the semantics we want to communicate?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure&gt;
+&lt;img alt="multimodal-inputs" src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fcocoaaa%2FOzdNmX2UzQ.png?alt=media&amp;amp;token=b246a2e5-5e52-418d-8c96-afbbbe84d1b7" style="width:60%"/&gt;
+&lt;/figure&gt;
+&lt;p&gt;I approach this question from an information-processing point of view and am developing &lt;strong&gt;generative models&lt;/strong&gt; with &lt;strong&gt;disentangled representation&lt;/strong&gt; to jointly learn the analysis and synthesis processes of multimodal data.  My most recent work introduces a generative model with adversarial training that learns spatial semantics from map tiles collected from diverse sources such as satellites, Google Street Map and custom rendering engines.   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read more about our dataset of multi-style map tiles (&lt;a href="#"&gt;TBA&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Read more about our work on Learning a structured ... (&lt;a href="#"&gt;TBA&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Currently, I am exploring different ways to understand our proposed model, in particular, by measuring semantic information and studying the flow of information between the latent partitions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How we can quantify the amount of the shared semantic information captured by our model?&lt;/li&gt;
+&lt;li&gt;If we view each latent partition as a subsystem that constitutes a global system represented by the whole latent space, then we can view the the adversarial discriminator as a demon (like &lt;a href="https://en.wikipedia.org/wiki/Maxwell%27s_demon"&gt;Maxwell's Demon&lt;/a&gt;) sitting at the boarder of the latent subsystems. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--- (How) does the adversary -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?--&gt;
+&lt;ul&gt;
+&lt;li&gt;From this point of view, (how) does this adversary -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It's exciting to see how the ideas and tools in thermodynamics can help quantify and visualize this flow of semantic information in our model :)&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h2 id="recent-updates_1"&gt;Recent updates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I'm preparing for a talk at &lt;a href="https://www.scipy2021.scipy.org/"&gt;Scipy 2021&lt;/a&gt; in July.&lt;/li&gt;
+&lt;li&gt;I got accepted to &lt;a href="https://www.santafe.edu/engage/learn/schools/sfi-complex-systems-summer-school"&gt;2021 Complex Systems Summer School&lt;/a&gt; at Santa Fe Institute, Woohoo!&lt;/li&gt;
+&lt;li&gt;I gave my first tutorial @ PyData LA, 2019 on "Experimental ML with Holoviews/Geoviews + Pyorch". Here are my talk &lt;a href="/pdfs/experimental-ml-2019-hayley.pdf"&gt;slides&lt;/a&gt;, &lt;a href="#"&gt;video&lt;/a&gt;, and &lt;a href="https://github.com/cocoaaa/PyData-LA-2019"&gt;jupyter notebook materials&lt;/a&gt;!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img alt="pydata-0" src="/images/pydata-0.png"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="pydata-1" src="/images/pydata-1.png"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="pydata-1-2" src="/images/pydata-1-2.png"/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img alt="pydata-2" src="/images/pydata-2.png"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="pydata-3" src="/images/pydata-3.png"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="pydata-4" src="/images/pydata-4.png"/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;I participated in &lt;a href="https://sites.google.com/earthoutreach.org/geoforgood19/home"&gt;Geo4Good&lt;/a&gt; @ Google in Mtn View, CA! Check out some &lt;a href="https://tinyurl.com/wdoyepy"&gt;highlights&lt;/a&gt; of inspiring project going on using Google Earth Engine and Studio. &lt;/li&gt;
+&lt;li&gt;New post: "Total variation, KL-Divergence, Maximum Likelihood"&lt;/li&gt;
+&lt;li&gt;New post: "Let's be honest: peeling the assumptions that get us to Variational Autoencoders"&lt;/li&gt;
+&lt;li&gt;New post: "Thinking about an observer vs. the observed"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;h2 id="research-questions"&gt;Research Questions&lt;/h2&gt;
+&lt;p&gt;My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this dance between abstraction and synthesis in a video of Picasso's live drawing:&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;iframe "="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="480" src="https://www.youtube.com/embed/JU9oaD0e7uU" width="672"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;!-- &lt;iframe  height="420" align="left" src="https://www.youtube.com/embed/Xwbuw1CSFew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;--&gt;
+&lt;!-- &lt;iframe width="672" height="480" src="https://www.youtube.com/embed/Nxes8pyHkJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;--&gt;
+&lt;!-- &lt;iframe width="672" height="480" src="https://www.youtube.com/embed/ylh0X38yvQI?t=411" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
+&lt;p&gt;More specifically, I'm intrigued by how seamlessly we extract a common semantic content from observations in vastly different representational forms (such as languages, images, gestures or sounds, and infinitely many forms within each modality), and reversely, how a semantic content can be expressed in various forms without losing its (overall) meaning
+&lt;label class="margin-toggle sidenote-number" for="sn-note"&gt;&lt;/label&gt;
+&lt;input class="margin-toggle" id="sn-note" type="checkbox"/&gt;
+&lt;span class="sidenote"&gt;
+Hmm.. coarse-graining?&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;My exploration starts with an hypothesis that a phenomena in reality, from which
+our observations stem from, contains &lt;strong&gt;semantic potentials&lt;/strong&gt;("potential" as in
+&lt;em&gt;potential energy&lt;/em&gt; in Physics, or going further up the stream, as in Aristotle's
+&lt;a href="https://en.wikipedia.org/wiki/Potentiality_and_actuality"&gt;"Potentiality and actuality"&lt;/a&gt;
+&lt;label class="margin-toggle sidenote-number" for="sn-note"&gt;&lt;/label&gt;
+&lt;input class="margin-toggle" id="sn-note" type="checkbox"/&gt;
+&lt;span class="sidenote"&gt;
+This idea influenced Leibniz to develop the science of "dynamics". 
+Learning about such influence brings light into what Leibniz was struggling to hit the chord with ideas like 'power' and 'action'. Contemplate: Aristotle's "potential:actuality" vs. Leibniz's "power:action"&lt;/span&gt;
+.) &lt;/p&gt;
+&lt;p&gt;I wonder,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is the relationship between &lt;em&gt;semantic information&lt;/em&gt;&lt;label class="margin-toggle sidenote-number" for="sn-note"&gt;&lt;/label&gt;
+&lt;input class="margin-toggle" id="sn-note" type="checkbox"/&gt;
+&lt;span class="sidenote"&gt;
+See &lt;a href="https://dspace.mit.edu/bitstream/handle/1721.1/4821/RLE-TR-247-03150899.pdf?sequence=1"&gt;An Outline of a Theory of Semantic Information&lt;/a&gt;, a &lt;a href="https://plato.stanford.edu/entries/information-semantic/"&gt;survey&lt;/a&gt;, and more recent work by &lt;a href="https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0041"&gt;Kolchinsky and Wolpert&lt;/a&gt;
+&lt;/span&gt;
+and &lt;em&gt;semantic potential&lt;/em&gt;, i.e. the underlying &lt;em&gt;field&lt;/em&gt; from which individual observations are actualized into an instance of a natural phenomena, an event?&lt;/li&gt;
+&lt;li&gt;What is the process -- or geometric constraints -- that leads the same semantics to different representational forms? Can we learn this process from multimodal data?&lt;/li&gt;
+&lt;li&gt;What is the process through which an observer builds an understanding -- an internal representation -- of an event?&lt;ul&gt;
+&lt;li&gt;What is the process through which we identify, extract and encode the invariant semantics from observations in diverse modalities?&lt;/li&gt;
+&lt;li&gt;How can we define and measure the semantic information in our representations, efficiently?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Can we model these processes by &lt;strong&gt;learning a generative model from data collected from multiple modalities&lt;/strong&gt;?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;h2 id="specific-example"&gt;Specific Example&lt;/h2&gt;
+&lt;p&gt;For instance, consider the following observations: &lt;span class="math"&gt;\(X^A\)&lt;/span&gt; is an image of a dog barking on the door, &lt;span class="math"&gt;\(X^B\)&lt;/span&gt; is a recording of a dog barking, and &lt;span class="math"&gt;\(X^C\)&lt;/span&gt; is a sentence written in the English language. The semantic content shared among the observations is "there is a dog barking", and each observation is the result of expressing (synm: rendering, stylizing) the semantic content into a form proper for its modality (ie. image, sound, written English language, respectively). &lt;/p&gt;
+&lt;p&gt;My question, at the representational level is, how do we identify the underlying, shared semantic contents from the information about domain-specific variations? 
+&lt;img alt="multi-modal-encoding-of-semantics" src="/images/semantic_potential/encoding-semantics-from-origin.png"/&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How do we &lt;em&gt;identify&lt;/em&gt; what is the type of information that is invariant among observations from multiple domains?&lt;/li&gt;
+&lt;li&gt;What discovery process goes into separating the shared contents (invariance across domain) from the domain-specifics?  &lt;/li&gt;
+&lt;li&gt;Can we use learning-based approaches to build a computational model of such process (i)more efficiently, (ii)by leveraging large amounts of data available?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now let's flip the question and consider the process of synthesis. I start with a concept that I'd like to express and communicate. For example, I want to actualize the idea of "a dog barking at the door". If I ask you to express this content as an image, sounds, and an English sentence, what would be the process of such domain-specific actualization of a semantic information?
+&lt;img alt="generating-semantics-in-multi-domains" src="/images/semantic_potential/generating-semantics-in-multiple-domains.png"/&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is the process of recombining the encoded representations to make better decisions, derive new conclusions? In particular, what is the underlying structure that defines each modality?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Geometry of a modality space: imposes geometric constraints that an instance must satisfy to be a valid observations of that modality
+&lt;img alt="geometry-of-modality-space" src="/images/semantic_potential/geometry-of-modality-space.png"/&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;E.g. an observation in an image form must satisfy a different set of geometric constraints than that in an acoustic form.&lt;/li&gt;
+&lt;li&gt;Can we learn a model of such geometric rules via a generative model with neural networks?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The breakdown of main components of my questions looks as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Semantic information: Address a limitation of Shannon's theory of Information&lt;label class="margin-toggle sidenote-number" for="sn-note"&gt;&lt;/label&gt;
+&lt;input class="margin-toggle" id="sn-note" type="checkbox"/&gt;
+&lt;span class="sidenote"&gt;
+The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbols, yet disregards their identities. See &lt;a href="http://tuvalu.santafe.edu/~simon/it.pdf"&gt;ITTP2018&lt;/a&gt;&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Semantic potentials == a natural phenomena -- is this what "nature" is defined as?&lt;/li&gt;
+&lt;li&gt;The process of actualizing semantic potentials/information to different modalities&lt;/li&gt;
+&lt;li&gt;The process during which an observer builds an understanding of the actualized data point&lt;/li&gt;
+&lt;li&gt;Geometry of modality space: what is the underlying geometry that defines an observation as a valid image vs. a valid human voice vs. a valid text? &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;h2 id="research-statement"&gt;Research Statement&lt;/h2&gt;
+&lt;h3 id="learning-a-generative-model-of-multimodal-representation"&gt;Learning a generative model of multimodal representation&lt;/h3&gt;
+&lt;p&gt;In pursuit of this computational model of understanding and generating multimodal data, I am developing generative models with disentangled representation to jointly learn the analysis and synthesis processes of complex, high-dimensional data (eg. satellite images, knowledge bases) with compact and &amp;ldquo;meaningful&amp;rdquo; representations.&amp;nbsp; 
+I'm working with Prof. Wael Abd-Almageed at ISI's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt;, 
+focusing on various types of generative models for this goal.
+My project with  Prof. &lt;a href="https://spatial.usc.edu/team-view/yao-yi-chiang/"&gt;Yao-Yi Chiang&lt;/a&gt; and Prof. &lt;a href="https://usc-isi-i2.github.io/knoblock/"&gt;Craig Knoblock&lt;/a&gt; tackles this line of questions using geospatial data, and aims to learn spatial semantics from data that are collected from diverse sources (eg. satellites, Google Street Map, historical maps) and stored in diverse format (eg. images, graphs). This work has potential applications such as global-scale urban environment analysis, automated map synthesis and systems for monitoring environmental changes.&lt;/p&gt;
+&lt;!--- Read more about our maptile dataset [here](#).--&gt;
+&lt;p&gt;Within the domain of representation learning, I&amp;rsquo;m most interested in variational inference methods, especially recent developments in deep generative models such as variational autoencoders (VAEs) and the idea of adversarial training. &lt;/p&gt;
+&lt;p&gt;Using a VAE-variant model and adversarial training, I&amp;rsquo;m investigating how we can build a model that extracts invariance in a dataset of heterogeneous representations via VAEs and adversarial training.&amp;nbsp; One of my current projects investigates this question in the domain of spatial informatics, using our new dataset of map tiles from diverse sources.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read more about my work, "Learning Bipartitioned Representation of ..." -- [In Preparation].&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="next-itches"&gt;Next itches&lt;/h3&gt;
+&lt;details&gt;
+&lt;summary&gt;More about next steps...&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;Understanding adversary at the latent space from the perspectives of information flow and non-equilibrium achieved by the adversary, ie. the Maxwell's Demon at the gate that distinguishes the two latent partitions&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;GAN models are often described in the framework of min-max games between a generator and an adversary. In particular, there has been works making a connection between Nash Equilibrium and local minimum of the GAN's objective function. This connection motivates me to view my adversary (at the latent partitions) as an 'information sorter', like the &lt;a href="https://en.wikipedia.org/wiki/Maxwell%27s_demon"&gt;Maxwell's Demon&lt;/a&gt;. The goal of this information sorter is to organize the semantic information into one latent partition, and the domain-specific information into the other latent partition, so that each partition (equivalent to a gas chamber in Maxwell's thought experiment) contains only its type of information.  This approach will allow me to bring in computational tools from information theory and theromodynamics (flow of information) to understand how the adversarial information sorter actually achieves the partitioned latent space. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;Evaluation of the disentangled partition requires a measure of semantic information &lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;In order to evaluate how well our semantic latent space captures the semantic information in the inputs, we first need a well grounded _definition of the semantic information_, as well as _computational methods to efficiently compute_ the value.&lt;/li&gt;
+&lt;li&gt;See &lt;a href="https://dspace.mit.edu/bitstream/handle/1721.1/4821/RLE-TR-247-03150899.pdf?sequence=1"&gt;An Outline of a Theory of Semantic Information&lt;/a&gt;, a nice &lt;a href="https://plato.stanford.edu/entries/information-semantic/"&gt;survey&lt;/a&gt;, and more recent work by &lt;a href="https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0041"&gt;Kolchinsky and Wolpert&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;Linking the discovered latent factors to external knowledge graph&lt;/li&gt;
+&lt;!--     - How can we map the learned latent factors to concepts in a more global knowledge graph (eg. Wikipedia)?--&gt;
+&lt;/ul&gt;&lt;/details&gt;
+&lt;hr/&gt;
+&lt;h2 id="research-traces_1"&gt;Research Traces&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="desert-rocks" src="/images/semantic_potential/desert-rocks-adobe-academy.jpeg" style="width: 60%; height: 50%"/&gt;&lt;/p&gt;
+&lt;!--src: https://academy.substance3d.com/courses/desert-rocks-making-of-by-jonathan-benainous--&gt;
+&lt;p&gt;My interests center around &lt;em&gt;understanding&lt;/em&gt; of complex data and the &lt;em&gt;processes&lt;/em&gt; through which such understanding happens. Here are some snapshots along that journey: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Interactive visualizations that represent high-dimensional data accurately and efficiently&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;via learning a meaningful and compact representation of observations&lt;/li&gt;
+&lt;li&gt;See &lt;a href="https://github.com/mintproject/MINT-GeoViz/tree/master?"&gt;MINT GeoViz&lt;/a&gt;, &lt;a href="https://github.com/mintproject/MINT-NetCDF-Convention/blob/master/README.md"&gt;Mint NETCDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Learning dynamics of neural net&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How does the model, in particular the representation of input observations, evolve during the training process? Can we detect points at which meaning state transitions happen?&lt;/li&gt;
+&lt;li&gt;How does information flow across the layers of a neural network? Can we visualize this flow to help understand the learning process?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See more details &lt;a href="/pages/publications.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr/&gt;
+&lt;h2 id="tmi-how-much-is-too-much-information"&gt;TMI: How much is Too Much Information?&lt;/h2&gt;
+&lt;p&gt;More importantly, I'm practicing to:&lt;br/&gt;
+- observe without being entangled in what is personal
+- look at small thoughts carefully
+- not to rush
+- spend most of time on what matters most
+- be gentle 
+- be slow
+- be curious
+- question
+- relax in discomforts
+- greet what is as what is
+- nothing more, nothing less
+- stay open&lt;/p&gt;
+&lt;!--## Quotes to sit with--&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lsquo;Your act was unwise,&amp;rsquo; I exclaimed, &amp;lsquo;as you see by the outcome.&amp;rsquo; &lt;br/&gt;
+He solemnly eyed me.&lt;br/&gt;
+&amp;lsquo;When choosing the course of my action,&amp;rsquo; said he,
+&amp;lsquo;I had not the outcome to guide me.&amp;rsquo; &lt;br/&gt;
+- Ambrose Bierce&lt;/p&gt;
+&lt;p&gt;Intention and attention.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- 
+&gt; If you understand what you're doing, you're not learning anything.   
+- Einstein
+ Let questions guide your journey, free of motif or resting on an answer.
+- continuously bring stochasity to the current model of world as I believe and,
+I worry that too much hopping from the domain of AI/ML to physics, and then ultimately to philosophy will worry my PhD advisors. When the worry quiets itself, however, I see that beaconings of uncomfortable inklings/curious itches often point me to exactly what I should be doing at any moment. 
+
+---
+studying the lower-dimensional representation of complex unstructured datasets (eg. multi-spectral satellite images, 3D MRI scans) using deep learning. My work lies in the intersection of statistical machine learning, information theory and coding theory.  I also work on interactive visualization of high-dimensional datasets and complex models (eg. deep neural nets) for a guide to better insight and understanding.
+
+- Information Distillation across domain and modality: Variational Autoencoder
+- Invariance in representation: information-theory, "nuisance"
+- Dynamics of learning in neural networks: initialization, normalization
+    - non-linear and chaos theory
+    - emergence
+    - information geometry
+
+Before my PhD, I was at MIT studying Mathematics and EECS (Electrical Engineering and Computer Science) for my undergraduate and Masters. After Masters, I interned at Apple as a coop for 9 months.  I also worked on a cool French robotics startup (Keecker) and several academic research labs (MIT CSAIL, MIT Media Lab and INRIA) during my studies.
+
+More about [me](/pages/about-me.html) and papers [here](/pages/publications.html).
+---
+version1
+I'm a 3rd year Computer Science PhD at USC working on a computational model of multimodal representation using generative models.  
+My research interest lies at the intersection of representation learning and information theory, inspired by the way our perceptual system integrates multimodal sensory inputs via identifying invariant semantics.  
+
+Before my PhD, I was at MIT studying Mathematics and EECS (Electrical Engineering and Computer Science) for my undergraduate and Masters.  During my studies, I interned at a French robotics startup (Keecker) and academic research labs in MIT CSAIL, MIT Media Lab and INRIA.  After Masters, I worked at Apple as a COOP for 9 months.
+
+My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this process of abstraction and synthesis in this video of Picasso's live drawing.
+
+
+--&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Home"></category></entry><entry><title>Short note on coarse-graining</title><link href="https://cocoaaa.github.io/articles/2021/02/23/short-note-on-coarse-graining" rel="alternate"></link><published>2021-02-23T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-23:/articles/2021/02/23/short-note-on-coarse-graining</id><summary type="html">&lt;p&gt;One of the axioms in Shannon's information theory is that (Shannon's) entropy satisfies coarse-graining property:&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt="coarse-graining-dedeo" src="/images/it/coarse-graining-dedeo.png" width="60%"/&gt;
+&lt;figcaption&gt; While reading Information Theory for Intelligent People by S.DeDeo
+&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;This property is closely related to the conditional probabilities.
+In communication -- regardless of the types of agents involved, eg. between the people over a phone …&lt;/p&gt;</summary><content type="html">&lt;p&gt;One of the axioms in Shannon's information theory is that (Shannon's) entropy satisfies coarse-graining property:&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt="coarse-graining-dedeo" src="/images/it/coarse-graining-dedeo.png" width="60%"/&gt;
+&lt;figcaption&gt; While reading Information Theory for Intelligent People by S.DeDeo
+&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;This property is closely related to the conditional probabilities.
+In communication -- regardless of the types of agents involved, eg. between the people over a phone, between parent cell's DNA to daughter cell's DNA, between a disk storage at time T and that at time T+10), or between me (the writer of this article) and you (the reader),
+ there is some 'tolerance' bound that allows "good-enough" intention/semantics to be transmitted and understood between the sender and the receiver.
+How is this idea related to the Rate-Distortion theory or error-correcting codes?
+Can this idea help us understand/define the "semantic" information (vs. Shannon's Information measure is often called "syntactic" because it is ignorant/invariant to the identities of the events whose probabilities within the process we are measuring the uncertainty of).&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Pondering... &lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;Coarse-graining/level of details when describing a process&lt;/li&gt;
+&lt;li&gt;As we 'abstract' away from particular representational form of an event/instance, we move from semantics+form domain to &amp;rarr; &amp;rarr; &amp;rarr; semantics+less form domain. This allows me to say "The chair is blue" and you understand what general color the chair is.&lt;/li&gt;
+&lt;li&gt;At which level of abstraction / this ladder of coarse-graining, do we get sufficient (ie. good-enough to communication our intentions) level of semantics?&lt;/li&gt;
+&lt;li&gt;If we measure $H(\tilde{X})$ at that level, can we say that quantity measures 'semantic information'?&lt;/li&gt;
+&lt;li&gt;The difference $H(G)$ is the force/gradient that drives the flow of information -- information of what?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</content><category term="Information"></category><category term="coarse-graining"></category><category term="error-tolerance"></category></entry><entry><title>Basic concepts in measure theory</title><link href="https://cocoaaa.github.io/articles/2020/02/23/basic-concepts-in-measure-theory" rel="alternate"></link><published>2020-02-23T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-23:/articles/2020/02/23/basic-concepts-in-measure-theory</id><summary type="html">&lt;h2 id="measure"&gt;Measure&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="orbanz-1-2" src="images/orbanz-1-2.png"/&gt;
+- Intuition: roughly a measure is an integral as a function of its region
+&lt;/p&gt;
+&lt;div class="math"&gt;$$ \mu(A) = \int_{A} dx ~~\text{or,} ~~~\mu(A) = \int_{A} p(x) dx $$&lt;/div&gt;
+&lt;p&gt;
+For example, in geometric case, &lt;span class="math"&gt;\(\mu(A)\)&lt;/span&gt; can be interpreted as a (physical) length (if &lt;span class="math"&gt;\(A\)&lt;/span&gt; is one dimensional), mass (if &lt;span class="math"&gt;\(A …&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;h2 id="measure"&gt;Measure&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="orbanz-1-2" src="images/orbanz-1-2.png"/&gt;
+- Intuition: roughly a measure is an integral as a function of its region
+&lt;/p&gt;
+&lt;div class="math"&gt;$$ \mu(A) = \int_{A} dx ~~\text{or,} ~~~\mu(A) = \int_{A} p(x) dx $$&lt;/div&gt;
+&lt;p&gt;
+For example, in geometric case, &lt;span class="math"&gt;\(\mu(A)\)&lt;/span&gt; can be interpreted as a (physical) length (if &lt;span class="math"&gt;\(A\)&lt;/span&gt; is one dimensional), mass (if &lt;span class="math"&gt;\(A\)&lt;/span&gt; is two dimensional), or volumn (if three-dim) of a region &lt;span class="math"&gt;\(A\)&lt;/span&gt;. In the case that &lt;span class="math"&gt;\(\mu\)&lt;/span&gt; is a measure of probability, &lt;span class="math"&gt;\(\mu(A)\)&lt;/span&gt; is the probability mass of event, "random variable &lt;span class="math"&gt;\(X\)&lt;/span&gt; takes values in the set &lt;span class="math"&gt;\(A\)&lt;/span&gt; (also called event &lt;span class="math"&gt;\(A\)&lt;/span&gt;)"&lt;/p&gt;
+&lt;h2 id="density"&gt;Density&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="orbanz-1-3" src="images/orbanz-1-3.png"/&gt;
+A (probability) density is a function that transforms one measure to another measure by pointwise reweighting (on the abstract sample space &lt;span class="math"&gt;\(\Omega\)&lt;/span&gt;)
+&lt;img alt="probability-density" src="/images/Orbanz-probability-density.png"/&gt;&lt;/p&gt;
+&lt;h2 id="measure-theoretic-formalism-for-probability"&gt;Measure-theoretic formalism for Probability&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="measure-theory-framework" src="/images/Orbanz-probability-formal-framework.png"/&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;abstract probability space vs. observation space
+Think of the abstract probability space as the entire system of the universe. A point in the space is a state of the universe (eg. a long vector of values assigned to all existing atoms' states). We often don't have a direct access to this "state", ie. it is not fully observable to us. Instead we observe/measure variables that are some functions of this atomic configuration/state (&lt;span class="math"&gt;\(w\)&lt;/span&gt;). This mapping from a state of the universe to a value that the variable of our interest is observed/measured to take is called a "Random Variable". &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="random-variable"&gt;Random Variable&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="orbanz-1-4" src="images/orbanz-1-4.png"/&gt;
+- is a function that maps a outcome in the abstract probability space's sample space &lt;span class="math"&gt;\(\Lambda\)&lt;/span&gt; to the sample space of the observation space &lt;span class="math"&gt;\(\Omega\)&lt;/span&gt; (often &lt;span class="math"&gt;\(\mathbb{R}\)&lt;/span&gt;)
+- it is the key component that connects the abstract probability space (which we don't get to directly observe) to the observation space
+- Image measure &lt;span class="math"&gt;\(\mu_{X}\)&lt;/span&gt; is the (derived/induced) measure on the observation space that is related to the abstract probability space via the random variable &lt;span class="math"&gt;\(X\)&lt;/span&gt;. 
+  - We need it since the measure on the abstract probability space &lt;span class="math"&gt;\(\mathbb{P}\)&lt;/span&gt; is not known explicitly, but we need to have a way to descirbe the measure of sets in the Borel set of the observation space. 
+  - To assign measures to an event in the observation space, we use "Image measure" &lt;span class="math"&gt;\(\mu_{X}\)&lt;/span&gt; which is linked to &lt;span class="math"&gt;\(\mathbb{P}\)&lt;/span&gt; via:
+    &lt;/p&gt;
+&lt;div class="math"&gt;$$ \mu_{X}(A) := \mathbb{P}(X^{-1}(A))$$&lt;/div&gt;
+&lt;p&gt;
+  - In other words, we compute the probability measure of an event &lt;span class="math"&gt;\(A\)&lt;/span&gt; (ie.the probability that the random variable X takes a value in the set A) by:
+     1. Map the set A in the observation space to a space in the abstract probability space, &lt;span class="math"&gt;\(A^{\leftarrow} = X^{-1}(A)\)&lt;/span&gt;
+     2. Compute the probability of event &lt;span class="math"&gt;\(A^{\leftarrow}\)&lt;/span&gt; using &lt;span class="math"&gt;\(\mathbb{P}\)&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id="relationship-between-two-random-variables-and-their-image-measures"&gt;Relationship between two random variables and their image measures&lt;/h2&gt;
+&lt;h2 id="density-describes-the-relationship-between-two-random-variables-and-their-image-measures"&gt;"Density" describes the relationship between two random variables and their image measures:&lt;/h2&gt;
+&lt;h2 id="source"&gt;Source&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Theoretical Foundations of Nonparametric Bayesian Models, by P.Orbanz. MLSS2009: video part &lt;a href="http://videolectures.net/mlss09uk_orbanz_fnbm/"&gt;1&lt;/a&gt;, &lt;a href="https://tinyurl.com/vnzb4pu"&gt;2&lt;/a&gt;. Slides &lt;a href="http://mlg.eng.cam.ac.uk/mlss09/mlss_slides/Orbanz_1.pdf"&gt;1&lt;/a&gt;, &lt;a href=""&gt;2&lt;/a&gt; Great introduction of measure theory just as much in detail to be relevant for statistics (and nonparametric Bayesian models)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="more-resources"&gt;More resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MLSS09 all lecture and slide links: &lt;a href="http://mlg.eng.cam.ac.uk/mlss09/schedule.htm"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="ML"></category><category term="measure-theory"></category><category term="random-variable"></category><category term="measure"></category><category term="probability-theory"></category></entry><entry><title>KL Divergence</title><link href="https://cocoaaa.github.io/articles/2020/02/22/kl-divergence" rel="alternate"></link><published>2020-02-22T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-22:/articles/2020/02/22/kl-divergence</id><summary type="html">&lt;h2 id="resource"&gt;Resource&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://tinyurl.com/uta23v5"&gt;Lec on VAE&lt;/a&gt;, by Ali Ghodsi: This lecture motivates KL Divergence as the measurement of difference in the average information content of two random varialbes, whose distributions are &lt;span class="math"&gt;\(p\)&lt;/span&gt; and &lt;span class="math"&gt;\(q\)&lt;/span&gt; in in the article.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Kullback&amp;ndash;Leibler_divergence"&gt;Wiki&lt;/a&gt;: It clears up different terminologies that are (misused) to refer to the KL …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2 id="resource"&gt;Resource&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://tinyurl.com/uta23v5"&gt;Lec on VAE&lt;/a&gt;, by Ali Ghodsi: This lecture motivates KL Divergence as the measurement of difference in the average information content of two random varialbes, whose distributions are &lt;span class="math"&gt;\(p\)&lt;/span&gt; and &lt;span class="math"&gt;\(q\)&lt;/span&gt; in in the article.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Kullback&amp;ndash;Leibler_divergence"&gt;Wiki&lt;/a&gt;: It clears up different terminologies that are (misused) to refer to the KL.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tuvalu.santafe.edu/~simon/it.pdf"&gt;Information Theory for Intelligent People&lt;/a&gt;, by Simon Dedeo&lt;ul&gt;
+&lt;li&gt;It gives a great example of "answering 20 questions" problem as a way to think about basic concepts in info theory, including entropy, KL divergence and mutual information.&lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(H(X)\)&lt;/span&gt; is equal to the average &lt;em&gt;length of an arbitrary tree&lt;/em&gt;, which is the number of questions to get to choice &lt;span class="math"&gt;\(x\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;"(Using &lt;span class="math"&gt;\(H(X)\)&lt;/span&gt;,) (f)or any probability distribution, we can now talk about "how uncertain we are about the outcome", "how much information is in the process", or "how much entropy the process has", and even measure it, in bits" (p.3)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="ML"></category><category term="divergence"></category><category term="similarity"></category></entry><entry><title>Bayesian Data Analysis for dummies like me</title><link href="https://cocoaaa.github.io/articles/2020/02/01/bayesian-data-analysis-for-dummies-like-me" rel="alternate"></link><published>2020-02-01T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-01:/articles/2020/02/01/bayesian-data-analysis-for-dummies-like-me</id><summary type="html">&lt;h2 id="explaining-physical-phenomenon-consistent-with-observations"&gt;Explaining physical phenomenon consistent with observations&lt;/h2&gt;
+&lt;p&gt;Bayesian data analysis is a way to iteratively building a mathemtical description of a physical phenomenon of interest using observed data. &lt;/p&gt;
+&lt;h2 id="setup"&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (&lt;span class="math"&gt;\(\theta …&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;h2 id="explaining-physical-phenomenon-consistent-with-observations"&gt;Explaining physical phenomenon consistent with observations&lt;/h2&gt;
+&lt;p&gt;Bayesian data analysis is a way to iteratively building a mathemtical description of a physical phenomenon of interest using observed data. &lt;/p&gt;
+&lt;h2 id="setup"&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (&lt;span class="math"&gt;\(\theta\)&lt;/span&gt;) as more evidence or information becomes available [wikipedia].&lt;/p&gt;
+&lt;p&gt;Therefore, it is used in the following scenario. I'll refer to the workflow as the workflow of "Bayesian data analysis" following Gelman.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;We have some physical phenomenon (aka. process) of interest that we want to describe with mathematical language. Why? because once we have the description (aka. mathematical model of the physical phenomenon), we can use it to explain how the phenomenon works as a function of its inner components, predict how it would behave as the inner components or its input variables take different values, (... any other usage of the mathematical model?)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We decide how to describe the phenomenon using a mathematical language by specifying:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variables &lt;/li&gt;
+&lt;li&gt;Relations
+This is the step of "choosing a model family (aka. a statistical model)"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now we have specified a family of probability models, each of which corresponds to a particular hypothesis/explanation of the physical process of interest. What we need to do is, to choose the "best" hypothesis from all of these possible hypotheses. To do so, we need to observe how the physical phenomenon manifests by collecting data of the outcomes of the phenomenon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Collect data of the outcomes of the phenomenon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;"Learn"/"Fit" the model to the data.  (aka, "estimate" the parameters (&lt;span class="math"&gt;\(\theta\)&lt;/span&gt;) with the data). In English, this corresponds to "find a hypothesis of the phenomenon that matches the observed data "best"".  To find such hypothesis &lt;span class="math"&gt;\(\theta \in \Theta\)&lt;/span&gt;, we need to define what is means to be the "best" hypothesis given the model (aka. Hypothesis space) and the observed data. We formulate this step as an optimization problem:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;choose a loss function &lt;span class="math"&gt;\(L(\theta \mid \text{model}, \bar{X})\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Solve the optimization problem of finding argmin of the loss:
+  &lt;div class="math"&gt;$$ \theta^{*} = \arg min  ~~ L(\theta \mid \text{model}, \bar{x})$$&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Note: &lt;span class="math"&gt;\(L(\theta \mid \text{model}, \bar{x}) \equiv L(\theta \mid \Theta, \bar{X})\)&lt;/span&gt;. So we can rewrite the optimization objection as: 
+  &lt;div class="math"&gt;$$ \theta^{*} = \arg min_{\theta \in \Theta}  ~~ L(\theta \mid  \bar{x})$$&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="more-specific-scenario-a-phenomenon-with-unobservable-variables"&gt;More specific scenario: a phenomenon with unobservable variables&lt;/h2&gt;
+&lt;p&gt;Most physical phenomenon involves variables that we can't directly observe. These are called "Latent variables", and a statiscal model with such unobservable variables (in addition to observed/data variables) are called "Latent Variable Model".  When we are focusing on the latent variable model, we often use &lt;span class="math"&gt;\(Z\)&lt;/span&gt; as the latent variables and &lt;span class="math"&gt;\(X\)&lt;/span&gt; as the data sample variable. That is, if we have &lt;span class="math"&gt;\(N\)&lt;/span&gt; observation, the sample variable will be a vector of &lt;span class="math"&gt;\(N\)&lt;/span&gt; data variables: &lt;span class="math"&gt;\(X = {X_1, X_2, \dots , X_N }\)&lt;/span&gt;.  The general setup of Bayesian data analysis workflow above (ie. choose a model &lt;span class="math"&gt;\(\rightarrow\)&lt;/span&gt; collect data &lt;span class="math"&gt;\(\rightarrow\)&lt;/span&gt; fit the model to the data &lt;span class="math"&gt;\(\rightarrow\)&lt;/span&gt; criticize the model &lt;span class="math"&gt;\(\rightarrow\)&lt;/span&gt; repeat).  We can express the bayesian data analysis workflow using these notations as follows:
+(Note these notations are consistent with Blei MLSS2019.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In English, describe what is the physical phenomenon of interest&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose a statistical model by specifying&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;variables (nodes in the graph)&lt;ul&gt;
+&lt;li&gt;data variables (aka. observable variables): &lt;span class="math"&gt;\(X\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;latent variables: &lt;span class="math"&gt;\(Z\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;relations (edges in the graph)&lt;ul&gt;
+&lt;li&gt;as a (parametrized) function of its nodes&lt;br/&gt;
+Let's denote the set of all parameters in the model, &lt;span class="math"&gt;\(\theta\)&lt;/span&gt;. Our statistical model can be expressed as: &lt;span class="math"&gt;\(P(Z,X; \theta)\)&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Collect data: &lt;span class="math"&gt;\(\bar{X}\)&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Fit the model to the observed data&lt;ul&gt;
+&lt;li&gt;Choose a loss function (a function wrt parameters): &lt;span class="math"&gt;\(L(\theta;\bar{X})\)&lt;/span&gt; for &lt;span class="math"&gt;\(\theta \in \Theta\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="inference"&gt;Inference&lt;/h2&gt;
+&lt;p&gt;Generally speaking, inference (which stems from the Philosophy of Science)&lt;/p&gt;
+&lt;h3 id="bayesian-inference-method"&gt;Bayesian inference method&lt;/h3&gt;
+&lt;p&gt;Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis(&lt;span class="math"&gt;\(\theta\)&lt;/span&gt;) as more evidence or information becomes available &lt;a href="#"&gt;wikipedia&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My sketch&lt;br/&gt;
+&lt;img alt="bayesian-inference" src="/images/bayesian/bayesian-inference.jpg"/&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is &lt;strong&gt;not&lt;/strong&gt; a model, it is a general &lt;strong&gt;method&lt;/strong&gt;(aka. &lt;strong&gt;technique&lt;/strong&gt;, &lt;strong&gt;algorithm&lt;/strong&gt;) that allows to infer unknowns probabilistically via computing, eg. marginal and conditional distributions of the model, the distribution over the parameters given observed data, the conditional distribution over the latent variables given the observed data.  &lt;/p&gt;
+&lt;p&gt;Since it is a general technique (or an appoarch to doing inference) that is not tied to a specific model or a problem, we can use it whenever a suitable setup is presented.  In the Bayesian Data analysis workflow, I see two places where we can use the Bayes theorem to infer some unknown quantities in the model (ie. use bayesian inference to compute unknowns given knowns).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Use bayesian inference method to learn the model from the observed data. That is, what is the probability of the parameter of the model given observation?
+&lt;div class="math"&gt;$$ P(\theta \mid \bar{X})$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use bayes' theorem to compute the conditional distribution of latent variables given observed data and a fixed parameter (eg. the learned parameter from step 1)
+&lt;div class="math"&gt;$$ P(Z \mid \bar{X}, \bar{\theta})$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note: I was living in the smog under the impression that "Bayesian inference" is tied to either 1 or 2. But now I understand "bayesian inference" just means computing probability distribution over the unknowns (either because they are unobservable (ie. conditional distribution of latent variables given observed data), or a subset of variables (ie. marginal distribution) that requires further computation on the joint distribution (aka. the probability model)). So, as Wikipedia's definition clarifies, anytime we have a quantity (with prior distribution) and make observations regarding a relevant process, we can &lt;strong&gt;update&lt;/strong&gt; the prior distribution using the observed data via Bayes Theorem. That is all that is in the intimidating word "Bayesian inference". Gosh, can we please give another name to this way of doing computation with a probability model and  data assumed to come from the probability model? "Inference" is such intimidating word. I feel like I need to do philosophy to use this word and everytime I hear this term, I feel like I never understand what the heck it is about because I don't understand what inference means in Philosophy. Yikes! :[&lt;/p&gt;
+&lt;h2 id="approximate-inference_1"&gt;Approximate Inference&lt;/h2&gt;
+&lt;p&gt;When we cannot compute the "flipped" probability ("flipped" using the Bayes Theorem) because it is, for example, too computationally expensive, we sometimes resort to an approximation of the true "flipped" probability. &lt;/p&gt;
+&lt;h3 id="variational-approximate-inference"&gt;Variational Approximate Inference&lt;/h3&gt;
+&lt;p&gt;People call this "Variational Bayes", which I find it very loaded and unclear whether if the term refers to a method of inference or some model family because both "V" and "B" are captialized and it gives me an impressions that it's a name of some specific class of probability distributions. Yikes2! :[ Please give another name to it. &lt;/p&gt;
+&lt;p&gt;Variational Approximate Bayesian Inference is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a method of finding a "good" &lt;strong&gt;approximate&lt;/strong&gt; distribution to the "flipped" distribution of your probability model (ie. &lt;span class="math"&gt;\(P\)&lt;/span&gt; with a fixed parameter &lt;span class="math"&gt;\(\bar{\theta}\)&lt;/span&gt;) (ie2: &lt;strong&gt;"flipped" using Bayes theorem&lt;/strong&gt; given your probability model) by formulating a proper &lt;strong&gt;optimization&lt;/strong&gt; problem. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So far, we have discussed about "bayesian inference", and the need to sometimes be content with an "approximation" to the "flipped" distribution (given a fixed parameter and observed data). The last thing to understand is the "variational" part, which correpsonds to formulating the search for a "good" approximation distribution as an optimization problem. As usual for an optimization problem, we need to define "goodness", or in this case "loss"&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sketch for understanding the motivation for variational bayesian inference method (aka. Variational Bayes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="variational-bayes" src="/images/bayesian/variational-bayes.jpg"/&gt;&lt;/p&gt;
+&lt;p&gt;To be continued...&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="ML"></category><category term="bayesian"></category><category term="inference"></category><category term="variational"></category></entry><entry><title>Multimodal Distribution in Image or Text domain</title><link href="https://cocoaaa.github.io/articles/2020/02/01/multimodal-distribution-in-image-or-text-domain" rel="alternate"></link><published>2020-02-01T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-01:/articles/2020/02/01/multimodal-distribution-in-image-or-text-domain</id><summary type="html">&lt;p&gt;Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?&lt;/p&gt;
+&lt;p&gt;While reading papers on conditional image generation using generative modeling (eg. &lt;a href="https://tinyurl.com/s5drg9c"&gt;"Toward Multimodal Image-to-Image Translation"&lt;/a&gt; by Zhu et al (NIPS 2017)), I wasn't clear what was meant by "one-to-many mapping" between input image domain and output image …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?&lt;/p&gt;
+&lt;p&gt;While reading papers on conditional image generation using generative modeling (eg. &lt;a href="https://tinyurl.com/s5drg9c"&gt;"Toward Multimodal Image-to-Image Translation"&lt;/a&gt; by Zhu et al (NIPS 2017)), I wasn't clear what was meant by "one-to-many mapping" between input image domain and output image domain, "multimodal distribution" in the output image domain, or "multi-modal outputs" (eg. &lt;a href="https://tinyurl.com/szjmmzf"&gt;Quora&lt;/a&gt;). &lt;/p&gt;
+&lt;h3 id="definition"&gt;Definition&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In statistics, a &lt;code&gt;multimodal distribution&lt;/code&gt; is a continuous probability distribution with two or more modes (distinct peaks; local maxima) - &lt;a href="https://tinyurl.com/pa47gte"&gt;wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;(single-variable) bimodal distribution&lt;/th&gt;
+&lt;th&gt;bivariate multimodal distribution&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img alt="bimodal" src="/images/bimodal.png"/&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="bivariate-multimodal" src="/images/bivariate-multimodal.png"/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--|&lt;img src="/images/bimodal.png" alt="bimodal" width="250px"/&gt; | &lt;img src="/images/bivariate-multimodal.png" alt="bivariate-multimodal" width="250px"/&gt;--&gt;
+&lt;p&gt;In high-dimensional space (such as an Image domain: &lt;span class="math"&gt;\(P(X)\)&lt;/span&gt; where X lives in &lt;span class="math"&gt;\(d\)&lt;/span&gt;-dim space where &lt;span class="math"&gt;\(d\)&lt;/span&gt; is the number of pixels, eg. &lt;span class="math"&gt;\(32x32=1024\)&lt;/span&gt;. If each pixel &lt;span class="math"&gt;\(X_i\)&lt;/span&gt; takes a binary value (0 or 1), the size of this image domain is &lt;span class="math"&gt;\(2^{1024}\)&lt;/span&gt;.  If each pixel takes an integer value &lt;span class="math"&gt;\(\in [0,255]\)&lt;/span&gt;, then the size of this image domain is &lt;span class="math"&gt;\(256^{1024}\)&lt;/span&gt;. This, by the way, is too big to compute for Mac's spotlight:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="too-big" src="/images/too-big.png" width="500px"/&gt; &lt;/p&gt;
+&lt;p&gt;What it means by saying "the distribution of (output) image is multimodal" is to say, there are multiple images (ie. realization of the random variable (vector) X) with the (local) maxima value of the probability. In Figure below, the green dots represent the local maxima, ie. modes of the distribution. The configurations (ie. specific values/realizations) that achieves the (local) maximum probability density are the "probable/likely" images. &lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt="gan-multimodal-outputs" src="images/gan-multimodal-outputs.jpg" width="250px"/&gt;
+&lt;img alt="multimodal-annot" src="images/bivariate-multimodal-annot.png" width="250px"/&gt;
+&lt;figcaption&gt;The green dots representing modes of the distribution over the image domain (which is abstracted into a 2Dim space for visualization, in this case)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;So, given one input image, if the distribution of the output image random variable is multi-modal, the standard problem of &lt;pre&gt;Find &lt;span class="math"&gt;\(x\)&lt;/span&gt; s.t. &lt;span class="math"&gt;\(\underset{x \in \mathcal{X}}{\arg\max} P(X)\)&lt;/span&gt; (&lt;span class="math"&gt;\(\mathcal{X}\)&lt;/span&gt; is the image space)&lt;/pre&gt; has multiple solutions. According to the paper (Toward Multimodal Image-to-Image Translation), many previous works have produced a "single" output image as "the" argmax of the output image distribution. But this is not accurate if the output image distribution is multi-modal.  We would like to see/generate as many of those argmax configurations/output images. One way to do so, is by sampling from the output image distribution.  This is the paper's approach. &lt;/p&gt;
+&lt;hr/&gt;
+&lt;h3 id="multimodal-distribution-as-the-distribution-over-the-space-of-target-domains-domain-adaptiontransfer-leraning"&gt;Multimodal distribution as the distribution over the space of target domains [Domain adaption/transfer leraning]&lt;/h3&gt;
+&lt;p&gt;So far, I viewed the multimodal distribution as a distribution over a specific domain (eg. Image domain), and the random variable corresponded to a realization, eg. an observed/sampled/output image instance. However, &lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="TIL (Today I Learned)"></category><category term="generative-modeling"></category><category term="multimodal"></category><category term="one-to-many-mapping"></category></entry><entry><title>Stochastic Thinking: Predictive non-determinism</title><link href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking-predictive-non-determinism" rel="alternate"></link><published>2020-01-20T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-20:/articles/2020/01/20/stochastic-thinking-predictive-non-determinism</id><summary type="html">&lt;p&gt;MIT 6.0002 Lec4: Stochastic Thinking
+- &lt;a href="https://www.youtube.com/watch?v=-1BnXEwHUok"&gt;YOUTUBE&lt;/a&gt;
+- &lt;img alt="predictive-nondeterminism" src="images/predictive-nondeterminism.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Often confusing categorization of a mathematical model:
+- &lt;a href="https://tinyurl.com/sxg4ejt"&gt;SE&lt;/a&gt;
+    - NB: in CS, people often use "deterministic" to mean non-randomized. This causes confusion:
+        &amp;gt; "Determinism" means non-randomized. But, "Non-determinism" does &lt;strong&gt;not&lt;/strong&gt; mean "randomized".
+- Determinism vs. Non-Determinism
+- ...? vs. stochastic/random 
+    - a stochastic (or random) process means, &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;p …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;MIT 6.0002 Lec4: Stochastic Thinking
+- &lt;a href="https://www.youtube.com/watch?v=-1BnXEwHUok"&gt;YOUTUBE&lt;/a&gt;
+- &lt;img alt="predictive-nondeterminism" src="images/predictive-nondeterminism.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Often confusing categorization of a mathematical model:
+- &lt;a href="https://tinyurl.com/sxg4ejt"&gt;SE&lt;/a&gt;
+    - NB: in CS, people often use "deterministic" to mean non-randomized. This causes confusion:
+        &amp;gt; "Determinism" means non-randomized. But, "Non-determinism" does &lt;strong&gt;not&lt;/strong&gt; mean "randomized".
+- Determinism vs. Non-Determinism
+- ...? vs. stochastic/random 
+    - a stochastic (or random) process means, &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;hidden&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;![stochastic-process](images/stochastic-process.png)&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I think better way to put this confusion into words is: "Nondeterinistc vs. Probabilistic models"
+- &lt;a href="http://planning.cs.uiuc.edu/node440.html"&gt;lavalle 2006&lt;/a&gt;&lt;/p&gt;</content><category term="TIL (Today I Learned)"></category></entry><entry><title>How to read a paper</title><link href="https://cocoaaa.github.io/articles/2020/01/16/how-to-read-a-paper" rel="alternate"></link><published>2020-01-16T00:00:00-08:00</published><updated>2020-01-16T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-16:/articles/2020/01/16/how-to-read-a-paper</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;Ref: &lt;a href="https://tinyurl.com/teh4dhg"&gt;medium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="before-you-start"&gt;Before you start&lt;/h2&gt;
+&lt;p&gt;Q: &lt;strong&gt;"why are you reading this?"&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write it down where you can see it while reading the paper&lt;ul&gt;
+&lt;li&gt;Your purpose/goal of reading may change later.  You will have a different experience then. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Is there a clear answer for this question? If not,  you probably …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;Ref: &lt;a href="https://tinyurl.com/teh4dhg"&gt;medium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="before-you-start"&gt;Before you start&lt;/h2&gt;
+&lt;p&gt;Q: &lt;strong&gt;"why are you reading this?"&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write it down where you can see it while reading the paper&lt;ul&gt;
+&lt;li&gt;Your purpose/goal of reading may change later.  You will have a different experience then. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Is there a clear answer for this question? If not,  you probably should not go on reading the paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="warm-up-1-hr"&gt;Warm-up (1 hr)&lt;/h2&gt;
+&lt;p&gt;Think of it like going on a date with a new person. It's a new relationship, so don't try/expect to understand it in one go -- this is rude:)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Go to a quiet place for a few hours. Take your coffee with you&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start by reading the title and abstract&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Goal: gain a high level overview of the paper&lt;/li&gt;
+&lt;li&gt;What are the main goals of the authors?&lt;/li&gt;
+&lt;li&gt;What are the high level results?&lt;/li&gt;
+&lt;li&gt;What is the problem the paper is solving?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Skim the paper (~15min)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look at the figures&lt;/li&gt;
+&lt;li&gt;Jot down any keywords to look out for when reading&lt;/li&gt;
+&lt;li&gt;Goal: get a sense for the layout of the paper; get keywords to look out for&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to introduction, especially if you feel unfamiliar with the field/paper. Okay to do it often. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Goal: get other references to fill in the gap in your understanding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Carefully step through each figure&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;why?: each figure contain key points of the paper. Authors spend a lot of time creating them and try to condense important information that supports their experiments/hypothesis. Pay particular attention to them.&lt;/li&gt;
+&lt;li&gt;Goal: Gain feel for what the authors think is most important; &lt;strong&gt;Write down&lt;/strong&gt; what to look out for when reading the paper in detail (which will follow soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Take a break. Walk a bit. &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="first-pass-date-15hr"&gt;First ~pass~ date (1.5hr)&lt;/h2&gt;
+&lt;p&gt;Start taking high level notes. Expect new words, unfamiliar ideas. Mark those (you don't yet need to understand every single word), move on.&lt;/p&gt;
+&lt;p&gt;This is your first date with the paper. You are not going to learn all gory details about it, but you will ask good questions, understand what motivated the paper, and what it's going to be about. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Begin again with the &lt;strong&gt;abstract&lt;/strong&gt;, skim through the &lt;strong&gt;introduction&lt;/strong&gt;*&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Diligent pass through the &lt;strong&gt;methods&lt;/strong&gt; section&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Goal: Draw down the overall setup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Read the &lt;strong&gt;results&lt;/strong&gt; and &lt;strong&gt;discussion&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Goal: write down the key findings and how they were determined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Take a break. Do jumping jacks. Sing a song.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let's continue.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Revisit the &lt;strong&gt;figures&lt;/strong&gt;: by now, you should be able to get into nitty gritties of the figures (having read the methods, results, and discussion section)&lt;ul&gt;
+&lt;li&gt;Goal: find more gems from the figures. &lt;/li&gt;
+&lt;li&gt;Spend about 30min ~ 1hr&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="second-full-pass-1-2hrs"&gt;Second full pass (1-2hrs)&lt;/h2&gt;
+&lt;h3 id="goal"&gt;Goal:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Focus on shoring up what you didn't understand previously,&lt;/li&gt;
+&lt;li&gt;Gain a command of the &lt;strong&gt;methods&lt;/strong&gt; section &lt;ul&gt;
+&lt;li&gt;Test if you can write a pseudocode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Being a critical reader of the &lt;strong&gt;discussion&lt;/strong&gt; section&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="details"&gt;Details:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Pay particular attention to the areas you marked as being difficult to understand. This is why you read a new paper. Don't play safe.  Okay to feel uncomfortable. Okay to do it the following day (but don't push it back too much).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Leave no word undefined, unclear. Make sure you understand every sentence.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Skim through areas you feel confident in (eg. abstract, intro, results)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="guiding-questions_1"&gt;Guiding Questions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;from &lt;a href="https://tinyurl.com/teh4dhg"&gt;Quora&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What previous research and ideas were cited that this paper is building off of? (usually introduction)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Was there reasoning for performing this research, if so what was it? (introduction)&lt;/li&gt;
+&lt;li&gt;Clearly list out the objectives of the study&lt;/li&gt;
+&lt;li&gt;Did you write down &lt;code&gt;3&lt;/code&gt; on your note?&lt;/li&gt;
+&lt;li&gt;Was any equipment/software used? (methods)&lt;/li&gt;
+&lt;li&gt;What variables were measured during experimentation? (methods)&lt;/li&gt;
+&lt;li&gt;Were any statistical tests used? What were their results? (methods/results)&lt;/li&gt;
+&lt;li&gt;What are the main findings? (results)&lt;/li&gt;
+&lt;li&gt;How do these results fit into the context of other research and their 'field'? (discussion)&lt;/li&gt;
+&lt;li&gt;Explain each figure and discuss their significance.&lt;/li&gt;
+&lt;li&gt;Did you write down &lt;code&gt;9&lt;/code&gt; on your note?&lt;/li&gt;
+&lt;li&gt;Can the results be reproduced and is there any code available?&lt;/li&gt;
+&lt;li&gt;Name the authors, year, and title of the paper!&lt;/li&gt;
+&lt;li&gt;Are any of the authors familiar, do you know their previous work? &lt;/li&gt;
+&lt;li&gt;What key terms and concepts do I not know and need to look up in a dictionary, textbook, or ask someone?&lt;/li&gt;
+&lt;li&gt;What are your thoughts on the results? Do they seem valid?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr/&gt;
+&lt;h2 id="apply-the-technique"&gt;Apply the technique&lt;/h2&gt;
+&lt;p&gt;Most importantly, apply this guideline to your reading. 
+Modify it to suit your personality. &lt;/p&gt;
+&lt;hr/&gt;
+&lt;h2 id="write-a-reading-report"&gt;Write a reading report&lt;/h2&gt;
+&lt;p&gt;This is the end product of your reading. Without it, you didn't do your job. &lt;br/&gt;
+^Really. &lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;To check out&lt;/summary&gt;
+
+## check out:
+- Jason Eisner (JHU): [how to read a paper](https://www.cs.jhu.edu/~jason/advice/how-to-read-a-paper.html)
+- Prof.Murat at Buffalo: 
+    - [how to lead a reading group](https://tinyurl.com/rbree4d)
+    - [how he reads a paper](http://muratbuffalo.blogspot.com/2013/07/how-i-read-research-paper.html)
+        - how Prof. Nancy Lynch works: cool!
+
+- Cathy Wu, MIT: [how to lead a reading group](https://tinyurl.com/rbree4d)
+&lt;/details&gt;</content><category term="Research"></category></entry><entry><title>Let's blog with Pelican</title><link href="https://cocoaaa.github.io/articles/2020/01/10/lets-blog-with-pelican" rel="alternate"></link><published>2020-01-10T00:00:00-08:00</published><updated>2020-01-11T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-10:/articles/2020/01/10/lets-blog-with-pelican</id><summary type="html">&lt;h2 id="makefile"&gt;Makefile&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;make html&lt;/code&gt;: generates output html files from files in &lt;code&gt;content&lt;/code&gt; folder using
+development config file&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make regenerate&lt;/code&gt;: do &lt;code&gt;make html&lt;/code&gt; with "listening" to new changes&lt;/li&gt;
+&lt;li&gt;vs. &lt;code&gt;make publish&lt;/code&gt;: similar to &lt;code&gt;make html&lt;/code&gt; except it uses settings in &lt;code&gt;pulishconf.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;make serve&lt;/code&gt;: (re)starts a http server in the &lt;code&gt;output …&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h2 id="makefile"&gt;Makefile&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;make html&lt;/code&gt;: generates output html files from files in &lt;code&gt;content&lt;/code&gt; folder using
+development config file&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make regenerate&lt;/code&gt;: do &lt;code&gt;make html&lt;/code&gt; with "listening" to new changes&lt;/li&gt;
+&lt;li&gt;vs. &lt;code&gt;make publish&lt;/code&gt;: similar to &lt;code&gt;make html&lt;/code&gt; except it uses settings in &lt;code&gt;pulishconf.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;make serve&lt;/code&gt;: (re)starts a http server in the &lt;code&gt;output&lt;/code&gt; folder. Default port is 8000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;localhost:&amp;lt;PORT&amp;gt;&lt;/code&gt; to see the output website&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ghp-import -b &amp;lt;local-gh-branch&amp;gt; &amp;lt;outputdir&amp;gt;&lt;/code&gt;: imports content in &lt;output&gt; to 
+the local branch &lt;code&gt;local-gh-branch&lt;/code&gt;&lt;/output&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="workflow"&gt;Workflow&lt;/h2&gt;
+&lt;p&gt;Key points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do every work in &lt;code&gt;dev&lt;/code&gt; branch. &lt;/li&gt;
+&lt;li&gt;Do not touch &lt;code&gt;blog-build&lt;/code&gt; or &lt;code&gt;master&lt;/code&gt;. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;blog-build&lt;/code&gt; will be indirectly modified by &lt;code&gt;ghp-import&lt;/code&gt; (or &lt;code&gt;make publish-to-github&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;and &lt;code&gt;master&lt;/code&gt; is the branch that Github will access to show my website. &lt;/li&gt;
+&lt;li&gt;So, manage the source (and outputs) only in &lt;code&gt;dev&lt;/code&gt; branch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="local-dev"&gt;Local dev&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Activate the right conda env with &lt;code&gt;pelican&lt;/code&gt; library&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;conda&lt;span class="w"&gt; &lt;/span&gt;activate&lt;span class="w"&gt; &lt;/span&gt;my-blog&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/Workspace/Blog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure you are on &lt;code&gt;dev&lt;/code&gt; branch
+git checkout dev&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(this step is for github syncing) Add new files  under &lt;code&gt;content&lt;/code&gt;
+git add my-article.md&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Generate the content with pelican
+make html # or, make regenerate &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start a local server 
+make server&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open a browser and go to localhost:8000 
+Or whatever the port number is, set in Makefile (under the variable name of PORT)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="global-dev"&gt;Global dev&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Use &lt;code&gt;make publish&lt;/code&gt; instead of &lt;code&gt;make html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Update the &lt;code&gt;blog-build&lt;/code&gt; branch with contents in &lt;code&gt;output&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Push the &lt;code&gt;blog-build&lt;/code&gt; branch's content to &lt;code&gt;origin/master&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These three steps can be done in one line: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make&lt;span class="w"&gt; &lt;/span&gt;publish-to-github
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="version-control-the-source"&gt;Version control the source&lt;/h3&gt;
+&lt;p&gt;Important: Write new contents only on the &lt;code&gt;dev&lt;/code&gt; branch&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;files&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# make sure not to push the output folder&lt;/span&gt;
+
+git&lt;span class="w"&gt; &lt;/span&gt;cm&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"&amp;lt;commit message&amp;gt;"&lt;/span&gt;
+
+git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;origin&lt;span class="w"&gt; &lt;/span&gt;dev&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;#origin/dev is the remote branch that keeps track of blog sources&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="TIL (Today I Learned)"></category></entry><entry><title>Linear Regression</title><link href="https://cocoaaa.github.io/articles/2020/01/01/linear-regression" rel="alternate"></link><published>2020-01-01T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-01:/articles/2020/01/01/linear-regression</id><content type="html">&lt;h2 id="todo"&gt;Todo:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Set up the problem&lt;/li&gt;
+&lt;li&gt;[ ] Simple housing problem&lt;/li&gt;
+&lt;li&gt;[ ] Frequentist view - minimize the squared-loss&lt;/li&gt;
+&lt;li&gt;[ ] Probablistic view - Discriminative classifier to model conditional distribution&lt;/li&gt;
+&lt;li&gt;[ ] Interactive example using &lt;code&gt;holoviews&lt;/code&gt; or &lt;code&gt;ipywwidgets&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="ML"></category></entry><entry><title>Cool Chart tool: `amcharts`</title><link href="https://cocoaaa.github.io/articles/2019/12/31/cool-chart-tool-amcharts" rel="alternate"></link><published>2019-12-31T00:00:00-08:00</published><updated>2019-12-31T00:00:00-08:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2019-12-31:/articles/2019/12/31/cool-chart-tool-amcharts</id><summary type="html">&lt;p&gt;While making a visualization for my part whereabouts for the &lt;a href="#"&gt;front page&lt;/a&gt; of this blog, I came across this easy-to-use visualization examples using &lt;code&gt;amcharts&lt;/code&gt;.  Initially, I wanted to use Google Earth Studio but it required me to import country boundaries (in KML files) as well as time to learn new …&lt;/p&gt;</summary><content type="html">&lt;p&gt;While making a visualization for my part whereabouts for the &lt;a href="#"&gt;front page&lt;/a&gt; of this blog, I came across this easy-to-use visualization examples using &lt;code&gt;amcharts&lt;/code&gt;.  Initially, I wanted to use Google Earth Studio but it required me to import country boundaries (in KML files) as well as time to learn new toolsuites, so I find this javascript based demos more useful for my need. &lt;/p&gt;
+&lt;p&gt;List of timeline + map charts
+- &lt;a href="https://www.amcharts.com/demos/fishbone-timeline/"&gt;Fishbone timeline&lt;/a&gt;
+- &lt;a href="https://www.amcharts.com/demos/flight-routes-map/"&gt;Fight routes on map&lt;/a&gt;
+- &lt;a href="https://www.amcharts.com/demos/animations-along-lines/"&gt;Flight animation on map&lt;/a&gt;
+- &lt;a href="https://www.amcharts.com/demos/map-line-chart-gauge/"&gt;Timeline animation with fligh on map&lt;/a&gt;
+- and many more &lt;a href="https://www.amcharts.com/demos/#maps"&gt;demos&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pretty neat!&lt;/p&gt;</content><category term="TIL (Today I Learned)"></category></entry><entry><title>Git refspec</title><link href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec" rel="alternate"></link><published>2017-01-01T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2017-01-01:/articles/2017/01/01/git-refspec</id><summary type="html">&lt;p&gt;Resource: &lt;a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec"&gt;git-book&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="git-remotes"&gt;Git Remotes&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remote repositories: versions of your project that are hosted on the internet&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="git-remote-v"&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Let's say I cloned a repository from some repository, for instance
+&lt;code&gt;git@github.com:cocoaaa/dip.git&lt;/code&gt;, by running:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nd"&gt;@github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;cocoaaa&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;dip&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, in this cloned …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Resource: &lt;a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec"&gt;git-book&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="git-remotes"&gt;Git Remotes&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remote repositories: versions of your project that are hosted on the internet&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="git-remote-v"&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Let's say I cloned a repository from some repository, for instance
+&lt;code&gt;git@github.com:cocoaaa/dip.git&lt;/code&gt;, by running:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nd"&gt;@github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;cocoaaa&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;dip&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, in this cloned repo's directory in my local machine, 
+&lt;code&gt;git remote&lt;/code&gt; will list the shortnames of each remote handle I've specified. 
+By default, Git gives to the server I've just cloned the shortname, &lt;code&gt;origin&lt;/code&gt;.
+Use &lt;code&gt;git remote -v&lt;/code&gt; to see both the shortname and the URLs that Git has stored for
+each shortname to use for reading and writing to that remote.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="git-remote" src="https://cocoaaa.github.io/images/git-remote.png"/&gt;&lt;/p&gt;
+&lt;h3 id="git-remote-add"&gt;&lt;code&gt;git remote add &amp;lt;shortname&amp;gt; &amp;lt;URL&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dd&gt;adds a remote in &lt;code&gt;&amp;lt;URL&amp;gt;&lt;/code&gt; with the shortname of &lt;code&gt;&amp;lt;shortname&amp;gt;&lt;/code&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h3 id="git-fetch"&gt;&lt;code&gt;git fetch &amp;lt;remote&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;The command goes out to that remote project and pulls down all the data from that
+remote project that I don't have yet. It does so for all branches in the remote.
+Upon the command execution, I should have references to all the branches from that
+remote, and I can merge in or inspect them at any time.&lt;/p&gt;
+&lt;p&gt;Remember that &lt;code&gt;git fetch&lt;/code&gt; command only downloads the data to my local repository,
+and does &lt;em&gt;NOT&lt;/em&gt; automatically merge it with any of my work or modify what I'm currently
+working on. So, it is safer than &lt;code&gt;git pull&lt;/code&gt;, yet I'm required to merge it into my 
+work whenever I'm ready. &lt;/p&gt;
+&lt;p&gt;For fetching and pushing, my current branch needs be set up to track a remote 
+&lt;em&gt;branch&lt;/em&gt;. In other words, setting up the URL to the remote repository is not enough, 
+and we need to specify which local branch will track which remote branch.  &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git clone &amp;lt;some-repo-url&amp;gt;&lt;/code&gt; automatically sets up my local &lt;code&gt;master&lt;/code&gt; branch to 
+track the remote default branch (often also &lt;code&gt;master&lt;/code&gt;) on the server I cloned from,
+ie. &lt;code&gt;&amp;lt;URL&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="push-my-local-changes-to-the-remote-server-upstream"&gt;Push my (local) changes to the remote server (upstream)&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;git push &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;&lt;/code&gt; pushes my local &lt;code&gt;branch&lt;/code&gt; to my &lt;code&gt;remote&lt;/code&gt; server. 
+For example, if I want to push my &lt;code&gt;master&lt;/code&gt; branch to my &lt;code&gt;origin&lt;/code&gt; server (recall 
+that these names are set up by &lt;code&gt;git clone &amp;lt;some-repo-url&amp;gt;&lt;/code&gt; command automatically),
+run: &lt;code&gt;git push origin master&lt;/code&gt;. Again, &lt;code&gt;origin&lt;/code&gt; is the shortname assigned to the 
+remote server URL, and &lt;code&gt;master&lt;/code&gt; is the name of the local branch I'm pushing.&lt;/p&gt;
+&lt;p&gt;If I want to push my local &lt;code&gt;dev-local&lt;/code&gt; branch to my remote repository called &lt;code&gt;origin&lt;/code&gt;'s 
+&lt;code&gt;dev-remote&lt;/code&gt; branch, I'd run &lt;code&gt;git push origin dev-local:dev-remote&lt;/code&gt;. 
+The colon syntax follows &lt;code&gt;src_refspec&lt;/code&gt;:&lt;code&gt;dst_refspec&lt;/code&gt; where &lt;code&gt;src_refspec&lt;/code&gt; and &lt;code&gt;dst_refspec&lt;/code&gt;
+are the refspecs of the source branch (in local) and the destination branch (in remote)
+of the &lt;code&gt;git push&lt;/code&gt; action, respectively.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: wait, we don't need to specify which branch in the remote server to push 
+the local branch?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="inspecting-a-remote"&gt;Inspecting a remote&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;git remote show &amp;lt;remote-shortname&amp;gt;&lt;/code&gt; command shows the details of the particular 
+remote. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="git-remote-show" src="https://cocoaaa.github.io/images/git-remote-show.png"/&gt;&lt;/p&gt;</content><category term="TIL (Today I Learned)"></category></entry></feed>

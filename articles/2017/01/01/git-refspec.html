@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Small Simplicity | Git refspec</title>
+    <link rel="shortcut icon" type="image/png" href="https://cocoaaa.github.io/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
+    <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
+    <link href="https://cocoaaa.github.io/feeds/TIL.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Categories Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="Hayley Song" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://cocoaaa.github.io/">Home</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/about-me">About</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/publications">Publications</a></li>
+                <li><a href="https://cocoaaa.github.io/blog_index">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="https://cocoaaa.github.io/">Small Simplicity</a></h1>
+            <h2>Understanding Intelligence from Computational Perspective</h2>
+        </div>
+    </header>
+
+
+    <div id="wrapper" class="pure-g">
+
+        <div id="content pure-u-1 pure-u-md-4-5">
+<h4 class="date">Jan 01, 2017</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec" rel="bookmark" title="Permanent Link to &quot;Git refspec&quot;">Git refspec</a>
+</h2>
+
+
+<p>Resource: <a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec">git-book</a></p>
+<h2 id="git-remotes">Git Remotes</h2>
+<blockquote>
+<p>Remote repositories: versions of your project that are hosted on the internet</p>
+</blockquote>
+<h3 id="git-remote-v"><code>git remote -v</code></h3>
+<p>Let's say I cloned a repository from some repository, for instance
+<code>git@github.com:cocoaaa/dip.git</code>, by running:</p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">cocoaaa</span><span class="o">/</span><span class="n">dip</span><span class="o">.</span><span class="n">git</span>
+</code></pre></div>
+<p>Then, in this cloned repo's directory in my local machine, 
+<code>git remote</code> will list the shortnames of each remote handle I've specified. 
+By default, Git gives to the server I've just cloned the shortname, <code>origin</code>.
+Use <code>git remote -v</code> to see both the shortname and the URLs that Git has stored for
+each shortname to use for reading and writing to that remote.</p>
+<p><img alt="git-remote" src="https://cocoaaa.github.io/images/git-remote.png"/></p>
+<h3 id="git-remote-add"><code>git remote add &lt;shortname&gt; &lt;URL&gt;</code></h3>
+<dl>
+<dd>adds a remote in <code>&lt;URL&gt;</code> with the shortname of <code>&lt;shortname&gt;</code></dd>
+</dl>
+<h3 id="git-fetch"><code>git fetch &lt;remote&gt;</code></h3>
+<p>The command goes out to that remote project and pulls down all the data from that
+remote project that I don't have yet. It does so for all branches in the remote.
+Upon the command execution, I should have references to all the branches from that
+remote, and I can merge in or inspect them at any time.</p>
+<p>Remember that <code>git fetch</code> command only downloads the data to my local repository,
+and does <em>NOT</em> automatically merge it with any of my work or modify what I'm currently
+working on. So, it is safer than <code>git pull</code>, yet I'm required to merge it into my 
+work whenever I'm ready. </p>
+<p>For fetching and pushing, my current branch needs be set up to track a remote 
+<em>branch</em>. In other words, setting up the URL to the remote repository is not enough, 
+and we need to specify which local branch will track which remote branch.  </p>
+<p><code>git clone &lt;some-repo-url&gt;</code> automatically sets up my local <code>master</code> branch to 
+track the remote default branch (often also <code>master</code>) on the server I cloned from,
+ie. <code>&lt;URL&gt;</code>.</p>
+<h3 id="push-my-local-changes-to-the-remote-server-upstream">Push my (local) changes to the remote server (upstream)</h3>
+<p><code>git push &lt;remote&gt; &lt;branch&gt;</code> pushes my local <code>branch</code> to my <code>remote</code> server. 
+For example, if I want to push my <code>master</code> branch to my <code>origin</code> server (recall 
+that these names are set up by <code>git clone &lt;some-repo-url&gt;</code> command automatically),
+run: <code>git push origin master</code>. Again, <code>origin</code> is the shortname assigned to the 
+remote server URL, and <code>master</code> is the name of the local branch I'm pushing.</p>
+<p>If I want to push my local <code>dev-local</code> branch to my remote repository called <code>origin</code>'s 
+<code>dev-remote</code> branch, I'd run <code>git push origin dev-local:dev-remote</code>. 
+The colon syntax follows <code>src_refspec</code>:<code>dst_refspec</code> where <code>src_refspec</code> and <code>dst_refspec</code>
+are the refspecs of the source branch (in local) and the destination branch (in remote)
+of the <code>git push</code> action, respectively.</p>
+<blockquote>
+<p>Q: wait, we don't need to specify which branch in the remote server to push 
+the local branch?</p>
+</blockquote>
+<h3 id="inspecting-a-remote">Inspecting a remote</h3>
+<p><code>git remote show &lt;remote-shortname&gt;</code> command shows the details of the particular 
+remote. </p>
+<p><img alt="git-remote-show" src="https://cocoaaa.github.io/images/git-remote-show.png"/></p>
+<div class="clear"></div>
+
+<div class="info">
+    <a href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/TIL" rel="tag">TIL (Today I Learned)</a>
+</div>
+
+</article>
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+                &middot;
+                <a href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="alternate">Atom Feed</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+
+</html>

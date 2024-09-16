@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Information</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/IT.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2022-06-14T23:43:56-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Short note on coarse-graining</title><link href="https://cocoaaa.github.io/articles/2021/02/23/short-note-on-coarse-graining" rel="alternate"></link><published>2021-02-23T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-23:/articles/2021/02/23/short-note-on-coarse-graining</id><summary type="html">&lt;p&gt;One of the axioms in Shannon's information theory is that (Shannon's) entropy satisfies coarse-graining property:&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt="coarse-graining-dedeo" src="/images/it/coarse-graining-dedeo.png" width="60%"/&gt;
+&lt;figcaption&gt; While reading Information Theory for Intelligent People by S.DeDeo
+&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;This property is closely related to the conditional probabilities.
+In communication -- regardless of the types of agents involved, eg. between the people over a phone …&lt;/p&gt;</summary><content type="html">&lt;p&gt;One of the axioms in Shannon's information theory is that (Shannon's) entropy satisfies coarse-graining property:&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt="coarse-graining-dedeo" src="/images/it/coarse-graining-dedeo.png" width="60%"/&gt;
+&lt;figcaption&gt; While reading Information Theory for Intelligent People by S.DeDeo
+&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;This property is closely related to the conditional probabilities.
+In communication -- regardless of the types of agents involved, eg. between the people over a phone, between parent cell's DNA to daughter cell's DNA, between a disk storage at time T and that at time T+10), or between me (the writer of this article) and you (the reader),
+ there is some 'tolerance' bound that allows "good-enough" intention/semantics to be transmitted and understood between the sender and the receiver.
+How is this idea related to the Rate-Distortion theory or error-correcting codes?
+Can this idea help us understand/define the "semantic" information (vs. Shannon's Information measure is often called "syntactic" because it is ignorant/invariant to the identities of the events whose probabilities within the process we are measuring the uncertainty of).&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Pondering... &lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;Coarse-graining/level of details when describing a process&lt;/li&gt;
+&lt;li&gt;As we 'abstract' away from particular representational form of an event/instance, we move from semantics+form domain to &amp;rarr; &amp;rarr; &amp;rarr; semantics+less form domain. This allows me to say "The chair is blue" and you understand what general color the chair is.&lt;/li&gt;
+&lt;li&gt;At which level of abstraction / this ladder of coarse-graining, do we get sufficient (ie. good-enough to communication our intentions) level of semantics?&lt;/li&gt;
+&lt;li&gt;If we measure $H(\tilde{X})$ at that level, can we say that quantity measures 'semantic information'?&lt;/li&gt;
+&lt;li&gt;The difference $H(G)$ is the force/gradient that drives the flow of information -- information of what?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</content><category term="Information"></category><category term="coarse-graining"></category><category term="error-tolerance"></category></entry></feed>

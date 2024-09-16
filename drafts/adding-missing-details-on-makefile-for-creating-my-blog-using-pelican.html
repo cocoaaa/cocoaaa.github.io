@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Small Simplicity | Adding missing details on Makefile for creating my blog using Pelican</title>
+    <link rel="shortcut icon" type="image/png" href="https://cocoaaa.github.io/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cocoaaa.github.io/favicon.ico">
+    <link href="https://cocoaaa.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Full Atom Feed" />
+    <link href="https://cocoaaa.github.io/feeds/til.atom.xml" type="application/atom+xml" rel="alternate" title="Small Simplicity Categories Atom Feed" />
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:wght@500|Fira+Sans+Condensed|Cantarell|VT323&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://cocoaaa.github.io/theme/css/print.css" type="text/css" media="print" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="Hayley Song" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://cocoaaa.github.io/">Home</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/about-me">About</a></li>
+                <li><a href="https://cocoaaa.github.io/pages/publications">Publications</a></li>
+                <li><a href="https://cocoaaa.github.io/blog_index">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="https://cocoaaa.github.io/">Small Simplicity</a></h1>
+            <h2>Understanding Intelligence from Computational Perspective</h2>
+        </div>
+    </header>
+
+
+    <div id="wrapper" class="pure-g">
+
+        <div id="content pure-u-1 pure-u-md-4-5">
+<h4 class="date">Sep 15, 2024</h4>
+
+<article class="post">
+<h2 class="title">
+    <a href="https://cocoaaa.github.io/drafts/adding-missing-details-on-makefile-for-creating-my-blog-using-pelican.html" rel="bookmark" title="Permanent Link to &quot;Adding missing details on Makefile for creating my blog using Pelican&quot;">Adding missing details on Makefile for creating my blog using Pelican</a>
+</h2>
+
+
+<h2 id="log">log</h2>
+<ul>
+<li>20240915-160152 - i am reinstalling pelican conda env:</li>
+<li>conda create --name my-blog pelican </li>
+<li>
+<p>installed: pelican 4.9</p>
+<ul>
+<li>python 3.12</li>
+</ul>
+</li>
+<li>
+<p>while running <code>make publish</code>, getting errors - from missin glibs:</p>
+</li>
+<li>
+<p>so i am intsllaing those libs:</p>
+<ul>
+<li>~~conda install anaconda::html5lib~~ --&gt; seemed not right (taking it a while to search the right version )</li>
+<li>[x] use this: mamba install html5lib  --&gt; success!</li>
+<li>[x] mamba install markdown=3.3.7 </li>
+<li>use this version to avoid error (caused by changes in markdown library after 3.4 version: see https://github.com/mkdocs/mkdocs/issues/2892)</li>
+<li></li>
+<li></li>
+</ul>
+<h2 id="which-theme-is-being-used">which theme is being used?</h2>
+<ul>
+<li>In my publishconf.py 's theme: `theme/blue-penguin'</li>
+</ul>
+</li>
+</ul>
+<h2 id="on-make-devserver">On <code>make devserver</code></h2>
+<ul>
+<li>
+<p>in <code>develop_server.sh</code>, see the function <code>usage</code>:
+    &gt; it doesn't read your Pelican settingsm so if you edit any paths in your Makefile you will need to edit your settings as well</p>
+</li>
+<li>
+<p>so I'm now updating the paths on the top of this file to "match your Makefile" as it's suggested int eh is file (on the very top)</p>
+</li>
+<li>i don't know how this wasn't updated (and ran?) in the previous builds?</li>
+<li>maybe i've never really used <code>make devserver</code> - how would that be possible,,, i still don't understand...</li>
+</ul>
+<h2 id="to-publish-to-real-website">To publish to real website:</h2>
+<p>make publish-to-github
+- this need <code>ghp-import</code> python library:
+- whicih can be installed via conda</p>
+<h2 id="to-add-toc-to-articles-and-posts">To add TOC to articles and posts:</h2>
+<ul>
+<li>need to install a plugin </li>
+<li><code>pelican-toc</code></li>
+<li>requires beautifulsoup4 to be installed<ul>
+<li><code>mamba install beautifulsoup4</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="temp-note">temp note</h2>
+<p>In Makefile:</p>
+<ul>
+<li><code>CONFFILE</code>: set this to the development config file which is used when running <code>make html</code>, <code>makedewverser</code><ul>
+<li>eg. <code>pelicanconf.py</code> (vs <code>publishconf.py</code> which is used when running <code>make publish</code>)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Creating Themes
+src: https://docs.getpelican.com/en/stable/themes.html
+To generate its HTML output, Pelican uses the Jinja templating engine due to its flexibility and straightforward syntax. If you want to create your own theme, feel free to take inspiration from the &ldquo;simple&rdquo; theme.</p>
+<p>To generate your site using a theme you have created (or downloaded manually and then modified), you can specify that theme via the -t flag:</p>
+<p>pelican content -s pelicanconf.py -t /projects/your-site/themes/your-theme
+If you&rsquo;d rather not specify the theme on every invocation, you can define THEME in your settings to point to the location of your preferred theme.</p>
+</blockquote>
+<div class="clear"></div>
+
+<div class="info">
+    <a href="https://cocoaaa.github.io/drafts/adding-missing-details-on-makefile-for-creating-my-blog-using-pelican.html">posted at 00:00</a>
+    &nbsp;&middot;&nbsp;<a href="https://cocoaaa.github.io/category/til" rel="tag">TIL</a>
+</div>
+
+</article>
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+                &middot;
+                <a href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="alternate">Atom Feed</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+
+</html>
