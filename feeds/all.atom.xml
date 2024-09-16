@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T08:25:28-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T08:25:28-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T10:05:40-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T10:05:40-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -19,14 +19,17 @@ testing sidebar
 &lt;figure&gt;
 &lt;img alt="profile" src="/images/profile.jpg" width="250"/&gt;
 &lt;/figure&gt;
-&lt;!-- Add my recent update section to the right side --&gt;
-&lt;!-- &lt;h1 align="center"&gt; Recent updates! &lt;/h1&gt; --&gt;
-&lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
 &lt;/div&gt;
-&lt;!-- end of testing playground --&gt;
-&lt;!--todo: resume here --&gt;
-&lt;p&gt;I'm a Computer Science PhD student at USC's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt; interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
-&lt;p&gt;Before starting my PhD, I studied Mathematics …&lt;/p&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+&lt;!-- Add my recent update section to the right side --&gt;
+&lt;div class="marginnote"&gt;
+&lt;!-- &lt;div class=marginnote align="center"&gt; --&gt;
+&lt;h1 align="center" id="recent-updates"&gt; Recent updates! &lt;/h1&gt;
+&lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
+&lt;div ;="" style="font-size:0.9em"&gt;
+&lt;ul&gt;
+&lt;li&gt;2024 Feb: Our paper (ManiFPT: On Defining and Analyzing the Fingerprints of Generative Models) is accepted to CVPR 2024!&lt;/li&gt;
+&lt;li&gt;2024 May: I am invited to an AI meeting hosted by LG AI Research in the Bay Area to give a spotlight talk on my research. Thank you!&lt;/li&gt;
+&lt;li&gt;2023 …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -46,16 +49,46 @@ testing sidebar
 &lt;figure&gt;
 &lt;img alt="profile" src="/images/profile.jpg" width="250"/&gt;
 &lt;/figure&gt;
+&lt;/div&gt;
 &lt;!-- Add my recent update section to the right side --&gt;
-&lt;!-- &lt;h1 align="center"&gt; Recent updates! &lt;/h1&gt; --&gt;
+&lt;div class="marginnote"&gt;
+&lt;!-- &lt;div class=marginnote align="center"&gt; --&gt;
+&lt;h1 align="center" id="recent-updates"&gt; Recent updates! &lt;/h1&gt;
 &lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
+&lt;div ;="" style="font-size:0.9em"&gt;
+&lt;ul&gt;
+&lt;li&gt;2024 Feb: Our paper (ManiFPT: On Defining and Analyzing the Fingerprints of Generative Models) is accepted to CVPR 2024!&lt;/li&gt;
+&lt;li&gt;2024 May: I am invited to an AI meeting hosted by LG AI Research in the Bay Area to give a spotlight talk on my research. Thank you!&lt;/li&gt;
+&lt;li&gt;2023 Dec: Our paper on model attribution is accepted to NeurIPS Workshop on Attirbution at Large Scale.&lt;/li&gt;
+&lt;li&gt;I am preparing for a talk at &lt;a href="https://www.scipy2021.scipy.org"&gt;Scipy 2021&lt;/a&gt; in July.&lt;/li&gt;
+&lt;li&gt;I got accepted to &lt;a href="https://www.santafe.edu/engage/learn/schools/sfi-complex-systems-summer-school"&gt;2021 Complex Systems Summer School&lt;/a&gt; at Santa Fe Institute, Woohoo!&lt;/li&gt;
+&lt;li&gt;I gave my first tutorial @ PyData LA, 2019 on "Experimental ML with Holoviews/Geoviews + Pyorch". Here are my talk &lt;a href="/pdfs/experimental-ml-2019-hayley.pdf"&gt;slides&lt;/a&gt;, &lt;a href="#"&gt;video&lt;/a&gt; and &lt;a href="(https://github.com/cocoaaa/PyData-LA-2019"&gt;jupyter notebook materials&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;I participated in &lt;a href="https://sites.google.com/earthoutreach.org/geoforgood19/home"&gt;Geo4Good&lt;/a&gt; @ Google in Mtn View, CA! Check out some &lt;a href="https://tinyurl.com/wdoyepy"&gt;highlights&lt;/a&gt; of inspiring project going on using Google Earth Engine and Studio. &lt;/li&gt;
+&lt;li&gt;New post: "Total variation, KL-Divergence, Maximum Likelihood"&lt;/li&gt;
+&lt;li&gt;New post: "Let's be honest: peeling the assumptions that get us to Variational Autoencoders"&lt;/li&gt;
+&lt;li&gt;New post: "Thinking about an observer vs. the observed"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;!-- end of testing playground --&gt;
 &lt;!--todo: resume here --&gt;
-&lt;p&gt;I'm a Computer Science PhD student at USC's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt; interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations.&lt;/p&gt;
+&lt;p&gt;I'm a Computer Science PhD student at USC, working with Prof. &lt;a href="http://ilab.usc.edu/itti/"&gt;Laurent Itti&lt;/a&gt; at &lt;a href="http://ilab.usc.edu/"&gt;iLab&lt;/a&gt; and Prof. Wael Abd-Almageed at ISI's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.  Along the way, I interned at a French robotics startup &lt;em&gt;Keecker&lt;/em&gt; and academic research labs in MIT's CSAIL, Media Lab, McGovern Institute and in INRIA.  After my Masters, I worked at Apple as a COOP for 9 months.&lt;/p&gt;
-&lt;p&gt;My research interest lies at the intersection of &lt;strong&gt;representation learning&lt;/strong&gt; and &lt;strong&gt;information&lt;/strong&gt; theory, inspired by the way our perceptual system integrates &lt;strong&gt;multimodal&lt;/strong&gt; sensory inputs via identifying &lt;strong&gt;invariant semantics&lt;/strong&gt;.  I am interested in understanding how the &lt;strong&gt;semantic information&lt;/strong&gt; flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow. &lt;/p&gt;
-&lt;p&gt;My current guiding question is, &lt;/p&gt;
+&lt;h2 id="research-interest"&gt;Research Interest&lt;/h2&gt;
+&lt;p&gt;Broadly, my research interest lies at understanding how complex, high-dimensional information-processing systems (e.g., human intelligence, modern generative models, human movements like traffic patterns) behave and
+developing effecient algorithms to analyze their characteristics and traces in a principled way, in order to improve their internal mechanisms to steer their behaviors away from degenerative behaviors, and towards rightly-valued ones. 
+Of many such complex systems, my PhD research focuses on generative models and representation learning algorithms.&lt;/p&gt;
+&lt;p&gt;I am particularly interested in formalizing the theory of generative models -- in particular, their high-dimensional behaviors, characteristics (i.e., behavioral "fingerprints") and controllability -- from geometric perspectives. &lt;/p&gt;
+&lt;p&gt;To this end, I approach my problems standing on the rich theory of differential geometry and Riemannian Manifold, and aim to apply theoretical and computational tools from Riemannian geometry to study generative models.&lt;/p&gt;
+&lt;p&gt;My recent work on fingerprinting generative models proposed a useful theoretical framework to represent model behaviors in a manfold language (i.e., as vector fields on a Riemannian manifold)(See more details &lt;a href="/pages/publications.html"&gt;here&lt;/a&gt;, and I am excited to apply and extend this work to study the geometric signatures of generative models, including Foundation Models (FMs) like LLMs and multimodal FMs, 
+to contribute to a safe and responsible integration of Generative A.I. into our society. &lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt="multimodal-inputs" src="/images/tracing-detectives.png" style="width:80%"/&gt;
+&lt;/figure&gt;
+&lt;h2 id="research-thread-2"&gt;Research Thread 2&lt;/h2&gt;
+&lt;!-- I am interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations. --&gt;
+&lt;p&gt;Another thread of my research lies at the intersection of &lt;strong&gt;representation learning&lt;/strong&gt; and &lt;strong&gt;information&lt;/strong&gt; theory, inspired by the way our perceptual system integrates &lt;strong&gt;multimodal&lt;/strong&gt; sensory inputs via identifying &lt;strong&gt;invariant semantics&lt;/strong&gt;.  I am interested in understanding how the &lt;strong&gt;semantic information&lt;/strong&gt; flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow. &lt;/p&gt;
+&lt;p&gt;My guiding question is, &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;How do we  extract the shared semantics from observations expressed in vastly different representational forms (eg. images,  sounds, written texts), and how do we create/actualize various forms of observations, starting from the semantics we want to communicate?&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -76,126 +109,103 @@ testing sidebar
 &lt;/ul&gt;
 &lt;p&gt;It's exciting to see how the ideas and tools in thermodynamics can help quantify and visualize this flow of semantic information in our model :)&lt;/p&gt;
 &lt;hr/&gt;
-&lt;h2 id="recent-updates"&gt;Recent updates&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;I'm preparing for a talk at &lt;a href="https://www.scipy2021.scipy.org/"&gt;Scipy 2021&lt;/a&gt; in July.&lt;/li&gt;
-&lt;li&gt;I got accepted to &lt;a href="https://www.santafe.edu/engage/learn/schools/sfi-complex-systems-summer-school"&gt;2021 Complex Systems Summer School&lt;/a&gt; at Santa Fe Institute, Woohoo!&lt;/li&gt;
-&lt;li&gt;I gave my first tutorial @ PyData LA, 2019 on "Experimental ML with Holoviews/Geoviews + Pyorch". Here are my talk &lt;a href="/pdfs/experimental-ml-2019-hayley.pdf"&gt;slides&lt;/a&gt;, &lt;a href="#"&gt;video&lt;/a&gt;, and &lt;a href="https://github.com/cocoaaa/PyData-LA-2019"&gt;jupyter notebook materials&lt;/a&gt;!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img alt="pydata-0" src="/images/pydata-0.png"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img alt="pydata-1" src="/images/pydata-1.png"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img alt="pydata-1-2" src="/images/pydata-1-2.png"/&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img alt="pydata-2" src="/images/pydata-2.png"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img alt="pydata-3" src="/images/pydata-3.png"/&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img alt="pydata-4" src="/images/pydata-4.png"/&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;ul&gt;
-&lt;li&gt;I participated in &lt;a href="https://sites.google.com/earthoutreach.org/geoforgood19/home"&gt;Geo4Good&lt;/a&gt; @ Google in Mtn View, CA! Check out some &lt;a href="https://tinyurl.com/wdoyepy"&gt;highlights&lt;/a&gt; of inspiring project going on using Google Earth Engine and Studio. &lt;/li&gt;
-&lt;li&gt;New post: "Total variation, KL-Divergence, Maximum Likelihood"&lt;/li&gt;
-&lt;li&gt;New post: "Let's be honest: peeling the assumptions that get us to Variational Autoencoders"&lt;/li&gt;
-&lt;li&gt;New post: "Thinking about an observer vs. the observed"&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr/&gt;
-&lt;h2 id="research-questions"&gt;Research Questions&lt;/h2&gt;
-&lt;p&gt;My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this dance between abstraction and synthesis in a video of Picasso's live drawing:&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h2 id="more-details-on-my-research-questions"&gt;More Details (on My Research Questions)&lt;/h2&gt;
+&lt;details&gt;
+&lt;summary&gt; Click to expand &lt;/summary&gt;
+My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this dance between abstraction and synthesis in a video of Picasso's live drawing:
+
+&lt;br/&gt;
 &lt;div align="center"&gt;
 &lt;iframe "="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="480" src="https://www.youtube.com/embed/JU9oaD0e7uU" width="672"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;!-- &lt;iframe  height="420" align="left" src="https://www.youtube.com/embed/Xwbuw1CSFew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;--&gt;
 &lt;!-- &lt;iframe width="672" height="480" src="https://www.youtube.com/embed/Nxes8pyHkJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;--&gt;
 &lt;!-- &lt;iframe width="672" height="480" src="https://www.youtube.com/embed/ylh0X38yvQI?t=411" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt; --&gt;
-&lt;p&gt;More specifically, I'm intrigued by how seamlessly we extract a common semantic content from observations in vastly different representational forms (such as languages, images, gestures or sounds, and infinitely many forms within each modality), and reversely, how a semantic content can be expressed in various forms without losing its (overall) meaning
+
+
+More specifically, I'm intrigued by how seamlessly we extract a common semantic content from observations in vastly different representational forms (such as languages, images, gestures or sounds, and infinitely many forms within each modality), and reversely, how a semantic content can be expressed in various forms without losing its (overall) meaning
 &lt;label class="margin-toggle sidenote-number" for="sn-note"&gt;&lt;/label&gt;
 &lt;input class="margin-toggle" id="sn-note" type="checkbox"/&gt;
 &lt;span class="sidenote"&gt;
-Hmm.. coarse-graining?&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;My exploration starts with an hypothesis that a phenomena in reality, from which
-our observations stem from, contains &lt;strong&gt;semantic potentials&lt;/strong&gt;("potential" as in
-&lt;em&gt;potential energy&lt;/em&gt; in Physics, or going further up the stream, as in Aristotle's
-&lt;a href="https://en.wikipedia.org/wiki/Potentiality_and_actuality"&gt;"Potentiality and actuality"&lt;/a&gt;
+Hmm.. coarse-graining?&lt;/span&gt;.
+
+My exploration starts with an hypothesis that a phenomena in reality, from which
+our observations stem from, contains __semantic potentials__("potential" as in
+_potential energy_ in Physics, or going further up the stream, as in Aristotle's
+["Potentiality and actuality"](https://en.wikipedia.org/wiki/Potentiality_and_actuality)
 &lt;label class="margin-toggle sidenote-number" for="sn-note"&gt;&lt;/label&gt;
 &lt;input class="margin-toggle" id="sn-note" type="checkbox"/&gt;
 &lt;span class="sidenote"&gt;
 This idea influenced Leibniz to develop the science of "dynamics". 
 Learning about such influence brings light into what Leibniz was struggling to hit the chord with ideas like 'power' and 'action'. Contemplate: Aristotle's "potential:actuality" vs. Leibniz's "power:action"&lt;/span&gt;
-.) &lt;/p&gt;
-&lt;p&gt;I wonder,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What is the relationship between &lt;em&gt;semantic information&lt;/em&gt;&lt;label class="margin-toggle sidenote-number" for="sn-note"&gt;&lt;/label&gt;
+.) 
+
+I wonder,
+
+- What is the relationship between _semantic information_&lt;label class="margin-toggle sidenote-number" for="sn-note"&gt;&lt;/label&gt;
 &lt;input class="margin-toggle" id="sn-note" type="checkbox"/&gt;
 &lt;span class="sidenote"&gt;
-See &lt;a href="https://dspace.mit.edu/bitstream/handle/1721.1/4821/RLE-TR-247-03150899.pdf?sequence=1"&gt;An Outline of a Theory of Semantic Information&lt;/a&gt;, a &lt;a href="https://plato.stanford.edu/entries/information-semantic/"&gt;survey&lt;/a&gt;, and more recent work by &lt;a href="https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0041"&gt;Kolchinsky and Wolpert&lt;/a&gt;
+See [An Outline of a Theory of Semantic Information](https://dspace.mit.edu/bitstream/handle/1721.1/4821/RLE-TR-247-03150899.pdf?sequence=1), a [survey](https://plato.stanford.edu/entries/information-semantic/), and more recent work by [Kolchinsky and Wolpert](https://royalsocietypublishing.org/doi/10.1098/rsfs.2018.0041)
 &lt;/span&gt;
-and &lt;em&gt;semantic potential&lt;/em&gt;, i.e. the underlying &lt;em&gt;field&lt;/em&gt; from which individual observations are actualized into an instance of a natural phenomena, an event?&lt;/li&gt;
-&lt;li&gt;What is the process -- or geometric constraints -- that leads the same semantics to different representational forms? Can we learn this process from multimodal data?&lt;/li&gt;
-&lt;li&gt;What is the process through which an observer builds an understanding -- an internal representation -- of an event?&lt;ul&gt;
-&lt;li&gt;What is the process through which we identify, extract and encode the invariant semantics from observations in diverse modalities?&lt;/li&gt;
-&lt;li&gt;How can we define and measure the semantic information in our representations, efficiently?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Can we model these processes by &lt;strong&gt;learning a generative model from data collected from multiple modalities&lt;/strong&gt;?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr/&gt;
-&lt;h2 id="specific-example"&gt;Specific Example&lt;/h2&gt;
-&lt;p&gt;For instance, consider the following observations: &lt;span class="math"&gt;\(X^A\)&lt;/span&gt; is an image of a dog barking on the door, &lt;span class="math"&gt;\(X^B\)&lt;/span&gt; is a recording of a dog barking, and &lt;span class="math"&gt;\(X^C\)&lt;/span&gt; is a sentence written in the English language. The semantic content shared among the observations is "there is a dog barking", and each observation is the result of expressing (synm: rendering, stylizing) the semantic content into a form proper for its modality (ie. image, sound, written English language, respectively). &lt;/p&gt;
-&lt;p&gt;My question, at the representational level is, how do we identify the underlying, shared semantic contents from the information about domain-specific variations? 
-&lt;img alt="multi-modal-encoding-of-semantics" src="/images/semantic_potential/encoding-semantics-from-origin.png"/&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How do we &lt;em&gt;identify&lt;/em&gt; what is the type of information that is invariant among observations from multiple domains?&lt;/li&gt;
-&lt;li&gt;What discovery process goes into separating the shared contents (invariance across domain) from the domain-specifics?  &lt;/li&gt;
-&lt;li&gt;Can we use learning-based approaches to build a computational model of such process (i)more efficiently, (ii)by leveraging large amounts of data available?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Now let's flip the question and consider the process of synthesis. I start with a concept that I'd like to express and communicate. For example, I want to actualize the idea of "a dog barking at the door". If I ask you to express this content as an image, sounds, and an English sentence, what would be the process of such domain-specific actualization of a semantic information?
-&lt;img alt="generating-semantics-in-multi-domains" src="/images/semantic_potential/generating-semantics-in-multiple-domains.png"/&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What is the process of recombining the encoded representations to make better decisions, derive new conclusions? In particular, what is the underlying structure that defines each modality?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Geometry of a modality space: imposes geometric constraints that an instance must satisfy to be a valid observations of that modality
-&lt;img alt="geometry-of-modality-space" src="/images/semantic_potential/geometry-of-modality-space.png"/&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;E.g. an observation in an image form must satisfy a different set of geometric constraints than that in an acoustic form.&lt;/li&gt;
-&lt;li&gt;Can we learn a model of such geometric rules via a generative model with neural networks?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The breakdown of main components of my questions looks as follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Semantic information: Address a limitation of Shannon's theory of Information&lt;label class="margin-toggle sidenote-number" for="sn-note"&gt;&lt;/label&gt;
+and _semantic potential_, i.e. the underlying _field_ from which individual observations are actualized into an instance of a natural phenomena, an event?
+- What is the process -- or geometric constraints -- that leads the same semantics to different representational forms? Can we learn this process from multimodal data?
+- What is the process through which an observer builds an understanding -- an internal representation -- of an event?
+    - What is the process through which we identify, extract and encode the invariant semantics from observations in diverse modalities?
+    - How can we define and measure the semantic information in our representations, efficiently?
+- Can we model these processes by __learning a generative model from data collected from multiple modalities__?
+
+---
+## Specific Example
+For instance, consider the following observations: $X^A$ is an image of a dog barking on the door, $X^B$ is a recording of a dog barking, and $X^C$ is a sentence written in the English language. The semantic content shared among the observations is "there is a dog barking", and each observation is the result of expressing (synm: rendering, stylizing) the semantic content into a form proper for its modality (ie. image, sound, written English language, respectively). 
+
+My question, at the representational level is, how do we identify the underlying, shared semantic contents from the information about domain-specific variations? 
+![multi-modal-encoding-of-semantics](/images/semantic_potential/encoding-semantics-from-origin.png)
+
+- How do we _identify_ what is the type of information that is invariant among observations from multiple domains?
+- What discovery process goes into separating the shared contents (invariance across domain) from the domain-specifics?  
+- Can we use learning-based approaches to build a computational model of such process (i)more efficiently, (ii)by leveraging large amounts of data available?
+
+Now let's flip the question and consider the process of synthesis. I start with a concept that I'd like to express and communicate. For example, I want to actualize the idea of "a dog barking at the door". If I ask you to express this content as an image, sounds, and an English sentence, what would be the process of such domain-specific actualization of a semantic information?
+![generating-semantics-in-multi-domains](/images/semantic_potential/generating-semantics-in-multiple-domains.png)
+
+- What is the process of recombining the encoded representations to make better decisions, derive new conclusions? In particular, what is the underlying structure that defines each modality?
+
+Geometry of a modality space: imposes geometric constraints that an instance must satisfy to be a valid observations of that modality
+![geometry-of-modality-space](/images/semantic_potential/geometry-of-modality-space.png)
+
+- E.g. an observation in an image form must satisfy a different set of geometric constraints than that in an acoustic form.
+- Can we learn a model of such geometric rules via a generative model with neural networks?
+
+The breakdown of main components of my questions looks as follows:
+
+- Semantic information: Address a limitation of Shannon's theory of Information&lt;label class="margin-toggle sidenote-number" for="sn-note"&gt;&lt;/label&gt;
 &lt;input class="margin-toggle" id="sn-note" type="checkbox"/&gt;
 &lt;span class="sidenote"&gt;
-The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbols, yet disregards their identities. See &lt;a href="http://tuvalu.santafe.edu/~simon/it.pdf"&gt;ITTP2018&lt;/a&gt;&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;Semantic potentials == a natural phenomena -- is this what "nature" is defined as?&lt;/li&gt;
-&lt;li&gt;The process of actualizing semantic potentials/information to different modalities&lt;/li&gt;
-&lt;li&gt;The process during which an observer builds an understanding of the actualized data point&lt;/li&gt;
-&lt;li&gt;Geometry of modality space: what is the underlying geometry that defines an observation as a valid image vs. a valid human voice vs. a valid text? &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr/&gt;
-&lt;h2 id="research-statement"&gt;Research Statement&lt;/h2&gt;
-&lt;h3 id="learning-a-generative-model-of-multimodal-representation"&gt;Learning a generative model of multimodal representation&lt;/h3&gt;
-&lt;p&gt;In pursuit of this computational model of understanding and generating multimodal data, I am developing generative models with disentangled representation to jointly learn the analysis and synthesis processes of complex, high-dimensional data (eg. satellite images, knowledge bases) with compact and &amp;ldquo;meaningful&amp;rdquo; representations.&amp;nbsp; 
-I'm working with Prof. Wael Abd-Almageed at ISI's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt;, 
+The symmetry axiom of Shannon's entropy preserves the syntactic meaning in symbols, yet disregards their identities. See [ITTP2018](http://tuvalu.santafe.edu/~simon/it.pdf)&lt;/span&gt;.
+- Semantic potentials == a natural phenomena -- is this what "nature" is defined as?
+- The process of actualizing semantic potentials/information to different modalities
+- The process during which an observer builds an understanding of the actualized data point
+- Geometry of modality space: what is the underlying geometry that defines an observation as a valid image vs. a valid human voice vs. a valid text? 
+
+
+
+---
+## Research Statement
+### Learning a generative model of multimodal representation
+In pursuit of this computational model of understanding and generating multimodal data, I am developing generative models with disentangled representation to jointly learn the analysis and synthesis processes of complex, high-dimensional data (eg. satellite images, knowledge bases) with compact and &amp;ldquo;meaningful&amp;rdquo; representations.&amp;nbsp; 
+I'm working with Prof. Wael Abd-Almageed at ISI's [VIMAL](https://vimal.isi.edu/), 
 focusing on various types of generative models for this goal.
-My project with  Prof. &lt;a href="https://spatial.usc.edu/team-view/yao-yi-chiang/"&gt;Yao-Yi Chiang&lt;/a&gt; and Prof. &lt;a href="https://usc-isi-i2.github.io/knoblock/"&gt;Craig Knoblock&lt;/a&gt; tackles this line of questions using geospatial data, and aims to learn spatial semantics from data that are collected from diverse sources (eg. satellites, Google Street Map, historical maps) and stored in diverse format (eg. images, graphs). This work has potential applications such as global-scale urban environment analysis, automated map synthesis and systems for monitoring environmental changes.&lt;/p&gt;
+My project with  Prof. [Yao-Yi Chiang](https://spatial.usc.edu/team-view/yao-yi-chiang/) and Prof. [Craig Knoblock](https://usc-isi-i2.github.io/knoblock/) tackles this line of questions using geospatial data, and aims to learn spatial semantics from data that are collected from diverse sources (eg. satellites, Google Street Map, historical maps) and stored in diverse format (eg. images, graphs). This work has potential applications such as global-scale urban environment analysis, automated map synthesis and systems for monitoring environmental changes.
+
 &lt;!--- Read more about our maptile dataset [here](#).--&gt;
-&lt;p&gt;Within the domain of representation learning, I&amp;rsquo;m most interested in variational inference methods, especially recent developments in deep generative models such as variational autoencoders (VAEs) and the idea of adversarial training. &lt;/p&gt;
-&lt;p&gt;Using a VAE-variant model and adversarial training, I&amp;rsquo;m investigating how we can build a model that extracts invariance in a dataset of heterogeneous representations via VAEs and adversarial training.&amp;nbsp; One of my current projects investigates this question in the domain of spatial informatics, using our new dataset of map tiles from diverse sources.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Read more about my work, "Learning Bipartitioned Representation of ..." -- [In Preparation].&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="next-itches"&gt;Next itches&lt;/h3&gt;
+
+Within the domain of representation learning, I&amp;rsquo;m most interested in variational inference methods, especially recent developments in deep generative models such as variational autoencoders (VAEs) and the idea of adversarial training. 
+
+Using a VAE-variant model and adversarial training, I&amp;rsquo;m investigating how we can build a model that extracts invariance in a dataset of heterogeneous representations via VAEs and adversarial training.&amp;nbsp; One of my current projects investigates this question in the domain of spatial informatics, using our new dataset of map tiles from diverse sources.
+
+&lt;!-- - Read more about my work, "Learning Bipartitioned Representation of ..." -- [In Preparation]. --&gt;
+
+### Next itches
 &lt;details&gt;
 &lt;summary&gt;More about next steps...&lt;/summary&gt;
 &lt;ul&gt;
@@ -211,31 +221,13 @@ My project with  Prof. &lt;a href="https://spatial.usc.edu/team-view/yao-yi-chia
 &lt;li&gt;Linking the discovered latent factors to external knowledge graph&lt;/li&gt;
 &lt;!--     - How can we map the learned latent factors to concepts in a more global knowledge graph (eg. Wikipedia)?--&gt;
 &lt;/ul&gt;&lt;/details&gt;
-&lt;hr/&gt;
-&lt;h2 id="research-traces_1"&gt;Research Traces&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="desert-rocks" src="/images/semantic_potential/desert-rocks-adobe-academy.jpeg" style="width: 60%; height: 50%"/&gt;&lt;/p&gt;
-&lt;!--src: https://academy.substance3d.com/courses/desert-rocks-making-of-by-jonathan-benainous--&gt;
-&lt;p&gt;My interests center around &lt;em&gt;understanding&lt;/em&gt; of complex data and the &lt;em&gt;processes&lt;/em&gt; through which such understanding happens. Here are some snapshots along that journey: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Interactive visualizations that represent high-dimensional data accurately and efficiently&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;via learning a meaningful and compact representation of observations&lt;/li&gt;
-&lt;li&gt;See &lt;a href="https://github.com/mintproject/MINT-GeoViz/tree/master?"&gt;MINT GeoViz&lt;/a&gt;, &lt;a href="https://github.com/mintproject/MINT-NetCDF-Convention/blob/master/README.md"&gt;Mint NETCDF&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Learning dynamics of neural net&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How does the model, in particular the representation of input observations, evolve during the training process? Can we detect points at which meaning state transitions happen?&lt;/li&gt;
-&lt;li&gt;How does information flow across the layers of a neural network? Can we visualize this flow to help understand the learning process?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;See more details &lt;a href="/pages/publications.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;hr/&gt;
-&lt;h2 id="tmi-how-much-is-too-much-information"&gt;TMI: How much is Too Much Information?&lt;/h2&gt;
-&lt;p&gt;More importantly, I'm practicing to:&lt;br/&gt;
+
+
+
+---
+
+## TMI: How much is Too Much Information?
+More importantly, I'm practicing to:  
 - observe without being entangled in what is personal
 - look at small thoughts carefully
 - not to rush
@@ -246,17 +238,19 @@ My project with  Prof. &lt;a href="https://spatial.usc.edu/team-view/yao-yi-chia
 - question
 - relax in discomforts
 - greet what is as what is
-- nothing more, nothing less
-- stay open&lt;/p&gt;
+&lt;!-- - nothing more, nothing less --&gt;
+- stay open
+
 &lt;!--## Quotes to sit with--&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;lsquo;Your act was unwise,&amp;rsquo; I exclaimed, &amp;lsquo;as you see by the outcome.&amp;rsquo; &lt;br/&gt;
-He solemnly eyed me.&lt;br/&gt;
+&amp;gt; &amp;lsquo;Your act was unwise,&amp;rsquo; I exclaimed, &amp;lsquo;as you see by the outcome.&amp;rsquo;   
+He solemnly eyed me.  
 &amp;lsquo;When choosing the course of my action,&amp;rsquo; said he,
-&amp;lsquo;I had not the outcome to guide me.&amp;rsquo; &lt;br/&gt;
-- Ambrose Bierce&lt;/p&gt;
-&lt;p&gt;Intention and attention.&lt;/p&gt;
-&lt;/blockquote&gt;
+&amp;lsquo;I had not the outcome to guide me.&amp;rsquo;   
+- Ambrose Bierce
+
+&amp;gt; Intention and attention.
+
+
 &lt;!-- 
 &gt; If you understand what you're doing, you're not learning anything.   
 - Einstein
@@ -287,64 +281,7 @@ Before my PhD, I was at MIT studying Mathematics and EECS (Electrical Engineerin
 My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this process of abstraction and synthesis in this video of Picasso's live drawing.
 
 
---&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</content><category term="Home"></category></entry><entry><title>Short note on coarse-graining</title><link href="https://cocoaaa.github.io/articles/2021/02/23/short-note-on-coarse-graining" rel="alternate"></link><published>2021-02-23T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-23:/articles/2021/02/23/short-note-on-coarse-graining</id><summary type="html">&lt;p&gt;One of the axioms in Shannon's information theory is that (Shannon's) entropy satisfies coarse-graining property:&lt;/p&gt;
+--&gt;&lt;/details&gt;</content><category term="Home"></category></entry><entry><title>Short note on coarse-graining</title><link href="https://cocoaaa.github.io/articles/2021/02/23/short-note-on-coarse-graining" rel="alternate"></link><published>2021-02-23T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-23:/articles/2021/02/23/short-note-on-coarse-graining</id><summary type="html">&lt;p&gt;One of the axioms in Shannon's information theory is that (Shannon's) entropy satisfies coarse-graining property:&lt;/p&gt;
 &lt;figure&gt;
 &lt;img alt="coarse-graining-dedeo" src="/images/it/coarse-graining-dedeo.png" width="60%"/&gt;
 &lt;figcaption&gt; While reading Information Theory for Intelligent People by S.DeDeo
