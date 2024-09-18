@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-16T10:53:40-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-16T10:53:40-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-16:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-17T23:13:20-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-17T23:13:20-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-17:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -91,10 +91,10 @@ Marina Del Rey, CA 90292
 &lt;ul&gt;
 &lt;li&gt;2024 Feb: Our paper (ManiFPT: On Defining and Analyzing the Fingerprints of Generative Models) is accepted to CVPR 2024!&lt;/li&gt;
 &lt;li&gt;2024 May: I am invited to an AI meeting hosted by LG AI Research in the Bay Area to give a spotlight talk on my research. Thank you!&lt;/li&gt;
-&lt;li&gt;2023 Dec: Our paper on model attribution is accepted to NeurIPS Workshop on Attirbution at Large Scale.&lt;/li&gt;
-&lt;li&gt;I am preparing for a talk at &lt;a href="https://www.scipy2021.scipy.org"&gt;Scipy 2021&lt;/a&gt; in July.&lt;/li&gt;
+&lt;li&gt;2023 Dec: Our paper on model attribution is accepted to NeurIPS Workshop on Attribution at Large Scale.&lt;/li&gt;
+&lt;li&gt;I am preparing for a talk at &lt;a href="https://www.scipy2021.scipy.org"&gt;SciPy 2021&lt;/a&gt; in July.&lt;/li&gt;
 &lt;li&gt;I got accepted to &lt;a href="https://www.santafe.edu/engage/learn/schools/sfi-complex-systems-summer-school"&gt;2021 Complex Systems Summer School&lt;/a&gt; at Santa Fe Institute, Woohoo!&lt;/li&gt;
-&lt;li&gt;I gave my first tutorial @ PyData LA, 2019 on "Experimental ML with Holoviews/Geoviews + Pyorch". Here are my talk &lt;a href="/pdfs/experimental-ml-2019-hayley.pdf"&gt;slides&lt;/a&gt;, &lt;a href="#"&gt;video&lt;/a&gt; and &lt;a href="(https://github.com/cocoaaa/PyData-LA-2019"&gt;jupyter notebook materials&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;I gave my first tutorial @ PyData LA, 2019 on "Experimental ML with Holoviews/Geoviews + Pytorch". Here are my talk &lt;a href="/pdfs/experimental-ml-2019-hayley.pdf"&gt;slides&lt;/a&gt;, &lt;a href="#"&gt;video&lt;/a&gt; and &lt;a href="(https://github.com/cocoaaa/PyData-LA-2019"&gt;jupyter notebook materials&lt;/a&gt;!&lt;/li&gt;
 &lt;li&gt;I participated in &lt;a href="https://sites.google.com/earthoutreach.org/geoforgood19/home"&gt;Geo4Good&lt;/a&gt; @ Google in Mtn View, CA! Check out some &lt;a href="https://tinyurl.com/wdoyepy"&gt;highlights&lt;/a&gt; of inspiring projects based on Google Earth Engine and Studio. &lt;/li&gt;
 &lt;li&gt;New post: "Total variation, KL-Divergence, Maximum Likelihood"&lt;/li&gt;
 &lt;li&gt;New post: "Let's be honest: peeling the assumptions that get us to Variational Autoencoders"&lt;/li&gt;
@@ -104,22 +104,74 @@ Marina Del Rey, CA 90292
 &lt;/div&gt;
 &lt;!-- end of testing playground --&gt;
 &lt;!--todo: resume here --&gt;
-&lt;p&gt;I'm a Computer Science PhD student at USC, working with Prof. &lt;a href="http://ilab.usc.edu/itti/"&gt;Laurent Itti&lt;/a&gt; at &lt;a href="http://ilab.usc.edu/"&gt;iLab&lt;/a&gt; and Prof. Wael Abd-Almageed at ISI's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.  Along the way, I interned at a French robotics startup &lt;em&gt;Keecker&lt;/em&gt; and worked at academic research labs in MIT's CSAIL, Media Lab, McGovern Institute and in INRIA.  After my Masters, I worked at Apple as a COOP for 6 months.&lt;/p&gt;
-&lt;h2 id="research-interest"&gt;Research Interest&lt;/h2&gt;
-&lt;p&gt;Broadly, my research interest lies at understanding how complex, high-dimensional information-processing systems (e.g., human intelligence, modern generative models, human movements like traffic patterns) behave and
-developing effecient algorithms to analyze their characteristics and traces in a principled way, in order to improve their internal mechanisms to steer their behaviors away from degenerative behaviors, and towards rightly-valued ones. 
-Of many such complex systems, my PhD research focuses on generative models and representation learning algorithms.&lt;/p&gt;
-&lt;p&gt;I am particularly interested in formalizing the theory of generative models -- in particular, their high-dimensional behaviors, characteristics (i.e., behavioral "fingerprints") and controllability -- from geometric perspectives. &lt;/p&gt;
-&lt;p&gt;To this end, I approach my problems standing on the rich theory of differential geometry and Riemannian Manifold, and aim to apply theoretical and computational tools from Riemannian geometry to study generative models.&lt;/p&gt;
-&lt;p&gt;My recent work on fingerprinting generative models proposed a useful theoretical framework to represent model behaviors in a manfold language (i.e., as vector fields on a Riemannian manifold)(See more details &lt;a href="/pages/publications.html"&gt;here&lt;/a&gt;), and I am excited to apply and extend this work to study the geometric signatures of generative models, including Foundation Models (FMs) like LLMs and multimodal FMs, 
-to contribute to a safe and responsible integration of Generative A.I. into our society. &lt;/p&gt;
+&lt;p&gt;I'm a Computer Science PhD student at USC, working with Prof. &lt;a href="http://ilab.usc.edu/itti/"&gt;Laurent Itti&lt;/a&gt; at &lt;a href="http://ilab.usc.edu/"&gt;iLab&lt;/a&gt; and ISI's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt; .&lt;/p&gt;
+&lt;!-- and Prof. Wael Abd-Almageed at ISI's [VIMAL](https://vimal.isi.edu/). --&gt;
+&lt;p&gt;Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.  Along the way, I interned at a French robotics startup &lt;em&gt;Keecker&lt;/em&gt; and worked at academic research labs at MIT (&lt;a href="https://www.csail.mit.edu/"&gt;CSAIL&lt;/a&gt;, &lt;a href="https://www.media.mit.edu/groups/camera-culture/overview/"&gt;Media Lab&lt;/a&gt;, &lt;a href="https://mcgovern.mit.edu/"&gt;McGovern Institute&lt;/a&gt;) and in INRIA (&lt;a href="https://ilda.saclay.inria.fr/index.html"&gt;ILDA lab&lt;/a&gt;).  After my Masters, I worked at Apple as a COOP for 6 months.&lt;/p&gt;
+&lt;h2 id="research-interests"&gt;Research Interests&lt;/h2&gt;
+&lt;h3 id="geometric-fingerprints-of-generative-models"&gt;Geometric Fingerprints of Generative Models&lt;/h3&gt;
+&lt;p&gt;Broadly, my research interest lies in understanding how complex, high-dimensional information-processing systems (e.g., human intelligence, modern generative models, human movements like traffic patterns) behave and developing efficient algorithms to analyze their characteristics and traces in a principled way, from geometric perspectives. 
+Through this geometric understanding of their properties and internal mechanisms, I aim to improve their behaviors (e.g., steering away from degenerative patterns and biases while aligning to more proper values), by mechanistically intervening in their internal causal pathways. Of many such complex systems, my PhD research focuses on generative models and representation learning algorithms.
+ &lt;!-- that are responsible for different behavioral characteristics  --&gt;&lt;/p&gt;
+&lt;!-- (e.g., defects in Vision Generative Models, hallucinations in LLMs).  --&gt;
+&lt;!--  opt1--&gt;
+&lt;!-- current gap --&gt;
+&lt;p&gt;Currently, despite the rapid development of Generative A.I., there is still a big gap in our understanding and control over their designs and behaviors.
+&lt;span class="blue bold"&gt;My aim&lt;/span&gt; is to fill this gap, by developing a formal framework and efficient algorithms that can &lt;strong&gt;represent&lt;/strong&gt;, &lt;strong&gt;analyze&lt;/strong&gt; and &lt;strong&gt;control&lt;/strong&gt; the &lt;strong&gt;behaviors of generative models&lt;/strong&gt; (e.g., Large Foundation Models (FMs)) in their high-dimensional spaces.&lt;/p&gt;
+&lt;p&gt;To this end, I approach these problems from geometric perspectives, and I am working on formalizing the theory of (generative) model behaviors using &lt;strong&gt;Differential Geometry and Riemannian Manifold&lt;/strong&gt;.
+Grounded on this theory, I also work to develop efficient algorithms that can extract &lt;strong&gt;geometric signatures&lt;/strong&gt; of the behaviors and internal representations of large generative models (which live on much higher dimensional spaces than what the current geometric approach has been employed (e.g., 1D signals or 3D images) ), 
+in order to "fingerprint" and characterize them. &lt;/p&gt;
+&lt;!-- end opt1
+
+&lt;!-- opt2 --&gt;
+&lt;!-- I am particularly interested in formalizing the theory of generative models -- in particular, their **high-dimensional behaviors**, characteristics (i.e., behavioral **"fingerprints"**) and **controllability** -- from geometric perspectives. 
+
+To this end, I approach my problems by standing on the rich theory of **Differential Geometry and Riemannian Manifold**, and aim to apply theoretical and computational tools from Riemannian geometry to study generative models: their geometric signatures and controllability on their internal mechanisms.  --&gt;
+&lt;!-- end opt2 --&gt;
 &lt;figure&gt;
-&lt;img alt="multimodal-inputs" src="/images/tracing-detectives.png" style="width:80%"/&gt;
+&lt;img alt="multimodal-inputs" src="/images/my-research-statement/gm-tracing-detectives-ver2.png" style="width:80%"/&gt;
 &lt;/figure&gt;
+&lt;!-- These geometric signatures will help address many open and arising problems in generative modeling, by providing principled ways to extract and represent the characteristics of different model behaviors (e.g., as vectors) and quantify their differences. --&gt;
+&lt;!-- compare different model behaviors and quantify their characteristics. --&gt;
+&lt;!-- in numerics, in a vector space. --&gt;
+&lt;!--  as formal measures  --&gt;
+&lt;!-- For example, using them we can differentiate amongst different Foundation Models, addressing questions like "is this image generated by DALL-E or IMAGEN?" or "is this document from ChatGPT, LLaMA, or human?".
+We can also study what makes one model different from another based on their signatures, and investigate their underlying internal mechanisms that cause specific signatures like artifacts in model-generated images or hallucinations in LLMs.  --&gt;
+&lt;!-- I also aim to use these geometric signatures to study and control the internal mechanisms of generative models,  --&gt;
+&lt;!-- ## My current project on fingerprinting generative models --&gt;
+&lt;h2 id="my-recent-work-and-extensions_1"&gt;My recent work and extensions&lt;/h2&gt;
+&lt;p&gt;I have started on this research endeavor through my work on fingerprinting generative models:
+In our recent work on fingerprinting generative models (&lt;a href="https://openaccess.thecvf.com/content/CVPR2024/html/Song_ManiFPT_Defining_and_Analyzing_Fingerprints_of_Generative_Models_CVPR_2024_paper.html"&gt;CVPR 24&lt;/a&gt;), we proposed a useful theoretical framework to represent model behaviors on a data manifold (i.e., as vector fields on a data manifold constructed from real images).
+We also formalized, for
+the first time in the literature, the definition of &amp;ldquo;artifacts&amp;rdquo; and &amp;ldquo;fingerprints&amp;rdquo; of generative models based on their
+data manifolds, and proposed an effective attribution method to study and compare vision generative models.
+(See more details &lt;a href="/pages/publications.html"&gt;here&lt;/a&gt;.)&lt;/p&gt;
+&lt;!--  we formalized, for
+the first time in the literature, the definition of “artifacts” and “fingerprints” of generative models based on their
+data manifolds, and proposed an effective attribution method to study and compare vision generative models --&gt;
+&lt;p&gt;I am excited to extend this work to a larger variety of &lt;strong&gt;Foundation Models&lt;/strong&gt;, including LLMs and SoTA multimodal models, and look into their &lt;strong&gt;internal mechanisms&lt;/strong&gt; to identify and &lt;strong&gt;intervene&lt;/strong&gt; causal pathways that are responsible for their fingerprints. &lt;/p&gt;
+&lt;!-- the geometric signatures of generative models, including Foundation Models (FMs) like LLMs and multimodal FMs,  --&gt;
+&lt;p&gt;I hope by researching these problems, I will contribute to a geometric theory of generative models and their internal mechanisms, which in turn help shaping a  safe and responsible integration of Generative A.I. into our society. &lt;/p&gt;
+&lt;!-- ---
+
+My aim is to develop a formal framework that 
+represent the **complex behaviors of generative models** (e.g., Large Foundation Models) in their high-dimensional spaces, 
+and efficient algorithms that help analyze their geometric signatures, in order to characterize and differentiate them in a principled way.
+
+To this end, I am working on formalizing the theory of generative models from geometric perspectives -- using the theory of **differential geometry** -- in particular, with respect to their **high-dimensional behaviors**, **characteristics** (i.e., behavioral "fingerprints") and **controllability**.
+
+The 
+My approach is grounded on the rich theory of differential geometry and Riemannian Manifold, and I aim to apply theoretical and computational tools from Riemannian geometry to study generative models.
+
+
+ --&gt;
+&lt;p&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;&lt;/p&gt;
+&lt;hr/&gt;
+&lt;hr/&gt;
 &lt;h2 id="research-thread-2"&gt;Research Thread 2&lt;/h2&gt;
 &lt;!-- I am interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations. --&gt;
-&lt;p&gt;Another thread of my research lies at the intersection of &lt;strong&gt;representation learning&lt;/strong&gt; and &lt;strong&gt;information&lt;/strong&gt; theory, inspired by the way our perceptual system integrates &lt;strong&gt;multimodal&lt;/strong&gt; sensory inputs via identifying &lt;strong&gt;invariant semantics&lt;/strong&gt;.  I am interested in understanding how the &lt;strong&gt;semantic information&lt;/strong&gt; flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow. &lt;/p&gt;
+&lt;p&gt;Another thread of my research lies at the intersection of &lt;strong&gt;representation learning&lt;/strong&gt; and &lt;strong&gt;information theory&lt;/strong&gt;, inspired by the way our perceptual system integrates &lt;strong&gt;multimodal&lt;/strong&gt; sensory inputs via identifying &lt;strong&gt;invariant semantics&lt;/strong&gt;.  I am interested in understanding how the &lt;strong&gt;semantic information&lt;/strong&gt; flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow. &lt;/p&gt;
 &lt;p&gt;My guiding question is, &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;How do we  extract the shared semantics from observations expressed in vastly different representational forms (eg. images,  sounds, written texts), and how do we create/actualize various forms of observations, starting from the semantics we want to communicate?&lt;/em&gt;&lt;/p&gt;

@@ -40,6 +40,7 @@ strong {
     font-weight: bold;
     color: #2aa198;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -96,10 +97,18 @@ h1, h2, h3, h4, h5, h6 {
    font-family:var(--condensed-font), sans-serif;
     font-weight: bold;
 }
-h1, h2, h3 {
-    font-size: 1.5em;
+h1, h2, h3{
+    font-size: 1.8em;
     line-height: 1em;
     margin: 1em 0;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.3em;
 }
 
 img, p, .post > .highlight, .highlighttable, h4, h5, h6 {
@@ -170,7 +179,10 @@ blockquote {
 .page {
     margin: 0 90px;
 }
-
+.bold{
+    /* color:#000; */
+    font-weight: bold;
+}
 .blue {
    color: #3683ff;
 }
