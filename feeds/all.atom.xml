@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-17T23:21:32-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-17T23:21:32-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-17:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-17T23:29:16-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-17T23:29:16-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-17:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -147,9 +147,16 @@ the first time in the literature, the definition of &amp;ldquo;artifacts&amp;rdq
 &lt;!--  we formalized, for
 the first time in the literature, the definition of “artifacts” and “fingerprints” of generative models based on their
 data manifolds, and proposed an effective attribution method to study and compare vision generative models --&gt;
-&lt;p&gt;I am excited to extend this work to a larger variety of &lt;strong&gt;Foundation Models&lt;/strong&gt;, including LLMs and SoTA multimodal models, and look into their &lt;strong&gt;internal mechanisms&lt;/strong&gt; to identify and &lt;strong&gt;intervene&lt;/strong&gt; causal pathways that are responsible for their fingerprints. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I am excited to extend this work to a larger variety of &lt;strong&gt;Foundation Models&lt;/strong&gt;, including LLMs and SoTA multimodal models, to study their fingerprints and proactively &lt;strong&gt;watermark&lt;/strong&gt; the models. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I will also look into their &lt;strong&gt;internal mechanisms&lt;/strong&gt; that cause these fingerprints and develop principled methods to  &lt;strong&gt;intervene&lt;/strong&gt; and &lt;strong&gt;control&lt;/strong&gt; causal pathways that are responsible for different model behaviors (e.g., image artifacts by Vision GMs or hallucinations in LLMs).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- the geometric signatures of generative models, including Foundation Models (FMs) like LLMs and multimodal FMs,  --&gt;
-&lt;p&gt;I hope by researching these problems, I will contribute to a geometric theory of generative models and their internal mechanisms, which in turn help shaping a  safe and responsible integration of Generative A.I. into our society. &lt;/p&gt;
+&lt;p&gt;I hope by researching these problems, I will contribute to a generalized theory of generative models and their internal mechanisms, which in turn help shape a  safe and responsible integration of Generative A.I. into our society. &lt;/p&gt;
 &lt;!-- ---
 
 My aim is to develop a formal framework that 
