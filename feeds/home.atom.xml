@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-17T23:29:16-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-17T23:29:16-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-17:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-21T14:36:34-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-21T14:36:34-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-21:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -19,32 +19,52 @@ testing sidebar
 &lt;figure&gt;
 &lt;img alt="profile" src="/images/profile.jpg" width="250"/&gt;
 &lt;/figure&gt;
+&lt;!-- my name and address --&gt;
 &lt;div&gt;
 &lt;h1 id="hae-jin-hayley-song"&gt;Hae Jin (Hayley) Song&lt;/h1&gt;
 &lt;h4 id="phd-candidate-in-computer-science"&gt;Ph.D. Candidate in Computer Science&lt;/h4&gt;
 
-USC Viterbi School of Engineering,
-&lt;br/&gt;
+    USC Viterbi School of Engineering,
+    &lt;br/&gt;
 
-Information Sciences Institute (ISI)
-&lt;br/&gt;
-
-4676 Admiralty Way, Suite 1001
-&lt;br/&gt;
-
-Marina Del Rey, CA 90292
-&lt;br/&gt;
+    Information Sciences Institute (ISI)
+    &lt;br/&gt;
+&lt;!-- 4676 Admiralty Way, Suite 1001 --&gt;
+&lt;!-- &lt;br/&gt; --&gt;
+&lt;!-- Marina Del Rey, CA 90292 --&gt;
+&lt;!-- &lt;br/&gt; --&gt;
 &lt;!-- email: haejinso@usc.edu  --&gt;
+&lt;/div&gt; &lt;!-- end name, address --&gt;
+&lt;!-- display buttons for cv, git, pubs, projects  --&gt;
+&lt;div align="center"&gt;
+&lt;!-- &lt;div class="image-text-container"&gt; --&gt;
+&lt;a href="/docs/hjsong_cv.pdf"&gt;| CV | &lt;img alt="cv" src="/images/cv1.png" width="40"/&gt;&lt;/a&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;div class="image-text-container"&gt; --&gt;
+&lt;a href="https://github.com/cocoaaa"&gt;Github | &lt;img alt="@cocoaaa" src="/images/github.svg" width="40"/&gt;&lt;/a&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;div class="image-text-container"&gt; --&gt;
+&lt;a href="/pages/publications.html"&gt;Pubs | &lt;img alt="publications" src="/images/publication.png" width="40"/&gt;&lt;/a&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;div class="image-text-container"&gt; --&gt;
+&lt;a href="/pages/projects.html"&gt;Projects | &lt;img alt="projects" src="/images/lightbulb3.svg" width="40"/&gt;&lt;/a&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;div class="image-text-container"&gt; --&gt;
+&lt;!-- &lt;a href="/docs/hjsong_rs.pdf"&gt;Research |&lt;img src="/images/lightbulb3.svg" alt="research-statement" width="40"/&gt;&lt;/a&gt; --&gt;
+&lt;!-- &lt;/div&gt; --&gt;
 &lt;/div&gt;
+&lt;!-- todo: temp: link to my rs (invisible, but only to keep the link available by directly going to the link(ie. cocoaaa.github.io/docs/hjsong_rs.pdf)) --&gt;
+&lt;a href="/docs/hjsong_rs.pdf"&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;!-- Add my recent update section to the right side --&gt;
-&lt;div class="marginnote"&gt;
+&lt;!-- end sidenote for profile  --&gt;&lt;div class="marginnote"&gt;
 &lt;!-- &lt;div class=marginnote align="center"&gt; --&gt;
 &lt;h1 align="center" id="recent-updates_1"&gt; Recent updates! &lt;/h1&gt;
 &lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
 &lt;div ;="" style="font-size:0.9em"&gt;
 &lt;ul&gt;
-&lt;li&gt;2024 Feb: Our paper (ManiFPT: On Defining and Analyzing the Fingerprints of Generative Models) is accepted to CVPR 2024 …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+&lt;li&gt;2024 Feb: Our paper (ManiFPT: On Defining and Analyzing the Fingerprints of Generative Models) is accepted to CVPR 2024!&lt;/li&gt;
+&lt;li&gt;2024 May: I am invited to …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -64,26 +84,45 @@ testing sidebar
 &lt;figure&gt;
 &lt;img alt="profile" src="/images/profile.jpg" width="250"/&gt;
 &lt;/figure&gt;
+&lt;!-- my name and address --&gt;
 &lt;div&gt;
 &lt;h1 id="hae-jin-hayley-song"&gt;Hae Jin (Hayley) Song&lt;/h1&gt;
 &lt;h4 id="phd-candidate-in-computer-science"&gt;Ph.D. Candidate in Computer Science&lt;/h4&gt;
 
-USC Viterbi School of Engineering,
-&lt;br/&gt;
+    USC Viterbi School of Engineering,
+    &lt;br/&gt;
 
-Information Sciences Institute (ISI)
-&lt;br/&gt;
-
-4676 Admiralty Way, Suite 1001
-&lt;br/&gt;
-
-Marina Del Rey, CA 90292
-&lt;br/&gt;
+    Information Sciences Institute (ISI)
+    &lt;br/&gt;
+&lt;!-- 4676 Admiralty Way, Suite 1001 --&gt;
+&lt;!-- &lt;br/&gt; --&gt;
+&lt;!-- Marina Del Rey, CA 90292 --&gt;
+&lt;!-- &lt;br/&gt; --&gt;
 &lt;!-- email: haejinso@usc.edu  --&gt;
+&lt;/div&gt; &lt;!-- end name, address --&gt;
+&lt;!-- display buttons for cv, git, pubs, projects  --&gt;
+&lt;div align="center"&gt;
+&lt;!-- &lt;div class="image-text-container"&gt; --&gt;
+&lt;a href="/docs/hjsong_cv.pdf"&gt;| CV | &lt;img alt="cv" src="/images/cv1.png" width="40"/&gt;&lt;/a&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;div class="image-text-container"&gt; --&gt;
+&lt;a href="https://github.com/cocoaaa"&gt;Github | &lt;img alt="@cocoaaa" src="/images/github.svg" width="40"/&gt;&lt;/a&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;div class="image-text-container"&gt; --&gt;
+&lt;a href="/pages/publications.html"&gt;Pubs | &lt;img alt="publications" src="/images/publication.png" width="40"/&gt;&lt;/a&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;div class="image-text-container"&gt; --&gt;
+&lt;a href="/pages/projects.html"&gt;Projects | &lt;img alt="projects" src="/images/lightbulb3.svg" width="40"/&gt;&lt;/a&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;div class="image-text-container"&gt; --&gt;
+&lt;!-- &lt;a href="/docs/hjsong_rs.pdf"&gt;Research |&lt;img src="/images/lightbulb3.svg" alt="research-statement" width="40"/&gt;&lt;/a&gt; --&gt;
+&lt;!-- &lt;/div&gt; --&gt;
 &lt;/div&gt;
+&lt;!-- todo: temp: link to my rs (invisible, but only to keep the link available by directly going to the link(ie. cocoaaa.github.io/docs/hjsong_rs.pdf)) --&gt;
+&lt;a href="/docs/hjsong_rs.pdf"&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;!-- Add my recent update section to the right side --&gt;
-&lt;div class="marginnote"&gt;
+&lt;!-- end sidenote for profile  --&gt;&lt;div class="marginnote"&gt;
 &lt;!-- &lt;div class=marginnote align="center"&gt; --&gt;
 &lt;h1 align="center" id="recent-updates_1"&gt; Recent updates! &lt;/h1&gt;
 &lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
@@ -105,8 +144,16 @@ Marina Del Rey, CA 90292
 &lt;!-- end of testing playground --&gt;
 &lt;!--todo: resume here --&gt;
 &lt;p&gt;I'm a Computer Science PhD student at USC, working with Prof. &lt;a href="http://ilab.usc.edu/itti/"&gt;Laurent Itti&lt;/a&gt; at &lt;a href="http://ilab.usc.edu/"&gt;iLab&lt;/a&gt; and ISI's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt; .&lt;/p&gt;
-&lt;!-- and Prof. Wael Abd-Almageed at ISI's [VIMAL](https://vimal.isi.edu/). --&gt;
-&lt;p&gt;Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.  Along the way, I interned at a French robotics startup &lt;em&gt;Keecker&lt;/em&gt; and worked at academic research labs at MIT (&lt;a href="https://www.csail.mit.edu/"&gt;CSAIL&lt;/a&gt;, &lt;a href="https://www.media.mit.edu/groups/camera-culture/overview/"&gt;Media Lab&lt;/a&gt;, &lt;a href="https://mcgovern.mit.edu/"&gt;McGovern Institute&lt;/a&gt;) and in INRIA (&lt;a href="https://ilda.saclay.inria.fr/index.html"&gt;ILDA lab&lt;/a&gt;).  After my Masters, I worked at Apple as a COOP for 6 months.&lt;/p&gt;
+&lt;!-- Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.   --&gt;
+&lt;p&gt;Before starting my PhD, I studied at MIT for my Bachelors and Masters in Electrical Engineering and Computer Science (EECS) with Minor in Mathematics.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;During my Masters, I concentrated on Artificial Intelligence and worked under the joint guidance of Prof. &lt;a href="https://people.csail.mit.edu/regina/"&gt;Regina Barzilay&lt;/a&gt; and Dr. &lt;a href="http://people.csail.mit.edu/jstraub/"&gt;Julian Straub&lt;/a&gt;. 
+My main projects were (1) non-rigid image registration of mammograms for breast cancer detection, and (2) 3D reconstruction of human arms for efficient &lt;a href="https://mayocl.in/2S5khTZ"&gt;lymphedema&lt;/a&gt; screening.  You can find out more about them 
+&lt;a href="/pages/publications.html#masters-thesis"&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- &lt;a href="/pages/publications.html#meng-thesis"&gt;here&lt;/a&gt;. --&gt;
+&lt;p&gt;Along the way, I worked at academic research labs at MIT (&lt;a href="https://www.csail.mit.edu/"&gt;CSAIL&lt;/a&gt;, &lt;a href="https://www.media.mit.edu/groups/camera-culture/overview/"&gt;Media Lab&lt;/a&gt;, &lt;a href="https://mcgovern.mit.edu/"&gt;McGovern Institute&lt;/a&gt;) and INRIA (&lt;a href="https://ilda.saclay.inria.fr/index.html"&gt;ILDA lab&lt;/a&gt;).   I also interned in the industry, at a French robotics startup (Keecker),  Apple (6-month COOP) and MathWorks (PhD Research Intern). &lt;/p&gt;
+&lt;!-- Apple (as a COOP for 6 months) --&gt;
 &lt;h2 id="research-interests"&gt;Research Interests&lt;/h2&gt;
 &lt;h3 id="geometric-fingerprints-of-generative-models"&gt;Geometric Fingerprints of Generative Models&lt;/h3&gt;
 &lt;p&gt;Broadly, my research interest lies in understanding how complex, high-dimensional information-processing systems (e.g., human intelligence, modern generative models, human movements like traffic patterns) behave and developing efficient algorithms to analyze their characteristics and traces in a principled way, from geometric perspectives. 
