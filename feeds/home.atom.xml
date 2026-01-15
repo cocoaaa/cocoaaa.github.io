@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2026-01-15T02:17:26-08:00</updated><subtitle>Understanding Complex Intelligent Systems from Computational Perspective...and Doing Good with What We Understand</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2026-01-15T02:17:26-08:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2026-01-15:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity - Home</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/home.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2026-01-15T05:02:34-08:00</updated><subtitle>Understanding Complex Intelligent Systems from Computational Perspective...and Doing Good with What We Understand</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2026-01-15T05:02:34-08:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2026-01-15:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -156,10 +156,9 @@ testing sidebar
 &lt;!-- end of testing playground --&gt;
 &lt;!-- ver: my bkc profile: updated here on 20260115-012143--&gt;
 &lt;!--todo: resume here --&gt;
-&lt;p&gt;I am currently a Fellow at the &lt;a href="https://cyber.harvard.edu/"&gt;Berkman Klein Center at Harvard University&lt;/a&gt; and an AI Research Fellow at ThoughtWorks, where &lt;/p&gt;
+&lt;p&gt;I am currently a Fellow at the &lt;a href="https://cyber.harvard.edu/"&gt;Berkman Klein Center at Harvard University&lt;/a&gt; and an AI Research Fellow at ThoughtWorks, where I work on geometric foundations of scalable and robust AI interpretability and safety. &lt;/p&gt;
 &lt;!-- I work on developing principled methods of scalable and robust AI design, development and governance.  --&gt;
 &lt;!-- I develop principled methods of scalable and robust AI design, development and governance.  --&gt;
-&lt;p&gt;I work on geometric foundations of scalable and robust AI interpretability and safety. &lt;/p&gt;
 &lt;p&gt;My research develops formal, geometry-based frameworks for understanding, analyzing, and steering the behavior of modern generative models. 
 I hold a Ph.D. in Computer Science from the University of Southern California. I earned my B.S. and M.Eng. in Electrical Engineering and Computer Science from MIT, with a minor in Mathematics. 
 During her M.Eng., I specialized in artificial intelligence and worked under the joint guidance of Prof. Regina Barzilay and Dr. Julian Straub on computer vision problems in medical imaging, including non-rigid mammogram registration for breast cancer detection and 3D reconstruction of human arms for lymphedema screening. &lt;/p&gt;
