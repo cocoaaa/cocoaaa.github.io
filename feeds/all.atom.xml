@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2024-09-21T14:53:38-07:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2024-09-21T14:53:38-07:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2024-09-21:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Small Simplicity</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><link href="https://cocoaaa.github.io/feeds/all.atom.xml" rel="self"></link><id>https://cocoaaa.github.io/</id><updated>2026-01-15T01:42:26-08:00</updated><subtitle>Understanding Intelligence from Computational Perspective</subtitle><entry><title>Welcome!</title><link href="https://cocoaaa.github.io/" rel="alternate"></link><published>2026-01-15T01:42:26-08:00</published><updated>2024-09-15T00:00:00-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2026-01-15:/</id><summary type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -22,13 +22,16 @@ testing sidebar
 &lt;!-- my name and address --&gt;
 &lt;div&gt;
 &lt;h1 id="hae-jin-hayley-song"&gt;Hae Jin (Hayley) Song&lt;/h1&gt;
-&lt;h4 id="phd-candidate-in-computer-science"&gt;Ph.D. Candidate in Computer Science&lt;/h4&gt;
-
+&lt;h4 id="fellow-at-berkman-klein-center-at-harvard-university"&gt;Fellow at Berkman Klein Center at Harvard University&lt;/h4&gt;
+&lt;h4 id="ai-research-fellow-at-thoughtworks-inc"&gt;AI Research Fellow at ThoughtWorks Inc.&lt;/h4&gt;
+&lt;h4 id="phd-in-computer-science"&gt;Ph.D. in Computer Science&lt;/h4&gt;
+&lt;!--
     USC Viterbi School of Engineering,
     &lt;br/&gt;
 
     Information Sciences Institute (ISI)
     &lt;br/&gt;
+--&gt;
 &lt;!-- 4676 Admiralty Way, Suite 1001 --&gt;
 &lt;!-- &lt;br/&gt; --&gt;
 &lt;!-- Marina Del Rey, CA 90292 --&gt;
@@ -63,8 +66,9 @@ testing sidebar
 &lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
 &lt;div ;="" style="font-size:0.9em"&gt;
 &lt;ul&gt;
-&lt;li&gt;2024 Feb: Our paper (ManiFPT: On Defining and Analyzing the Fingerprints of Generative Models) is accepted to CVPR 2024!&lt;/li&gt;
-&lt;li&gt;2024 May: I am invited to …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
+&lt;!-- &lt;li&gt;&lt;/li&gt; --&gt;
+&lt;li&gt;2026 Jan: Working on updating my blog...:-) &lt;/li&gt;
+&lt;li&gt;2025 Nov: Attending &lt;a href="https://www.mis.mpg.de/events/series/workshop-on-geometry-topology-and-machine-learning-gtml-2025"&gt;Workshop on Geometry, Topology, and Machine Learning (GTML 2025)&lt;/a&gt;  at  Max …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;!-- &gt;&gt; testing playground --&gt;
 &lt;!-- &lt;div class=sidebar&gt;
 testing sidebar
 - try also to add an image (eg. my profile)
@@ -87,13 +91,16 @@ testing sidebar
 &lt;!-- my name and address --&gt;
 &lt;div&gt;
 &lt;h1 id="hae-jin-hayley-song"&gt;Hae Jin (Hayley) Song&lt;/h1&gt;
-&lt;h4 id="phd-candidate-in-computer-science"&gt;Ph.D. Candidate in Computer Science&lt;/h4&gt;
-
+&lt;h4 id="fellow-at-berkman-klein-center-at-harvard-university"&gt;Fellow at Berkman Klein Center at Harvard University&lt;/h4&gt;
+&lt;h4 id="ai-research-fellow-at-thoughtworks-inc"&gt;AI Research Fellow at ThoughtWorks Inc.&lt;/h4&gt;
+&lt;h4 id="phd-in-computer-science"&gt;Ph.D. in Computer Science&lt;/h4&gt;
+&lt;!--
     USC Viterbi School of Engineering,
     &lt;br/&gt;
 
     Information Sciences Institute (ISI)
     &lt;br/&gt;
+--&gt;
 &lt;!-- 4676 Admiralty Way, Suite 1001 --&gt;
 &lt;!-- &lt;br/&gt; --&gt;
 &lt;!-- Marina Del Rey, CA 90292 --&gt;
@@ -128,9 +135,14 @@ testing sidebar
 &lt;!-- todo: add cvpr, lg meet spotlight, neurips, and the rest from what i already had in the blog --&gt;
 &lt;div ;="" style="font-size:0.9em"&gt;
 &lt;ul&gt;
-&lt;li&gt;2024 Feb: Our paper (ManiFPT: On Defining and Analyzing the Fingerprints of Generative Models) is accepted to CVPR 2024!&lt;/li&gt;
+&lt;!-- &lt;li&gt;&lt;/li&gt; --&gt;
+&lt;li&gt;2026 Jan: Working on updating my blog...:-) &lt;/li&gt;
+&lt;li&gt;2025 Nov: Attending &lt;a href="https://www.mis.mpg.de/events/series/workshop-on-geometry-topology-and-machine-learning-gtml-2025"&gt;Workshop on Geometry, Topology, and Machine Learning (GTML 2025)&lt;/a&gt;  at  Max Planck Institute for Mathematics in the Sciences. Excited to meet new friends working at the intersection of geometry and machine learning! &lt;/li&gt;
+&lt;li&gt;2025 Oct: Very grateful and excited for this opportunity to join &lt;strong&gt;&lt;a href="https://cyber.harvard.edu/"&gt;Berkman Klein Center at Harvard University&lt;/a&gt;&lt;/strong&gt; as AI fellow, working on principled methods of scalable and robust AI design, development and governance.
+&lt;li&gt;2025 June: Excited to share that our paper on "Riemannian-geometric fingerprints of generative models" is accepted to &lt;strong&gt;ICCV 2025&lt;/strong&gt; as a highlight paper! Please check it out here: &lt;a href="https://arxiv.org/abs/2506.22802"&gt;https://arxiv.org/abs/2506.22802&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2024 Feb: Our paper (ManiFPT: On Defining and Analyzing the Fingerprints of Generative Models) is accepted to &lt;strong&gt;CVPR 2024&lt;/strong&gt;!&lt;/li&gt;
 &lt;li&gt;2024 May: I am invited to an AI meeting hosted by LG AI Research in the Bay Area to give a spotlight talk on my research. Thank you!&lt;/li&gt;
-&lt;li&gt;2023 Dec: Our paper on model attribution is accepted to NeurIPS Workshop on Attribution at Large Scale.&lt;/li&gt;
+&lt;li&gt;2023 Dec: Our paper on model attribution is accepted to &lt;strong&gt;NeurIPS Workshop&lt;/strong&gt; on Attribution at Large Scale.&lt;/li&gt;
 &lt;li&gt;New post: "Total variation, KL-Divergence, Maximum Likelihood"&lt;/li&gt;
 &lt;li&gt;New post: "Let's be honest: peeling the assumptions that get us to Variational Autoencoders"&lt;/li&gt;
 &lt;li&gt;New post: "Thinking about an observer vs. the observed"&lt;/li&gt;
@@ -138,23 +150,25 @@ testing sidebar
 &lt;li&gt;I got accepted to &lt;a href="https://www.santafe.edu/engage/learn/schools/sfi-complex-systems-summer-school"&gt;2021 Complex Systems Summer School&lt;/a&gt; at Santa Fe Institute, Woohoo!&lt;/li&gt;
 &lt;li&gt;I gave my first tutorial @ PyData LA, 2019 on "Experimental ML with Holoviews/Geoviews + Pytorch". Here are my talk &lt;a href="/pdfs/experimental-ml-2019-hayley.pdf"&gt;slides&lt;/a&gt;, &lt;a href="#"&gt;video&lt;/a&gt; and &lt;a href="(https://github.com/cocoaaa/PyData-LA-2019"&gt;jupyter notebook materials&lt;/a&gt;!&lt;/li&gt;
 &lt;li&gt;I participated in &lt;a href="https://sites.google.com/earthoutreach.org/geoforgood19/home"&gt;Geo4Good&lt;/a&gt; @ Google in Mtn View, CA! Check out some &lt;a href="https://tinyurl.com/wdoyepy"&gt;highlights&lt;/a&gt; of inspiring projects based on Google Earth Engine and Studio. &lt;/li&gt;
-&lt;/ul&gt;
+&lt;/li&gt;&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;!-- end of testing playground --&gt;
+&lt;!-- ver: my bkc profile: updated here on 20260115-012143--&gt;
 &lt;!--todo: resume here --&gt;
-&lt;p&gt;I'm a Computer Science PhD student at USC, working with Prof. &lt;a href="http://ilab.usc.edu/itti/"&gt;Laurent Itti&lt;/a&gt; at &lt;a href="http://ilab.usc.edu/"&gt;iLab&lt;/a&gt; and ISI's &lt;a href="https://vimal.isi.edu/"&gt;VIMAL&lt;/a&gt; .&lt;/p&gt;
-&lt;!-- Before starting my PhD, I studied Mathematics and EECS (Electrical Engineering and Computer Science) at MIT for my Bachelors and Masters.   --&gt;
-&lt;p&gt;Before starting my PhD, I studied at MIT for my Bachelors and Masters in Electrical Engineering and Computer Science (EECS) with Minor in Mathematics.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;During my Masters, I concentrated on Artificial Intelligence and worked under the joint guidance of Prof. &lt;a href="https://people.csail.mit.edu/regina/"&gt;Regina Barzilay&lt;/a&gt; and Dr. &lt;a href="http://people.csail.mit.edu/jstraub/"&gt;Julian Straub&lt;/a&gt;. 
-My main projects were (1) non-rigid image registration of mammograms for breast cancer detection, and (2) 3D reconstruction of human arms for efficient &lt;a href="https://mayocl.in/2S5khTZ"&gt;lymphedema&lt;/a&gt; screening.  You can find out more about them 
-&lt;a href="/pages/publications.html#masters-thesis"&gt;here&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- &lt;a href="/pages/publications.html#meng-thesis"&gt;here&lt;/a&gt;. --&gt;
-&lt;p&gt;Along the way, I worked at academic research labs at MIT (&lt;a href="https://www.csail.mit.edu/"&gt;CSAIL&lt;/a&gt;, &lt;a href="https://www.media.mit.edu/groups/camera-culture/overview/"&gt;Media Lab&lt;/a&gt;, &lt;a href="https://mcgovern.mit.edu/"&gt;McGovern Institute&lt;/a&gt;) and INRIA (&lt;a href="https://ilda.saclay.inria.fr/index.html"&gt;ILDA lab&lt;/a&gt;).   I also interned in the industry, at a French robotics startup (Keecker),  Apple (6-month COOP) and MathWorks (PhD Research Intern). &lt;/p&gt;
-&lt;!-- Apple (as a COOP for 6 months) --&gt;
+&lt;p&gt;I am currently a Fellow at the &lt;a href="https://cyber.harvard.edu/"&gt;Berkman Klein Center at Harvard University&lt;/a&gt; and an AI Research Fellow at ThoughtWorks, where I work on the geometric foundations of AI interpretability and safety. &lt;/p&gt;
+&lt;p&gt;My research develops formal, geometry-based frameworks for understanding, analyzing, and steering the behavior of modern generative models. 
+I hold a Ph.D. in Computer Science from the University of Southern California. I earned my B.S. and M.Eng. in Electrical Engineering and Computer Science from MIT, with a minor in Mathematics. 
+During her M.Eng., I specialized in artificial intelligence and worked under the joint guidance of Prof. Regina Barzilay and Dr. Julian Straub on computer vision problems in medical imaging, including non-rigid mammogram registration for breast cancer detection and 3D reconstruction of human arms for lymphedema screening. &lt;/p&gt;
+&lt;p&gt;Across my academic career, I have conducted research at MIT (CSAIL, Media Lab, McGovern Institute), INRIA (ILDA Lab), and USC (Information Sciences Institute, Visual Intelligence and Multimedia Analytics Laboratory (VIMAL), iLab, Knowledge Computing Lab). I have also had industry research internships at Apple, MathWorks, and a French robotics startup, Keecker. &lt;/p&gt;
 &lt;h2 id="research-interests"&gt;Research Interests&lt;/h2&gt;
+&lt;h3 id="geometric-foundation-of-generative-models"&gt;Geometric Foundation of Generative Models&lt;/h3&gt;
+&lt;h3 id="applications-for-scalable-and-robust-ai-design-development-and-governance"&gt;&amp;amp; Applications for Scalable and Robust AI Design, Development and Governance&lt;/h3&gt;
+&lt;p&gt;My current research focuses on how complex, high-dimensional information-processing systems, particularly modern generative models and other AI models, behave, using tools from differential geometry, Riemannian manifolds, latent-space topology and Bayesian methods.&lt;/p&gt;
+&lt;p&gt;My goal is to develop principled and scalable methods to characterize, attribute, and control model behaviors by identifying geometric &amp;ldquo;fingerprints&amp;rdquo; of their internal representations and dynamics. My work addresses foundational questions in the analysis and controllability of generative models, with applications to AI interpretability, model attribution, deepfake detection, bias and degeneration analysis, and model steering for safety and alignment. &lt;/p&gt;
+&lt;p&gt;My recent work has made significant contributions to these questions through research on fingerprinting generative models: In papers published at CVPR 2024 and ICCV 2025 (Highlight), we introduced a novel theoretical framework that represents model behavior on data manifolds and formalized the notions of &amp;ldquo;artifacts&amp;rdquo; and &amp;ldquo;fingerprints&amp;rdquo; of generative models in a geometric language. This framework enables effective attribution and systematic comparison of state-of-the-art generative models. &lt;/p&gt;
+&lt;p&gt;More broadly, through this line of research, I aim to advance a generalized theory of generative models and their internal mechanisms, to help shape the safe and responsible integration of Generative AI into our society in ways that serve humanity.&lt;/p&gt;
+&lt;!-- ## Research Interests --&gt;
 &lt;h3 id="geometric-fingerprints-of-generative-models"&gt;Geometric Fingerprints of Generative Models&lt;/h3&gt;
 &lt;p&gt;Broadly, my research interest lies in understanding how complex, high-dimensional information-processing systems (e.g., human intelligence, modern generative models, collective behaviors like traffic patterns) behave and developing efficient algorithms to analyze their characteristics and traces in a principled way, from geometric perspectives. 
 Through this geometric understanding of their properties and internal mechanisms, I aim to improve their behaviors (e.g., steering away from degenerative patterns and biases while aligning to more proper values), by mechanistically intervening in their internal causal pathways. Of many such complex systems, my PhD research focuses on generative models and representation learning algorithms.
@@ -221,33 +235,9 @@ My approach is grounded on the rich theory of differential geometry and Riemanni
 &lt;br/&gt;
 &lt;br/&gt;&lt;/p&gt;
 &lt;hr/&gt;
-&lt;hr/&gt;
-&lt;h2 id="research-thread-2"&gt;Research Thread 2&lt;/h2&gt;
-&lt;!-- I am interested in how we understand observations from multiple modalities (e.g. images, audio signals and written texts), and how we extract and build representations of the semantics that is invariant across the multimodal observations. --&gt;
-&lt;p&gt;Another thread of my research lies at the intersection of &lt;strong&gt;representation learning&lt;/strong&gt; and &lt;strong&gt;information theory&lt;/strong&gt;, inspired by the way our perceptual system integrates &lt;strong&gt;multimodal&lt;/strong&gt; sensory inputs via identifying &lt;strong&gt;invariant semantics&lt;/strong&gt;.  I am interested in understanding how the &lt;strong&gt;semantic information&lt;/strong&gt; flows while processing observations from multiple modalities, using tools in deep learning and thermodynamic approaches to information flow. &lt;/p&gt;
-&lt;p&gt;My guiding question is, &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;How do we  extract the shared semantics from observations expressed in vastly different representational forms (eg. images,  sounds, written texts), and how do we create/actualize various forms of observations, starting from the semantics we want to communicate?&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure&gt;
-&lt;img alt="multimodal-inputs" src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fcocoaaa%2FOzdNmX2UzQ.png?alt=media&amp;amp;token=b246a2e5-5e52-418d-8c96-afbbbe84d1b7" style="width:60%"/&gt;
-&lt;/figure&gt;
-&lt;p&gt;I approach this question from an information-processing point of view and am developing &lt;strong&gt;generative models&lt;/strong&gt; with &lt;strong&gt;disentangled representation&lt;/strong&gt; to jointly learn the analysis and synthesis processes of multimodal data.  My most recent work introduces a generative model with adversarial training that learns spatial semantics from map tiles collected from diverse sources such as satellites, Google Street Map and custom rendering engines.   &lt;/p&gt;
-&lt;!-- - Read more about our dataset of multi-style map tiles ([TBA](#))
-- Read more about our work on Learning a structured ... ([TBA](#)) --&gt;
-&lt;p&gt;Currently, I am exploring different ways to understand our proposed model, in particular, by measuring semantic information and studying the flow of information between the latent partitions.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How we can quantify the amount of the shared semantic information captured by our model?&lt;/li&gt;
-&lt;li&gt;If we view each latent partition as a subsystem that constitutes a global system represented by the whole latent space, then we can view the the adversarial discriminator as a demon (like &lt;a href="https://en.wikipedia.org/wiki/Maxwell%27s_demon"&gt;Maxwell's Demon&lt;/a&gt;) sitting at the boarder of the latent subsystems. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--- (How) does the adversary -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?--&gt;
-&lt;ul&gt;
-&lt;li&gt;From this point of view, (how) does this adversary -- the demon sitting at the boarder of the content and style latent partitions -- achieve the non-equilibrium state of the semantic vs. domain-specific information by "sorting" or "organizing" the information into the correct partition as the training happens?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It's exciting to see how the ideas and tools in thermodynamics can help quantify and visualize this flow of semantic information in our model!&lt;/p&gt;
 &lt;h4 id="please-see-more-details-on-my-research-in-my-publications-and-projects"&gt;Please see more details on my research in my &lt;a href="/pages/publications.html"&gt;publications&lt;/a&gt; and &lt;a href="/pages/projects.html"&gt;projects&lt;/a&gt; :)&lt;/h4&gt;
 &lt;hr/&gt;
-&lt;h2 id="more-details-on-my-research-questions_1"&gt;More Details (on My Research Questions)&lt;/h2&gt;
+&lt;h2 id="archived-details_1"&gt;Archived Details&lt;/h2&gt;
 &lt;details&gt;
 &lt;summary&gt; Click to expand &lt;/summary&gt;
 My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this dance between abstraction and synthesis in a video of Picasso's live drawing:
@@ -419,7 +409,7 @@ Before my PhD, I was at MIT studying Mathematics and EECS (Electrical Engineerin
 My journey started from noticing our own ability to (i) break down a complex observation into multiple chunks of smaller and abstract concepts and (ii) create a new idea by playing and recombining the conceptual building blocks.  For instance, we can take a glimpse of this process of abstraction and synthesis in this video of Picasso's live drawing.
 
 
---&gt;&lt;/details&gt;</content><category term="Home"></category></entry><entry><title>Short note on coarse-graining</title><link href="https://cocoaaa.github.io/articles/2021/02/23/short-note-on-coarse-graining" rel="alternate"></link><published>2021-02-23T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-23:/articles/2021/02/23/short-note-on-coarse-graining</id><summary type="html">&lt;p&gt;One of the axioms in Shannon's information theory is that (Shannon's) entropy satisfies coarse-graining property:&lt;/p&gt;
+--&gt;&lt;/details&gt;</content><category term="Home"></category></entry><entry><title>Short note on coarse-graining</title><link href="https://cocoaaa.github.io/articles/2021/02/23/short-note-on-coarse-graining" rel="alternate"></link><published>2021-02-23T00:00:00-08:00</published><updated>2022-06-15T02:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2021-02-23:/articles/2021/02/23/short-note-on-coarse-graining</id><summary type="html">&lt;p&gt;One of the axioms in Shannon's information theory is that (Shannon's) entropy satisfies coarse-graining property:&lt;/p&gt;
 &lt;figure&gt;
 &lt;img alt="coarse-graining-dedeo" src="/images/it/coarse-graining-dedeo.png" width="60%"/&gt;
 &lt;figcaption&gt; While reading Information Theory for Intelligent People by S.DeDeo
@@ -444,7 +434,7 @@ Can this idea help us understand/define the "semantic" information (vs. Shannon'
 &lt;li&gt;If we measure $H(\tilde{X})$ at that level, can we say that quantity measures 'semantic information'?&lt;/li&gt;
 &lt;li&gt;The difference $H(G)$ is the force/gradient that drives the flow of information -- information of what?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/details&gt;</content><category term="Information"></category><category term="coarse-graining"></category><category term="error-tolerance"></category></entry><entry><title>Basic concepts in measure theory</title><link href="https://cocoaaa.github.io/articles/2020/02/23/basic-concepts-in-measure-theory" rel="alternate"></link><published>2020-02-23T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-23:/articles/2020/02/23/basic-concepts-in-measure-theory</id><summary type="html">&lt;h2 id="measure"&gt;Measure&lt;/h2&gt;
+&lt;/details&gt;</content><category term="Information"></category><category term="coarse-graining"></category><category term="error-tolerance"></category></entry><entry><title>Basic concepts in measure theory</title><link href="https://cocoaaa.github.io/articles/2020/02/23/basic-concepts-in-measure-theory" rel="alternate"></link><published>2020-02-23T00:00:00-08:00</published><updated>2022-06-15T02:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-23:/articles/2020/02/23/basic-concepts-in-measure-theory</id><summary type="html">&lt;h2 id="measure"&gt;Measure&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="orbanz-1-2" src="images/orbanz-1-2.png"/&gt;
 - Intuition: roughly a measure is an integral as a function of its region
 &lt;/p&gt;
@@ -546,7 +536,7 @@ Think of the abstract probability space as the entire system of the universe. A 
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="ML"></category><category term="measure-theory"></category><category term="random-variable"></category><category term="measure"></category><category term="probability-theory"></category></entry><entry><title>KL Divergence</title><link href="https://cocoaaa.github.io/articles/2020/02/22/kl-divergence" rel="alternate"></link><published>2020-02-22T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-22:/articles/2020/02/22/kl-divergence</id><summary type="html">&lt;h2 id="resource"&gt;Resource&lt;/h2&gt;
+&lt;/script&gt;</content><category term="ML"></category><category term="measure-theory"></category><category term="random-variable"></category><category term="measure"></category><category term="probability-theory"></category></entry><entry><title>KL Divergence</title><link href="https://cocoaaa.github.io/articles/2020/02/22/kl-divergence" rel="alternate"></link><published>2020-02-22T00:00:00-08:00</published><updated>2022-06-15T02:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-22:/articles/2020/02/22/kl-divergence</id><summary type="html">&lt;h2 id="resource"&gt;Resource&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://tinyurl.com/uta23v5"&gt;Lec on VAE&lt;/a&gt;, by Ali Ghodsi: This lecture motivates KL Divergence as the measurement of difference in the average information content of two random varialbes, whose distributions are &lt;span class="math"&gt;\(p\)&lt;/span&gt; and &lt;span class="math"&gt;\(q\)&lt;/span&gt; in in the article.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Kullback&amp;ndash;Leibler_divergence"&gt;Wiki&lt;/a&gt;: It clears up different terminologies that are (misused) to refer to the KL …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2 id="resource"&gt;Resource&lt;/h2&gt;
@@ -616,7 +606,7 @@ Think of the abstract probability space as the entire system of the universe. A 
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="ML"></category><category term="divergence"></category><category term="similarity"></category></entry><entry><title>Bayesian Data Analysis for dummies like me</title><link href="https://cocoaaa.github.io/articles/2020/02/01/bayesian-data-analysis-for-dummies-like-me" rel="alternate"></link><published>2020-02-01T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-01:/articles/2020/02/01/bayesian-data-analysis-for-dummies-like-me</id><summary type="html">&lt;h2 id="explaining-physical-phenomenon-consistent-with-observations"&gt;Explaining physical phenomenon consistent with observations&lt;/h2&gt;
+&lt;/script&gt;</content><category term="ML"></category><category term="divergence"></category><category term="similarity"></category></entry><entry><title>Bayesian Data Analysis for dummies like me</title><link href="https://cocoaaa.github.io/articles/2020/02/01/bayesian-data-analysis-for-dummies-like-me" rel="alternate"></link><published>2020-02-01T00:00:00-08:00</published><updated>2022-06-15T02:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-01:/articles/2020/02/01/bayesian-data-analysis-for-dummies-like-me</id><summary type="html">&lt;h2 id="explaining-physical-phenomenon-consistent-with-observations"&gt;Explaining physical phenomenon consistent with observations&lt;/h2&gt;
 &lt;p&gt;Bayesian data analysis is a way to iteratively building a mathemtical description of a physical phenomenon of interest using observed data. &lt;/p&gt;
 &lt;h2 id="setup"&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Bayesian inference is a method of statistical inference in which Bayes' Theorem is used to update the probability for a hypothesis (&lt;span class="math"&gt;\(\theta …&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;h2 id="explaining-physical-phenomenon-consistent-with-observations"&gt;Explaining physical phenomenon consistent with observations&lt;/h2&gt;
@@ -776,7 +766,7 @@ Let's denote the set of all parameters in the model, &lt;span class="math"&gt;\(
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="ML"></category><category term="bayesian"></category><category term="inference"></category><category term="variational"></category></entry><entry><title>Multimodal Distribution in Image or Text domain</title><link href="https://cocoaaa.github.io/articles/2020/02/01/multimodal-distribution-in-image-or-text-domain" rel="alternate"></link><published>2020-02-01T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-01:/articles/2020/02/01/multimodal-distribution-in-image-or-text-domain</id><summary type="html">&lt;p&gt;Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?&lt;/p&gt;
+&lt;/script&gt;</content><category term="ML"></category><category term="bayesian"></category><category term="inference"></category><category term="variational"></category></entry><entry><title>Multimodal Distribution in Image or Text domain</title><link href="https://cocoaaa.github.io/articles/2020/02/01/multimodal-distribution-in-image-or-text-domain" rel="alternate"></link><published>2020-02-01T00:00:00-08:00</published><updated>2022-06-15T02:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-02-01:/articles/2020/02/01/multimodal-distribution-in-image-or-text-domain</id><summary type="html">&lt;p&gt;Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?&lt;/p&gt;
 &lt;p&gt;While reading papers on conditional image generation using generative modeling (eg. &lt;a href="https://tinyurl.com/s5drg9c"&gt;"Toward Multimodal Image-to-Image Translation"&lt;/a&gt; by Zhu et al (NIPS 2017)), I wasn't clear what was meant by "one-to-many mapping" between input image domain and output image …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Q: What does "multimodal distribution" mean in computer vision literature (eg. image-to-image translation)?&lt;/p&gt;
 &lt;p&gt;While reading papers on conditional image generation using generative modeling (eg. &lt;a href="https://tinyurl.com/s5drg9c"&gt;"Toward Multimodal Image-to-Image Translation"&lt;/a&gt; by Zhu et al (NIPS 2017)), I wasn't clear what was meant by "one-to-many mapping" between input image domain and output image domain, "multimodal distribution" in the output image domain, or "multi-modal outputs" (eg. &lt;a href="https://tinyurl.com/szjmmzf"&gt;Quora&lt;/a&gt;). &lt;/p&gt;
 &lt;h3 id="definition"&gt;Definition&lt;/h3&gt;
@@ -866,7 +856,7 @@ Let's denote the set of all parameters in the model, &lt;span class="math"&gt;\(
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="TIL (Today I Learned)"></category><category term="generative-modeling"></category><category term="multimodal"></category><category term="one-to-many-mapping"></category></entry><entry><title>Stochastic Thinking: Predictive non-determinism</title><link href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking-predictive-non-determinism" rel="alternate"></link><published>2020-01-20T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-20:/articles/2020/01/20/stochastic-thinking-predictive-non-determinism</id><summary type="html">&lt;p&gt;MIT 6.0002 Lec4: Stochastic Thinking
+&lt;/script&gt;</content><category term="TIL (Today I Learned)"></category><category term="generative-modeling"></category><category term="multimodal"></category><category term="one-to-many-mapping"></category></entry><entry><title>Stochastic Thinking: Predictive non-determinism</title><link href="https://cocoaaa.github.io/articles/2020/01/20/stochastic-thinking-predictive-non-determinism" rel="alternate"></link><published>2020-01-20T00:00:00-08:00</published><updated>2022-06-15T02:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-20:/articles/2020/01/20/stochastic-thinking-predictive-non-determinism</id><summary type="html">&lt;p&gt;MIT 6.0002 Lec4: Stochastic Thinking
 - &lt;a href="https://www.youtube.com/watch?v=-1BnXEwHUok"&gt;YOUTUBE&lt;/a&gt;
 - &lt;img alt="predictive-nondeterminism" src="images/predictive-nondeterminism.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Often confusing categorization of a mathematical model:
@@ -1128,7 +1118,7 @@ Or whatever the port number is, set in Makefile (under the variable name of PORT
 git&lt;span class="w"&gt; &lt;/span&gt;cm&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"&amp;lt;commit message&amp;gt;"&lt;/span&gt;
 
 git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;origin&lt;span class="w"&gt; &lt;/span&gt;dev&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;#origin/dev is the remote branch that keeps track of blog sources&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="TIL (Today I Learned)"></category></entry><entry><title>Linear Regression</title><link href="https://cocoaaa.github.io/articles/2020/01/01/linear-regression" rel="alternate"></link><published>2020-01-01T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-01:/articles/2020/01/01/linear-regression</id><content type="html">&lt;h2 id="todo"&gt;Todo:&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="TIL (Today I Learned)"></category></entry><entry><title>Linear Regression</title><link href="https://cocoaaa.github.io/articles/2020/01/01/linear-regression" rel="alternate"></link><published>2020-01-01T00:00:00-08:00</published><updated>2022-06-15T02:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2020-01-01:/articles/2020/01/01/linear-regression</id><content type="html">&lt;h2 id="todo"&gt;Todo:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;[ ] Set up the problem&lt;/li&gt;
 &lt;li&gt;[ ] Simple housing problem&lt;/li&gt;
@@ -1142,7 +1132,7 @@ git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;o
 - &lt;a href="https://www.amcharts.com/demos/animations-along-lines/"&gt;Flight animation on map&lt;/a&gt;
 - &lt;a href="https://www.amcharts.com/demos/map-line-chart-gauge/"&gt;Timeline animation with fligh on map&lt;/a&gt;
 - and many more &lt;a href="https://www.amcharts.com/demos/#maps"&gt;demos&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Pretty neat!&lt;/p&gt;</content><category term="TIL (Today I Learned)"></category></entry><entry><title>Git refspec</title><link href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec" rel="alternate"></link><published>2017-01-01T00:00:00-08:00</published><updated>2022-06-14T23:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2017-01-01:/articles/2017/01/01/git-refspec</id><summary type="html">&lt;p&gt;Resource: &lt;a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec"&gt;git-book&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pretty neat!&lt;/p&gt;</content><category term="TIL (Today I Learned)"></category></entry><entry><title>Git refspec</title><link href="https://cocoaaa.github.io/articles/2017/01/01/git-refspec" rel="alternate"></link><published>2017-01-01T00:00:00-08:00</published><updated>2022-06-15T02:43:56-07:00</updated><author><name>Hayley Song</name></author><id>tag:cocoaaa.github.io,2017-01-01:/articles/2017/01/01/git-refspec</id><summary type="html">&lt;p&gt;Resource: &lt;a href="https://git-scm.com/book/en/v2/Git-Internals-The-Refspec"&gt;git-book&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="git-remotes"&gt;Git Remotes&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Remote repositories: versions of your project that are hosted on the internet&lt;/p&gt;
